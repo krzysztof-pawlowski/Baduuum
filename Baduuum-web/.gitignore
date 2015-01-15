@@ -1,0 +1,85 @@
+#OS junk files
+[Tt]humbs.db
+*.DS_Store
+
+#Visual Studio files
+*.[Oo]bj
+*.user
+*.aps
+*.pch
+*.vspscc
+*.vssscc
+*_i.c
+*_p.c
+*.ncb
+*.suo
+*.tlb
+*.tlh
+*.bak
+*.[Cc]ache
+*.ilk
+*.log
+*.lib
+*.sbr
+*.sdf
+*.opensdf
+*.unsuccessfulbuild
+*.vssettings
+ipch/
+obj/
+!tools/apache-maven-3.1.0/bin/
+[Dd]ebug*/
+[Rr]elease*/
+Ankh.NoLoad
+
+#MonoDevelop
+*.pidb
+*.userprefs
+
+#Tooling
+_ReSharper*/
+*.resharper
+src/*[Tt]est[Rr]esult*
+*.sass-cache
+
+#Project files
+[Bb]uild/
+
+#Subversion files
+.svn
+
+# Office Temp Files
+~$*
+
+#NuGet
+packages/
+
+#ncrunch
+*ncrunch*
+*crunch*.local.xml
+
+# visual studio database projects
+*.dbmdl
+
+#Test files
+*.testsettings
+
+#Ignore all custom DotSettings files, except the Phoenix.DotSettings
+*.DotSettings
+!tools/Phoenix.DotSettings
+
+#Ignore Quark Publishing Platform Files
+src/QPPServer/IHS
+src/QPPServer/ext/*.jar
+src/QPPServer/ext/phoenix_extensions
+src/QPPServer/ext/version*
+src/QPPServer/ext/conf/Database.properties
+src/QPPServer/ext/conf/Qla.properties
+src/QppServer/.project
+
+#IntelliJ
+*.iml
+artifacts/
+*.cmd
+.idea
+ *.orig
