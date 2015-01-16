@@ -4,7 +4,19 @@ import com.google.gwt.resources.client.ClientBundle;
 import com.google.gwt.resources.client.CssResource;
 
 public interface BaduuumResources extends ClientBundle {
+<<<<<<< HEAD
+	  
+=======
+	   public interface MyCss extends CssResource {
+	      String blackText();
 
+	      
+	   }
+
+	   @Source("Baduuum.css")
+	   MyCss style();
+	}
+>>>>>>> effecd2f7c3572799c37bd8bf33ed81e48e15c57
 	public interface MyCss extends CssResource {
 		String blackText();
 
@@ -21,4 +33,3 @@ public interface BaduuumResources extends ClientBundle {
 	@Source("Baduuum.css")
 	MyCss style();
 }
-
