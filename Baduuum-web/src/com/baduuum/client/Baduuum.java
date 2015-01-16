@@ -17,6 +17,10 @@ public class Baduuum extends Composite {
 	
 	private static BaduuumUiBinder uiBinder = GWT.create(BaduuumUiBinder.class);
 	
+	@UiTemplate("Baduuum.ui.xml")
+	   interface BaduuumUiBinder extends UiBinder<Widget, Baduuum> {
+	   }
+	
 	@UiField(provided = true)
 	   final BaduuumResources res;
 
