@@ -1,0 +1,24 @@
+
+Baduuum-web/.classpath
+Baduuum-web/.settings/com.google.gwt.eclipse.core.prefs
+
+Baduuum-web/*.class
+# Package Files #
+Baduuum-web/*.jar
+Baduuum-web/*.war
+# gwt caches and compiled units #
+Baduuum-web/war/gwt_bree/
+Baduuum-web/gwt-unitCache/
+# boilerplate generated classes #
+Baduuum-web/.apt_generated/
+# more caches and things from deploy #
+Baduuum-web/war/WEB-INF/deploy/
+Baduuum-web/war/WEB-INF/classes/
+#compilation logs
+Baduuum-web/.gwt/
+#caching for already compiled files
+Baduuum-web/gwt-unitCache/
+#gwt junit compilation files
+Baduuum-web/www-test/
+#old GWT (1.5) created this dir
+Baduuum-web/.gwt-tmp/
