@@ -22,3 +22,4 @@ Baduuum-web/gwt-unitCache/
 Baduuum-web/www-test/
 #old GWT (1.5) created this dir
 Baduuum-web/.gwt-tmp/
+Baduuum-web/war/baduuum/baduuum.nocache.js
