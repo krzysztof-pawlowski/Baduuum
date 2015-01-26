@@ -7,6 +7,7 @@
   <version>0.0.1-SNAPSHOT</version>
   <name>admin Maven Webapp</name>
   <url>http://maven.apache.org</url>
+  <build>
   <plugins>
     <plugin>
 		<groupId>org.apache.tomcat.maven</groupId>
@@ -19,6 +20,7 @@
 		</configuration>
 	</plugin>
   </plugins>
+  </build>
   <dependencies>
     <dependency>
       <groupId>junit</groupId>
