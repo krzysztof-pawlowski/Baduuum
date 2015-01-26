@@ -33,7 +33,7 @@ public class Baduuum extends Composite {
 	   @UiField
 	   TextBox loginBox;
 
-	   @UiField
+	/*   @UiField
 	   TextBox passwordBox;
 
 	   @UiField
@@ -44,10 +44,6 @@ public class Baduuum extends Composite {
 
 	   private Boolean tooShort = false;
 
-	   /*
-	   * Method name is not relevant, the binding is done according to the class
-	   * of the parameter.
-	   */
 	   @UiHandler("buttonSubmit")
 	   void doClickSubmit(ClickEvent event) {
 	      if (tooShort) {
@@ -77,5 +73,5 @@ public class Baduuum extends Composite {
 	         tooShort = false;
 	         completionLabel2.setText("");
 	      }
-	   }
+	   } */
 	}

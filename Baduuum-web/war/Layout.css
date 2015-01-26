@@ -1,0 +1,35 @@
+.wrapper {
+	width: 100%;
+	min-width: 1000px;
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+}
+
+
+/* Header
+-----------------------------------------------------------------------------*/
+.header {
+	height: 150px;
+	background: #FFE680;
+}
+
+
+/* Middle
+-----------------------------------------------------------------------------*/
+.content {
+	padding: 0 0 100px;
+}
+
+
+
+
+/* Footer
+-----------------------------------------------------------------------------*/
+.footer {
+	margin: -100px auto 0;
+	min-width: 1000px;
+	height: 100px;
+	background: #BFF08E;
+	position: relative;
+}
