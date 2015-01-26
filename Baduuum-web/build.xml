@@ -46,7 +46,7 @@
       <arg value="war"/>
       <!-- Additional arguments like -style PRETTY or -logLevel DEBUG -->
       <arg line="${gwt.args}"/>
-      <arg value="com.baduuum.Baduuum"/>
+      <arg value="pl.baduuum.Baduuum"/>
     </java>
   </target>
 
@@ -63,8 +63,8 @@
       <arg value="war"/>
       <!-- Additional arguments like -style PRETTY, -logLevel DEBUG or -nosuperDevMode -->
       <arg line="${gwt.args}"/>
-      <arg value="com.baduuum.Baduuum"/>
-      <arg value="com.baduuum.Baduuum"/>
+      <arg value="pl.baduuum.Baduuum"/>
+      <arg value="pl.baduuum.Baduuum"/>
     </java>
   </target>
 

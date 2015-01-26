@@ -1,0 +1,53 @@
+
+<ui:UiBinder xmlns:ui='urn:ui:com.google.gwt.uibinder' xmlns:gwt='urn:import:com.google.gwt.user.client.ui' xmlns:res='urn:with:pl.baduuum.client.BaduuumResources'>
+    <ui:with type="pl.baduuum.client.BaduuumResources" field="res">
+    </ui:with>
+    <ui:style>
+        .headerPanel { width: 1000px; height: 500px; border: 1px solid black; } .header { margin: 3px; border: 1px solid red; } .middle { margin: 3px; border: 1px solid orange; } .footer { margin: 3px; border: 1px solid green; }
+    </ui:style>
+    <gwt:HeaderPanel styleName="{style.headerPanel}">
+        <gwt:FlowPanel styleName="{style.middle}">
+            <gwt:HTML>
+                test header in div 
+            </gwt:HTML>
+            <gwt:Label text="bla" />
+            <gwt:MenuBar ui:field="menuBar">
+                <gwt:MenuItem ui:field="helpMenuItem">Help</gwt:MenuItem>
+                <gwt:MenuItem ui:field="aboutMenuItem">About</gwt:MenuItem>
+                <gwt:MenuItem ui:field="siteMapMenuItem">Site Map</gwt:MenuItem>
+            </gwt:MenuBar>
+            <gwt:HTML>
+                <div> test </div>
+            </gwt:HTML>
+        </gwt:FlowPanel>
+        <gwt:FlowPanel styleName="{style.middle}">
+            <gwt:Label text="Login" res:styleName="style.blackText" />
+            <gwt:TextBox ui:field="loginBox" res:styleName="style.box" />
+        </gwt:FlowPanel>
+        <gwt:FlowPanel styleName="{style.middle}">
+            <gwt:HTML>
+               test footer in div 
+            </gwt:HTML>
+        </gwt:FlowPanel>
+    </gwt:HeaderPanel>
+    <!--  	<gwt:HTMLPanel>
+		<div align="center">
+			<gwt:VerticalPanel res:styleName="style.background">
+				<gwt:Label text="Login" res:styleName="style.blackText" />
+				<gwt:TextBox ui:field="loginBox" res:styleName="style.box" />
+				<gwt:Label text="Password" res:styleName="style.blackText" />
+				<gwt:PasswordTextBox ui:field="passwordBox"
+					res:styleName="style.box" />
+				<gwt:HorizontalPanel verticalAlignment="middle">
+					<gwt:Button ui:field="buttonSubmit" text="Submit"
+						res:styleName="style.loginButton" />
+					<gwt:CheckBox ui:field="myCheckBox" />
+					<gwt:Label ui:field="myLabel" text="Remember me"
+						res:styleName="style.blackText" />
+				</gwt:HorizontalPanel>
+				<gwt:Label ui:field="completionLabel1" res:styleName="style.blackText" />
+				<gwt:Label ui:field="completionLabel2" res:styleName="style.blackText" />
+			</gwt:VerticalPanel>
+		</div>
+	</gwt:HTMLPanel> -->
+</ui:UiBinder>
