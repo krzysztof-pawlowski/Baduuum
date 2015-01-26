@@ -7,6 +7,18 @@
   <version>0.0.1-SNAPSHOT</version>
   <name>admin Maven Webapp</name>
   <url>http://maven.apache.org</url>
+  <plugins>
+    <plugin>
+		<groupId>org.apache.tomcat.maven</groupId>
+		<artifactId>tomcat7-maven-plugin</artifactId>
+		<version>2.2</version>
+		<configuration>
+			<url>http://localhost:8081</url>
+			<server>TomcatServer</server>
+			<path>/admin</path>
+		</configuration>
+	</plugin>
+  </plugins>
   <dependencies>
     <dependency>
       <groupId>junit</groupId>
