@@ -1,5 +1,6 @@
+
 <ui:UiBinder xmlns:ui='urn:ui:com.google.gwt.uibinder' xmlns:gwt='urn:import:com.google.gwt.user.client.ui' xmlns:res='urn:with:com.baduuum.client.BaduuumResources'>
-    <ui:with type="com.baduuum.client.BaduuumResources" field="res">
+    <ui:with type="pl.baduuum.client.BaduuumResources" field="res">
     </ui:with>
     <ui:style>
         .headerPanel { width: 1000px; height: 500px; border: 1px solid black; } .header { margin: 3px; border: 1px solid red; } .middle { margin: 3px; border: 1px solid orange; } .footer { margin: 3px; border: 1px solid green; }

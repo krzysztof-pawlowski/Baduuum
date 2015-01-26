@@ -1,4 +1,4 @@
-package com.baduuum.client;
+package pl.baduuum.client;
 
 import com.google.gwt.user.client.rpc.AsyncCallback;
 

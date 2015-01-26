@@ -1,4 +1,4 @@
-package com.baduuum.client;
+package pl.baduuum.client;
 
 import com.google.gwt.resources.client.ClientBundle;
 import com.google.gwt.resources.client.CssResource;

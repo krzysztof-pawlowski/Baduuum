@@ -1,4 +1,4 @@
-package com.baduuum.shared;
+package pl.baduuum.shared;
 
 /**
  * <p>

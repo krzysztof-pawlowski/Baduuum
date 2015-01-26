@@ -1,7 +1,8 @@
-package com.baduuum.server;
+package pl.baduuum.server;
 
-import com.baduuum.client.GreetingService;
-import com.baduuum.shared.FieldVerifier;
+import pl.baduuum.client.GreetingService;
+import pl.baduuum.shared.FieldVerifier;
+
 import com.google.gwt.user.server.rpc.RemoteServiceServlet;
 
 /**
