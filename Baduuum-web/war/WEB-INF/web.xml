@@ -8,7 +8,7 @@
   <!-- Servlets -->
   <servlet>
     <servlet-name>greetServlet</servlet-name>
-    <servlet-class>com.baduuum.server.GreetingServiceImpl</servlet-class>
+    <servlet-class>pl.baduuum.server.GreetingServiceImpl</servlet-class>
   </servlet>
   
   <servlet-mapping>
