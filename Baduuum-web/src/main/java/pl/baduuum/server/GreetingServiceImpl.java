@@ -2,6 +2,7 @@ package pl.baduuum.server;
 
 import pl.baduuum.client.GreetingService;
 import pl.baduuum.shared.FieldVerifier;
+
 import com.google.gwt.user.server.rpc.RemoteServiceServlet;
 
 /**
