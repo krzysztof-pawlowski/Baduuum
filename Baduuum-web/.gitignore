@@ -1,4 +1,4 @@
-
+.project
 .classpath
 .settings/com.google.gwt.eclipse.core.prefs
 
@@ -24,3 +24,4 @@ www-test/
 .gwt-tmp/
 target/
 .settings/
+
