@@ -1,3 +1,10 @@
+-- Created by Vertabelo (http://vertabelo.com)
+-- Script type: create
+-- Scope: [tables, references, sequences, views, procedures]
+-- Generated at Sat Jan 31 12:03:36 UTC 2015
+
+
+
 
 -- tables
 -- Table: carnet
@@ -70,6 +77,27 @@ CREATE TABLE cost_subcategory (
 
 
 
+-- Table: income
+CREATE TABLE income (
+    id int  NOT NULL,
+    amount decimal(3,2)  NOT NULL,
+    income_category_id int  NOT NULL,
+    reservation_id int  NOT NULL,
+    date date  NOT NULL,
+    CONSTRAINT income_pk PRIMARY KEY (id)
+);
+
+
+
+-- Table: income_category
+CREATE TABLE income_category (
+    id int  NOT NULL,
+    name varchar(100)  NOT NULL,
+    CONSTRAINT income_category_pk PRIMARY KEY (id)
+);
+
+
+
 -- Table: reservation
 CREATE TABLE reservation (
     id int  NOT NULL,
@@ -78,7 +106,6 @@ CREATE TABLE reservation (
     date date  NOT NULL,
     hour_start time  NOT NULL,
     hours_end time  NOT NULL,
-    cost decimal(4,0)  NULL,
     is_paid boolean  NOT NULL,
     is_approved boolean  NOT NULL,
     is_cymbals boolean  NOT NULL,
@@ -152,6 +179,26 @@ ALTER TABLE cost ADD CONSTRAINT cost_subcategory_cost
 ALTER TABLE cost_subcategory ADD CONSTRAINT cost_subcategory_cost_category 
     FOREIGN KEY (cost_category_id)
     REFERENCES cost_category (id)
+    NOT DEFERRABLE 
+    INITIALLY IMMEDIATE 
+;
+
+-- Reference:  income_income_category (table: income)
+
+
+ALTER TABLE income ADD CONSTRAINT income_income_category 
+    FOREIGN KEY (income_category_id)
+    REFERENCES income_category (id)
+    NOT DEFERRABLE 
+    INITIALLY IMMEDIATE 
+;
+
+-- Reference:  income_reservation (table: income)
+
+
+ALTER TABLE income ADD CONSTRAINT income_reservation 
+    FOREIGN KEY (reservation_id)
+    REFERENCES reservation (id)
     NOT DEFERRABLE 
     INITIALLY IMMEDIATE 
 ;
