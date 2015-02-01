@@ -136,3 +136,10 @@ body {
    margin-top: 5px;
    padding: 6px;
 }
+
+
+.headerPanel { 
+	width: 1000px; 
+	height: 500px; 
+	border: 1px solid black; 
+}

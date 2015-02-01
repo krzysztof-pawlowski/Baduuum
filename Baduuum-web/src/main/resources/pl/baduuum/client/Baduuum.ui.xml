@@ -21,7 +21,7 @@
             </gwt:HTML>
         </gwt:FlowPanel>
         <gwt:FlowPanel styleName="{style.middle}">
-            <gwt:Label text="Login" res:styleName="style.blackText" />
+            <gwt:Label text="Login" res:styleName="style.redText" />
             <gwt:TextBox ui:field="loginBox" res:styleName="style.box" />
         </gwt:FlowPanel>
         <gwt:FlowPanel styleName="{style.middle}">
