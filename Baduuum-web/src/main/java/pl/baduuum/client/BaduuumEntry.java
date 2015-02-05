@@ -6,7 +6,9 @@ import com.google.gwt.user.client.ui.RootPanel;
 public class BaduuumEntry implements EntryPoint{
 
 	public void onModuleLoad() {
-		RootPanel.get().add(new Baduuum());   
+		
+		Baduuum panel = new Baduuum();
+		RootPanel.get().add(panel);   
 		
 	}
 

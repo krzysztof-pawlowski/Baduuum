@@ -25,6 +25,8 @@ public interface BaduuumResources extends ClientBundle {
 		String content();
 		
 		String headerPanel();
+		
+		String middle();
 
 	}
 
