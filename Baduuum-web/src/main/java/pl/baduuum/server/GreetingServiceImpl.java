@@ -1,6 +1,6 @@
 package pl.baduuum.server;
 
-import pl.baduuum.client.GreetingService;
+import pl.baduuum.client.BaduuumService;
 import pl.baduuum.shared.FieldVerifier;
 
 import com.google.gwt.user.server.rpc.RemoteServiceServlet;
@@ -10,7 +10,7 @@ import com.google.gwt.user.server.rpc.RemoteServiceServlet;
  */
 @SuppressWarnings("serial")
 public class GreetingServiceImpl extends RemoteServiceServlet implements
-    GreetingService {
+    BaduuumService {
 
   public String greetServer(String input) throws IllegalArgumentException {
     // Verify that the input is valid. 

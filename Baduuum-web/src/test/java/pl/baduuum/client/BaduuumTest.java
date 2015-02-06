@@ -32,11 +32,11 @@ public class BaduuumTest extends GWTTestCase {
 
   /**
    * This test will send a request to the server using the greetServer method in
-   * GreetingService and verify the response.
+   * BaduuumService and verify the response.
    */
   public void testGreetingService() {
     // Create the service that we will test.
-    GreetingServiceAsync greetingService = GWT.create(GreetingService.class);
+    BaduuumServiceAsync greetingService = GWT.create(BaduuumService.class);
     ServiceDefTarget target = (ServiceDefTarget) greetingService;
     target.setServiceEntryPoint(GWT.getModuleBaseURL() + "baduuum/greet");
 

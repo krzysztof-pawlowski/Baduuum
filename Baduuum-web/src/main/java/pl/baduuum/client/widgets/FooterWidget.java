@@ -8,12 +8,12 @@ import com.google.gwt.user.client.ui.Composite;
 import com.google.gwt.user.client.ui.Label;  
 import com.google.gwt.user.client.ui.Widget;
 
-public class SomeWidget extends Composite {
+public class FooterWidget extends Composite {
 
     private static SomeWidgetUiBinder uiBinder = GWT.create(SomeWidgetUiBinder.class);
 
-    @UiTemplate("SomeWidget.ui.xml")
-    interface SomeWidgetUiBinder extends UiBinder<Widget, SomeWidget> {    }
+    @UiTemplate("FooterWidget.ui.xml")
+    interface SomeWidgetUiBinder extends UiBinder<Widget, FooterWidget> {    }
 
     @UiField Label displayText;
 
@@ -21,7 +21,7 @@ public class SomeWidget extends Composite {
         displayText.setText(t);
     }
 
-    public SomeWidget() {
+    public FooterWidget() {
         initWidget(uiBinder.createAndBindUi(this));
     }
 

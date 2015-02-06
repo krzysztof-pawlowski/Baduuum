@@ -36,11 +36,10 @@
 		<gwt:FlowPanel ui:field="content" styleName="{res.style.middle}">
 			<gwt:Label text="Login" styleName="{res.style.redText}" />
 			<gwt:TextBox ui:field="loginBox" res:styleName="style.box" />
-			
 		</gwt:FlowPanel>
 		<gwt:FlowPanel styleName="{res.style.middle}">
 			<gwt:HTMLPanel>
-				<c:SomeWidget myField="test footer in widget "/>
+				<c:FooterWidget myField="test footer in widget "/>
 			</gwt:HTMLPanel>
 		</gwt:FlowPanel>
 	</gwt:HeaderPanel>
