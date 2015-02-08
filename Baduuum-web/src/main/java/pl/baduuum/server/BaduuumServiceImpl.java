@@ -9,7 +9,7 @@ import com.google.gwt.user.server.rpc.RemoteServiceServlet;
  * The server-side implementation of the RPC service.
  */
 @SuppressWarnings("serial")
-public class GreetingServiceImpl extends RemoteServiceServlet implements
+public class BaduuumServiceImpl extends RemoteServiceServlet implements
     BaduuumService {
 
   public String greetServer(String input) throws IllegalArgumentException {

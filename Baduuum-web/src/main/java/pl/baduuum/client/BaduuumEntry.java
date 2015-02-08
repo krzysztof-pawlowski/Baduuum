@@ -5,18 +5,18 @@ import com.google.gwt.core.client.GWT;
 import com.google.gwt.event.shared.HandlerManager;
 import com.google.gwt.user.client.ui.RootPanel;
 
-public class BaduuumEntry implements EntryPoint{
+public class BaduuumEntry implements EntryPoint {
 
 	public void onModuleLoad() {
-		
-		Baduuum panel = new Baduuum();
-		RootPanel.get().add(panel);   
-		
-		  BaduuumServiceAsync rpcService = GWT.create(BaduuumService.class);
-		    HandlerManager eventBus = new HandlerManager(null);
-		    AppController appViewer = new AppController(rpcService, eventBus);
-		    appViewer.go(RootPanel.get());
-		
+
+		//Baduuum panel = new Baduuum();
+		//RootPanel.get().add(panel);
+
+		BaduuumServiceAsync rpcService = GWT.create(BaduuumService.class);
+		HandlerManager eventBus = new HandlerManager(null);
+		AppController appViewer = new AppController(rpcService, eventBus);
+		appViewer.go(RootPanel.get());
+
 	}
 
 }

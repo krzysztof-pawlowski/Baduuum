@@ -10,6 +10,6 @@
   <inherits name='pl.baduuum.Baduuum'/>
 
   <!-- Specify the path to any remote services.                   -->
-  <servlet path="/baduuum/greet" class="pl.baduuum.server.GreetingServiceImpl" />
+  <servlet path="/baduuum/greet" class="pl.baduuum.server.BaduuumServiceImpl" />
 
 </module>

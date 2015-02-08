@@ -1,8 +1,16 @@
 package pl.baduuum.client.view;
 
-import com.google.gwt.user.client.ui.Composite;
+import com.google.gwt.user.client.ui.Widget;
 
 
-public class TestView extends Composite implements TestPresenter {
+
+public interface TestView  {
+	
+	public interface Presenter {
+		void onAddButtonClicked();
+	}
+	
+	void setPresenter(Presenter presenter);
+	Widget asWidget();
 
 }
