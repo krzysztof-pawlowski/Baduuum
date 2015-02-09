@@ -19,6 +19,7 @@ public class TestPresenter implements Presenter, TestView.Presenter {
 		  this.rpcService = rpcService;
 		  this.eventBus = eventBus;
 		  this.view = view;
+		  this.view.setPresenter(this);
 	  }
 
 	@Override
