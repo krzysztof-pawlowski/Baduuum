@@ -45,19 +45,4 @@ public class Baduuum extends Composite {
 		buttonHome.setScheduledCommand(cmd);
 	}
 
-	/*
-	 * @UiField TextBox passwordBox;
-	 * 
-	 * @UiField Label completionLabel1;
-	 * 
-	 * @UiField Label completionLabel2;
-	 * 
-	 * private Boolean tooShort = false;
-	 * 
-	 * @UiHandler("buttonSubmit") void doClickSubmit(ClickEvent event) { if (tooShort) { Window.alert("Login Successful!"); } else { Window.alert("Login or Password is too short!"); } }
-	 * 
-	 * @UiHandler("loginBox") void handleLoginChange(ValueChangeEvent<String> event) { if (event.getValue().length() < 6) { completionLabel1.setText("Login too short (Size must be > 6)"); tooShort = true; } else { tooShort = false; completionLabel1.setText(""); } }
-	 * 
-	 * @UiHandler("passwordBox") void handlePasswordChange(ValueChangeEvent<String> event) { if (event.getValue().length() < 6) { tooShort = true; completionLabel2.setText("Password too short (Size must be > 6)"); } else { tooShort = false; completionLabel2.setText(""); } }
-	 */
 }

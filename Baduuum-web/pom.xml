@@ -64,6 +64,7 @@
 				<!-- Plugin configuration. There are many available options, see gwt-maven-plugin 
 					documentation at codehaus.org -->
 				<configuration>
+				     <debug>true</debug>
 					<modules>
 						<module>pl.baduuum.Baduuum</module>
 					</modules>

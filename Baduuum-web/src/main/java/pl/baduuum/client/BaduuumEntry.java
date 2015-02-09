@@ -9,9 +9,6 @@ public class BaduuumEntry implements EntryPoint {
 
 	public void onModuleLoad() {
 
-		//Baduuum panel = new Baduuum();
-		//RootPanel.get().add(panel);
-
 		BaduuumServiceAsync rpcService = GWT.create(BaduuumService.class);
 		HandlerManager eventBus = new HandlerManager(null);
 		AppController appViewer = new AppController(rpcService, eventBus);
