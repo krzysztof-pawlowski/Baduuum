@@ -1,24 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
-              http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
-         version="2.5"
-         xmlns="http://java.sun.com/xml/ns/javaee">
+<!DOCTYPE web-app
+    PUBLIC "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+    "http://java.sun.com/dtd/web-app_2_3.dtd">
 
-  <!-- Servlets -->
+<web-app>
+  
   <servlet>
-    <servlet-name>greetServlet</servlet-name>
-    <servlet-class>pl.baduuum.server.GreetingServiceImpl</servlet-class>
+    <servlet-name>contactsServiceServlet</servlet-name>
+    <servlet-class>com.google.gwt.sample.contacts.server.ContactsServiceImpl</servlet-class>
   </servlet>
   
   <servlet-mapping>
-    <servlet-name>greetServlet</servlet-name>
-    <url-pattern>/baduuum/greet</url-pattern>
+    <servlet-name>contactsServiceServlet</servlet-name>
+    <url-pattern>/contacts/contactsService</url-pattern>
   </servlet-mapping>
-  
+
   <!-- Default page to serve -->
   <welcome-file-list>
-    <welcome-file>Baduuum.html</welcome-file>
+    <welcome-file>Contacts.html</welcome-file>
   </welcome-file-list>
 
 </web-app>
