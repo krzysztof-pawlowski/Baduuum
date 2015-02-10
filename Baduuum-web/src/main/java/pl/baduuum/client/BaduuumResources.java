@@ -7,25 +7,15 @@ public interface BaduuumResources extends ClientBundle {
 
 	public interface MyCss extends CssResource {
 		String blackText();
-
 		String redText();
-
 		String loginButton();
-
 		String box();
-
 		String background();
-		
 		String footer();
-		
 		String header();
-		
 		String wrapper();
-		
 		String content();
-		
 		String headerPanel();
-		
 		String middle();
 
 	}

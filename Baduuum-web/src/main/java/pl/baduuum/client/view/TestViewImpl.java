@@ -23,7 +23,6 @@ public class TestViewImpl extends Composite implements TestView {
 
 	private Presenter presenter;
 
-	@Override
 	public void setPresenter(Presenter presenter) {
 		this.presenter = presenter;
 	}
