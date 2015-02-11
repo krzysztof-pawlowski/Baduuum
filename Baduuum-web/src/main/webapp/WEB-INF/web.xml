@@ -6,13 +6,13 @@
 <web-app>
   
   <servlet>
-    <servlet-name>contactsServiceServlet</servlet-name>
-    <servlet-class>pl.baduuum.server.ContactsServiceImpl</servlet-class>
+    <servlet-name>baduuumServiceServlet</servlet-name>
+    <servlet-class>pl.baduuum.server.BaduuumServiceImpl</servlet-class>
   </servlet>
   
   <servlet-mapping>
-    <servlet-name>contactsServiceServlet</servlet-name>
-    <url-pattern>/baduuum/contactsService</url-pattern>
+    <servlet-name>baduuumServiceServlet</servlet-name>
+    <url-pattern>/baduuum/baduuumService</url-pattern>
   </servlet-mapping>
 
   <!-- Default page to serve -->

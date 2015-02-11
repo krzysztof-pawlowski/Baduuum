@@ -20,7 +20,7 @@ public interface BaduuumResources extends ClientBundle {
 
 	}
 
-	@Source("Baduuum.css")
+	@Source("BaduuumStyles.css")
 	MyCss style();
 }
 
