@@ -11,7 +11,7 @@ public class BaduuumEntry  {
 
 		BaduuumServiceAsync rpcService = GWT.create(BaduuumService.class);
 		HandlerManager eventBus = new HandlerManager(null);
-		AppController appViewer = new AppController(rpcService, eventBus);
+		AppControllerOld appViewer = new AppControllerOld(rpcService, eventBus);
 		appViewer.go(RootPanel.get());
 
 	
