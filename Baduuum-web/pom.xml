@@ -8,7 +8,7 @@
 	<artifactId>Baduuum</artifactId>
 	<packaging>war</packaging>
 	<version>1.0-SNAPSHOT</version>
-	<name>com.google.gwt.sample.contacts.Contacts</name>
+	<name>pl.baduuum.Contacts</name>
 
 	<properties>
 		<!-- Convenience property to set the GWT version -->
@@ -66,10 +66,10 @@
 				<configuration>
 				     <debug>true</debug>
 					<modules>
-						<module>com.google.gwt.sample.contacts.Contacts</module>
+						<module>pl.baduuum.Contacts</module>
 					</modules>
 					<!-- URL that should be opened by DevMode (gwt:run). -->
-					<runTarget>Contacts.html</runTarget>
+					<runTarget>Baduuum.html</runTarget>
 					<!-- Ask GWT to create the Story of Your Compile (SOYC) (gwt:compile) -->
 					<compileReport>true</compileReport>
 					<!-- Run tests using HtmlUnit -->
