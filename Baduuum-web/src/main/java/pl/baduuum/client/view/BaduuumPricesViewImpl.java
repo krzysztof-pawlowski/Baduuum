@@ -61,4 +61,10 @@ public class BaduuumPricesViewImpl extends Composite implements BaduuumView{
 		return this;
 	}
 
+	@Override
+	public void initializeMenu() {
+		// TODO Auto-generated method stub
+		
+	}
+
 }

@@ -1,7 +1,6 @@
-package pl.baduuum.client.view.shared;
+package pl.baduuum.client.view.commands;
 
 import pl.baduuum.client.view.BaduuumView.Presenter;
-
 import com.google.gwt.user.client.Command;
 
 public class PricesCommand implements Command {
@@ -13,6 +12,7 @@ public class PricesCommand implements Command {
 
 	@Override
 	public void execute() {
+		
 		if (presenter != null) {
 			presenter.onPricesButtonClicked();
 		}

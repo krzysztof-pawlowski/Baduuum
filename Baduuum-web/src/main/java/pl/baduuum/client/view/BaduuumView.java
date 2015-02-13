@@ -10,4 +10,5 @@ public interface BaduuumView {
   }
   void setPresenter(Presenter presenter);
   Widget asWidget();
+  void initializeMenu();
 }

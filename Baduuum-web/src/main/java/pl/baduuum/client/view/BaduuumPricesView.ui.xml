@@ -22,7 +22,7 @@
 					</g:MenuBar>
 				</g:MenuItem>
 				<g:MenuItem text="REGULAMIN" ui:field="buttonRegulations" />
-				<g:MenuItem text="FAQ" ui:field="buttonFQA" />
+				<g:MenuItem text="FAQ" ui:field="buttonFAQ" />
 				<g:MenuItem text="KONTAKT" ui:field="buttonContact" />
 			</g:MenuBar>
 
