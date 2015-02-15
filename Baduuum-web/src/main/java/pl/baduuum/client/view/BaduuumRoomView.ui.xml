@@ -27,7 +27,7 @@
 
 			<g:HorizontalPanel>
 				<g:HTML>
-					home
+					room
 				</g:HTML>
 			</g:HorizontalPanel>
 

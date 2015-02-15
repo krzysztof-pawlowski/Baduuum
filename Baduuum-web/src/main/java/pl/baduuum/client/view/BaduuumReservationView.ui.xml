@@ -27,7 +27,7 @@
 
 			<g:HorizontalPanel>
 				<g:HTML>
-					home
+					reservation
 				</g:HTML>
 			</g:HorizontalPanel>
 

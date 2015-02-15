@@ -13,8 +13,9 @@ public class CalendarCommand implements Command{
 
 	@Override
 	public void execute() {
-		// TODO Auto-generated method stub
-		
+		if (presenter != null) {
+			presenter.onCalendarButtonClicked();
+		}
 	}
 
 }

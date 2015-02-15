@@ -12,7 +12,6 @@ public class PricesCommand implements Command {
 
 	@Override
 	public void execute() {
-		
 		if (presenter != null) {
 			presenter.onPricesButtonClicked();
 		}

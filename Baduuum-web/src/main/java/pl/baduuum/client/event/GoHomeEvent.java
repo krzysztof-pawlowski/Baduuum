@@ -12,6 +12,6 @@ public class GoHomeEvent extends GwtEvent<GoHomeEventHandler> {
 
   @Override
   protected void dispatch(GoHomeEventHandler handler) {
-    handler.onGoHome(this);
+	  handler.onGoHome(this);
   }
 }

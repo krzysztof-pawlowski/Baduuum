@@ -5,18 +5,18 @@ import com.google.gwt.uibinder.client.UiBinder;
 import com.google.gwt.uibinder.client.UiTemplate;
 import com.google.gwt.user.client.ui.Widget;
 
-public class BaduuumPricesViewImpl extends BaseView implements BaduuumView{
+public class BaduuumCalendarViewImpl extends BaseView implements BaduuumView {
 
-	@UiTemplate("BaduuumPricesView.ui.xml")
-	interface BaduuumPricesViewUiBinder extends UiBinder<Widget, BaduuumPricesViewImpl> {
+	@UiTemplate("BaduuumCalendarView.ui.xml")
+	interface BaduuumCalendarViewUiBinder extends UiBinder<Widget, BaduuumCalendarViewImpl> {
 	}
 
-	private static BaduuumPricesViewUiBinder uiBinder = GWT.create(BaduuumPricesViewUiBinder.class);
-
+	private static BaduuumCalendarViewUiBinder uiBinder = GWT.create(BaduuumCalendarViewUiBinder.class);
+	
 	private Presenter presenter;
 
-	public BaduuumPricesViewImpl() {
-		initWidget(uiBinder.createAndBindUi(this));
+	public BaduuumCalendarViewImpl() {
+		initWidget(uiBinder.createAndBindUi(this));	
 	}
 
 	public void setPresenter(Presenter presenter) {
@@ -31,5 +31,4 @@ public class BaduuumPricesViewImpl extends BaseView implements BaduuumView{
 	public void initializeMenu() {
 		setCommands(presenter);
 	}
-
 }

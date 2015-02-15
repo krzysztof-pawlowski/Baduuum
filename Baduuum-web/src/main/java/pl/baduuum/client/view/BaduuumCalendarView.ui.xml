@@ -27,7 +27,7 @@
 
 			<g:HorizontalPanel>
 				<g:HTML>
-					home
+					calendar
 				</g:HTML>
 			</g:HorizontalPanel>
 

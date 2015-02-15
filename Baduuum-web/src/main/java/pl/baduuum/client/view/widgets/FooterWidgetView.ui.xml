@@ -1,7 +1,9 @@
 <!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">  
 <ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"  
     xmlns:g="urn:import:com.google.gwt.user.client.ui">
-    <g:HTMLPanel>
-       <g:Label ui:field="displayText"/>
-    </g:HTMLPanel>
+<g:HTMLPanel>
+    <div>
+ footer
+    </div>
+  </g:HTMLPanel>
 </ui:UiBinder>  
