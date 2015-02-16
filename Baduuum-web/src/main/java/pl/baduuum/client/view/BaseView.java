@@ -28,7 +28,7 @@ public class BaseView extends Composite {
 	@UiField MenuItem buttonRegulations;
 	@UiField MenuItem buttonFAQ;
 	@UiField MenuItem buttonContact;
-	
+
 	public void setCommands(Presenter presenter){
 		buttonHome.setScheduledCommand(new HomeCommand(presenter));
 		buttonPrice.setScheduledCommand(new PricesCommand(presenter));

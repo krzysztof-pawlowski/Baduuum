@@ -2,25 +2,17 @@ package pl.baduuum.client;
 
 import com.google.gwt.resources.client.ClientBundle;
 import com.google.gwt.resources.client.CssResource;
+import com.google.gwt.resources.client.ImageResource;
 
 public interface BaduuumResources extends ClientBundle {
 
-	public interface MyCss extends CssResource {
-		String blackText();
-		String redText();
-		String loginButton();
-		String box();
-		String background();
-		String footer();
-		String header();
-		String wrapper();
-		String content();
-		String headerPanel();
-		String middle();
-
-	}
-
 	@Source("BaduuumStyles.css")
-	MyCss style();
-}
+	Style style();
 
+	@Source("images/logo.jpg")
+	ImageResource logo();
+
+	public interface Style extends CssResource {
+		String center();
+	}
+}
