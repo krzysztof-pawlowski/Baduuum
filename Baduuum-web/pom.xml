@@ -8,7 +8,7 @@
 	<artifactId>Baduuum</artifactId>
 	<packaging>war</packaging>
 	<version>1.0-SNAPSHOT</version>
-	<name>pl.baduuum.Contacts</name>
+	<name>pl.baduuum.Baduuum</name>
 
 	<properties>
 		<!-- Convenience property to set the GWT version -->
