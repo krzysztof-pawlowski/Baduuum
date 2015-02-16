@@ -25,3 +25,4 @@ www-test/
 target/
 .settings/
 
+/bin
