@@ -4,8 +4,8 @@
 
 	<ui:with field='res' type='pl.baduuum.client.StyleResources'/>
 	
-	<g:DecoratorPanel>
-		<g:VerticalPanel addStyleNames="{res.style.center}">
+	<g:DecoratorPanel addStyleNames="{res.style.center}">
+		<g:VerticalPanel>
 			<g:HTMLPanel>
 				<c:HeaderWidgetView ui:field="header" />
 			</g:HTMLPanel>
