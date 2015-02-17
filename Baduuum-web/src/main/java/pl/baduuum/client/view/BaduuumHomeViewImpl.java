@@ -1,6 +1,6 @@
 package pl.baduuum.client.view;
 
-import pl.baduuum.client.BaduuumResources;
+import pl.baduuum.client.StyleResources;
 
 import com.google.gwt.core.client.GWT;
 import com.google.gwt.uibinder.client.UiBinder;
@@ -10,7 +10,7 @@ import com.google.gwt.user.client.ui.Widget;
 
 public class BaduuumHomeViewImpl extends BaseView implements BaduuumView {
 
-	@UiField BaduuumResources res;
+	@UiField StyleResources res;
 	
 	@UiTemplate("BaduuumHomeView.ui.xml")
 	interface BaduuumHomeViewUiBinder extends UiBinder<Widget, BaduuumHomeViewImpl> {

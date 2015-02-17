@@ -2,11 +2,12 @@
 <ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"  
     xmlns:g="urn:import:com.google.gwt.user.client.ui">
     
-    <ui:with field='resources' type='pl.baduuum.client.BaduuumResources'/>
+    <ui:with field='resources' type='pl.baduuum.client.StyleResources'/>
+    <ui:with field='images' type='pl.baduuum.client.ImageResources'/>
     
 <g:HTMLPanel>
     <div>
-		<g:Image resource='{resources.logo}' />
+		<g:Image resource='{images.logo}' />
  		header
     </div>
  
