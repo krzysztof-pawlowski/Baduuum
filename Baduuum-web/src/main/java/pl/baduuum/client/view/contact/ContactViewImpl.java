@@ -1,21 +1,24 @@
-package pl.baduuum.client.view;
+package pl.baduuum.client.view.contact;
+
+import pl.baduuum.client.view.BaduuumView;
+import pl.baduuum.client.view.BaseView;
 
 import com.google.gwt.core.client.GWT;
 import com.google.gwt.uibinder.client.UiBinder;
 import com.google.gwt.uibinder.client.UiTemplate;
 import com.google.gwt.user.client.ui.Widget;
 
-public class BaduuumRoomViewImpl extends BaseView implements BaduuumView {
+public class ContactViewImpl extends BaseView implements BaduuumView {
 
-	@UiTemplate("BaduuumRoomView.ui.xml")
-	interface BaduuumRoomViewUiBinder extends UiBinder<Widget, BaduuumRoomViewImpl> {
+	@UiTemplate("ContactView.ui.xml")
+	interface BaduuumContactViewUiBinder extends UiBinder<Widget, ContactViewImpl> {
 	}
 
-	private static BaduuumRoomViewUiBinder uiBinder = GWT.create(BaduuumRoomViewUiBinder.class);
+	private static BaduuumContactViewUiBinder uiBinder = GWT.create(BaduuumContactViewUiBinder.class);
 	
 	private Presenter presenter;
 
-	public BaduuumRoomViewImpl() {
+	public ContactViewImpl() {
 		initWidget(uiBinder.createAndBindUi(this));	
 	}
 

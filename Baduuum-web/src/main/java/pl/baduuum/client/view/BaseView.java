@@ -18,16 +18,16 @@ import com.google.gwt.user.client.ui.MenuItem;
 
 public class BaseView extends Composite {
 	
-	@UiField MenuItem buttonHome;
-	@UiField MenuItem buttonPrice;
-	@UiField MenuItem buttonCalendar;
-	@UiField MenuItem buttonRoom;
-	@UiField MenuItem buttonReservation;
-	@UiField MenuItem buttonGalleryRoom;
-	@UiField MenuItem buttonGalleryBuild;
-	@UiField MenuItem buttonRegulations;
-	@UiField MenuItem buttonFAQ;
-	@UiField MenuItem buttonContact;
+	public @UiField MenuItem buttonHome;
+	public @UiField MenuItem buttonPrice;
+	public @UiField MenuItem buttonCalendar;
+	public @UiField MenuItem buttonRoom;
+	public @UiField MenuItem buttonReservation;
+	public @UiField MenuItem buttonGalleryRoom;
+	public @UiField MenuItem buttonGalleryBuild;
+	public @UiField MenuItem buttonRegulations;
+	public @UiField MenuItem buttonFAQ;
+	public @UiField MenuItem buttonContact;
 
 	public void setCommands(Presenter presenter){
 		buttonHome.setScheduledCommand(new HomeCommand(presenter));

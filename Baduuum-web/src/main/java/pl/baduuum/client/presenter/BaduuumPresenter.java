@@ -28,7 +28,6 @@ public class BaduuumPresenter implements Presenter, BaduuumView.Presenter {
 		this.view = view;
 		this.view.setPresenter(this);
 		this.view.initializeMenu();
-
 	}
 	
 	@Override

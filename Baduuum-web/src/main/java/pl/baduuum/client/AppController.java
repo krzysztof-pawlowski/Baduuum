@@ -22,16 +22,16 @@ import pl.baduuum.client.event.GoRoomEvent;
 import pl.baduuum.client.event.GoRoomEventHandler;
 import pl.baduuum.client.presenter.BaduuumPresenter;
 import pl.baduuum.client.presenter.Presenter;
-import pl.baduuum.client.view.BaduuumCalendarViewImpl;
-import pl.baduuum.client.view.BaduuumContactViewImpl;
-import pl.baduuum.client.view.BaduuumFaqViewImpl;
-import pl.baduuum.client.view.BaduuumGalleryBuildViewImpl;
-import pl.baduuum.client.view.BaduuumGalleryRoomViewImpl;
-import pl.baduuum.client.view.BaduuumHomeViewImpl;
-import pl.baduuum.client.view.BaduuumPricesViewImpl;
-import pl.baduuum.client.view.BaduuumRegulationsViewImpl;
-import pl.baduuum.client.view.BaduuumReservationViewImpl;
-import pl.baduuum.client.view.BaduuumRoomViewImpl;
+import pl.baduuum.client.view.calendar.CalendarViewImpl;
+import pl.baduuum.client.view.contact.ContactViewImpl;
+import pl.baduuum.client.view.faq.FaqViewImpl;
+import pl.baduuum.client.view.gallery.GalleryBuildViewImpl;
+import pl.baduuum.client.view.gallery.GalleryRoomViewImpl;
+import pl.baduuum.client.view.home.HomeViewImpl;
+import pl.baduuum.client.view.prices.PricesViewImpl;
+import pl.baduuum.client.view.regulations.RegulationsViewImpl;
+import pl.baduuum.client.view.reservation.ReservationViewImpl;
+import pl.baduuum.client.view.room.RoomViewImpl;
 
 import com.google.gwt.core.client.GWT;
 import com.google.gwt.core.client.RunAsyncCallback;
@@ -57,16 +57,16 @@ public class AppController implements Presenter, ValueChangeHandler<String> {
 	private final BaduuumServiceAsync rpcService;
 	private HasWidgets container;
 	
-	private BaduuumHomeViewImpl baduuumHomeView = null;
-	private BaduuumPricesViewImpl baduuumPricesView = null;
-	private BaduuumCalendarViewImpl baduuumCalendarView = null;
-	private BaduuumRoomViewImpl baduuumRoomView = null;
-	private BaduuumReservationViewImpl baduuumReservationView = null;
-	private BaduuumGalleryRoomViewImpl baduuumGalleryRoomView = null;
-	private BaduuumGalleryBuildViewImpl baduuumGalleryBuildView = null;
-	private BaduuumRegulationsViewImpl baduuumRegulationsView = null;
-	private BaduuumFaqViewImpl baduuumFaqView = null;
-	private BaduuumContactViewImpl baduuumContactView = null;
+	private HomeViewImpl baduuumHomeView = null;
+	private PricesViewImpl baduuumPricesView = null;
+	private CalendarViewImpl baduuumCalendarView = null;
+	private RoomViewImpl baduuumRoomView = null;
+	private ReservationViewImpl baduuumReservationView = null;
+	private GalleryRoomViewImpl baduuumGalleryRoomView = null;
+	private GalleryBuildViewImpl baduuumGalleryBuildView = null;
+	private RegulationsViewImpl baduuumRegulationsView = null;
+	private FaqViewImpl baduuumFaqView = null;
+	private ContactViewImpl baduuumContactView = null;
 	
 
 	public AppController(BaduuumServiceAsync rpcService, HandlerManager eventBus) {
@@ -178,7 +178,7 @@ public class AppController implements Presenter, ValueChangeHandler<String> {
 						// lazily initialize our views, and keep them around to be reused
 						//
 						if (baduuumHomeView == null) {
-							baduuumHomeView = new BaduuumHomeViewImpl();
+							baduuumHomeView = new HomeViewImpl();
 
 						}
 						new BaduuumPresenter(rpcService, eventBus, baduuumHomeView).go(container);
@@ -194,7 +194,7 @@ public class AppController implements Presenter, ValueChangeHandler<String> {
 					@Override
 					public void onSuccess() {
 						if (baduuumPricesView == null) {
-							baduuumPricesView = new BaduuumPricesViewImpl();
+							baduuumPricesView = new PricesViewImpl();
 						}
 						new BaduuumPresenter(rpcService, eventBus, baduuumPricesView).go(container);
 					}
@@ -209,7 +209,7 @@ public class AppController implements Presenter, ValueChangeHandler<String> {
 					@Override
 					public void onSuccess() {
 						if (baduuumCalendarView == null){
-							baduuumCalendarView = new BaduuumCalendarViewImpl();
+							baduuumCalendarView = new CalendarViewImpl();
 						}
 						new BaduuumPresenter(rpcService, eventBus, baduuumCalendarView).go(container);
 					}
@@ -224,7 +224,7 @@ public class AppController implements Presenter, ValueChangeHandler<String> {
 					@Override
 					public void onSuccess() {
 						if (baduuumRoomView == null){
-							baduuumRoomView = new BaduuumRoomViewImpl();
+							baduuumRoomView = new RoomViewImpl();
 						}
 						new BaduuumPresenter(rpcService, eventBus, baduuumRoomView).go(container);;
 					}
@@ -239,7 +239,7 @@ public class AppController implements Presenter, ValueChangeHandler<String> {
 					@Override
 					public void onSuccess() {
 						if (baduuumReservationView == null){
-							baduuumReservationView = new BaduuumReservationViewImpl();
+							baduuumReservationView = new ReservationViewImpl();
 						}
 						new BaduuumPresenter(rpcService, eventBus, baduuumReservationView).go(container);
 					}
@@ -254,7 +254,7 @@ public class AppController implements Presenter, ValueChangeHandler<String> {
 					@Override
 					public void onSuccess() {
 						if (baduuumGalleryBuildView == null){
-							baduuumGalleryBuildView = new BaduuumGalleryBuildViewImpl();
+							baduuumGalleryBuildView = new GalleryBuildViewImpl();
 						}
 						new BaduuumPresenter(rpcService, eventBus, baduuumGalleryBuildView).go(container);
 					}
@@ -269,7 +269,7 @@ public class AppController implements Presenter, ValueChangeHandler<String> {
 					@Override
 					public void onSuccess() {
 						if (baduuumGalleryRoomView == null){
-							baduuumGalleryRoomView = new BaduuumGalleryRoomViewImpl();
+							baduuumGalleryRoomView = new GalleryRoomViewImpl();
 						}
 						new BaduuumPresenter(rpcService, eventBus, baduuumGalleryRoomView).go(container);
 					}
@@ -284,7 +284,7 @@ public class AppController implements Presenter, ValueChangeHandler<String> {
 					@Override
 					public void onSuccess() {
 						if (baduuumRegulationsView == null){
-							baduuumRegulationsView = new BaduuumRegulationsViewImpl();
+							baduuumRegulationsView = new RegulationsViewImpl();
 						}
 						new BaduuumPresenter(rpcService, eventBus, baduuumRegulationsView).go(container);
 					}
@@ -299,7 +299,7 @@ public class AppController implements Presenter, ValueChangeHandler<String> {
 					@Override
 					public void onSuccess() {
 						if (baduuumFaqView == null){
-							baduuumFaqView = new BaduuumFaqViewImpl();
+							baduuumFaqView = new FaqViewImpl();
 						}
 						new BaduuumPresenter(rpcService, eventBus, baduuumFaqView).go(container);
 					}
@@ -314,7 +314,7 @@ public class AppController implements Presenter, ValueChangeHandler<String> {
 					@Override
 					public void onSuccess() {
 						if (baduuumContactView == null){
-							baduuumContactView = new BaduuumContactViewImpl();
+							baduuumContactView = new ContactViewImpl();
 						}
 						new BaduuumPresenter(rpcService, eventBus, baduuumContactView).go(container);
 					}

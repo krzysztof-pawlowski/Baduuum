@@ -1,21 +1,24 @@
-package pl.baduuum.client.view;
+package pl.baduuum.client.view.calendar;
+
+import pl.baduuum.client.view.BaduuumView;
+import pl.baduuum.client.view.BaseView;
 
 import com.google.gwt.core.client.GWT;
 import com.google.gwt.uibinder.client.UiBinder;
 import com.google.gwt.uibinder.client.UiTemplate;
 import com.google.gwt.user.client.ui.Widget;
 
-public class BaduuumReservationViewImpl extends BaseView implements BaduuumView {
+public class CalendarViewImpl extends BaseView implements BaduuumView {
 
-	@UiTemplate("BaduuumReservationView.ui.xml")
-	interface BaduuumReservationViewUiBinder extends UiBinder<Widget, BaduuumReservationViewImpl> {
+	@UiTemplate("CalendarView.ui.xml")
+	interface BaduuumCalendarViewUiBinder extends UiBinder<Widget, CalendarViewImpl> {
 	}
 
-	private static BaduuumReservationViewUiBinder uiBinder = GWT.create(BaduuumReservationViewUiBinder.class);
+	private static BaduuumCalendarViewUiBinder uiBinder = GWT.create(BaduuumCalendarViewUiBinder.class);
 	
 	private Presenter presenter;
 
-	public BaduuumReservationViewImpl() {
+	public CalendarViewImpl() {
 		initWidget(uiBinder.createAndBindUi(this));	
 	}
 

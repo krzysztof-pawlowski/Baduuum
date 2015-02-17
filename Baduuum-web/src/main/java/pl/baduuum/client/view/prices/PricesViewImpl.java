@@ -1,21 +1,24 @@
-package pl.baduuum.client.view;
+package pl.baduuum.client.view.prices;
+
+import pl.baduuum.client.view.BaduuumView;
+import pl.baduuum.client.view.BaseView;
 
 import com.google.gwt.core.client.GWT;
 import com.google.gwt.uibinder.client.UiBinder;
 import com.google.gwt.uibinder.client.UiTemplate;
 import com.google.gwt.user.client.ui.Widget;
 
-public class BaduuumPricesViewImpl extends BaseView implements BaduuumView{
+public class PricesViewImpl extends BaseView implements BaduuumView{
 
-	@UiTemplate("BaduuumPricesView.ui.xml")
-	interface BaduuumPricesViewUiBinder extends UiBinder<Widget, BaduuumPricesViewImpl> {
+	@UiTemplate("PricesView.ui.xml")
+	interface BaduuumPricesViewUiBinder extends UiBinder<Widget, PricesViewImpl> {
 	}
 
 	private static BaduuumPricesViewUiBinder uiBinder = GWT.create(BaduuumPricesViewUiBinder.class);
 
 	private Presenter presenter;
 
-	public BaduuumPricesViewImpl() {
+	public PricesViewImpl() {
 		initWidget(uiBinder.createAndBindUi(this));
 	}
 

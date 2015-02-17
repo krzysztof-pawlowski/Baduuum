@@ -1,21 +1,24 @@
-package pl.baduuum.client.view;
+package pl.baduuum.client.view.room;
+
+import pl.baduuum.client.view.BaduuumView;
+import pl.baduuum.client.view.BaseView;
 
 import com.google.gwt.core.client.GWT;
 import com.google.gwt.uibinder.client.UiBinder;
 import com.google.gwt.uibinder.client.UiTemplate;
 import com.google.gwt.user.client.ui.Widget;
 
-public class BaduuumGalleryBuildViewImpl extends BaseView implements BaduuumView {
+public class RoomViewImpl extends BaseView implements BaduuumView {
 
-	@UiTemplate("BaduuumGalleryBuildView.ui.xml")
-	interface BaduuumGalleryBuildViewUiBinder extends UiBinder<Widget, BaduuumGalleryBuildViewImpl> {
+	@UiTemplate("RoomView.ui.xml")
+	interface BaduuumRoomViewUiBinder extends UiBinder<Widget, RoomViewImpl> {
 	}
 
-	private static BaduuumGalleryBuildViewUiBinder uiBinder = GWT.create(BaduuumGalleryBuildViewUiBinder.class);
+	private static BaduuumRoomViewUiBinder uiBinder = GWT.create(BaduuumRoomViewUiBinder.class);
 	
 	private Presenter presenter;
 
-	public BaduuumGalleryBuildViewImpl() {
+	public RoomViewImpl() {
 		initWidget(uiBinder.createAndBindUi(this));	
 	}
 
