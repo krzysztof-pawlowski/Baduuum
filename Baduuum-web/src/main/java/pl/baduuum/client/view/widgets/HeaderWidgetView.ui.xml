@@ -6,56 +6,10 @@
 	<ui:with field='images' type='pl.baduuum.client.ImageResources' />
 
 	<ui:style>
-	.wrapper {
-		border: 2px solid #000;
-		overflow: hidden;
-	}
-	
-	.wrapper div {
-		min-height: 100px;
-		padding: 10px;
-	}
-	
-	.one {
-		background-color: gray;
-		float: left;
-		margin-right: 20px;
-		width: 140px;
-		border-right: 2px solid #000;
-		min-height: 90px;
-	}
-	
-	.two {
-		background-color: white;
-		overflow: hidden;
-		margin: 10px;
-		border: 2px dashed #ccc;
-		min-height: 90px;
-	}
-	
-	@media screen and (min-width: 600px) {
-		.wrapper {
-			height: auto;
-			overflow: hidden;
-			//
-			clearing
-		}
-		.one {
-			width: 200px;
-			float: left;
-		}
-		.two {
-			margin-left: 200px;
-		}
-	}
 	</ui:style>
 	
 	
 	<g:HTMLPanel>
-		<div class="{style.wrapper}">
-			<div class="{style.one}"><g:Image resource='{images.logo}' /></div>
-			<div class="{style.two}">two</div>
-		</div>
 	</g:HTMLPanel>
 
 </ui:UiBinder>  

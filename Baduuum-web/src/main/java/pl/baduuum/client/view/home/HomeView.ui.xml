@@ -3,33 +3,81 @@
 	xmlns:g="urn:import:com.google.gwt.user.client.ui" xmlns:c="urn:import:pl.baduuum.client.view.widgets">
 
 	<ui:with field='res' type='pl.baduuum.client.StyleResources' />
+	<ui:with field='images' type='pl.baduuum.client.ImageResources' />
 
-	<g:HTMLPanel addStyleNames="{res.style.center}">
+	<ui:style>
+	
+	</ui:style>
 
-		<c:HeaderWidgetView ui:field="header" />
+	<g:HTMLPanel>
+		<div id="pagewrap">
+				<div id="headerLogo"> <g:Image resource='{images.logo}' /> </div>
+				<div id="headerPhone" class="headerFont">  +48 731 805 769 </div>
+				<div id="headerMail" > <a class="headerFont" href="mailto:baduuum@baduuum.pl">baduuum@baduuum.pl</a> </div>
+				<div id="headerFb" class="headerFont"> SalaProbBaduuum </div>
 
-		<g:MenuBar ui:field="menuBar" animationEnabled="true"
-			autoOpen="true">
-			<g:MenuItem text="HOME" ui:field="buttonHome" />
-			<g:MenuItem text="CENNIK" ui:field="buttonPrice" />
-			<g:MenuItem text="GRAFIK" ui:field="buttonCalendar" />
-			<g:MenuItem text="SALA" ui:field="buttonRoom" />
-			<g:MenuItem text="REZERWACJA" ui:field="buttonReservation" />
-			<g:MenuItem text="GALERIA" ui:field="buttonGallery">
-				<g:MenuBar vertical="true">
-					<g:MenuItem text="SALA TWIN PEAKS" ui:field="buttonGalleryRoom" />
-					<g:MenuItem text="BUDOWA SALI" ui:field="buttonGalleryBuild" />
+			<div id="headerMenu">
+
+				<g:MenuBar title="Account" ui:field="menuBar"
+					animationEnabled="true" autoOpen="true">
+					<g:MenuItem text="HOME" ui:field="buttonHome" />
+					<g:MenuItem text="CENNIK" ui:field="buttonPrice" />
+					<g:MenuItem text="GRAFIK" ui:field="buttonCalendar" />
+					<g:MenuItem text="SALA" ui:field="buttonRoom" />
+					<g:MenuItem text="REZERWACJA" ui:field="buttonReservation" />
+					<g:MenuItem text="GALERIA" ui:field="buttonGallery">
+						<g:MenuBar vertical="true">
+							<g:MenuItem text="SALA TWIN PEAKS" ui:field="buttonGalleryRoom" />
+							<g:MenuItem text="BUDOWA SALI" ui:field="buttonGalleryBuild" />
+						</g:MenuBar>
+					</g:MenuItem>
+					<g:MenuItem text="REGULAMIN" ui:field="buttonRegulations" />
+					<g:MenuItem text="FAQ" ui:field="buttonFAQ" />
+					<g:MenuItem text="KONTAKT" ui:field="buttonContact" />
 				</g:MenuBar>
-			</g:MenuItem>
-			<g:MenuItem text="REGULAMIN" ui:field="buttonRegulations" />
-			<g:MenuItem text="FAQ" ui:field="buttonFAQ" />
-			<g:MenuItem text="KONTAKT" ui:field="buttonContact" />
-		</g:MenuBar>
+			</div>
 
-		<g:HTML>
-			home
-		</g:HTML>
+			<div id="content">
+				<h2>1st Content Area</h2>
+				<p>This page demonstrates a 3 column responsive layout, complete
+					with responsive images and jquery slideshow.</p>
+			</div>
 
-		<c:FooterWidgetView ui:field="footer" />
+			<div id="middle">
+				<h2>2nd Content Area</h2>
+				<p>At full width all three columns will be displayed side by side.
+					As the page is resized the third column will collapse under the
+					first and second. At the smallest screen size all three columns
+					will be stacked on top of one another.</p>
+				<p>Ut wisi enim ad minim veniam, quis nostrud exerci tation
+					ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo
+					consequat. Duis autem vel eum iriure dolor in hendrerit in
+					vulputate velit esse molestie consequat, vel illum dolore eu
+					feugiat nulla facilisis at vero eros et accumsan et iusto odio
+					dignissim qui blandit praesent luptatum zzril delenit augue duis
+					dolore te feugait nulla facilisi.</p>
+			</div>
+
+			<div id="sidebar">
+				<h2>3rd Content Area</h2>
+				<p>Eodem modo typi, qui nunc nobis videntur parum clari, fiant
+					sollemnes in futurum.</p>
+				<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
+					diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam
+					erat volutpat.</p>
+				<p>Eodem modo typi, qui nunc nobis videntur parum clari, fiant
+					sollemnes in futurum.</p>
+			</div>
+
+			<div id="footer">
+				<h4>Footer</h4>
+				<c:FooterWidgetView ui:field="footer" />
+			</div>
+
+		</div>
+
+
 	</g:HTMLPanel>
+
+
 </ui:UiBinder> 

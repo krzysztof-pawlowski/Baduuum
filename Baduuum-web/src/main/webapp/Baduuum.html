@@ -7,35 +7,205 @@
 <!-- but may lead to some differences in layout.   -->
 
 <html>
-  <head>
-    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
 
-    <!--                                                               -->
-    <!-- Consider inlining CSS to reduce the number of requested files -->
-    <!--                                                               -->
-    <link type="text/css" rel="stylesheet" href="styles.css">
+<!--                                                               -->
+<!-- Consider inlining CSS to reduce the number of requested files -->
+<!--                                                               -->
+<link type="text/css" rel="stylesheet" href="styles.css">
 
-    <!--                                           -->
-    <!-- Any title is fine                         -->
-    <!--                                           -->
-    <title>Baduuum</title>
-    
-    <!--                                           -->
-    <!-- This script loads your compiled module.   -->
-    <!-- If you add any GWT meta tags, they must   -->
-    <!-- be added before this line.                -->
-    <!--                                           -->
-    <script type="text/javascript" language="javascript" src="baduuum/baduuum.nocache.js"></script>
-  </head>
+<!--                                           -->
+<!-- Any title is fine                         -->
+<!--                                           -->
+<title>Baduuum</title>
 
-  <!--                                           -->
-  <!-- The body can have arbitrary html, or      -->
-  <!-- you can leave the body empty if you want  -->
-  <!-- to create a completely dynamic UI.        -->
-  <!--                                           -->
-  <body>
-    <!-- OPTIONAL: include this if you want history support -->
-    <iframe src="javascript:''" id="__gwt_historyFrame" tabIndex='-1' style="position:absolute;width:0;height:0;border:0"></iframe>
-    
-  </body>
+<!--                                           -->
+<!-- This script loads your compiled module.   -->
+<!-- If you add any GWT meta tags, they must   -->
+<!-- be added before this line.                -->
+<!--                                           -->
+<script type="text/javascript" language="javascript"
+	src="baduuum/baduuum.nocache.js"></script>
+
+<style>
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	color: #666;
+}
+
+/* STRUCTURE */
+#pagewrap {
+	padding: 5px;
+	width: 960px;
+	margin: 20px auto;
+}
+
+#headerMenu {
+	clear: both;
+	height: 50px;
+	padding: 0 15px;
+}
+
+#headerLogo {
+	float: left;
+	padding: 5px 15px;
+	width: 250px;
+}
+
+#headerPhone {
+	text-align: center;
+	vertical-align: middle;
+	line-height: 80px;
+	width: 140px;
+	height: 80px;
+	float: right;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.headerFont {
+	color: #444444;
+	font-size: 13px;
+	font-family: 'open sans', arial, sans-serif;
+	font-weight: 300;
+	margin-top: 10px;
+}
+
+#headerMail {
+	text-align: center;
+	vertical-align: middle;
+	line-height: 80px;
+	width: 140px;
+	height: 80px;
+	float: right;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+#headerFb {
+	text-align: center;
+	vertical-align: middle;
+	line-height: 80px;
+	width: 140px;
+	height: 80px;
+	float: right;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+#content {
+	width: 290px;
+	float: left;
+	padding: 5px 15px;
+}
+
+#middle {
+	width: 294px; /* Account for margins + border values */
+	float: left;
+	padding: 5px 15px;
+	margin: 0px 5px 5px 5px;
+}
+
+#sidebar {
+	width: 270px;
+	padding: 5px 15px;
+	float: left;
+}
+
+#footer {
+	clear: both;
+	padding: 0 15px;
+}
+
+/************************************************************************************
+MEDIA QUERIES
+*************************************************************************************/
+/* for 980px or less */
+@media screen and (max-width: 980px) {
+	#pagewrap {
+		width: 94%;
+	}
+	#content {
+		width: 41%;
+		padding: 1% 4%;
+	}
+	#middle {
+		width: 41%;
+		padding: 1% 4%;
+		margin: 0px 0px 5px 5px;
+		float: right;
+	}
+	#sidebar {
+		clear: both;
+		padding: 1% 4%;
+		width: auto;
+		float: none;
+	}
+	#header,#footer {
+		padding: 1% 4%;
+	}
+}
+
+/* for 700px or less */
+@media screen and (max-width: 600px) {
+	#content {
+		width: auto;
+		float: none;
+	}
+	#middle {
+		width: auto;
+		float: none;
+		margin-left: 0px;
+	}
+	#sidebar {
+		width: auto;
+		float: none;
+	}
+}
+
+/* for 480px or less */
+@media screen and (max-width: 480px) {
+	#header {
+		height: auto;
+	}
+	h1 {
+		font-size: 2em;
+	}
+	#sidebar {
+		display: none;
+	}
+}
+
+#content {
+	background: #f8f8f8;
+}
+
+#sidebar {
+	background: #f0efef;
+}
+
+#header,#content,#middle,#sidebar {
+	margin-bottom: 5px;
+}
+
+#pagewrap,#header,#content,#middle,#sidebar,#footer {
+	border: solid 1px #ccc;
+}
+</style>
+</head>
+
+<!--                                           -->
+<!-- The body can have arbitrary html, or      -->
+<!-- you can leave the body empty if you want  -->
+<!-- to create a completely dynamic UI.        -->
+<!--                                           -->
+<body>
+	<!-- OPTIONAL: include this if you want history support -->
+	<iframe src="javascript:''" id="__gwt_historyFrame" tabIndex='-1'
+		style="position: absolute; width: 0; height: 0; border: 0"></iframe>
+
+</body>
 </html>
