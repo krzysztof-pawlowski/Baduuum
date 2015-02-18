@@ -12,8 +12,8 @@
 	<g:HTMLPanel>
 		<div id="pagewrap">
 				<div id="headerLogo"> <g:Image resource='{images.logo}' /> </div>
-				<div id="headerPhone" class="headerFont">  +48 731 805 769 </div>
-				<div id="headerMail" > <a class="headerFont" href="mailto:baduuum@baduuum.pl">baduuum@baduuum.pl</a> </div>
+				<div id="headerPhone" class="headerFont">  <i class="phone"></i> +48 731 805 769 </div>
+				<div id="headerMail" class="headerFont"> baduuum@baduuum.pl</div>
 				<div id="headerFb" class="headerFont"> SalaProbBaduuum </div>
 
 			<div id="headerMenu">
