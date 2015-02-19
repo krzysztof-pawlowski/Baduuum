@@ -1,15 +1,29 @@
 <!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
 <ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
 	xmlns:g="urn:import:com.google.gwt.user.client.ui">
-
-	<ui:with field='resources' type='pl.baduuum.client.StyleResources' />
 	<ui:with field='images' type='pl.baduuum.client.ImageResources' />
 
-	<ui:style>
-	</ui:style>
-	
-	
 	<g:HTMLPanel>
+		<div id="headerLogo">
+			<a href="http://www.baduuum.pl">
+				<g:Image resource='{images.logo}' />
+			</a>
+		</div>
+		<div id="headerPhone" class="headerFont">
+			<i class="fa fa-phone"></i>
+			&nbsp; +48 731 805 769
+		</div>
+		<div id="headerMail" class="headerFont">
+			<a href="mailto:baduuum@baduuum.pl" style="color:#333">
+				<i class="fa fa-envelope"></i>
+				&nbsp; baduuum@baduuum.pl
+			</a>
+		</div>
+		<div id="headerFb" class="headerFont">
+			<a href="https://www.facebook.com/SalaProbBaduuum" style="color:#333">
+				<i class="fa fa-facebook"></i>
+				&nbsp; SalaProbBaduuum
+			</a>
+		</div>
 	</g:HTMLPanel>
-
 </ui:UiBinder>  

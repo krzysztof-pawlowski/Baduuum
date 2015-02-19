@@ -3,19 +3,14 @@
 	xmlns:g="urn:import:com.google.gwt.user.client.ui" xmlns:c="urn:import:pl.baduuum.client.view.widgets">
 
 	<ui:with field='res' type='pl.baduuum.client.StyleResources' />
-	<ui:with field='images' type='pl.baduuum.client.ImageResources' />
 
 	<ui:style>
-	
+
 	</ui:style>
 
 	<g:HTMLPanel>
 		<div id="pagewrap">
-				<div id="headerLogo"> <g:Image resource='{images.logo}' /> </div>
-				<div id="headerPhone" class="headerFont">  <span class="phone"><i class="fa fa-phone fa-lg"></i>&nbsp; +48 731 805 769 </span></div>
-				<div id="headerMail" class="headerFont"> baduuum@baduuum.pl</div>
-				<div id="headerFb" class="headerFont"> SalaProbBaduuum </div>
-
+			<c:HeaderWidgetView ui:field="header" />
 			<div id="headerMenu">
 
 				<g:MenuBar title="Account" ui:field="menuBar"

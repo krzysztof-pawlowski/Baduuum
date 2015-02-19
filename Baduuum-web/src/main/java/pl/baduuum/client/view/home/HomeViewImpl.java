@@ -8,10 +8,9 @@ import com.google.gwt.core.client.GWT;
 import com.google.gwt.uibinder.client.UiBinder;
 import com.google.gwt.uibinder.client.UiField;
 import com.google.gwt.uibinder.client.UiTemplate;
-import com.google.gwt.user.client.ui.Composite;
 import com.google.gwt.user.client.ui.Widget;
 
-public class HomeViewImpl extends Composite implements BaduuumView {
+public class HomeViewImpl extends BaseView implements BaduuumView {
 
 	@UiField StyleResources res;
 	
@@ -38,6 +37,6 @@ public class HomeViewImpl extends Composite implements BaduuumView {
 
 	@Override
 	public void initializeMenu() {
-		//setCommands(presenter);
+		setCommands(presenter);
 	}
 }
