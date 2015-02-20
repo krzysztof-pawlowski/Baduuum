@@ -1,9 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
 <!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
 <ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
 	xmlns:g="urn:import:com.google.gwt.user.client.ui">
 	<g:HTMLPanel>
-		<div>
-			footer
+		<div id="footerMenu">
+			<div id="footerMenuItem"> <a href="#home" style="color:#DCDCDC"><i class="fa fa-caret-right"></i>&nbsp;Home</a> </div>
+			<div id="footerMenuItem"> <a href="#prices" style="color:#DCDCDC"><i class="fa fa-caret-right"></i>&nbsp;Cennik</a> </div>
+			<div id="footerMenuItem"> <a href="#calendar" style="color:#DCDCDC"><i class="fa fa-caret-right"></i>&nbsp;Grafik</a> </div>
+			<div id="footerMenuItem"> <a href="#room" style="color:#DCDCDC"><i class="fa fa-caret-right"></i>&nbsp;Sala</a> </div>
+			<div id="footerMenuItem"> <a href="#reservation" style="color:#DCDCDC"><i class="fa fa-caret-right"></i>&nbsp;Rezerwacja</a> </div>
+			<div id="footerMenuItem"> <a href="#galleryRoom" style="color:#DCDCDC"><i class="fa fa-caret-right"></i>&nbsp;Galeria</a> </div>
+			<div id="footerMenuItem"> <a href="#regulations" style="color:#DCDCDC"><i class="fa fa-caret-right"></i>&nbsp;Regulamin</a> </div>
+			<div id="footerMenuItem"> <a href="#faq" style="color:#DCDCDC"><i class="fa fa-caret-right"></i>&nbsp;FAQ</a> </div>
+			<div id="footerMenuItem"> <a href="#contact" style="color:#DCDCDC"><i class="fa fa-caret-right"></i>&nbsp;Kontakt</a> </div>	 		
+		</div>
+		
+		<div id="footerMenu">
+		    <div id="footerInfoItem"> <a href="https://www.facebook.com/SalaProbBaduuum" style="color:white"> <i class="fa fa-facebook"></i>&nbsp; SalaProbBaduuum</a> </div>
+		    <div id="footerInfoItem"> <a href="mailto:baduuum@baduuum.pl" style="color:white"> <i class="fa fa-envelope"></i> baduuum@baduuum.pl </a> </div>
+			<div id="footerInfoItem"> <i class="fa fa-phone"></i>&nbsp; +48 731 805 769 </div>
+			<div id="footerMenuItem" style="color:white"> <i class="fa fa-map-marker"></i>&nbsp; Baduuum, ul. Kaprów 17a, Gdańsk  </div>
 		</div>
 	</g:HTMLPanel>
 </ui:UiBinder>  

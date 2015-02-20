@@ -3,7 +3,7 @@ var __gwtModuleFunction = $wnd.baduuum;
 var $sendStats = __gwtModuleFunction.__sendStats;
 $sendStats('moduleStartup', 'moduleEvalStart');
 var $gwt_version = "2.7.0";
-var $strongName = 'A26128A0A98D3448684335EF16FC92AF';
+var $strongName = '87ABBCA07812ED7BF9577F7A83535C7F';
 var $gwt = {};
 var $doc = $wnd.document;
 var $moduleName, $moduleBase;
@@ -71112,7 +71112,7 @@ _.html1_13_g$ = function html1_5_g$(arg0_0_g$, arg1_0_g$, arg2_0_g$){
   sb_0_g$.append_78_g$(htmlEscape_1_g$(arg0_0_g$));
   sb_0_g$.append_78_g$("'><\/span> <div id='headerMenu'> <span id='");
   sb_0_g$.append_78_g$(htmlEscape_1_g$(arg1_0_g$));
-  sb_0_g$.append_78_g$("'><\/span> <\/div> <div id='content'> <h2>1st Content Area<\/h2> <p>This page demonstrates a 3 column responsive layout, complete with responsive images and jquery slideshow.<\/p> <\/div> <div id='middle'> <h2>2nd Content Area<\/h2> <p>At full width all three columns will be displayed side by side. As the page is resized the third column will collapse under the first and second. At the smallest screen size all three columns will be stacked on top of one another.<\/p> <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.<\/p> <\/div> <div id='sidebar'> <h2>3rd Content Area<\/h2> <p>Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes in futurum.<\/p> <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.<\/p> <p>Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes in futurum.<\/p> <\/div> <div id='footer'> <h4>Footer<\/h4> <span id='");
+  sb_0_g$.append_78_g$("'><\/span> <\/div> <div id='content'> <h2>1st Content Area<\/h2> <p>This page demonstrates a 3 column responsive layout, complete with responsive images and jquery slideshow.<\/p> <\/div> <div id='middle'> <h2>2nd Content Area<\/h2> <p>At full width all three columns will be displayed side by side. As the page is resized the third column will collapse under the first and second. At the smallest screen size all three columns will be stacked on top of one another.<\/p> <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.<\/p>o <\/div> <div id='sidebar'> <h2>3rd Content Area<\/h2> <p>Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes in futurum.<\/p> <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.<\/p> <p>Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes in futurum.<\/p> <\/div> <div id='footer'> <span id='");
   sb_0_g$.append_78_g$(htmlEscape_1_g$(arg2_0_g$));
   sb_0_g$.append_78_g$("'><\/span> <\/div> <\/div>");
   return new OnlyToBeUsedInGeneratedCodeStringBlessedAsSafeHtml_1_g$(sb_0_g$.toString$());
@@ -73495,7 +73495,7 @@ _.$init_2230_g$ = function $init_1112_g$(){
 _.html1_14_g$ = function html1_10_g$(){
   var sb_0_g$;
   sb_0_g$ = new StringBuilder_1_g$;
-  sb_0_g$.append_78_g$('<div> footer <\/div>');
+  sb_0_g$.append_78_g$("<div id='footerMenu'> <div id='footerMenuItem'> <a href='#home' style='color:#DCDCDC'><i class='fa fa-caret-right'><\/i>\xA0Home<\/a> <\/div> <div id='footerMenuItem'> <a href='#prices' style='color:#DCDCDC'><i class='fa fa-caret-right'><\/i>\xA0Cennik<\/a> <\/div> <div id='footerMenuItem'> <a href='#calendar' style='color:#DCDCDC'><i class='fa fa-caret-right'><\/i>\xA0Grafik<\/a> <\/div> <div id='footerMenuItem'> <a href='#room' style='color:#DCDCDC'><i class='fa fa-caret-right'><\/i>\xA0Sala<\/a> <\/div> <div id='footerMenuItem'> <a href='#reservation' style='color:#DCDCDC'><i class='fa fa-caret-right'><\/i>\xA0Rezerwacja<\/a> <\/div> <div id='footerMenuItem'> <a href='#galleryRoom' style='color:#DCDCDC'><i class='fa fa-caret-right'><\/i>\xA0Galeria<\/a> <\/div> <div id='footerMenuItem'> <a href='#regulations' style='color:#DCDCDC'><i class='fa fa-caret-right'><\/i>\xA0Regulamin<\/a> <\/div> <div id='footerMenuItem'> <a href='#faq' style='color:#DCDCDC'><i class='fa fa-caret-right'><\/i>\xA0FAQ<\/a> <\/div> <div id='footerMenuItem'> <a href='#contact' style='color:#DCDCDC'><i class='fa fa-caret-right'><\/i>\xA0Kontakt<\/a> <\/div>  <\/div>  <div id='footerMenu'> <div id='footerInfoItem'> <a href='https://www.facebook.com/SalaProbBaduuum' style='color:white'> <i class='fa fa-facebook'><\/i>SalaProbBaduuum<\/a> <\/div> <div id='footerInfoItem'> <a href='mailto:baduuum@baduuum.pl' style='color:white'> <i class='fa fa-envelope'><\/i> baduuum@baduuum.pl <\/a> <\/div> <div id='footerInfoItem'> <i class='fa fa-phone'><\/i>+48 731 805 769 <\/div> <div id='footerMenuItem'> <i class='fa fa-map-marker'><\/i>\xA0 Baduuum, ul. Kapr\xF3w 17a, Gda\u0144sk <\/div> <\/div>");
   return new OnlyToBeUsedInGeneratedCodeStringBlessedAsSafeHtml_1_g$(sb_0_g$.toString$());
 }
 ;
@@ -73737,6 +73737,6 @@ $sendStats('moduleStartup', 'moduleEvalEnd');
 gwtOnLoad(__gwtModuleFunction.__errFn, __gwtModuleFunction.__moduleName, __gwtModuleFunction.__moduleBase, __gwtModuleFunction.__softPermutationId,__gwtModuleFunction.__computePropValue);
 $sendStats('moduleStartup', 'end');
 $gwt && $gwt.permProps && __gwtModuleFunction.__moduleStartupDone($gwt.permProps);
-//# sourceMappingURL=http://127.0.0.1:9876/sourcemaps/baduuum/A26128A0A98D3448684335EF16FC92AF_sourcemap.json 
+//# sourceMappingURL=http://127.0.0.1:9876/sourcemaps/baduuum/87ABBCA07812ED7BF9577F7A83535C7F_sourcemap.json 
 //# sourceURL=baduuum-0.js
 
