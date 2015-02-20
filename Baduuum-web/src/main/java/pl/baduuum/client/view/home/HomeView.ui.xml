@@ -13,23 +13,28 @@
 			<c:HeaderWidgetView ui:field="header" />
 			<div id="headerMenu">
 
-				<g:MenuBar title="Account" ui:field="menuBar"
-					animationEnabled="true" autoOpen="true">
-					<g:MenuItem text="HOME" ui:field="buttonHome" />
-					<g:MenuItem text="CENNIK" ui:field="buttonPrice" />
-					<g:MenuItem text="GRAFIK" ui:field="buttonCalendar" />
-					<g:MenuItem text="SALA" ui:field="buttonRoom" />
-					<g:MenuItem text="REZERWACJA" ui:field="buttonReservation" />
-					<g:MenuItem text="GALERIA" ui:field="buttonGallery">
-						<g:MenuBar vertical="true">
-							<g:MenuItem text="SALA TWIN PEAKS" ui:field="buttonGalleryRoom" />
-							<g:MenuItem text="BUDOWA SALI" ui:field="buttonGalleryBuild" />
-						</g:MenuBar>
-					</g:MenuItem>
-					<g:MenuItem text="REGULAMIN" ui:field="buttonRegulations" />
-					<g:MenuItem text="FAQ" ui:field="buttonFAQ" />
-					<g:MenuItem text="KONTAKT" ui:field="buttonContact" />
-				</g:MenuBar>
+				<label for="show-menu" class="show-menu">Show Menu</label>
+	<input type="checkbox" id="show-menu" role="button"/>
+	<ul id="menu">
+		<li><a href="#">Home</a></li>
+		<li>
+			<a href="#">About &#65516;</a>
+			<ul class="hidden">
+				<li><a href="#">Who We Are</a></li>
+				<li><a href="#">What We Do</a></li>
+			</ul>
+		</li>
+		<li>
+			<a href="#">Portfolio &#65516;</a>
+			<ul class="hidden">
+				<li><a href="#">Photography</a></li>
+				<li><a href="#">Web &amp; User Interface Design</a></li>
+				<li><a href="#">Illustration</a></li>
+			</ul>
+		</li>
+		<li><a href="#">News</a></li>
+		<li><a href="#">Contact</a></li>
+	</ul>
 			</div>
 
 			<div id="content">
