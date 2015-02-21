@@ -5,37 +5,13 @@
 	<ui:with field='res' type='pl.baduuum.client.StyleResources' />
 
 	<ui:style>
-
+	
 	</ui:style>
 
 	<g:HTMLPanel>
 		<div id="pagewrap">
 			<c:HeaderWidgetView ui:field="header" />
-			<div id="headerMenu">
-
-				<label for="show-menu" class="show-menu">Show Menu</label>
-	<input type="checkbox" id="show-menu" role="button"/>
-	<ul id="menu">
-		<li><a href="#">Home</a></li>
-		<li>
-			<a href="#">About &#65516;</a>
-			<ul class="hidden">
-				<li><a href="#">Who We Are</a></li>
-				<li><a href="#">What We Do</a></li>
-			</ul>
-		</li>
-		<li>
-			<a href="#">Portfolio &#65516;</a>
-			<ul class="hidden">
-				<li><a href="#">Photography</a></li>
-				<li><a href="#">Web &amp; User Interface Design</a></li>
-				<li><a href="#">Illustration</a></li>
-			</ul>
-		</li>
-		<li><a href="#">News</a></li>
-		<li><a href="#">Contact</a></li>
-	</ul>
-			</div>
+			<c:MenuWidgetView ui:field="menu" />
 
 			<div id="content">
 				<h2>1st Content Area</h2>
@@ -55,7 +31,8 @@
 					vulputate velit esse molestie consequat, vel illum dolore eu
 					feugiat nulla facilisis at vero eros et accumsan et iusto odio
 					dignissim qui blandit praesent luptatum zzril delenit augue duis
-					dolore te feugait nulla facilisi.</p>o
+					dolore te feugait nulla facilisi.</p>
+				o
 			</div>
 
 			<div id="sidebar">
@@ -69,9 +46,7 @@
 					sollemnes in futurum.</p>
 			</div>
 
-			<div id="footer">
-				<c:FooterWidgetView ui:field="footer" />
-			</div>
+			<c:FooterWidgetView ui:field="footer" />
 
 		</div>
 

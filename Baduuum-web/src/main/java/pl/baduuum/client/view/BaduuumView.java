@@ -17,7 +17,5 @@ public interface BaduuumView {
 	void onRoomButtonClicked();
   }
   
-  void setPresenter(Presenter presenter);
   Widget asWidget();
-  void initializeMenu();
 }

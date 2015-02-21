@@ -26,8 +26,7 @@ public class BaduuumPresenter implements Presenter, BaduuumView.Presenter {
 		this.rpcService = rpcService;
 		this.eventBus = eventBus;
 		this.view = view;
-		this.view.setPresenter(this);
-		this.view.initializeMenu();
+	//	this.view.setPresenter(this);
 	}
 	
 	@Override

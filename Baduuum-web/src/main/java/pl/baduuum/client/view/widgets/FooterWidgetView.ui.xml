@@ -3,6 +3,7 @@
 <ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
 	xmlns:g="urn:import:com.google.gwt.user.client.ui">
 	<g:HTMLPanel>
+	<div id="footer">
 		<div id="footerMenu">
 			<div id="footerMenuItem"> <a href="#home" style="color:#DCDCDC"><i class="fa fa-caret-right"></i>&nbsp;Home</a> </div>
 			<div id="footerMenuItem"> <a href="#prices" style="color:#DCDCDC"><i class="fa fa-caret-right"></i>&nbsp;Cennik</a> </div>
@@ -21,5 +22,6 @@
 			<div id="footerInfoItem"> <i class="fa fa-phone"></i>&nbsp; +48 731 805 769 </div>
 			<div id="footerMenuItem" style="color:white"> <i class="fa fa-map-marker"></i>&nbsp; Baduuum, ul. Kaprów 17a, Gdańsk  </div>
 		</div>
+	</div>
 	</g:HTMLPanel>
 </ui:UiBinder>  
