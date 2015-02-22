@@ -5,7 +5,7 @@
 
 	<g:HTMLPanel>
 		<div id="headerLogo">
-			<a href="http://www.baduuum.pl">
+			<a href="#home">
 				<g:Image resource='{images.logo}' />
 			</a>
 		</div>
