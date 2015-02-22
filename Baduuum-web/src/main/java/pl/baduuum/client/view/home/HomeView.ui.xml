@@ -4,54 +4,46 @@
 
 	<ui:with field='res' type='pl.baduuum.client.StyleResources' />
 
-	<ui:style>
-	
-	</ui:style>
-
 	<g:HTMLPanel>
 		<div id="pagewrap">
 			<c:HeaderWidgetView ui:field="header" />
 			<c:MenuWidgetView ui:field="menu" />
 
-			<div id="content">
-				<h2>1st Content Area</h2>
-				<p>This page demonstrates a 3 column responsive layout, complete
-					with responsive images and jquery slideshow.</p>
-			</div>
+			<div id="contentHome">
+				<h2>Witaj na stronie sali prób Baduuum!</h2>
+				<p>Baduuum to miejsce wyjątkowe, powstałe wskutek realizacji
+					marzenia o sali prób gdzie każdy może poćwiczyć sam lub z własnym
+					zespołem w doskonałych
+					warunkach akustycznych i na porządnym sprzęcie.
+				</p>
 
-			<div id="middle">
-				<h2>2nd Content Area</h2>
-				<p>At full width all three columns will be displayed side by side.
-					As the page is resized the third column will collapse under the
-					first and second. At the smallest screen size all three columns
-					will be stacked on top of one another.</p>
-				<p>Ut wisi enim ad minim veniam, quis nostrud exerci tation
-					ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo
-					consequat. Duis autem vel eum iriure dolor in hendrerit in
-					vulputate velit esse molestie consequat, vel illum dolore eu
-					feugiat nulla facilisis at vero eros et accumsan et iusto odio
-					dignissim qui blandit praesent luptatum zzril delenit augue duis
-					dolore te feugait nulla facilisi.</p>
-				o
-			</div>
+				<p>
+					Miejsce dla muzyków profesjonalnych i amatorów, dla tych którzy wolą
+					korzystać z własnego sprzętu jak i dla tych którzy chcą rozpocząć
+					swoją muzyczną
+					przygodę, a nie mają na czym grać lub z garażu już przegonili ich sąsiedzi
+					:). Baduuum to miejsce gdzie próby niezależnie od swego rozmiaru,
+					tego czy
+					są hałaśliwe czy kameralne, to z pewnością przyniosą radość z
+					tworzenia.
+				</p>
 
-			<div id="sidebar">
-				<h2>3rd Content Area</h2>
-				<p>Eodem modo typi, qui nunc nobis videntur parum clari, fiant
-					sollemnes in futurum.</p>
-				<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
-					diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam
-					erat volutpat.</p>
-				<p>Eodem modo typi, qui nunc nobis videntur parum clari, fiant
-					sollemnes in futurum.</p>
+				<p>
+					Staramy się tworzyć miejsce inspirujące nie tylko poprzez możliwość
+					korzystania z nowego, sprawnego sprzętu czy z dużą dbałością
+					zaprojektowanej akustyki, ale też przez superprzyjazną atmosferę
+					oraz nietypowy wystrój sali.
+				</p>
+			</div>
+			<div id="middleHome"> 
+			<h2>Zdjecia</h2>
+			</div>
+			
+			<div id="bottomHome">
+			<h2>Lokalizacja</h2>
 			</div>
 
 			<c:FooterWidgetView ui:field="footer" />
-
 		</div>
-
-
 	</g:HTMLPanel>
-
-
 </ui:UiBinder> 
