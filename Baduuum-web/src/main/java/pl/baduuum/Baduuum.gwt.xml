@@ -3,13 +3,15 @@
 
 	<inherits name='com.google.gwt.user.User' />
 	<inherits name='com.google.gwt.user.theme.standard.Standard' />
+	<inherits name="com.google.gwt.resources.Resources"/>
+	
 
 	<entry-point class='pl.baduuum.client.BaduuumEntry' />
 
 	<source path='client' />
 	<source path='shared' />
 	<source path='test/gwt' />
-	<resource path='resources/images' />
+	<resource path='resources' />
 
 	<!-- old Mozilla, and Opera need a different implementation -->
 	<replace-with class="com.google.gwt.user.client.ui.impl.FocusImplOld">
