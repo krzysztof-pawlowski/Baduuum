@@ -20,6 +20,8 @@ import pl.baduuum.client.event.GoReservationEvent;
 import pl.baduuum.client.event.GoReservationEventHandler;
 import pl.baduuum.client.event.GoRoomEvent;
 import pl.baduuum.client.event.GoRoomEventHandler;
+import pl.baduuum.client.event.GoStudioEvent;
+import pl.baduuum.client.event.GoStudioEventHandler;
 import pl.baduuum.client.presenter.BaduuumPresenter;
 import pl.baduuum.client.presenter.Presenter;
 import pl.baduuum.client.view.calendar.CalendarViewImpl;
@@ -32,6 +34,7 @@ import pl.baduuum.client.view.prices.PricesViewImpl;
 import pl.baduuum.client.view.regulations.RegulationsViewImpl;
 import pl.baduuum.client.view.reservation.ReservationViewImpl;
 import pl.baduuum.client.view.room.RoomViewImpl;
+import pl.baduuum.client.view.studio.StudioViewImpl;
 
 import com.google.gwt.core.client.GWT;
 import com.google.gwt.core.client.RunAsyncCallback;
@@ -52,6 +55,7 @@ public class AppController implements Presenter, ValueChangeHandler<String> {
 	private static final String CALENDAR = "calendar";
 	private static final String PRICES = "prices";
 	private static final String HOME = "home";
+	private static final String STUDIO = "studio";
 	
 	private final HandlerManager eventBus;
 	private final BaduuumServiceAsync rpcService;
@@ -61,6 +65,7 @@ public class AppController implements Presenter, ValueChangeHandler<String> {
 	private PricesViewImpl baduuumPricesView = null;
 	private CalendarViewImpl baduuumCalendarView = null;
 	private RoomViewImpl baduuumRoomView = null;
+	private StudioViewImpl studioViewImpl = null;
 	private ReservationViewImpl baduuumReservationView = null;
 	private GalleryRoomViewImpl baduuumGalleryRoomView = null;
 	private GalleryBuildViewImpl baduuumGalleryBuildView = null;
@@ -148,7 +153,13 @@ public class AppController implements Presenter, ValueChangeHandler<String> {
 				doOpenPage(ROOM);;
 			}
 		});
-				
+		
+		eventBus.addHandler(GoStudioEvent.TYPE, new GoStudioEventHandler() {
+			@Override
+			public void onGoStudio(GoStudioEvent event) {
+				doOpenPage(STUDIO);
+			}
+		});
 
 	}
 	
@@ -242,6 +253,21 @@ public class AppController implements Presenter, ValueChangeHandler<String> {
 							baduuumReservationView = new ReservationViewImpl();
 						}
 						new BaduuumPresenter(rpcService, eventBus, baduuumReservationView).go(container);
+					}
+					
+					@Override
+					public void onFailure(Throwable reason) {
+					}
+				});
+			} else if (token.equals(STUDIO)){
+				GWT.runAsync(new RunAsyncCallback() {
+					
+					@Override
+					public void onSuccess() {
+						if (studioViewImpl == null){
+							studioViewImpl = new StudioViewImpl();
+						}
+						new BaduuumPresenter(rpcService, eventBus, studioViewImpl).go(container);
 					}
 					
 					@Override
