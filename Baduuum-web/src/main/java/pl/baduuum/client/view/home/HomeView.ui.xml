@@ -3,6 +3,7 @@
 <ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
 	xmlns:g="urn:import:com.google.gwt.user.client.ui" xmlns:c="urn:import:pl.baduuum.client.view.widgets">
 
+    <ui:with field='images' type='pl.baduuum.client.ImageResources' />
 	<ui:with field='res' type='pl.baduuum.client.StyleResources' />
 
 	<g:HTMLPanel>
@@ -15,34 +16,49 @@
 				<p>Baduuum to miejsce wyjątkowe, powstałe wskutek realizacji
 					marzenia o sali prób gdzie każdy może poćwiczyć sam lub z własnym
 					zespołem w doskonałych
-					warunkach akustycznych i na porządnym sprzęcie.
+					warunkach akustycznych i na porządnym
+					sprzęcie.
 				</p>
 
 				<p>
-					Miejsce dla muzyków profesjonalnych i amatorów, dla tych którzy wolą
-					korzystać z własnego sprzętu jak i dla tych którzy chcą rozpocząć
+					Miejsce dla muzyków profesjonalnych i amatorów, dla tych którzy
+					wolą
+					korzystać z własnego sprzętu jak i dla tych którzy chcą
+					rozpocząć
 					swoją muzyczną
-					przygodę, a nie mają na czym grać lub z garażu już przegonili ich sąsiedzi
-					:). Baduuum to miejsce gdzie próby niezależnie od swego rozmiaru,
+					przygodę, a nie mają na czym grać lub z
+					garażu już przegonili ich sąsiedzi
+					:). Baduuum to miejsce gdzie
+					próby niezależnie od swego rozmiaru,
 					tego czy
-					są hałaśliwe czy kameralne, to z pewnością przyniosą radość z
+					są hałaśliwe czy
+					kameralne, to z pewnością przyniosą radość z
 					tworzenia.
 				</p>
 
 				<p>
-					Staramy się tworzyć miejsce inspirujące nie tylko poprzez możliwość
-					korzystania z nowego, sprawnego sprzętu czy z dużą dbałością
-					zaprojektowanej akustyki, ale też przez superprzyjazną atmosferę
+					Staramy się tworzyć miejsce inspirujące nie tylko poprzez
+					możliwość
+					korzystania z nowego, sprawnego sprzętu czy z dużą
+					dbałością
+					zaprojektowanej akustyki, ale też przez superprzyjazną
+					atmosferę
 					oraz nietypowy wystrój sali.
 				</p>
 			</div>
-			<div id="middleHome"> 
-			<h2>Zdjecia</h2>
+			 <div class="middleHome">
+
+				
+						<g:Image resource='{images.homePage1}'/>
+						<g:Image resource='{images.homePage2}' />
+				
+
 			</div>
-			
-			    <div class="map-container">
-			<iframe width="900" height="450" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=Sala%20Pr%C3%B3b%20Baduuum%2C%20Kapr%C3%B3w%2C%20Gda%C5%84sk%2C%20Polska&amp;key=AIzaSyA68SN7UAeCcY9i7hCAwOecVlXUc0dTfIM"></iframe> 
-			
+
+			<div class="map-container">
+				<iframe width="900" height="450" frameborder="0" style="border:0"
+					src="https://www.google.com/maps/embed/v1/place?q=Sala%20Pr%C3%B3b%20Baduuum%2C%20Kapr%C3%B3w%2C%20Gda%C5%84sk%2C%20Polska&amp;key=AIzaSyA68SN7UAeCcY9i7hCAwOecVlXUc0dTfIM"></iframe>
+
 			</div>
 
 			<c:FooterWidgetView ui:field="footer" />
