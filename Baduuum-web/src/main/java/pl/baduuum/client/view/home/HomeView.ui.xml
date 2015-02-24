@@ -50,8 +50,8 @@
 
 				
 						<g:Image resource='{images.homePage1}'/>
+				<g:Image resource='{images.homePage3}' />
 						<g:Image resource='{images.homePage2}' />
-				
 
 			</div>
 
