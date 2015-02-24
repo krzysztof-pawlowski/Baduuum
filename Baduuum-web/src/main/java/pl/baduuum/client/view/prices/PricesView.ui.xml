@@ -13,9 +13,48 @@
 			<c:HeaderWidgetView ui:field="header" />
 			<c:MenuWidgetView ui:field="menu" />
 
-			<div id="content">
-				<h2>1st Content Area</h2>
-				<p>prices</p>
+			<div id="contentPrices">
+				<table class="table table-hover table-bordered" id="main">
+					<caption>
+						<h2>opcje jednorazowej rezerwacji</h2>
+					</caption>
+					<thead>
+						<tr>
+							<th>nazwa</th>
+							<th>cena w PLN</th>
+						</tr>
+					</thead>
+					<tbody>
+
+						<tr>
+							<td class="cena">pierwsza godzina dla nowych zespołów</td>
+							<td width="30%">0 zł</td>
+						</tr>
+
+						<tr>
+							<td class="cena">cena za godzinę</td>
+							<td width="30%">30 zł</td>
+						</tr>
+
+						<tr>
+							<td class="cena">trzecia godzina i następne</td>
+							<td width="30%">20 zł</td>
+						</tr>
+
+						<tr>
+							<td class="cena">przy przedpłacie przed próbą (najpóźniej 3 dni
+								przed)</td>
+							<td width="30%">10% rabatu</td>
+						</tr>
+
+						<tr>
+							<td class="cena">karnet 10h</td>
+							<td width="30%">200 zł</td>
+						</tr>
+
+					</tbody>
+				</table>
+
 			</div>
 
 
