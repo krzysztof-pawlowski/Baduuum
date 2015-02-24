@@ -3,7 +3,7 @@ var __gwtModuleFunction = $wnd.baduuum;
 var $sendStats = __gwtModuleFunction.__sendStats;
 $sendStats('moduleStartup', 'moduleEvalStart');
 var $gwt_version = "2.7.0";
-var $strongName = '527F9D2E7F570DB823C109AD0E6732AD';
+var $strongName = '318FB6728D1FC65E6AD067F7A9075EB7';
 var $gwt = {};
 var $doc = $wnd.document;
 var $moduleName, $moduleBase;
@@ -69946,7 +69946,7 @@ _.html1_14_g$ = function html1_5_g$(arg0_0_g$, arg1_0_g$, arg2_0_g$){
   sb_0_g$.append_78_g$(htmlEscape_1_g$(arg0_0_g$));
   sb_0_g$.append_78_g$("'><\/span> <span id='");
   sb_0_g$.append_78_g$(htmlEscape_1_g$(arg1_0_g$));
-  sb_0_g$.append_78_g$("'><\/span> <div id='contentHome'> <h2>Witaj na stronie sali pr\xF3b Baduuum!<\/h2> <p>Baduuum to miejsce wyj\u0105tkowe, powsta\u0142e wskutek realizacji marzenia o sali pr\xF3b gdzie ka\u017Cdy mo\u017Ce po\u0107wiczy\u0107 sam lub z w\u0142asnym zespo\u0142em w doskona\u0142ych warunkach akustycznych i na porz\u0105dnym sprz\u0119cie. <\/p> <p> Miejsce dla muzyk\xF3w profesjonalnych i amator\xF3w, dla tych kt\xF3rzy wol\u0105 korzysta\u0107 z w\u0142asnego sprz\u0119tu jak i dla tych kt\xF3rzy chc\u0105 rozpocz\u0105\u0107 swoj\u0105 muzyczn\u0105 przygod\u0119, a nie maj\u0105 na czym gra\u0107 lub z gara\u017Cu ju\u017C przegonili ich s\u0105siedzi :). Baduuum to miejsce gdzie pr\xF3by niezale\u017Cnie od swego rozmiaru, tego czy s\u0105 ha\u0142a\u015Bliwe czy kameralne, to z pewno\u015Bci\u0105 przynios\u0105 rado\u015B\u0107 z tworzenia. <\/p> <p> Staramy si\u0119 tworzy\u0107 miejsce inspiruj\u0105ce nie tylko poprzez mo\u017Cliwo\u015B\u0107 korzystania z nowego, sprawnego sprz\u0119tu czy z du\u017C\u0105 dba\u0142o\u015Bci\u0105 zaprojektowanej akustyki, ale te\u017C przez superprzyjazn\u0105 atmosfer\u0119 oraz nietypowy wystr\xF3j sali. <\/p> <\/div> <div id='middleHome'> <h2>Zdjecia<\/h2> <\/div>  <div id='bottomHome'> <h2>Lokalizacja<\/h2> <\/div> <span id='");
+  sb_0_g$.append_78_g$("'><\/span> <div id='contentHome'> <h2>Witaj na stronie sali pr\xF3b Baduuum!<\/h2> <p>Baduuum to miejsce wyj\u0105tkowe, powsta\u0142e wskutek realizacji marzenia o sali pr\xF3b gdzie ka\u017Cdy mo\u017Ce po\u0107wiczy\u0107 sam lub z w\u0142asnym zespo\u0142em w doskona\u0142ych warunkach akustycznych i na porz\u0105dnym sprz\u0119cie. <\/p> <p> Miejsce dla muzyk\xF3w profesjonalnych i amator\xF3w, dla tych kt\xF3rzy wol\u0105 korzysta\u0107 z w\u0142asnego sprz\u0119tu jak i dla tych kt\xF3rzy chc\u0105 rozpocz\u0105\u0107 swoj\u0105 muzyczn\u0105 przygod\u0119, a nie maj\u0105 na czym gra\u0107 lub z gara\u017Cu ju\u017C przegonili ich s\u0105siedzi :). Baduuum to miejsce gdzie pr\xF3by niezale\u017Cnie od swego rozmiaru, tego czy s\u0105 ha\u0142a\u015Bliwe czy kameralne, to z pewno\u015Bci\u0105 przynios\u0105 rado\u015B\u0107 z tworzenia. <\/p> <p> Staramy si\u0119 tworzy\u0107 miejsce inspiruj\u0105ce nie tylko poprzez mo\u017Cliwo\u015B\u0107 korzystania z nowego, sprawnego sprz\u0119tu czy z du\u017C\u0105 dba\u0142o\u015Bci\u0105 zaprojektowanej akustyki, ale te\u017C przez superprzyjazn\u0105 atmosfer\u0119 oraz nietypowy wystr\xF3j sali. <\/p> <\/div> <div id='middleHome'> <h2>Zdjecia<\/h2> <\/div>  <div class='map-container'> <iframe frameborder='0' height='450' src='https://www.google.com/maps/embed/v1/place?q=Sala%20Pr%C3%B3b%20Baduuum%2C%20Kapr%C3%B3w%2C%20Gda%C5%84sk%2C%20Polska&amp;key=AIzaSyA68SN7UAeCcY9i7hCAwOecVlXUc0dTfIM' style='border:0' width='900'><\/iframe>   <\/div> <span id='");
   sb_0_g$.append_78_g$(htmlEscape_1_g$(arg2_0_g$));
   sb_0_g$.append_78_g$("'><\/span> <\/div>");
   return new OnlyToBeUsedInGeneratedCodeStringBlessedAsSafeHtml_1_g$(sb_0_g$.toString$());
@@ -72340,6 +72340,6 @@ $sendStats('moduleStartup', 'moduleEvalEnd');
 gwtOnLoad(__gwtModuleFunction.__errFn, __gwtModuleFunction.__moduleName, __gwtModuleFunction.__moduleBase, __gwtModuleFunction.__softPermutationId,__gwtModuleFunction.__computePropValue);
 $sendStats('moduleStartup', 'end');
 $gwt && $gwt.permProps && __gwtModuleFunction.__moduleStartupDone($gwt.permProps);
-//# sourceMappingURL=http://127.0.0.1:9876/sourcemaps/baduuum/527F9D2E7F570DB823C109AD0E6732AD_sourcemap.json 
+//# sourceMappingURL=http://127.0.0.1:9876/sourcemaps/baduuum/318FB6728D1FC65E6AD067F7A9075EB7_sourcemap.json 
 //# sourceURL=baduuum-0.js
 
