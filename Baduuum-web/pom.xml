@@ -37,6 +37,11 @@
 			<version>${gwtVersion}</version>
 			<scope>provided</scope>
 		</dependency>
+		<dependency>
+			<groupId>org.gwtbootstrap3</groupId>
+			<artifactId>gwtbootstrap3</artifactId>
+			<version>0.9</version>
+		</dependency>
 
 		<dependency>
 			<groupId>junit</groupId>
@@ -64,7 +69,7 @@
 				<!-- Plugin configuration. There are many available options, see gwt-maven-plugin 
 					documentation at codehaus.org -->
 				<configuration>
-				     <debug>true</debug>
+					<debug>true</debug>
 					<modules>
 						<module>pl.baduuum.Baduuum</module>
 					</modules>

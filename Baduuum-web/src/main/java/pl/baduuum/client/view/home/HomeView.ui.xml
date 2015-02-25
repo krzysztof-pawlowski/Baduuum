@@ -12,7 +12,7 @@
 			<c:MenuWidgetView ui:field="menu" />
 
 			<div id="contentHome">
-				<h2>Witaj na stronie sali prób Baduuum!</h2>
+				<h3>Witaj na stronie sali prób Baduuum!</h3>
 				<p>Baduuum to miejsce wyjątkowe, powstałe wskutek realizacji
 					marzenia o sali prób gdzie każdy może poćwiczyć sam lub z własnym
 					zespołem w doskonałych
