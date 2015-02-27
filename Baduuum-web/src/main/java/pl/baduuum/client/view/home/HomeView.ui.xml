@@ -8,7 +8,12 @@
 
 	<g:HTMLPanel>
 		<div id="pagewrap">
-			<c:HeaderWidgetView ui:field="header" />
+
+
+
+
+		
+		 	<c:HeaderWidgetView ui:field="header" />
 			<c:MenuWidgetView ui:field="menu" />
 
 			<div id="contentHome">
