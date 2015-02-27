@@ -2,40 +2,29 @@
 <ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
 	xmlns:g="urn:import:com.google.gwt.user.client.ui">
 	<ui:with field='images' type='pl.baduuum.client.ImageResources' />
-
 	<g:HTMLPanel>
-	
-	<div class="container">
-
-      <div class="row">
-        <div class="col-md-3"><g:Image resource='{images.logo}' /> </div>
-        <div class="col-md-3"><i class="fa fa-phone"></i> 
-			&nbsp; +48 731 805 769</div>
-        <div class="col-md-3">.col-md-4</div>
-        <div class="col-md-3">.col-md-4</div>
-      </div>
-
-    </div>
-<!-- 		<div id="headerLogo"> -->
-<!-- 			<a href="#home"> -->
-<!-- 				<g:Image resource='{images.logo}' /> -->
-<!-- 			</a> -->
-<!-- 		</div> -->
-<!-- 		<div id="headerPhone" class="headerFont"> -->
-<!-- 			<i class="fa fa-phone"></i> -->
-<!-- 			&nbsp; +48 731 805 769 -->
-<!-- 		</div> -->
-<!-- 		<div id="headerMail" class="headerFont"> -->
-<!-- 			<a href="mailto:baduuum@baduuum.pl" style="color:#333"> -->
-<!-- 				<i class="fa fa-envelope"></i> -->
-<!-- 				&nbsp; baduuum@baduuum.pl -->
-<!-- 			</a> -->
-<!-- 		</div> -->
-<!-- 		<div id="headerFb" class="headerFont"> -->
-<!-- 			<a href="https://www.facebook.com/SalaProbBaduuum" style="color:#333"> -->
-<!-- 				<i class="fa fa-facebook"></i> -->
-<!-- 				&nbsp; SalaProbBaduuum -->
-<!-- 			</a> -->
-<!-- 		</div> -->
+		<div class="container">
+			<div class="row">
+				<div class="col-md-3">
+					<g:Image resource='{images.logo}' />
+				</div>
+				<div class="col-md-3 headerFont">
+					<i class="fa fa-phone"></i>
+					&nbsp; +48 731 805 769
+				</div>
+				<div class="col-md-3 headerFont">
+					<a href="mailto:baduuum@baduuum.pl" style="color:#333">
+						<i class="fa fa-envelope"></i>
+						&nbsp; baduuum@baduuum.pl
+					</a>
+				</div>
+				<div class="col-md-3 headerFont">
+					<a href="https://www.facebook.com/SalaProbBaduuum" style="color:#333">
+						<i class="fa fa-facebook"></i>
+						&nbsp; SalaProbBaduuum
+					</a>
+				</div>
+			</div>
+		</div>
 	</g:HTMLPanel>
 </ui:UiBinder>  

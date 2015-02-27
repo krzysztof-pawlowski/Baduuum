@@ -3,7 +3,7 @@ var __gwtModuleFunction = $wnd.baduuum;
 var $sendStats = __gwtModuleFunction.__sendStats;
 $sendStats('moduleStartup', 'moduleEvalStart');
 var $gwt_version = "2.7.0";
-var $strongName = '26E99DC0C00325CF7051FA3944460C24';
+var $strongName = 'C9C1450CBBA100285D492CB18273FF4D';
 var $gwt = {};
 var $doc = $wnd.document;
 var $moduleName, $moduleBase;
@@ -70293,7 +70293,7 @@ _.$init_2237_g$ = function $init_1096_g$(){
 _.html1_15_g$ = function html1_5_g$(arg0_0_g$, arg1_0_g$, arg2_0_g$, arg3_0_g$, arg4_0_g$, arg5_0_g$){
   var sb_0_g$;
   sb_0_g$ = new StringBuilder_1_g$;
-  sb_0_g$.append_78_g$("<div id='pagewrap'> <span id='");
+  sb_0_g$.append_78_g$("<div class='container'> <span id='");
   sb_0_g$.append_78_g$(htmlEscape_1_g$(arg0_0_g$));
   sb_0_g$.append_78_g$("'><\/span> <span id='");
   sb_0_g$.append_78_g$(htmlEscape_1_g$(arg1_0_g$));
@@ -72419,9 +72419,9 @@ _.$init_2276_g$ = function $init_1135_g$(){
 _.html1_17_g$ = function html1_12_g$(arg0_0_g$){
   var sb_0_g$;
   sb_0_g$ = new StringBuilder_1_g$;
-  sb_0_g$.append_78_g$("<div class='container'> <div class='row'> <div class='col-md-3'><span id='");
+  sb_0_g$.append_78_g$("<div class='container'> <div class='row'> <div class='col-md-3'> <span id='");
   sb_0_g$.append_78_g$(htmlEscape_1_g$(arg0_0_g$));
-  sb_0_g$.append_78_g$("'><\/span> <\/div> <div class='col-md-3'><i class='fa fa-phone'><\/i>  \xA0 +48 731 805 769<\/div> <div class='col-md-3'>.col-md-4<\/div> <div class='col-md-3'>.col-md-4<\/div> <\/div> <\/div>");
+  sb_0_g$.append_78_g$("'><\/span> <\/div> <div class='col-md-3 headerFont'> <i class='fa fa-phone'><\/i> \xA0 +48 731 805 769 <\/div> <div class='col-md-3 headerFont'> <a href='mailto:baduuum@baduuum.pl' style='color:#333'> <i class='fa fa-envelope'><\/i> \xA0 baduuum@baduuum.pl <\/a> <\/div> <div class='col-md-3 headerFont'> <a href='https://www.facebook.com/SalaProbBaduuum' style='color:#333'> <i class='fa fa-facebook'><\/i> \xA0 SalaProbBaduuum <\/a> <\/div> <\/div> <\/div>");
   return new OnlyToBeUsedInGeneratedCodeStringBlessedAsSafeHtml_1_g$(sb_0_g$.toString$());
 }
 ;
@@ -72607,6 +72607,6 @@ $sendStats('moduleStartup', 'moduleEvalEnd');
 gwtOnLoad(__gwtModuleFunction.__errFn, __gwtModuleFunction.__moduleName, __gwtModuleFunction.__moduleBase, __gwtModuleFunction.__softPermutationId,__gwtModuleFunction.__computePropValue);
 $sendStats('moduleStartup', 'end');
 $gwt && $gwt.permProps && __gwtModuleFunction.__moduleStartupDone($gwt.permProps);
-//# sourceMappingURL=http://127.0.0.1:9876/sourcemaps/baduuum/26E99DC0C00325CF7051FA3944460C24_sourcemap.json 
+//# sourceMappingURL=http://127.0.0.1:9876/sourcemaps/baduuum/C9C1450CBBA100285D492CB18273FF4D_sourcemap.json 
 //# sourceURL=baduuum-0.js
 

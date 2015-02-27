@@ -7,11 +7,7 @@
 	<ui:with field='res' type='pl.baduuum.client.StyleResources' />
 
 	<g:HTMLPanel>
-		<div id="pagewrap">
-
-
-
-
+		<div class="container">
 		
 		 	<c:HeaderWidgetView ui:field="header" />
 			<c:MenuWidgetView ui:field="menu" />

@@ -1,0 +1,9 @@
+.headerFont {
+	-webkit-font-smoothing: antialiased;
+	line-height: 40px;
+	text-align: center;
+	line-height: 40px;
+	color: #333;
+	font-size: 12px;
+	font-family: "open sans", arial, sans-serif;
+}
