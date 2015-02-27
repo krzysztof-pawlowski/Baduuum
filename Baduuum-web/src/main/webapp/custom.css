@@ -1,0 +1,17 @@
+.footer .adr-group {
+    margin-left: 40px;
+    margin-top: -40px;
+}
+
+.promo-badge {
+    margin: 0 auto;
+}
+
+.footer .footer-content {
+    margin-bottom: -10px;
+}
+
+#bottom_menu li{
+    display: inline-block !important;
+}
+
