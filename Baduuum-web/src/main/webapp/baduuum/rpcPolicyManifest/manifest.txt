@@ -1,0 +1,3 @@
+# Module baduuum
+# RPC service class, partial path of RPC policy file
+pl.baduuum.client.BaduuumService, 065377ADD56867B3D99875564BD314CB.gwt.rpc

@@ -1,0 +1,2 @@
+serviceClass: pl.baduuum.client.BaduuumService
+path: 065377ADD56867B3D99875564BD314CB.gwt.rpc
