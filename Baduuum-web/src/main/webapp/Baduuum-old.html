@@ -1,0 +1,472 @@
+<!doctype html>
+<!-- The HTML 4.01 Transitional DOCTYPE declaration-->
+<!-- above set at the top of the file will set     -->
+<!-- the browser's rendering engine into           -->
+<!-- "Quirks Mode". Replacing this declaration     -->
+<!-- with a "Standards Mode" doctype is supported, -->
+<!-- but may lead to some differences in layout.   -->
+
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+<!--                                                               -->
+<!-- Consider inlining CSS to reduce the number of requested files -->
+<!--                                                               -->
+<link type="text/css" rel="stylesheet" href="styles.css">
+<link rel="stylesheet"
+	href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+<!--                                           -->
+<!-- Any title is fine                         -->
+<!--                                           -->
+<title>Baduuum</title>
+
+<!--                                           -->
+<!-- This script loads your compiled module.   -->
+<!-- If you add any GWT meta tags, they must   -->
+<!-- be added before this line.                -->
+<!--                                           -->
+<script type="text/javascript" language="javascript"
+	src="baduuum/baduuum.nocache.js"></script>
+
+<style>
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	color: #666;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+#pagewrap {
+	max-width: 960px;
+	margin: 20px auto;
+}
+
+#headerLogo {
+	float: left;
+	padding: 5px 15px;
+	padding-right: 180px;
+	height: 90px;
+}
+
+#headerMenu {
+	clear: both;
+	height: 50px;
+	padding: 0 15px;
+	background: rgb(96, 145, 186);
+}
+
+#headerPhone {
+	float: left;
+	padding-left: 15px;
+	padding-right: 15px;
+	height: 30px;
+	padding-top: 10px;
+}
+
+#headerMail {
+	float: left;
+	padding-left: 15px;
+	padding-right: 15px;
+	height: 30px;
+	padding-top: 10px;
+}
+
+#headerFb {
+	float: left;
+	padding-left: 15px;
+	padding-right: 15px;
+	height: 30px;
+	padding-top: 10px;
+	padding-bottom: 20px;
+}
+
+.headerFont {
+	-webkit-font-smoothing: antialiased;
+	line-height: 40px;
+	text-align: center;
+	line-height: 40px;
+	color: #333;
+	font-size: 12px;
+	font-family: "open sans", arial, sans-serif;
+}
+
+#contentHome {
+    clear:both;
+	float: left;
+	background-color: rgb(68, 68, 68) !important;
+	padding: 5px 15px;
+	margin-left:5px;
+	margin-right:5px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+#middleHome {
+	clear:both;
+	padding: 5px 15px;
+	margin-left:5px;
+	margin-right:5px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	background-color: #fff !important;
+}
+
+#bottomHome {
+	clear:both;
+	padding: 5px 15px;
+	float: left;
+	margin-left:5px;
+	margin-top: 5px;
+	margin-right:5px;
+	
+}
+
+.map-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 35px;
+    height: 0;
+    overflow: hidden;
+    margin-left:5px;
+	margin-top: 5px;
+	margin-right:5px;
+	margin-bottom:15px;
+}
+
+.map-container iframe {
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+#contentHome, #middleHome, #bottomHome {
+	-webkit-font-smoothing: antialiased;
+	color: #000;
+	font-family: verdana, sans-serif;
+	font-size: 13px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: normal;
+}
+
+#contentHome {
+	color: #fff;
+}
+
+#content {
+    clear:both;
+	width: 290px;
+	float: left;
+	padding: 5px 15px;
+	margin-left:5px;
+	margin-top: 5px;
+}
+
+#contentPrices {
+    clear:both;
+	float: left;
+	padding: 5px 15px;
+	margin-left:5px;
+	margin-top: 5px;
+}
+
+.table {
+display: table;
+border-collapse: separate;
+-webkit-border-horizontal-spacing: 2px;
+-webkit-border-vertical-spacing: 2px;
+border-top-color: gray;
+border-right-color: gray;
+border-bottom-color: gray;
+border-left-color: gray;
+border-collapse: collapse;
+border-spacing: 0;
+max-width: 100%;
+background-color: transparent;
+width: 100%;
+margin-bottom: 20px;
+}
+
+.table-bordered {
+border: 1px solid #ebebeb;
+}
+
+#middle {
+	width: 289px; 
+	float: left;
+	padding: 5px 15px;
+	margin: 5px;
+}
+
+#sidebar {
+	width: 260px;
+	padding: 5px 15px;
+	float: left;
+	margin-top: 5px;
+	margin-right:5px;
+}
+
+#footer {
+	clear: both;
+	padding: 5px 15px;
+	border: 0 !important;
+	background: #444;
+	overflow: hidden;
+}
+
+#footerMenu {
+	clear: both;
+	font-size: 12px;
+}
+
+.middleHome .gwt-Image {
+margin-left: 12px;
+margin-top: 20px;
+margin-bottom: 20px;
+max-width: 100% !important; 
+  height: auto !important;    
+}
+
+#footerMenuItem {
+	float: left;
+	padding: 5px;
+	color: white;
+	
+}
+
+#footerInfoItem {
+	float:right;
+	color: white;
+	padding: 5px;
+}
+    
+
+ul {
+	list-style-type:none;
+	margin:0;
+	padding:0;
+	position: absolute;
+}
+
+li {
+	display:inline-block;
+	float: left;
+	margin-right: 1px;
+}
+
+li a {
+	display:block;
+	min-width:55px;
+	height: 50px;
+	padding-right:10px;
+	padding-left:5px;
+	text-align: center;
+	line-height: 50px;
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-size: 13px;
+	font-weight: 600;
+	color: #dce7f0 !important;
+	background: rgb(96, 145, 186);;
+	text-decoration: none;
+}
+
+li:hover a {
+	background: rgb(96, 145, 186);
+	color: #fff !important;
+}
+
+li:hover ul a {
+	background: rgb(96, 145, 186);;
+	height: 40px;
+	line-height: 40px;
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-size: 13px;
+	color: #dce7f0 !important;
+}
+
+li:hover ul a:hover {
+	background: rgb(96, 145, 186);;
+	color: #fff !important;
+}
+
+li ul {
+	display: none;
+}
+
+li ul li {
+	display: block;
+	float: none;
+}
+
+li ul li a {
+	width: auto;
+	min-width: 100px;
+	padding: 0 20px;
+}
+
+ul li a:hover + .hidden, .hidden:hover {
+	display: block;
+}
+
+.show-menu {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	text-decoration: none;
+	font-size: 15px;
+	color: #fff;
+	background: rgb(96, 145, 186);;
+	text-align: center;
+	padding: 15px 0;
+	display: none;
+}
+
+input[type=checkbox]{
+    display: none;
+    -webkit-appearance: none;
+}
+
+input[type=checkbox]:checked ~ #menu{
+    display: block;
+}
+
+
+
+@media screen and (max-width: 980px) {
+	#pagewrap {
+		width: 94%;
+	}
+	#content {
+		width: 41%;
+		padding: 1% 4%;
+	}
+	#middle {
+		width: 41%;
+		padding: 1% 4%;
+		margin: 0px 0px 5px 5px;
+		float: right;
+	}
+	#sidebar {
+		clear: both;
+		padding: 1% 4%;
+		width: auto;
+		float: none;
+	}
+	#header,#footer {
+		padding: 1% 4%;
+	}
+	ul {
+		position: static;
+		display: none;
+	}
+	li {
+		margin-bottom: 1px;
+	}
+	ul li, li a {
+		width: 100%;
+	}
+	.show-menu {
+		display:block;
+	}
+    
+}
+
+@media screen and (max-width: 600px) {
+	#content {
+		width: auto;
+		float: none;
+	}
+	#middle {
+		width: auto;
+		float: none;
+		margin-left: 0px;
+	}
+	#sidebar {
+		width: auto;
+		float: none;
+	}
+	ul {
+		position: static;
+		display: none;
+	}
+	li {
+		margin-bottom: 1px;
+	}
+	ul li, li a {
+		width: 100%;
+	}
+	.show-menu {
+		display:block;
+	}
+ 
+}
+
+@media screen and (max-width : 760px){
+	ul {
+		position: static;
+		display: none;
+	}
+	li {
+		margin-bottom: 1px;
+	}
+	ul li, li a {
+		width: 100%;
+	}
+	.show-menu {
+		display:block;
+	}
+}
+
+
+#content, #contentHome, #middleHome, #bottonHome  {
+	background: #f8f8f8;
+}
+
+#sidebar {
+	background: #f0efef;
+}
+
+#header,#content,#middle,#sidebar, #contentHome, #middleHome {
+	margin-bottom: 5px;
+}
+
+#bottomHome {
+	margin-bottom: 20px;
+}
+
+#pagewrap,#header,#content,#middle,#sidebar,#footer, #contentHome, #middleHome, #bottomHome {
+	border: solid 1px #ccc;
+}
+
+
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+</style>
+</head>
+
+<!--                                           -->
+<!-- The body can have arbitrary html, or      -->
+<!-- you can leave the body empty if you want  -->
+<!-- to create a completely dynamic UI.        -->
+<!--                                           -->
+<body>
+	<!-- OPTIONAL: include this if you want history support -->
+	<iframe src="javascript:''" id="__gwt_historyFrame" tabIndex='-1'
+		style="position: absolute; width: 0; height: 0; border: 0"></iframe>
+
+</body>
+</html>
