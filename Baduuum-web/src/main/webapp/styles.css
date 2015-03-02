@@ -7,3 +7,12 @@
 	font-size: 12px;
 	font-family: "open sans", arial, sans-serif;
 }
+
+.container {
+	border: 1px solid;
+	padding: 0px !important;
+}
+
+.noborder {
+	border: none !important;
+}
