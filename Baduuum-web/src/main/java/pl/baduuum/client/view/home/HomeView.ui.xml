@@ -7,12 +7,13 @@
 	<ui:with field='res' type='pl.baduuum.client.StyleResources' />
 
 	<g:HTMLPanel>
+		<div class="wraper">
 		<div class="container">
 		
-		 	<c:HeaderWidgetView ui:field="header" />
+		  	<c:HeaderWidgetView ui:field="header" /> 
 			<c:MenuWidgetView ui:field="menu" />
 
-			<div id="contentHome">
+		<!-- 	<div id="contentHome">
 				<h3>Witaj na stronie sali prób Baduuum!</h3>
 				<p>Baduuum to miejsce wyjątkowe, powstałe wskutek realizacji
 					marzenia o sali prób gdzie każdy może poćwiczyć sam lub z własnym
@@ -62,7 +63,8 @@
 
 			</div>
 
-			<c:FooterWidgetView ui:field="footer" />
+			<c:FooterWidgetView ui:field="footer" /> -->
+		</div>
 		</div>
 	</g:HTMLPanel>
 </ui:UiBinder> 

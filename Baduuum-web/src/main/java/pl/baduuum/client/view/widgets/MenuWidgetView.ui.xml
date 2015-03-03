@@ -3,45 +3,24 @@
 	xmlns:g="urn:import:com.google.gwt.user.client.ui">
 
 	<g:HTMLPanel>
+
+      <!-- Static navbar -->
 	<nav class="navbar navbar-default">
 		<div class="container-fluid">
-			<!-- Brand and toggle get grouped for better mobile display -->
 			<div class="navbar-header">
 				<button type="button" class="navbar-toggle collapsed"
-					data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-					<span class="sr-only">Toggle navigation</span>
+					data-toggle="collapse" data-target="#navbar" aria-expanded="false"
+					aria-controls="navbar">
+					<span class="sr-only">Menu</span>
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</button>
-				<a class="navbar-brand" href="#">Brand</a>
+
 			</div>
-			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			<div id="navbar" class="navbar-collapse collapse">
 				<ul class="nav navbar-nav">
 					<li class="active">
-						<a href="#">Link </a>
-					</li>
-					<li class="active">
-						<a href="#">Link </a>
-					</li>
-					<li class="active">
-						<a href="#">Link </a>
-					</li>
-					<li class="active">
-						<a href="#">Link </a>
-					</li>
-
-				</ul>
-			</div>
-		</div>
-	</nav>
-	
-	<!--  
-	<div id="headerMenu">
-				<label for="show-menu" class="show-menu">MENU</label>
-				<input type="checkbox" id="show-menu" role="button" />
-				<ul id="menu">
-					<li>
 						<a href="#home">HOME</a>
 					</li>
 					<li>
@@ -49,19 +28,23 @@
 					</li>
 					<li>
 						<a href="#calendar">GRAFIK</a>
-					</li>			
+					</li>
 					<li>
 						<a href="#reservation">REZERWACJA</a>
-					</li>							
+					</li>
 					<li>
 						<a href="#room">SALA</a>
 					</li>
 					<li>
 						<a href="#studio">STUDIO</a>
-					</li>				
-					<li>
-						<a href="#">GALERIA</a>
-						<ul class="hidden">
+					</li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+							aria-expanded="false">
+							GALERIA
+							<span class="caret"></span>
+						</a>
+						<ul class="dropdown-menu" role="menu">
 							<li>
 								<a href="#galleryRoom">SALA TWIN PEAKS</a>
 							</li>
@@ -70,17 +53,20 @@
 							</li>
 						</ul>
 					</li>
+
 					<li>
 						<a href="#regulations">REGULAMIN</a>
 					</li>
+
 					<li>
 						<a href="#faq">FAQ</a>
 					</li>
 					<li>
 						<a href="#contact">KONTAKT</a>
-					</li>					
+					</li>
 				</ul>
-			</div> 
-			-->
+			</div><!--/.nav-collapse -->
+		</div><!--/.container-fluid -->
+	</nav>
 	</g:HTMLPanel>
 </ui:UiBinder>  

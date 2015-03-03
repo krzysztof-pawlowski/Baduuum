@@ -3,7 +3,6 @@
 	xmlns:g="urn:import:com.google.gwt.user.client.ui">
 	<ui:with field='images' type='pl.baduuum.client.ImageResources' />
 	<g:HTMLPanel>
-		<div class="container noborder">
 		<div class="row">
 		<div class="col-md-12">&nbsp;</div>
 		</div>
@@ -28,6 +27,5 @@
 					</a>
 				</div>
 			</div>
-		</div>
 	</g:HTMLPanel>
 </ui:UiBinder>  
