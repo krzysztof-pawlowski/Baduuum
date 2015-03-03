@@ -3,7 +3,7 @@ var __gwtModuleFunction = $wnd.baduuum;
 var $sendStats = __gwtModuleFunction.__sendStats;
 $sendStats('moduleStartup', 'moduleEvalStart');
 var $gwt_version = "2.7.0";
-var $strongName = '425F1509FBDBA43D0424F31E0CDE16E6';
+var $strongName = '9DFDB7DA8C9112F9B14108A429E7B9A8';
 var $gwt = {};
 var $doc = $wnd.document;
 var $moduleName, $moduleBase;
@@ -71444,10 +71444,10 @@ function CalendarViewImpl_BaduuumCalendarViewUiBinderImpl$Widgets_1_g$(this$0_0_
   this.build_style_7_g$();
   this.build_domId0_12_g$();
   this.build_domId1_11_g$();
-  this.build_domId2_11_g$();
+  this.build_domId2_10_g$();
   this.build_domId0Element_12_g$();
   this.build_domId1Element_11_g$();
-  this.build_domId2Element_11_g$();
+  this.build_domId2Element_10_g$();
 }
 
 defineClass_0_g$(1709, 1, {1:1, 1709:1}, CalendarViewImpl_BaduuumCalendarViewUiBinderImpl$Widgets_1_g$);
@@ -71486,15 +71486,15 @@ _.build_domId1Element_11_g$ = function build_domId1Element_0_g$(){
   return this.domId1Element_0_g$;
 }
 ;
-_.build_domId2_11_g$ = function build_domId2_0_g$(){
+_.build_domId2_10_g$ = function build_domId2_0_g$(){
   $clinit_CalendarViewImpl_BaduuumCalendarViewUiBinderImpl$Widgets_0_g$();
   this.domId2_0_g$ = $createUniqueId_0_g$(get_12_g$());
   return this.domId2_0_g$;
 }
 ;
-_.build_domId2Element_11_g$ = function build_domId2Element_0_g$(){
+_.build_domId2Element_10_g$ = function build_domId2Element_0_g$(){
   $clinit_CalendarViewImpl_BaduuumCalendarViewUiBinderImpl$Widgets_0_g$();
-  this.domId2Element_0_g$ = new LazyDomElement_1_g$(this.get_domId2_11_g$());
+  this.domId2Element_0_g$ = new LazyDomElement_1_g$(this.get_domId2_10_g$());
   return this.domId2Element_0_g$;
 }
 ;
@@ -71506,16 +71506,16 @@ _.build_f_HTMLPanel1_14_g$ = function build_f_HTMLPanel1_0_g$(){
     __attachRecord___0_g$ = attachToDom_0_g$(f_HTMLPanel1_0_g$.getElement_5_g$());
     this.get_domId0Element_12_g$().get_76_g$();
     this.get_domId1Element_11_g$().get_76_g$();
-    this.get_domId2Element_11_g$().get_76_g$();
+    this.get_domId2Element_10_g$().get_76_g$();
     __attachRecord___0_g$.detach_1_g$();
   }
   f_HTMLPanel1_0_g$.addAndReplaceElement_9_g$(this.get_header_11_g$(), this.get_domId0Element_12_g$().get_76_g$());
   f_HTMLPanel1_0_g$.addAndReplaceElement_9_g$(this.get_menu_11_g$(), this.get_domId1Element_11_g$().get_76_g$());
-  f_HTMLPanel1_0_g$.addAndReplaceElement_9_g$(this.get_footer_11_g$(), this.get_domId2Element_11_g$().get_76_g$());
+  f_HTMLPanel1_0_g$.addAndReplaceElement_9_g$(this.get_footer_10_g$(), this.get_domId2Element_10_g$().get_76_g$());
   return f_HTMLPanel1_0_g$;
 }
 ;
-_.build_footer_11_g$ = function build_footer_0_g$(){
+_.build_footer_10_g$ = function build_footer_0_g$(){
   $clinit_CalendarViewImpl_BaduuumCalendarViewUiBinderImpl$Widgets_0_g$();
   var footer_0_g$;
   footer_0_g$ = dynamicCast_0_g$(dynamicCast_0_g$(new FooterWidgetView_1_g$, 1814), 1814);
@@ -71576,12 +71576,12 @@ _.get_domId1Element_11_g$ = function get_domId1Element_0_g$(){
   return this.domId1Element_0_g$;
 }
 ;
-_.get_domId2_11_g$ = function get_domId2_0_g$(){
+_.get_domId2_10_g$ = function get_domId2_0_g$(){
   $clinit_CalendarViewImpl_BaduuumCalendarViewUiBinderImpl$Widgets_0_g$();
   return this.domId2_0_g$;
 }
 ;
-_.get_domId2Element_11_g$ = function get_domId2Element_0_g$(){
+_.get_domId2Element_10_g$ = function get_domId2Element_0_g$(){
   $clinit_CalendarViewImpl_BaduuumCalendarViewUiBinderImpl$Widgets_0_g$();
   return this.domId2Element_0_g$;
 }
@@ -71591,9 +71591,9 @@ _.get_f_HTMLPanel1_14_g$ = function get_f_HTMLPanel1_0_g$(){
   return this.build_f_HTMLPanel1_14_g$();
 }
 ;
-_.get_footer_11_g$ = function get_footer_0_g$(){
+_.get_footer_10_g$ = function get_footer_0_g$(){
   $clinit_CalendarViewImpl_BaduuumCalendarViewUiBinderImpl$Widgets_0_g$();
-  return this.build_footer_11_g$();
+  return this.build_footer_10_g$();
 }
 ;
 _.get_header_11_g$ = function get_header_0_g$(){
@@ -71617,7 +71617,7 @@ _.get_style_7_g$ = function get_style_0_g$(){
 }
 ;
 _.template_html1_14_g$ = function template_html1_0_g$(){
-  return this.this$01_79_g$.template_2_g$.html1_14_g$(this.get_domId0_12_g$(), this.get_domId1_11_g$(), this.get_domId2_11_g$());
+  return this.this$01_79_g$.template_2_g$.html1_14_g$(this.get_domId0_12_g$(), this.get_domId1_11_g$(), this.get_domId2_10_g$());
 }
 ;
 var Lpl_baduuum_client_view_calendar_CalendarViewImpl_1BaduuumCalendarViewUiBinderImpl$Widgets_2_classLit_0_g$ = createForClass_0_g$('pl.baduuum.client.view.calendar', 'CalendarViewImpl_BaduuumCalendarViewUiBinderImpl/Widgets', 1709, Ljava_lang_Object_2_classLit_0_g$);
@@ -71846,10 +71846,10 @@ function ContactViewImpl_BaduuumContactViewUiBinderImpl$Widgets_1_g$(this$0_0_g$
   this.build_style_8_g$();
   this.build_domId0_13_g$();
   this.build_domId1_12_g$();
-  this.build_domId2_12_g$();
+  this.build_domId2_11_g$();
   this.build_domId0Element_13_g$();
   this.build_domId1Element_12_g$();
-  this.build_domId2Element_12_g$();
+  this.build_domId2Element_11_g$();
 }
 
 defineClass_0_g$(1720, 1, {1:1, 1720:1}, ContactViewImpl_BaduuumContactViewUiBinderImpl$Widgets_1_g$);
@@ -71888,15 +71888,15 @@ _.build_domId1Element_12_g$ = function build_domId1Element_1_g$(){
   return this.domId1Element_1_g$;
 }
 ;
-_.build_domId2_12_g$ = function build_domId2_1_g$(){
+_.build_domId2_11_g$ = function build_domId2_1_g$(){
   $clinit_ContactViewImpl_BaduuumContactViewUiBinderImpl$Widgets_0_g$();
   this.domId2_1_g$ = $createUniqueId_0_g$(get_12_g$());
   return this.domId2_1_g$;
 }
 ;
-_.build_domId2Element_12_g$ = function build_domId2Element_1_g$(){
+_.build_domId2Element_11_g$ = function build_domId2Element_1_g$(){
   $clinit_ContactViewImpl_BaduuumContactViewUiBinderImpl$Widgets_0_g$();
-  this.domId2Element_1_g$ = new LazyDomElement_1_g$(this.get_domId2_12_g$());
+  this.domId2Element_1_g$ = new LazyDomElement_1_g$(this.get_domId2_11_g$());
   return this.domId2Element_1_g$;
 }
 ;
@@ -71908,16 +71908,16 @@ _.build_f_HTMLPanel1_15_g$ = function build_f_HTMLPanel1_1_g$(){
     __attachRecord___0_g$ = attachToDom_0_g$(f_HTMLPanel1_0_g$.getElement_5_g$());
     this.get_domId0Element_13_g$().get_76_g$();
     this.get_domId1Element_12_g$().get_76_g$();
-    this.get_domId2Element_12_g$().get_76_g$();
+    this.get_domId2Element_11_g$().get_76_g$();
     __attachRecord___0_g$.detach_1_g$();
   }
   f_HTMLPanel1_0_g$.addAndReplaceElement_9_g$(this.get_header_12_g$(), this.get_domId0Element_13_g$().get_76_g$());
   f_HTMLPanel1_0_g$.addAndReplaceElement_9_g$(this.get_menu_12_g$(), this.get_domId1Element_12_g$().get_76_g$());
-  f_HTMLPanel1_0_g$.addAndReplaceElement_9_g$(this.get_footer_12_g$(), this.get_domId2Element_12_g$().get_76_g$());
+  f_HTMLPanel1_0_g$.addAndReplaceElement_9_g$(this.get_footer_11_g$(), this.get_domId2Element_11_g$().get_76_g$());
   return f_HTMLPanel1_0_g$;
 }
 ;
-_.build_footer_12_g$ = function build_footer_1_g$(){
+_.build_footer_11_g$ = function build_footer_1_g$(){
   $clinit_ContactViewImpl_BaduuumContactViewUiBinderImpl$Widgets_0_g$();
   var footer_0_g$;
   footer_0_g$ = dynamicCast_0_g$(dynamicCast_0_g$(new FooterWidgetView_1_g$, 1814), 1814);
@@ -71978,12 +71978,12 @@ _.get_domId1Element_12_g$ = function get_domId1Element_1_g$(){
   return this.domId1Element_1_g$;
 }
 ;
-_.get_domId2_12_g$ = function get_domId2_1_g$(){
+_.get_domId2_11_g$ = function get_domId2_1_g$(){
   $clinit_ContactViewImpl_BaduuumContactViewUiBinderImpl$Widgets_0_g$();
   return this.domId2_1_g$;
 }
 ;
-_.get_domId2Element_12_g$ = function get_domId2Element_1_g$(){
+_.get_domId2Element_11_g$ = function get_domId2Element_1_g$(){
   $clinit_ContactViewImpl_BaduuumContactViewUiBinderImpl$Widgets_0_g$();
   return this.domId2Element_1_g$;
 }
@@ -71993,9 +71993,9 @@ _.get_f_HTMLPanel1_15_g$ = function get_f_HTMLPanel1_1_g$(){
   return this.build_f_HTMLPanel1_15_g$();
 }
 ;
-_.get_footer_12_g$ = function get_footer_1_g$(){
+_.get_footer_11_g$ = function get_footer_1_g$(){
   $clinit_ContactViewImpl_BaduuumContactViewUiBinderImpl$Widgets_0_g$();
-  return this.build_footer_12_g$();
+  return this.build_footer_11_g$();
 }
 ;
 _.get_header_12_g$ = function get_header_1_g$(){
@@ -72019,7 +72019,7 @@ _.get_style_8_g$ = function get_style_1_g$(){
 }
 ;
 _.template_html1_15_g$ = function template_html1_1_g$(){
-  return this.this$01_81_g$.template_3_g$.html1_14_g$(this.get_domId0_13_g$(), this.get_domId1_12_g$(), this.get_domId2_12_g$());
+  return this.this$01_81_g$.template_3_g$.html1_14_g$(this.get_domId0_13_g$(), this.get_domId1_12_g$(), this.get_domId2_11_g$());
 }
 ;
 var Lpl_baduuum_client_view_contact_ContactViewImpl_1BaduuumContactViewUiBinderImpl$Widgets_2_classLit_0_g$ = createForClass_0_g$('pl.baduuum.client.view.contact', 'ContactViewImpl_BaduuumContactViewUiBinderImpl/Widgets', 1720, Ljava_lang_Object_2_classLit_0_g$);
@@ -72248,10 +72248,10 @@ function FaqViewImpl_BaduuumFaqViewUiBinderImpl$Widgets_1_g$(this$0_0_g$, owner_
   this.build_style_9_g$();
   this.build_domId0_14_g$();
   this.build_domId1_13_g$();
-  this.build_domId2_13_g$();
+  this.build_domId2_12_g$();
   this.build_domId0Element_14_g$();
   this.build_domId1Element_13_g$();
-  this.build_domId2Element_13_g$();
+  this.build_domId2Element_12_g$();
 }
 
 defineClass_0_g$(1731, 1, {1:1, 1731:1}, FaqViewImpl_BaduuumFaqViewUiBinderImpl$Widgets_1_g$);
@@ -72290,15 +72290,15 @@ _.build_domId1Element_13_g$ = function build_domId1Element_2_g$(){
   return this.domId1Element_2_g$;
 }
 ;
-_.build_domId2_13_g$ = function build_domId2_2_g$(){
+_.build_domId2_12_g$ = function build_domId2_2_g$(){
   $clinit_FaqViewImpl_BaduuumFaqViewUiBinderImpl$Widgets_0_g$();
   this.domId2_2_g$ = $createUniqueId_0_g$(get_12_g$());
   return this.domId2_2_g$;
 }
 ;
-_.build_domId2Element_13_g$ = function build_domId2Element_2_g$(){
+_.build_domId2Element_12_g$ = function build_domId2Element_2_g$(){
   $clinit_FaqViewImpl_BaduuumFaqViewUiBinderImpl$Widgets_0_g$();
-  this.domId2Element_2_g$ = new LazyDomElement_1_g$(this.get_domId2_13_g$());
+  this.domId2Element_2_g$ = new LazyDomElement_1_g$(this.get_domId2_12_g$());
   return this.domId2Element_2_g$;
 }
 ;
@@ -72310,16 +72310,16 @@ _.build_f_HTMLPanel1_16_g$ = function build_f_HTMLPanel1_2_g$(){
     __attachRecord___0_g$ = attachToDom_0_g$(f_HTMLPanel1_0_g$.getElement_5_g$());
     this.get_domId0Element_14_g$().get_76_g$();
     this.get_domId1Element_13_g$().get_76_g$();
-    this.get_domId2Element_13_g$().get_76_g$();
+    this.get_domId2Element_12_g$().get_76_g$();
     __attachRecord___0_g$.detach_1_g$();
   }
   f_HTMLPanel1_0_g$.addAndReplaceElement_9_g$(this.get_header_13_g$(), this.get_domId0Element_14_g$().get_76_g$());
   f_HTMLPanel1_0_g$.addAndReplaceElement_9_g$(this.get_menu_13_g$(), this.get_domId1Element_13_g$().get_76_g$());
-  f_HTMLPanel1_0_g$.addAndReplaceElement_9_g$(this.get_footer_13_g$(), this.get_domId2Element_13_g$().get_76_g$());
+  f_HTMLPanel1_0_g$.addAndReplaceElement_9_g$(this.get_footer_12_g$(), this.get_domId2Element_12_g$().get_76_g$());
   return f_HTMLPanel1_0_g$;
 }
 ;
-_.build_footer_13_g$ = function build_footer_2_g$(){
+_.build_footer_12_g$ = function build_footer_2_g$(){
   $clinit_FaqViewImpl_BaduuumFaqViewUiBinderImpl$Widgets_0_g$();
   var footer_0_g$;
   footer_0_g$ = dynamicCast_0_g$(dynamicCast_0_g$(new FooterWidgetView_1_g$, 1814), 1814);
@@ -72380,12 +72380,12 @@ _.get_domId1Element_13_g$ = function get_domId1Element_2_g$(){
   return this.domId1Element_2_g$;
 }
 ;
-_.get_domId2_13_g$ = function get_domId2_2_g$(){
+_.get_domId2_12_g$ = function get_domId2_2_g$(){
   $clinit_FaqViewImpl_BaduuumFaqViewUiBinderImpl$Widgets_0_g$();
   return this.domId2_2_g$;
 }
 ;
-_.get_domId2Element_13_g$ = function get_domId2Element_2_g$(){
+_.get_domId2Element_12_g$ = function get_domId2Element_2_g$(){
   $clinit_FaqViewImpl_BaduuumFaqViewUiBinderImpl$Widgets_0_g$();
   return this.domId2Element_2_g$;
 }
@@ -72395,9 +72395,9 @@ _.get_f_HTMLPanel1_16_g$ = function get_f_HTMLPanel1_2_g$(){
   return this.build_f_HTMLPanel1_16_g$();
 }
 ;
-_.get_footer_13_g$ = function get_footer_2_g$(){
+_.get_footer_12_g$ = function get_footer_2_g$(){
   $clinit_FaqViewImpl_BaduuumFaqViewUiBinderImpl$Widgets_0_g$();
-  return this.build_footer_13_g$();
+  return this.build_footer_12_g$();
 }
 ;
 _.get_header_13_g$ = function get_header_2_g$(){
@@ -72421,7 +72421,7 @@ _.get_style_9_g$ = function get_style_2_g$(){
 }
 ;
 _.template_html1_16_g$ = function template_html1_2_g$(){
-  return this.this$01_83_g$.template_4_g$.html1_14_g$(this.get_domId0_14_g$(), this.get_domId1_13_g$(), this.get_domId2_13_g$());
+  return this.this$01_83_g$.template_4_g$.html1_14_g$(this.get_domId0_14_g$(), this.get_domId1_13_g$(), this.get_domId2_12_g$());
 }
 ;
 var Lpl_baduuum_client_view_faq_FaqViewImpl_1BaduuumFaqViewUiBinderImpl$Widgets_2_classLit_0_g$ = createForClass_0_g$('pl.baduuum.client.view.faq', 'FaqViewImpl_BaduuumFaqViewUiBinderImpl/Widgets', 1731, Ljava_lang_Object_2_classLit_0_g$);
@@ -72650,10 +72650,10 @@ function GalleryBuildViewImpl_BaduuumGalleryBuildViewUiBinderImpl$Widgets_1_g$(t
   this.build_style_10_g$();
   this.build_domId0_15_g$();
   this.build_domId1_14_g$();
-  this.build_domId2_14_g$();
+  this.build_domId2_13_g$();
   this.build_domId0Element_15_g$();
   this.build_domId1Element_14_g$();
-  this.build_domId2Element_14_g$();
+  this.build_domId2Element_13_g$();
 }
 
 defineClass_0_g$(1742, 1, {1:1, 1742:1}, GalleryBuildViewImpl_BaduuumGalleryBuildViewUiBinderImpl$Widgets_1_g$);
@@ -72692,15 +72692,15 @@ _.build_domId1Element_14_g$ = function build_domId1Element_3_g$(){
   return this.domId1Element_3_g$;
 }
 ;
-_.build_domId2_14_g$ = function build_domId2_3_g$(){
+_.build_domId2_13_g$ = function build_domId2_3_g$(){
   $clinit_GalleryBuildViewImpl_BaduuumGalleryBuildViewUiBinderImpl$Widgets_0_g$();
   this.domId2_3_g$ = $createUniqueId_0_g$(get_12_g$());
   return this.domId2_3_g$;
 }
 ;
-_.build_domId2Element_14_g$ = function build_domId2Element_3_g$(){
+_.build_domId2Element_13_g$ = function build_domId2Element_3_g$(){
   $clinit_GalleryBuildViewImpl_BaduuumGalleryBuildViewUiBinderImpl$Widgets_0_g$();
-  this.domId2Element_3_g$ = new LazyDomElement_1_g$(this.get_domId2_14_g$());
+  this.domId2Element_3_g$ = new LazyDomElement_1_g$(this.get_domId2_13_g$());
   return this.domId2Element_3_g$;
 }
 ;
@@ -72712,16 +72712,16 @@ _.build_f_HTMLPanel1_17_g$ = function build_f_HTMLPanel1_3_g$(){
     __attachRecord___0_g$ = attachToDom_0_g$(f_HTMLPanel1_0_g$.getElement_5_g$());
     this.get_domId0Element_15_g$().get_76_g$();
     this.get_domId1Element_14_g$().get_76_g$();
-    this.get_domId2Element_14_g$().get_76_g$();
+    this.get_domId2Element_13_g$().get_76_g$();
     __attachRecord___0_g$.detach_1_g$();
   }
   f_HTMLPanel1_0_g$.addAndReplaceElement_9_g$(this.get_header_14_g$(), this.get_domId0Element_15_g$().get_76_g$());
   f_HTMLPanel1_0_g$.addAndReplaceElement_9_g$(this.get_menu_14_g$(), this.get_domId1Element_14_g$().get_76_g$());
-  f_HTMLPanel1_0_g$.addAndReplaceElement_9_g$(this.get_footer_14_g$(), this.get_domId2Element_14_g$().get_76_g$());
+  f_HTMLPanel1_0_g$.addAndReplaceElement_9_g$(this.get_footer_13_g$(), this.get_domId2Element_13_g$().get_76_g$());
   return f_HTMLPanel1_0_g$;
 }
 ;
-_.build_footer_14_g$ = function build_footer_3_g$(){
+_.build_footer_13_g$ = function build_footer_3_g$(){
   $clinit_GalleryBuildViewImpl_BaduuumGalleryBuildViewUiBinderImpl$Widgets_0_g$();
   var footer_0_g$;
   footer_0_g$ = dynamicCast_0_g$(dynamicCast_0_g$(new FooterWidgetView_1_g$, 1814), 1814);
@@ -72782,12 +72782,12 @@ _.get_domId1Element_14_g$ = function get_domId1Element_3_g$(){
   return this.domId1Element_3_g$;
 }
 ;
-_.get_domId2_14_g$ = function get_domId2_3_g$(){
+_.get_domId2_13_g$ = function get_domId2_3_g$(){
   $clinit_GalleryBuildViewImpl_BaduuumGalleryBuildViewUiBinderImpl$Widgets_0_g$();
   return this.domId2_3_g$;
 }
 ;
-_.get_domId2Element_14_g$ = function get_domId2Element_3_g$(){
+_.get_domId2Element_13_g$ = function get_domId2Element_3_g$(){
   $clinit_GalleryBuildViewImpl_BaduuumGalleryBuildViewUiBinderImpl$Widgets_0_g$();
   return this.domId2Element_3_g$;
 }
@@ -72797,9 +72797,9 @@ _.get_f_HTMLPanel1_17_g$ = function get_f_HTMLPanel1_3_g$(){
   return this.build_f_HTMLPanel1_17_g$();
 }
 ;
-_.get_footer_14_g$ = function get_footer_3_g$(){
+_.get_footer_13_g$ = function get_footer_3_g$(){
   $clinit_GalleryBuildViewImpl_BaduuumGalleryBuildViewUiBinderImpl$Widgets_0_g$();
-  return this.build_footer_14_g$();
+  return this.build_footer_13_g$();
 }
 ;
 _.get_header_14_g$ = function get_header_3_g$(){
@@ -72823,7 +72823,7 @@ _.get_style_10_g$ = function get_style_3_g$(){
 }
 ;
 _.template_html1_17_g$ = function template_html1_3_g$(){
-  return this.this$01_85_g$.template_5_g$.html1_14_g$(this.get_domId0_15_g$(), this.get_domId1_14_g$(), this.get_domId2_14_g$());
+  return this.this$01_85_g$.template_5_g$.html1_14_g$(this.get_domId0_15_g$(), this.get_domId1_14_g$(), this.get_domId2_13_g$());
 }
 ;
 var Lpl_baduuum_client_view_gallery_GalleryBuildViewImpl_1BaduuumGalleryBuildViewUiBinderImpl$Widgets_2_classLit_0_g$ = createForClass_0_g$('pl.baduuum.client.view.gallery', 'GalleryBuildViewImpl_BaduuumGalleryBuildViewUiBinderImpl/Widgets', 1742, Ljava_lang_Object_2_classLit_0_g$);
@@ -73052,10 +73052,10 @@ function GalleryRoomViewImpl_BaduuumGalleryRoomViewUiBinderImpl$Widgets_1_g$(thi
   this.build_style_11_g$();
   this.build_domId0_16_g$();
   this.build_domId1_15_g$();
-  this.build_domId2_15_g$();
+  this.build_domId2_14_g$();
   this.build_domId0Element_16_g$();
   this.build_domId1Element_15_g$();
-  this.build_domId2Element_15_g$();
+  this.build_domId2Element_14_g$();
 }
 
 defineClass_0_g$(1753, 1, {1:1, 1753:1}, GalleryRoomViewImpl_BaduuumGalleryRoomViewUiBinderImpl$Widgets_1_g$);
@@ -73094,15 +73094,15 @@ _.build_domId1Element_15_g$ = function build_domId1Element_4_g$(){
   return this.domId1Element_4_g$;
 }
 ;
-_.build_domId2_15_g$ = function build_domId2_4_g$(){
+_.build_domId2_14_g$ = function build_domId2_4_g$(){
   $clinit_GalleryRoomViewImpl_BaduuumGalleryRoomViewUiBinderImpl$Widgets_0_g$();
   this.domId2_4_g$ = $createUniqueId_0_g$(get_12_g$());
   return this.domId2_4_g$;
 }
 ;
-_.build_domId2Element_15_g$ = function build_domId2Element_4_g$(){
+_.build_domId2Element_14_g$ = function build_domId2Element_4_g$(){
   $clinit_GalleryRoomViewImpl_BaduuumGalleryRoomViewUiBinderImpl$Widgets_0_g$();
-  this.domId2Element_4_g$ = new LazyDomElement_1_g$(this.get_domId2_15_g$());
+  this.domId2Element_4_g$ = new LazyDomElement_1_g$(this.get_domId2_14_g$());
   return this.domId2Element_4_g$;
 }
 ;
@@ -73114,16 +73114,16 @@ _.build_f_HTMLPanel1_18_g$ = function build_f_HTMLPanel1_4_g$(){
     __attachRecord___0_g$ = attachToDom_0_g$(f_HTMLPanel1_0_g$.getElement_5_g$());
     this.get_domId0Element_16_g$().get_76_g$();
     this.get_domId1Element_15_g$().get_76_g$();
-    this.get_domId2Element_15_g$().get_76_g$();
+    this.get_domId2Element_14_g$().get_76_g$();
     __attachRecord___0_g$.detach_1_g$();
   }
   f_HTMLPanel1_0_g$.addAndReplaceElement_9_g$(this.get_header_15_g$(), this.get_domId0Element_16_g$().get_76_g$());
   f_HTMLPanel1_0_g$.addAndReplaceElement_9_g$(this.get_menu_15_g$(), this.get_domId1Element_15_g$().get_76_g$());
-  f_HTMLPanel1_0_g$.addAndReplaceElement_9_g$(this.get_footer_15_g$(), this.get_domId2Element_15_g$().get_76_g$());
+  f_HTMLPanel1_0_g$.addAndReplaceElement_9_g$(this.get_footer_14_g$(), this.get_domId2Element_14_g$().get_76_g$());
   return f_HTMLPanel1_0_g$;
 }
 ;
-_.build_footer_15_g$ = function build_footer_4_g$(){
+_.build_footer_14_g$ = function build_footer_4_g$(){
   $clinit_GalleryRoomViewImpl_BaduuumGalleryRoomViewUiBinderImpl$Widgets_0_g$();
   var footer_0_g$;
   footer_0_g$ = dynamicCast_0_g$(dynamicCast_0_g$(new FooterWidgetView_1_g$, 1814), 1814);
@@ -73184,12 +73184,12 @@ _.get_domId1Element_15_g$ = function get_domId1Element_4_g$(){
   return this.domId1Element_4_g$;
 }
 ;
-_.get_domId2_15_g$ = function get_domId2_4_g$(){
+_.get_domId2_14_g$ = function get_domId2_4_g$(){
   $clinit_GalleryRoomViewImpl_BaduuumGalleryRoomViewUiBinderImpl$Widgets_0_g$();
   return this.domId2_4_g$;
 }
 ;
-_.get_domId2Element_15_g$ = function get_domId2Element_4_g$(){
+_.get_domId2Element_14_g$ = function get_domId2Element_4_g$(){
   $clinit_GalleryRoomViewImpl_BaduuumGalleryRoomViewUiBinderImpl$Widgets_0_g$();
   return this.domId2Element_4_g$;
 }
@@ -73199,9 +73199,9 @@ _.get_f_HTMLPanel1_18_g$ = function get_f_HTMLPanel1_4_g$(){
   return this.build_f_HTMLPanel1_18_g$();
 }
 ;
-_.get_footer_15_g$ = function get_footer_4_g$(){
+_.get_footer_14_g$ = function get_footer_4_g$(){
   $clinit_GalleryRoomViewImpl_BaduuumGalleryRoomViewUiBinderImpl$Widgets_0_g$();
-  return this.build_footer_15_g$();
+  return this.build_footer_14_g$();
 }
 ;
 _.get_header_15_g$ = function get_header_4_g$(){
@@ -73225,7 +73225,7 @@ _.get_style_11_g$ = function get_style_4_g$(){
 }
 ;
 _.template_html1_18_g$ = function template_html1_4_g$(){
-  return this.this$01_87_g$.template_6_g$.html1_14_g$(this.get_domId0_16_g$(), this.get_domId1_15_g$(), this.get_domId2_15_g$());
+  return this.this$01_87_g$.template_6_g$.html1_14_g$(this.get_domId0_16_g$(), this.get_domId1_15_g$(), this.get_domId2_14_g$());
 }
 ;
 var Lpl_baduuum_client_view_gallery_GalleryRoomViewImpl_1BaduuumGalleryRoomViewUiBinderImpl$Widgets_2_classLit_0_g$ = createForClass_0_g$('pl.baduuum.client.view.gallery', 'GalleryRoomViewImpl_BaduuumGalleryRoomViewUiBinderImpl/Widgets', 1753, Ljava_lang_Object_2_classLit_0_g$);
@@ -73452,20 +73452,11 @@ function HomeViewImpl_BaduuumHomeViewUiBinderImpl$Widgets_1_g$(this$0_0_g$, owne
   Object_1_g$.call(this);
   this.$init_2343_g$();
   this.owner_6_g$ = owner_0_g$;
-  this.build_images_2_g$();
   this.build_res_14_g$();
   this.build_domId0_17_g$();
   this.build_domId1_16_g$();
-  this.build_domId2_16_g$();
-  this.build_domId3_1_g$();
-  this.build_domId4_1_g$();
-  this.build_domId5_1_g$();
   this.build_domId0Element_17_g$();
   this.build_domId1Element_16_g$();
-  this.build_domId2Element_16_g$();
-  this.build_domId3Element_1_g$();
-  this.build_domId4Element_1_g$();
-  this.build_domId5Element_1_g$();
 }
 
 defineClass_0_g$(1764, 1, {1:1, 1764:1}, HomeViewImpl_BaduuumHomeViewUiBinderImpl$Widgets_1_g$);
@@ -73504,54 +73495,6 @@ _.build_domId1Element_16_g$ = function build_domId1Element_5_g$(){
   return this.domId1Element_5_g$;
 }
 ;
-_.build_domId2_16_g$ = function build_domId2_5_g$(){
-  $clinit_HomeViewImpl_BaduuumHomeViewUiBinderImpl$Widgets_0_g$();
-  this.domId2_5_g$ = $createUniqueId_0_g$(get_12_g$());
-  return this.domId2_5_g$;
-}
-;
-_.build_domId2Element_16_g$ = function build_domId2Element_5_g$(){
-  $clinit_HomeViewImpl_BaduuumHomeViewUiBinderImpl$Widgets_0_g$();
-  this.domId2Element_5_g$ = new LazyDomElement_1_g$(this.get_domId2_16_g$());
-  return this.domId2Element_5_g$;
-}
-;
-_.build_domId3_1_g$ = function build_domId3_0_g$(){
-  $clinit_HomeViewImpl_BaduuumHomeViewUiBinderImpl$Widgets_0_g$();
-  this.domId3_0_g$ = $createUniqueId_0_g$(get_12_g$());
-  return this.domId3_0_g$;
-}
-;
-_.build_domId3Element_1_g$ = function build_domId3Element_0_g$(){
-  $clinit_HomeViewImpl_BaduuumHomeViewUiBinderImpl$Widgets_0_g$();
-  this.domId3Element_0_g$ = new LazyDomElement_1_g$(this.get_domId3_1_g$());
-  return this.domId3Element_0_g$;
-}
-;
-_.build_domId4_1_g$ = function build_domId4_0_g$(){
-  $clinit_HomeViewImpl_BaduuumHomeViewUiBinderImpl$Widgets_0_g$();
-  this.domId4_0_g$ = $createUniqueId_0_g$(get_12_g$());
-  return this.domId4_0_g$;
-}
-;
-_.build_domId4Element_1_g$ = function build_domId4Element_0_g$(){
-  $clinit_HomeViewImpl_BaduuumHomeViewUiBinderImpl$Widgets_0_g$();
-  this.domId4Element_0_g$ = new LazyDomElement_1_g$(this.get_domId4_1_g$());
-  return this.domId4Element_0_g$;
-}
-;
-_.build_domId5_1_g$ = function build_domId5_0_g$(){
-  $clinit_HomeViewImpl_BaduuumHomeViewUiBinderImpl$Widgets_0_g$();
-  this.domId5_0_g$ = $createUniqueId_0_g$(get_12_g$());
-  return this.domId5_0_g$;
-}
-;
-_.build_domId5Element_1_g$ = function build_domId5Element_0_g$(){
-  $clinit_HomeViewImpl_BaduuumHomeViewUiBinderImpl$Widgets_0_g$();
-  this.domId5Element_0_g$ = new LazyDomElement_1_g$(this.get_domId5_1_g$());
-  return this.domId5Element_0_g$;
-}
-;
 _.build_f_HTMLPanel1_19_g$ = function build_f_HTMLPanel1_5_g$(){
   $clinit_HomeViewImpl_BaduuumHomeViewUiBinderImpl$Widgets_0_g$();
   var __attachRecord___0_g$, f_HTMLPanel1_0_g$;
@@ -73560,47 +73503,11 @@ _.build_f_HTMLPanel1_19_g$ = function build_f_HTMLPanel1_5_g$(){
     __attachRecord___0_g$ = attachToDom_0_g$(f_HTMLPanel1_0_g$.getElement_5_g$());
     this.get_domId0Element_17_g$().get_76_g$();
     this.get_domId1Element_16_g$().get_76_g$();
-    this.get_domId2Element_16_g$().get_76_g$();
-    this.get_domId3Element_1_g$().get_76_g$();
-    this.get_domId4Element_1_g$().get_76_g$();
-    this.get_domId5Element_1_g$().get_76_g$();
     __attachRecord___0_g$.detach_1_g$();
   }
   f_HTMLPanel1_0_g$.addAndReplaceElement_9_g$(this.get_header_16_g$(), this.get_domId0Element_17_g$().get_76_g$());
   f_HTMLPanel1_0_g$.addAndReplaceElement_9_g$(this.get_menu_16_g$(), this.get_domId1Element_16_g$().get_76_g$());
-  f_HTMLPanel1_0_g$.addAndReplaceElement_9_g$(this.get_f_Image2_2_g$(), this.get_domId2Element_16_g$().get_76_g$());
-  f_HTMLPanel1_0_g$.addAndReplaceElement_9_g$(this.get_f_Image3_1_g$(), this.get_domId3Element_1_g$().get_76_g$());
-  f_HTMLPanel1_0_g$.addAndReplaceElement_9_g$(this.get_f_Image4_1_g$(), this.get_domId4Element_1_g$().get_76_g$());
-  f_HTMLPanel1_0_g$.addAndReplaceElement_9_g$(this.get_footer_16_g$(), this.get_domId5Element_1_g$().get_76_g$());
   return f_HTMLPanel1_0_g$;
-}
-;
-_.build_f_Image2_2_g$ = function build_f_Image2_0_g$(){
-  $clinit_HomeViewImpl_BaduuumHomeViewUiBinderImpl$Widgets_0_g$();
-  var f_Image2_0_g$;
-  f_Image2_0_g$ = new Image_3_g$(this.get_images_2_g$().homePage1_2_g$());
-  return f_Image2_0_g$;
-}
-;
-_.build_f_Image3_1_g$ = function build_f_Image3_0_g$(){
-  $clinit_HomeViewImpl_BaduuumHomeViewUiBinderImpl$Widgets_0_g$();
-  var f_Image3_0_g$;
-  f_Image3_0_g$ = new Image_3_g$(this.get_images_2_g$().homePage3_2_g$());
-  return f_Image3_0_g$;
-}
-;
-_.build_f_Image4_1_g$ = function build_f_Image4_0_g$(){
-  $clinit_HomeViewImpl_BaduuumHomeViewUiBinderImpl$Widgets_0_g$();
-  var f_Image4_0_g$;
-  f_Image4_0_g$ = new Image_3_g$(this.get_images_2_g$().homePage2_2_g$());
-  return f_Image4_0_g$;
-}
-;
-_.build_footer_16_g$ = function build_footer_5_g$(){
-  $clinit_HomeViewImpl_BaduuumHomeViewUiBinderImpl$Widgets_0_g$();
-  var footer_0_g$;
-  footer_0_g$ = dynamicCast_0_g$(dynamicCast_0_g$(new FooterWidgetView_1_g$, 1814), 1814);
-  return footer_0_g$;
 }
 ;
 _.build_header_16_g$ = function build_header_5_g$(){
@@ -73612,8 +73519,9 @@ _.build_header_16_g$ = function build_header_5_g$(){
 ;
 _.build_images_2_g$ = function build_images_0_g$(){
   $clinit_HomeViewImpl_BaduuumHomeViewUiBinderImpl$Widgets_0_g$();
-  this.images_2_g$ = dynamicCast_0_g$(dynamicCast_0_g$(new ImageResources_default_InlineClientBundleGenerator_1_g$, 1668), 1668);
-  return this.images_2_g$;
+  var images_0_g$;
+  images_0_g$ = dynamicCast_0_g$(dynamicCast_0_g$(new ImageResources_default_InlineClientBundleGenerator_1_g$, 1668), 1668);
+  return images_0_g$;
 }
 ;
 _.build_menu_16_g$ = function build_menu_5_g$(){
@@ -73656,69 +73564,9 @@ _.get_domId1Element_16_g$ = function get_domId1Element_5_g$(){
   return this.domId1Element_5_g$;
 }
 ;
-_.get_domId2_16_g$ = function get_domId2_5_g$(){
-  $clinit_HomeViewImpl_BaduuumHomeViewUiBinderImpl$Widgets_0_g$();
-  return this.domId2_5_g$;
-}
-;
-_.get_domId2Element_16_g$ = function get_domId2Element_5_g$(){
-  $clinit_HomeViewImpl_BaduuumHomeViewUiBinderImpl$Widgets_0_g$();
-  return this.domId2Element_5_g$;
-}
-;
-_.get_domId3_1_g$ = function get_domId3_0_g$(){
-  $clinit_HomeViewImpl_BaduuumHomeViewUiBinderImpl$Widgets_0_g$();
-  return this.domId3_0_g$;
-}
-;
-_.get_domId3Element_1_g$ = function get_domId3Element_0_g$(){
-  $clinit_HomeViewImpl_BaduuumHomeViewUiBinderImpl$Widgets_0_g$();
-  return this.domId3Element_0_g$;
-}
-;
-_.get_domId4_1_g$ = function get_domId4_0_g$(){
-  $clinit_HomeViewImpl_BaduuumHomeViewUiBinderImpl$Widgets_0_g$();
-  return this.domId4_0_g$;
-}
-;
-_.get_domId4Element_1_g$ = function get_domId4Element_0_g$(){
-  $clinit_HomeViewImpl_BaduuumHomeViewUiBinderImpl$Widgets_0_g$();
-  return this.domId4Element_0_g$;
-}
-;
-_.get_domId5_1_g$ = function get_domId5_0_g$(){
-  $clinit_HomeViewImpl_BaduuumHomeViewUiBinderImpl$Widgets_0_g$();
-  return this.domId5_0_g$;
-}
-;
-_.get_domId5Element_1_g$ = function get_domId5Element_0_g$(){
-  $clinit_HomeViewImpl_BaduuumHomeViewUiBinderImpl$Widgets_0_g$();
-  return this.domId5Element_0_g$;
-}
-;
 _.get_f_HTMLPanel1_19_g$ = function get_f_HTMLPanel1_5_g$(){
   $clinit_HomeViewImpl_BaduuumHomeViewUiBinderImpl$Widgets_0_g$();
   return this.build_f_HTMLPanel1_19_g$();
-}
-;
-_.get_f_Image2_2_g$ = function get_f_Image2_0_g$(){
-  $clinit_HomeViewImpl_BaduuumHomeViewUiBinderImpl$Widgets_0_g$();
-  return this.build_f_Image2_2_g$();
-}
-;
-_.get_f_Image3_1_g$ = function get_f_Image3_0_g$(){
-  $clinit_HomeViewImpl_BaduuumHomeViewUiBinderImpl$Widgets_0_g$();
-  return this.build_f_Image3_1_g$();
-}
-;
-_.get_f_Image4_1_g$ = function get_f_Image4_0_g$(){
-  $clinit_HomeViewImpl_BaduuumHomeViewUiBinderImpl$Widgets_0_g$();
-  return this.build_f_Image4_1_g$();
-}
-;
-_.get_footer_16_g$ = function get_footer_5_g$(){
-  $clinit_HomeViewImpl_BaduuumHomeViewUiBinderImpl$Widgets_0_g$();
-  return this.build_footer_16_g$();
 }
 ;
 _.get_header_16_g$ = function get_header_5_g$(){
@@ -73728,7 +73576,7 @@ _.get_header_16_g$ = function get_header_5_g$(){
 ;
 _.get_images_2_g$ = function get_images_0_g$(){
   $clinit_HomeViewImpl_BaduuumHomeViewUiBinderImpl$Widgets_0_g$();
-  return this.images_2_g$;
+  return this.build_images_2_g$();
 }
 ;
 _.get_menu_16_g$ = function get_menu_5_g$(){
@@ -73742,7 +73590,7 @@ _.get_res_14_g$ = function get_res_5_g$(){
 }
 ;
 _.template_html1_19_g$ = function template_html1_5_g$(){
-  return this.this$01_89_g$.template_7_g$.html1_15_g$(this.get_domId0_17_g$(), this.get_domId1_16_g$(), this.get_domId2_16_g$(), this.get_domId3_1_g$(), this.get_domId4_1_g$(), this.get_domId5_1_g$());
+  return this.this$01_89_g$.template_7_g$.html1_15_g$(this.get_domId0_17_g$(), this.get_domId1_16_g$());
 }
 ;
 var Lpl_baduuum_client_view_home_HomeViewImpl_1BaduuumHomeViewUiBinderImpl$Widgets_2_classLit_0_g$ = createForClass_0_g$('pl.baduuum.client.view.home', 'HomeViewImpl_BaduuumHomeViewUiBinderImpl/Widgets', 1764, Ljava_lang_Object_2_classLit_0_g$);
@@ -73809,22 +73657,14 @@ _.$init_2345_g$ = function $init_1150_g$(){
   $clinit_HomeViewImpl_BaduuumHomeViewUiBinderImpl_TemplateImpl_0_g$();
 }
 ;
-_.html1_15_g$ = function html1_5_g$(arg0_0_g$, arg1_0_g$, arg2_0_g$, arg3_0_g$, arg4_0_g$, arg5_0_g$){
+_.html1_15_g$ = function html1_5_g$(arg0_0_g$, arg1_0_g$){
   var sb_0_g$;
   sb_0_g$ = new StringBuilder_1_g$;
-  sb_0_g$.append_78_g$("<div class='container'> <span id='");
+  sb_0_g$.append_78_g$("<div class='wraper'> <div class='container'> <span id='");
   sb_0_g$.append_78_g$(htmlEscape_1_g$(arg0_0_g$));
-  sb_0_g$.append_78_g$("'><\/span> <span id='");
+  sb_0_g$.append_78_g$("'><\/span>  <span id='");
   sb_0_g$.append_78_g$(htmlEscape_1_g$(arg1_0_g$));
-  sb_0_g$.append_78_g$("'><\/span> <div id='contentHome'> <h3>Witaj na stronie sali pr\xF3b Baduuum!<\/h3> <p>Baduuum to miejsce wyj\u0105tkowe, powsta\u0142e wskutek realizacji marzenia o sali pr\xF3b gdzie ka\u017Cdy mo\u017Ce po\u0107wiczy\u0107 sam lub z w\u0142asnym zespo\u0142em w doskona\u0142ych warunkach akustycznych i na porz\u0105dnym sprz\u0119cie. <\/p> <p> Miejsce dla muzyk\xF3w profesjonalnych i amator\xF3w, dla tych kt\xF3rzy wol\u0105 korzysta\u0107 z w\u0142asnego sprz\u0119tu jak i dla tych kt\xF3rzy chc\u0105 rozpocz\u0105\u0107 swoj\u0105 muzyczn\u0105 przygod\u0119, a nie maj\u0105 na czym gra\u0107 lub z gara\u017Cu ju\u017C przegonili ich s\u0105siedzi :). Baduuum to miejsce gdzie pr\xF3by niezale\u017Cnie od swego rozmiaru, tego czy s\u0105 ha\u0142a\u015Bliwe czy kameralne, to z pewno\u015Bci\u0105 przynios\u0105 rado\u015B\u0107 z tworzenia. <\/p> <p> Staramy si\u0119 tworzy\u0107 miejsce inspiruj\u0105ce nie tylko poprzez mo\u017Cliwo\u015B\u0107 korzystania z nowego, sprawnego sprz\u0119tu czy z du\u017C\u0105 dba\u0142o\u015Bci\u0105 zaprojektowanej akustyki, ale te\u017C przez superprzyjazn\u0105 atmosfer\u0119 oraz nietypowy wystr\xF3j sali. <\/p> <\/div> <div class='middleHome'> <span id='");
-  sb_0_g$.append_78_g$(htmlEscape_1_g$(arg2_0_g$));
-  sb_0_g$.append_78_g$("'><\/span> <span id='");
-  sb_0_g$.append_78_g$(htmlEscape_1_g$(arg3_0_g$));
-  sb_0_g$.append_78_g$("'><\/span> <span id='");
-  sb_0_g$.append_78_g$(htmlEscape_1_g$(arg4_0_g$));
-  sb_0_g$.append_78_g$("'><\/span> <\/div> <div class='map-container'> <iframe frameborder='0' height='450' src='https://www.google.com/maps/embed/v1/place?q=Sala%20Pr%C3%B3b%20Baduuum%2C%20Kapr%C3%B3w%2C%20Gda%C5%84sk%2C%20Polska&amp;key=AIzaSyA68SN7UAeCcY9i7hCAwOecVlXUc0dTfIM' style='border:0' width='900'><\/iframe> <\/div> <span id='");
-  sb_0_g$.append_78_g$(htmlEscape_1_g$(arg5_0_g$));
-  sb_0_g$.append_78_g$("'><\/span> <\/div>");
+  sb_0_g$.append_78_g$("'><\/span>  <\/div> <\/div>");
   return new OnlyToBeUsedInGeneratedCodeStringBlessedAsSafeHtml_1_g$(sb_0_g$.toString$());
 }
 ;
@@ -73900,10 +73740,10 @@ function PricesViewImpl_BaduuumPricesViewUiBinderImpl$Widgets_1_g$(this$0_0_g$, 
   this.owner_7_g$ = owner_0_g$;
   this.build_domId0_18_g$();
   this.build_domId1_17_g$();
-  this.build_domId2_17_g$();
+  this.build_domId2_15_g$();
   this.build_domId0Element_18_g$();
   this.build_domId1Element_17_g$();
-  this.build_domId2Element_17_g$();
+  this.build_domId2Element_15_g$();
 }
 
 defineClass_0_g$(1772, 1, {1:1, 1772:1}, PricesViewImpl_BaduuumPricesViewUiBinderImpl$Widgets_1_g$);
@@ -73942,16 +73782,16 @@ _.build_domId1Element_17_g$ = function build_domId1Element_6_g$(){
   return this.domId1Element_6_g$;
 }
 ;
-_.build_domId2_17_g$ = function build_domId2_6_g$(){
+_.build_domId2_15_g$ = function build_domId2_5_g$(){
   $clinit_PricesViewImpl_BaduuumPricesViewUiBinderImpl$Widgets_0_g$();
-  this.domId2_6_g$ = $createUniqueId_0_g$(get_12_g$());
-  return this.domId2_6_g$;
+  this.domId2_5_g$ = $createUniqueId_0_g$(get_12_g$());
+  return this.domId2_5_g$;
 }
 ;
-_.build_domId2Element_17_g$ = function build_domId2Element_6_g$(){
+_.build_domId2Element_15_g$ = function build_domId2Element_5_g$(){
   $clinit_PricesViewImpl_BaduuumPricesViewUiBinderImpl$Widgets_0_g$();
-  this.domId2Element_6_g$ = new LazyDomElement_1_g$(this.get_domId2_17_g$());
-  return this.domId2Element_6_g$;
+  this.domId2Element_5_g$ = new LazyDomElement_1_g$(this.get_domId2_15_g$());
+  return this.domId2Element_5_g$;
 }
 ;
 _.build_f_HTMLPanel1_20_g$ = function build_f_HTMLPanel1_6_g$(){
@@ -73962,16 +73802,16 @@ _.build_f_HTMLPanel1_20_g$ = function build_f_HTMLPanel1_6_g$(){
     __attachRecord___0_g$ = attachToDom_0_g$(f_HTMLPanel1_0_g$.getElement_5_g$());
     this.get_domId0Element_18_g$().get_76_g$();
     this.get_domId1Element_17_g$().get_76_g$();
-    this.get_domId2Element_17_g$().get_76_g$();
+    this.get_domId2Element_15_g$().get_76_g$();
     __attachRecord___0_g$.detach_1_g$();
   }
   f_HTMLPanel1_0_g$.addAndReplaceElement_9_g$(this.get_header_17_g$(), this.get_domId0Element_18_g$().get_76_g$());
   f_HTMLPanel1_0_g$.addAndReplaceElement_9_g$(this.get_menu_17_g$(), this.get_domId1Element_17_g$().get_76_g$());
-  f_HTMLPanel1_0_g$.addAndReplaceElement_9_g$(this.get_footer_17_g$(), this.get_domId2Element_17_g$().get_76_g$());
+  f_HTMLPanel1_0_g$.addAndReplaceElement_9_g$(this.get_footer_15_g$(), this.get_domId2Element_15_g$().get_76_g$());
   return f_HTMLPanel1_0_g$;
 }
 ;
-_.build_footer_17_g$ = function build_footer_6_g$(){
+_.build_footer_15_g$ = function build_footer_5_g$(){
   $clinit_PricesViewImpl_BaduuumPricesViewUiBinderImpl$Widgets_0_g$();
   var footer_0_g$;
   footer_0_g$ = dynamicCast_0_g$(dynamicCast_0_g$(new FooterWidgetView_1_g$, 1814), 1814);
@@ -74024,14 +73864,14 @@ _.get_domId1Element_17_g$ = function get_domId1Element_6_g$(){
   return this.domId1Element_6_g$;
 }
 ;
-_.get_domId2_17_g$ = function get_domId2_6_g$(){
+_.get_domId2_15_g$ = function get_domId2_5_g$(){
   $clinit_PricesViewImpl_BaduuumPricesViewUiBinderImpl$Widgets_0_g$();
-  return this.domId2_6_g$;
+  return this.domId2_5_g$;
 }
 ;
-_.get_domId2Element_17_g$ = function get_domId2Element_6_g$(){
+_.get_domId2Element_15_g$ = function get_domId2Element_5_g$(){
   $clinit_PricesViewImpl_BaduuumPricesViewUiBinderImpl$Widgets_0_g$();
-  return this.domId2Element_6_g$;
+  return this.domId2Element_5_g$;
 }
 ;
 _.get_f_HTMLPanel1_20_g$ = function get_f_HTMLPanel1_6_g$(){
@@ -74039,9 +73879,9 @@ _.get_f_HTMLPanel1_20_g$ = function get_f_HTMLPanel1_6_g$(){
   return this.build_f_HTMLPanel1_20_g$();
 }
 ;
-_.get_footer_17_g$ = function get_footer_6_g$(){
+_.get_footer_15_g$ = function get_footer_5_g$(){
   $clinit_PricesViewImpl_BaduuumPricesViewUiBinderImpl$Widgets_0_g$();
-  return this.build_footer_17_g$();
+  return this.build_footer_15_g$();
 }
 ;
 _.get_header_17_g$ = function get_header_6_g$(){
@@ -74060,7 +73900,7 @@ _.get_res_15_g$ = function get_res_6_g$(){
 }
 ;
 _.template_html1_20_g$ = function template_html1_6_g$(){
-  return this.this$01_90_g$.template_8_g$.html1_14_g$(this.get_domId0_18_g$(), this.get_domId1_17_g$(), this.get_domId2_17_g$());
+  return this.this$01_90_g$.template_8_g$.html1_14_g$(this.get_domId0_18_g$(), this.get_domId1_17_g$(), this.get_domId2_15_g$());
 }
 ;
 var Lpl_baduuum_client_view_prices_PricesViewImpl_1BaduuumPricesViewUiBinderImpl$Widgets_2_classLit_0_g$ = createForClass_0_g$('pl.baduuum.client.view.prices', 'PricesViewImpl_BaduuumPricesViewUiBinderImpl/Widgets', 1772, Ljava_lang_Object_2_classLit_0_g$);
@@ -74213,10 +74053,10 @@ function RegulationsViewImpl_BaduuumRegulaionsViewUiBinderImpl$Widgets_1_g$(this
   this.build_style_12_g$();
   this.build_domId0_19_g$();
   this.build_domId1_18_g$();
-  this.build_domId2_18_g$();
+  this.build_domId2_16_g$();
   this.build_domId0Element_19_g$();
   this.build_domId1Element_18_g$();
-  this.build_domId2Element_18_g$();
+  this.build_domId2Element_16_g$();
 }
 
 defineClass_0_g$(1780, 1, {1:1, 1780:1}, RegulationsViewImpl_BaduuumRegulaionsViewUiBinderImpl$Widgets_1_g$);
@@ -74255,16 +74095,16 @@ _.build_domId1Element_18_g$ = function build_domId1Element_7_g$(){
   return this.domId1Element_7_g$;
 }
 ;
-_.build_domId2_18_g$ = function build_domId2_7_g$(){
+_.build_domId2_16_g$ = function build_domId2_6_g$(){
   $clinit_RegulationsViewImpl_BaduuumRegulaionsViewUiBinderImpl$Widgets_0_g$();
-  this.domId2_7_g$ = $createUniqueId_0_g$(get_12_g$());
-  return this.domId2_7_g$;
+  this.domId2_6_g$ = $createUniqueId_0_g$(get_12_g$());
+  return this.domId2_6_g$;
 }
 ;
-_.build_domId2Element_18_g$ = function build_domId2Element_7_g$(){
+_.build_domId2Element_16_g$ = function build_domId2Element_6_g$(){
   $clinit_RegulationsViewImpl_BaduuumRegulaionsViewUiBinderImpl$Widgets_0_g$();
-  this.domId2Element_7_g$ = new LazyDomElement_1_g$(this.get_domId2_18_g$());
-  return this.domId2Element_7_g$;
+  this.domId2Element_6_g$ = new LazyDomElement_1_g$(this.get_domId2_16_g$());
+  return this.domId2Element_6_g$;
 }
 ;
 _.build_f_HTMLPanel1_21_g$ = function build_f_HTMLPanel1_7_g$(){
@@ -74275,16 +74115,16 @@ _.build_f_HTMLPanel1_21_g$ = function build_f_HTMLPanel1_7_g$(){
     __attachRecord___0_g$ = attachToDom_0_g$(f_HTMLPanel1_0_g$.getElement_5_g$());
     this.get_domId0Element_19_g$().get_76_g$();
     this.get_domId1Element_18_g$().get_76_g$();
-    this.get_domId2Element_18_g$().get_76_g$();
+    this.get_domId2Element_16_g$().get_76_g$();
     __attachRecord___0_g$.detach_1_g$();
   }
   f_HTMLPanel1_0_g$.addAndReplaceElement_9_g$(this.get_header_18_g$(), this.get_domId0Element_19_g$().get_76_g$());
   f_HTMLPanel1_0_g$.addAndReplaceElement_9_g$(this.get_menu_18_g$(), this.get_domId1Element_18_g$().get_76_g$());
-  f_HTMLPanel1_0_g$.addAndReplaceElement_9_g$(this.get_footer_18_g$(), this.get_domId2Element_18_g$().get_76_g$());
+  f_HTMLPanel1_0_g$.addAndReplaceElement_9_g$(this.get_footer_16_g$(), this.get_domId2Element_16_g$().get_76_g$());
   return f_HTMLPanel1_0_g$;
 }
 ;
-_.build_footer_18_g$ = function build_footer_7_g$(){
+_.build_footer_16_g$ = function build_footer_6_g$(){
   $clinit_RegulationsViewImpl_BaduuumRegulaionsViewUiBinderImpl$Widgets_0_g$();
   var footer_0_g$;
   footer_0_g$ = dynamicCast_0_g$(dynamicCast_0_g$(new FooterWidgetView_1_g$, 1814), 1814);
@@ -74345,14 +74185,14 @@ _.get_domId1Element_18_g$ = function get_domId1Element_7_g$(){
   return this.domId1Element_7_g$;
 }
 ;
-_.get_domId2_18_g$ = function get_domId2_7_g$(){
+_.get_domId2_16_g$ = function get_domId2_6_g$(){
   $clinit_RegulationsViewImpl_BaduuumRegulaionsViewUiBinderImpl$Widgets_0_g$();
-  return this.domId2_7_g$;
+  return this.domId2_6_g$;
 }
 ;
-_.get_domId2Element_18_g$ = function get_domId2Element_7_g$(){
+_.get_domId2Element_16_g$ = function get_domId2Element_6_g$(){
   $clinit_RegulationsViewImpl_BaduuumRegulaionsViewUiBinderImpl$Widgets_0_g$();
-  return this.domId2Element_7_g$;
+  return this.domId2Element_6_g$;
 }
 ;
 _.get_f_HTMLPanel1_21_g$ = function get_f_HTMLPanel1_7_g$(){
@@ -74360,9 +74200,9 @@ _.get_f_HTMLPanel1_21_g$ = function get_f_HTMLPanel1_7_g$(){
   return this.build_f_HTMLPanel1_21_g$();
 }
 ;
-_.get_footer_18_g$ = function get_footer_7_g$(){
+_.get_footer_16_g$ = function get_footer_6_g$(){
   $clinit_RegulationsViewImpl_BaduuumRegulaionsViewUiBinderImpl$Widgets_0_g$();
-  return this.build_footer_18_g$();
+  return this.build_footer_16_g$();
 }
 ;
 _.get_header_18_g$ = function get_header_7_g$(){
@@ -74386,7 +74226,7 @@ _.get_style_12_g$ = function get_style_5_g$(){
 }
 ;
 _.template_html1_21_g$ = function template_html1_7_g$(){
-  return this.this$01_91_g$.template_9_g$.html1_14_g$(this.get_domId0_19_g$(), this.get_domId1_18_g$(), this.get_domId2_18_g$());
+  return this.this$01_91_g$.template_9_g$.html1_14_g$(this.get_domId0_19_g$(), this.get_domId1_18_g$(), this.get_domId2_16_g$());
 }
 ;
 var Lpl_baduuum_client_view_regulations_RegulationsViewImpl_1BaduuumRegulaionsViewUiBinderImpl$Widgets_2_classLit_0_g$ = createForClass_0_g$('pl.baduuum.client.view.regulations', 'RegulationsViewImpl_BaduuumRegulaionsViewUiBinderImpl/Widgets', 1780, Ljava_lang_Object_2_classLit_0_g$);
@@ -74615,10 +74455,10 @@ function ReservationViewImpl_BaduuumReservationViewUiBinderImpl$Widgets_1_g$(thi
   this.build_style_13_g$();
   this.build_domId0_20_g$();
   this.build_domId1_19_g$();
-  this.build_domId2_19_g$();
+  this.build_domId2_17_g$();
   this.build_domId0Element_20_g$();
   this.build_domId1Element_19_g$();
-  this.build_domId2Element_19_g$();
+  this.build_domId2Element_17_g$();
 }
 
 defineClass_0_g$(1791, 1, {1:1, 1791:1}, ReservationViewImpl_BaduuumReservationViewUiBinderImpl$Widgets_1_g$);
@@ -74657,16 +74497,16 @@ _.build_domId1Element_19_g$ = function build_domId1Element_8_g$(){
   return this.domId1Element_8_g$;
 }
 ;
-_.build_domId2_19_g$ = function build_domId2_8_g$(){
+_.build_domId2_17_g$ = function build_domId2_7_g$(){
   $clinit_ReservationViewImpl_BaduuumReservationViewUiBinderImpl$Widgets_0_g$();
-  this.domId2_8_g$ = $createUniqueId_0_g$(get_12_g$());
-  return this.domId2_8_g$;
+  this.domId2_7_g$ = $createUniqueId_0_g$(get_12_g$());
+  return this.domId2_7_g$;
 }
 ;
-_.build_domId2Element_19_g$ = function build_domId2Element_8_g$(){
+_.build_domId2Element_17_g$ = function build_domId2Element_7_g$(){
   $clinit_ReservationViewImpl_BaduuumReservationViewUiBinderImpl$Widgets_0_g$();
-  this.domId2Element_8_g$ = new LazyDomElement_1_g$(this.get_domId2_19_g$());
-  return this.domId2Element_8_g$;
+  this.domId2Element_7_g$ = new LazyDomElement_1_g$(this.get_domId2_17_g$());
+  return this.domId2Element_7_g$;
 }
 ;
 _.build_f_HTMLPanel1_22_g$ = function build_f_HTMLPanel1_8_g$(){
@@ -74677,16 +74517,16 @@ _.build_f_HTMLPanel1_22_g$ = function build_f_HTMLPanel1_8_g$(){
     __attachRecord___0_g$ = attachToDom_0_g$(f_HTMLPanel1_0_g$.getElement_5_g$());
     this.get_domId0Element_20_g$().get_76_g$();
     this.get_domId1Element_19_g$().get_76_g$();
-    this.get_domId2Element_19_g$().get_76_g$();
+    this.get_domId2Element_17_g$().get_76_g$();
     __attachRecord___0_g$.detach_1_g$();
   }
   f_HTMLPanel1_0_g$.addAndReplaceElement_9_g$(this.get_header_19_g$(), this.get_domId0Element_20_g$().get_76_g$());
   f_HTMLPanel1_0_g$.addAndReplaceElement_9_g$(this.get_menu_19_g$(), this.get_domId1Element_19_g$().get_76_g$());
-  f_HTMLPanel1_0_g$.addAndReplaceElement_9_g$(this.get_footer_19_g$(), this.get_domId2Element_19_g$().get_76_g$());
+  f_HTMLPanel1_0_g$.addAndReplaceElement_9_g$(this.get_footer_17_g$(), this.get_domId2Element_17_g$().get_76_g$());
   return f_HTMLPanel1_0_g$;
 }
 ;
-_.build_footer_19_g$ = function build_footer_8_g$(){
+_.build_footer_17_g$ = function build_footer_7_g$(){
   $clinit_ReservationViewImpl_BaduuumReservationViewUiBinderImpl$Widgets_0_g$();
   var footer_0_g$;
   footer_0_g$ = dynamicCast_0_g$(dynamicCast_0_g$(new FooterWidgetView_1_g$, 1814), 1814);
@@ -74747,14 +74587,14 @@ _.get_domId1Element_19_g$ = function get_domId1Element_8_g$(){
   return this.domId1Element_8_g$;
 }
 ;
-_.get_domId2_19_g$ = function get_domId2_8_g$(){
+_.get_domId2_17_g$ = function get_domId2_7_g$(){
   $clinit_ReservationViewImpl_BaduuumReservationViewUiBinderImpl$Widgets_0_g$();
-  return this.domId2_8_g$;
+  return this.domId2_7_g$;
 }
 ;
-_.get_domId2Element_19_g$ = function get_domId2Element_8_g$(){
+_.get_domId2Element_17_g$ = function get_domId2Element_7_g$(){
   $clinit_ReservationViewImpl_BaduuumReservationViewUiBinderImpl$Widgets_0_g$();
-  return this.domId2Element_8_g$;
+  return this.domId2Element_7_g$;
 }
 ;
 _.get_f_HTMLPanel1_22_g$ = function get_f_HTMLPanel1_8_g$(){
@@ -74762,9 +74602,9 @@ _.get_f_HTMLPanel1_22_g$ = function get_f_HTMLPanel1_8_g$(){
   return this.build_f_HTMLPanel1_22_g$();
 }
 ;
-_.get_footer_19_g$ = function get_footer_8_g$(){
+_.get_footer_17_g$ = function get_footer_7_g$(){
   $clinit_ReservationViewImpl_BaduuumReservationViewUiBinderImpl$Widgets_0_g$();
-  return this.build_footer_19_g$();
+  return this.build_footer_17_g$();
 }
 ;
 _.get_header_19_g$ = function get_header_8_g$(){
@@ -74788,7 +74628,7 @@ _.get_style_13_g$ = function get_style_6_g$(){
 }
 ;
 _.template_html1_22_g$ = function template_html1_8_g$(){
-  return this.this$01_93_g$.template_10_g$.html1_14_g$(this.get_domId0_20_g$(), this.get_domId1_19_g$(), this.get_domId2_19_g$());
+  return this.this$01_93_g$.template_10_g$.html1_14_g$(this.get_domId0_20_g$(), this.get_domId1_19_g$(), this.get_domId2_17_g$());
 }
 ;
 var Lpl_baduuum_client_view_reservation_ReservationViewImpl_1BaduuumReservationViewUiBinderImpl$Widgets_2_classLit_0_g$ = createForClass_0_g$('pl.baduuum.client.view.reservation', 'ReservationViewImpl_BaduuumReservationViewUiBinderImpl/Widgets', 1791, Ljava_lang_Object_2_classLit_0_g$);
@@ -75016,10 +74856,10 @@ function RoomViewImpl_BaduuumRoomViewUiBinderImpl$Widgets_1_g$(this$0_0_g$, owne
   this.owner_10_g$ = owner_0_g$;
   this.build_domId0_21_g$();
   this.build_domId1_20_g$();
-  this.build_domId2_20_g$();
+  this.build_domId2_18_g$();
   this.build_domId0Element_21_g$();
   this.build_domId1Element_20_g$();
-  this.build_domId2Element_20_g$();
+  this.build_domId2Element_18_g$();
 }
 
 defineClass_0_g$(1802, 1, {1:1, 1802:1}, RoomViewImpl_BaduuumRoomViewUiBinderImpl$Widgets_1_g$);
@@ -75058,16 +74898,16 @@ _.build_domId1Element_20_g$ = function build_domId1Element_9_g$(){
   return this.domId1Element_9_g$;
 }
 ;
-_.build_domId2_20_g$ = function build_domId2_9_g$(){
+_.build_domId2_18_g$ = function build_domId2_8_g$(){
   $clinit_RoomViewImpl_BaduuumRoomViewUiBinderImpl$Widgets_0_g$();
-  this.domId2_9_g$ = $createUniqueId_0_g$(get_12_g$());
-  return this.domId2_9_g$;
+  this.domId2_8_g$ = $createUniqueId_0_g$(get_12_g$());
+  return this.domId2_8_g$;
 }
 ;
-_.build_domId2Element_20_g$ = function build_domId2Element_9_g$(){
+_.build_domId2Element_18_g$ = function build_domId2Element_8_g$(){
   $clinit_RoomViewImpl_BaduuumRoomViewUiBinderImpl$Widgets_0_g$();
-  this.domId2Element_9_g$ = new LazyDomElement_1_g$(this.get_domId2_20_g$());
-  return this.domId2Element_9_g$;
+  this.domId2Element_8_g$ = new LazyDomElement_1_g$(this.get_domId2_18_g$());
+  return this.domId2Element_8_g$;
 }
 ;
 _.build_f_HTMLPanel1_23_g$ = function build_f_HTMLPanel1_9_g$(){
@@ -75078,16 +74918,16 @@ _.build_f_HTMLPanel1_23_g$ = function build_f_HTMLPanel1_9_g$(){
     __attachRecord___0_g$ = attachToDom_0_g$(f_HTMLPanel1_0_g$.getElement_5_g$());
     this.get_domId0Element_21_g$().get_76_g$();
     this.get_domId1Element_20_g$().get_76_g$();
-    this.get_domId2Element_20_g$().get_76_g$();
+    this.get_domId2Element_18_g$().get_76_g$();
     __attachRecord___0_g$.detach_1_g$();
   }
   f_HTMLPanel1_0_g$.addAndReplaceElement_9_g$(this.get_header_20_g$(), this.get_domId0Element_21_g$().get_76_g$());
   f_HTMLPanel1_0_g$.addAndReplaceElement_9_g$(this.get_menu_20_g$(), this.get_domId1Element_20_g$().get_76_g$());
-  f_HTMLPanel1_0_g$.addAndReplaceElement_9_g$(this.get_footer_20_g$(), this.get_domId2Element_20_g$().get_76_g$());
+  f_HTMLPanel1_0_g$.addAndReplaceElement_9_g$(this.get_footer_18_g$(), this.get_domId2Element_18_g$().get_76_g$());
   return f_HTMLPanel1_0_g$;
 }
 ;
-_.build_footer_20_g$ = function build_footer_9_g$(){
+_.build_footer_18_g$ = function build_footer_8_g$(){
   $clinit_RoomViewImpl_BaduuumRoomViewUiBinderImpl$Widgets_0_g$();
   var footer_0_g$;
   footer_0_g$ = dynamicCast_0_g$(dynamicCast_0_g$(new FooterWidgetView_1_g$, 1814), 1814);
@@ -75133,14 +74973,14 @@ _.get_domId1Element_20_g$ = function get_domId1Element_9_g$(){
   return this.domId1Element_9_g$;
 }
 ;
-_.get_domId2_20_g$ = function get_domId2_9_g$(){
+_.get_domId2_18_g$ = function get_domId2_8_g$(){
   $clinit_RoomViewImpl_BaduuumRoomViewUiBinderImpl$Widgets_0_g$();
-  return this.domId2_9_g$;
+  return this.domId2_8_g$;
 }
 ;
-_.get_domId2Element_20_g$ = function get_domId2Element_9_g$(){
+_.get_domId2Element_18_g$ = function get_domId2Element_8_g$(){
   $clinit_RoomViewImpl_BaduuumRoomViewUiBinderImpl$Widgets_0_g$();
-  return this.domId2Element_9_g$;
+  return this.domId2Element_8_g$;
 }
 ;
 _.get_f_HTMLPanel1_23_g$ = function get_f_HTMLPanel1_9_g$(){
@@ -75148,9 +74988,9 @@ _.get_f_HTMLPanel1_23_g$ = function get_f_HTMLPanel1_9_g$(){
   return this.build_f_HTMLPanel1_23_g$();
 }
 ;
-_.get_footer_20_g$ = function get_footer_9_g$(){
+_.get_footer_18_g$ = function get_footer_8_g$(){
   $clinit_RoomViewImpl_BaduuumRoomViewUiBinderImpl$Widgets_0_g$();
-  return this.build_footer_20_g$();
+  return this.build_footer_18_g$();
 }
 ;
 _.get_header_20_g$ = function get_header_9_g$(){
@@ -75164,7 +75004,7 @@ _.get_menu_20_g$ = function get_menu_9_g$(){
 }
 ;
 _.template_html1_23_g$ = function template_html1_9_g$(){
-  return this.this$01_95_g$.template_11_g$.html1_14_g$(this.get_domId0_21_g$(), this.get_domId1_20_g$(), this.get_domId2_20_g$());
+  return this.this$01_95_g$.template_11_g$.html1_14_g$(this.get_domId0_21_g$(), this.get_domId1_20_g$(), this.get_domId2_18_g$());
 }
 ;
 var Lpl_baduuum_client_view_room_RoomViewImpl_1BaduuumRoomViewUiBinderImpl$Widgets_2_classLit_0_g$ = createForClass_0_g$('pl.baduuum.client.view.room', 'RoomViewImpl_BaduuumRoomViewUiBinderImpl/Widgets', 1802, Ljava_lang_Object_2_classLit_0_g$);
@@ -75316,10 +75156,10 @@ function StudioViewImpl_BaduuumStudioViewUiBinderImpl$Widgets_1_g$(this$0_0_g$, 
   this.owner_11_g$ = owner_0_g$;
   this.build_domId0_22_g$();
   this.build_domId1_21_g$();
-  this.build_domId2_21_g$();
+  this.build_domId2_19_g$();
   this.build_domId0Element_22_g$();
   this.build_domId1Element_21_g$();
-  this.build_domId2Element_21_g$();
+  this.build_domId2Element_19_g$();
 }
 
 defineClass_0_g$(1810, 1, {1:1, 1810:1}, StudioViewImpl_BaduuumStudioViewUiBinderImpl$Widgets_1_g$);
@@ -75358,16 +75198,16 @@ _.build_domId1Element_21_g$ = function build_domId1Element_10_g$(){
   return this.domId1Element_10_g$;
 }
 ;
-_.build_domId2_21_g$ = function build_domId2_10_g$(){
+_.build_domId2_19_g$ = function build_domId2_9_g$(){
   $clinit_StudioViewImpl_BaduuumStudioViewUiBinderImpl$Widgets_0_g$();
-  this.domId2_10_g$ = $createUniqueId_0_g$(get_12_g$());
-  return this.domId2_10_g$;
+  this.domId2_9_g$ = $createUniqueId_0_g$(get_12_g$());
+  return this.domId2_9_g$;
 }
 ;
-_.build_domId2Element_21_g$ = function build_domId2Element_10_g$(){
+_.build_domId2Element_19_g$ = function build_domId2Element_9_g$(){
   $clinit_StudioViewImpl_BaduuumStudioViewUiBinderImpl$Widgets_0_g$();
-  this.domId2Element_10_g$ = new LazyDomElement_1_g$(this.get_domId2_21_g$());
-  return this.domId2Element_10_g$;
+  this.domId2Element_9_g$ = new LazyDomElement_1_g$(this.get_domId2_19_g$());
+  return this.domId2Element_9_g$;
 }
 ;
 _.build_f_HTMLPanel1_24_g$ = function build_f_HTMLPanel1_10_g$(){
@@ -75378,16 +75218,16 @@ _.build_f_HTMLPanel1_24_g$ = function build_f_HTMLPanel1_10_g$(){
     __attachRecord___0_g$ = attachToDom_0_g$(f_HTMLPanel1_0_g$.getElement_5_g$());
     this.get_domId0Element_22_g$().get_76_g$();
     this.get_domId1Element_21_g$().get_76_g$();
-    this.get_domId2Element_21_g$().get_76_g$();
+    this.get_domId2Element_19_g$().get_76_g$();
     __attachRecord___0_g$.detach_1_g$();
   }
   f_HTMLPanel1_0_g$.addAndReplaceElement_9_g$(this.get_header_21_g$(), this.get_domId0Element_22_g$().get_76_g$());
   f_HTMLPanel1_0_g$.addAndReplaceElement_9_g$(this.get_menu_21_g$(), this.get_domId1Element_21_g$().get_76_g$());
-  f_HTMLPanel1_0_g$.addAndReplaceElement_9_g$(this.get_footer_21_g$(), this.get_domId2Element_21_g$().get_76_g$());
+  f_HTMLPanel1_0_g$.addAndReplaceElement_9_g$(this.get_footer_19_g$(), this.get_domId2Element_19_g$().get_76_g$());
   return f_HTMLPanel1_0_g$;
 }
 ;
-_.build_footer_21_g$ = function build_footer_10_g$(){
+_.build_footer_19_g$ = function build_footer_9_g$(){
   $clinit_StudioViewImpl_BaduuumStudioViewUiBinderImpl$Widgets_0_g$();
   var footer_0_g$;
   footer_0_g$ = dynamicCast_0_g$(dynamicCast_0_g$(new FooterWidgetView_1_g$, 1814), 1814);
@@ -75433,14 +75273,14 @@ _.get_domId1Element_21_g$ = function get_domId1Element_10_g$(){
   return this.domId1Element_10_g$;
 }
 ;
-_.get_domId2_21_g$ = function get_domId2_10_g$(){
+_.get_domId2_19_g$ = function get_domId2_9_g$(){
   $clinit_StudioViewImpl_BaduuumStudioViewUiBinderImpl$Widgets_0_g$();
-  return this.domId2_10_g$;
+  return this.domId2_9_g$;
 }
 ;
-_.get_domId2Element_21_g$ = function get_domId2Element_10_g$(){
+_.get_domId2Element_19_g$ = function get_domId2Element_9_g$(){
   $clinit_StudioViewImpl_BaduuumStudioViewUiBinderImpl$Widgets_0_g$();
-  return this.domId2Element_10_g$;
+  return this.domId2Element_9_g$;
 }
 ;
 _.get_f_HTMLPanel1_24_g$ = function get_f_HTMLPanel1_10_g$(){
@@ -75448,9 +75288,9 @@ _.get_f_HTMLPanel1_24_g$ = function get_f_HTMLPanel1_10_g$(){
   return this.build_f_HTMLPanel1_24_g$();
 }
 ;
-_.get_footer_21_g$ = function get_footer_10_g$(){
+_.get_footer_19_g$ = function get_footer_9_g$(){
   $clinit_StudioViewImpl_BaduuumStudioViewUiBinderImpl$Widgets_0_g$();
-  return this.build_footer_21_g$();
+  return this.build_footer_19_g$();
 }
 ;
 _.get_header_21_g$ = function get_header_10_g$(){
@@ -75464,7 +75304,7 @@ _.get_menu_21_g$ = function get_menu_10_g$(){
 }
 ;
 _.template_html1_24_g$ = function template_html1_10_g$(){
-  return this.this$01_96_g$.template_12_g$.html1_14_g$(this.get_domId0_22_g$(), this.get_domId1_21_g$(), this.get_domId2_21_g$());
+  return this.this$01_96_g$.template_12_g$.html1_14_g$(this.get_domId0_22_g$(), this.get_domId1_21_g$(), this.get_domId2_19_g$());
 }
 ;
 var Lpl_baduuum_client_view_studio_StudioViewImpl_1BaduuumStudioViewUiBinderImpl$Widgets_2_classLit_0_g$ = createForClass_0_g$('pl.baduuum.client.view.studio', 'StudioViewImpl_BaduuumStudioViewUiBinderImpl/Widgets', 1810, Ljava_lang_Object_2_classLit_0_g$);
@@ -75819,11 +75659,11 @@ _.build_f_HTMLPanel1_26_g$ = function build_f_HTMLPanel1_12_g$(){
     this.get_domId0Element_23_g$().get_76_g$();
     __attachRecord___0_g$.detach_1_g$();
   }
-  f_HTMLPanel1_0_g$.addAndReplaceElement_9_g$(this.get_f_Image2_3_g$(), this.get_domId0Element_23_g$().get_76_g$());
+  f_HTMLPanel1_0_g$.addAndReplaceElement_9_g$(this.get_f_Image2_1_g$(), this.get_domId0Element_23_g$().get_76_g$());
   return f_HTMLPanel1_0_g$;
 }
 ;
-_.build_f_Image2_3_g$ = function build_f_Image2_1_g$(){
+_.build_f_Image2_1_g$ = function build_f_Image2_0_g$(){
   $clinit_HeaderWidgetView_HeaderWidgetViewUiBinderImpl$Widgets_0_g$();
   var f_Image2_0_g$;
   f_Image2_0_g$ = new Image_3_g$(this.get_images_3_g$().logo_2_g$());
@@ -75857,9 +75697,9 @@ _.get_f_HTMLPanel1_26_g$ = function get_f_HTMLPanel1_12_g$(){
   return this.build_f_HTMLPanel1_26_g$();
 }
 ;
-_.get_f_Image2_3_g$ = function get_f_Image2_1_g$(){
+_.get_f_Image2_1_g$ = function get_f_Image2_0_g$(){
   $clinit_HeaderWidgetView_HeaderWidgetViewUiBinderImpl$Widgets_0_g$();
-  return this.build_f_Image2_3_g$();
+  return this.build_f_Image2_1_g$();
 }
 ;
 _.get_images_3_g$ = function get_images_1_g$(){
@@ -75938,9 +75778,9 @@ _.$init_2384_g$ = function $init_1189_g$(){
 _.html1_17_g$ = function html1_12_g$(arg0_0_g$){
   var sb_0_g$;
   sb_0_g$ = new StringBuilder_1_g$;
-  sb_0_g$.append_78_g$("<div class='container'> <div class='row'> <div class='col-md-3'> <span id='");
+  sb_0_g$.append_78_g$("<div class='row'> <div class='col-md-12'>\xA0<\/div> <\/div> <div class='row'> <div class='col-md-6'> <span id='");
   sb_0_g$.append_78_g$(htmlEscape_1_g$(arg0_0_g$));
-  sb_0_g$.append_78_g$("'><\/span> <\/div> <div class='col-md-3 headerFont'> <i class='fa fa-phone'><\/i> \xA0 +48 731 805 769 <\/div> <div class='col-md-3 headerFont'> <a href='mailto:baduuum@baduuum.pl' style='color:#333'> <i class='fa fa-envelope'><\/i> \xA0 baduuum@baduuum.pl <\/a> <\/div> <div class='col-md-3 headerFont'> <a href='https://www.facebook.com/SalaProbBaduuum' style='color:#333'> <i class='fa fa-facebook'><\/i> \xA0 SalaProbBaduuum <\/a> <\/div> <\/div> <\/div>");
+  sb_0_g$.append_78_g$("'><\/span> <\/div> <div class='col-md-2 headerFont'> <i class='fa fa-phone'><\/i> \xA0 +48 731 805 769 <\/div> <div class='col-md-2 headerFont'> <a href='mailto:baduuum@baduuum.pl' style='color:#333'> <i class='fa fa-envelope'><\/i> \xA0 baduuum@baduuum.pl <\/a> <\/div> <div class='col-md-2 headerFont'> <a href='https://www.facebook.com/SalaProbBaduuum' style='color:#333'> <i class='fa fa-facebook'><\/i> \xA0 SalaProbBaduuum <\/a> <\/div> <\/div>");
   return new OnlyToBeUsedInGeneratedCodeStringBlessedAsSafeHtml_1_g$(sb_0_g$.toString$());
 }
 ;
@@ -76112,7 +75952,7 @@ _.$init_2389_g$ = function $init_1194_g$(){
 _.html1_16_g$ = function html1_13_g$(){
   var sb_0_g$;
   sb_0_g$ = new StringBuilder_1_g$;
-  sb_0_g$.append_78_g$("<div id='headerMenu'> <label class='show-menu' for='show-menu'>MENU<\/label> <input id='show-menu' role='button' type='checkbox'> <ul id='menu'> <li> <a href='#home'>HOME<\/a> <\/li> <li> <a href='#prices'>CENNIK<\/a> <\/li> <li> <a href='#calendar'>GRAFIK<\/a> <\/li>  <li> <a href='#reservation'>REZERWACJA<\/a> <\/li>  <li> <a href='#room'>SALA<\/a> <\/li> <li> <a href='#studio'>STUDIO<\/a> <\/li>  <li> <a href='#'>GALERIA<\/a> <ul class='hidden'> <li> <a href='#galleryRoom'>SALA TWIN PEAKS<\/a> <\/li> <li> <a href='#galleryBuild'>BUDOWA SALI<\/a> <\/li> <\/ul> <\/li> <li> <a href='#regulations'>REGULAMIN<\/a> <\/li> <li> <a href='#faq'>FAQ<\/a> <\/li> <li> <a href='#contact'>KONTAKT<\/a> <\/li>  <\/ul> <\/div>");
+  sb_0_g$.append_78_g$("<nav class='navbar navbar-default'> <div class='container-fluid'> <div class='navbar-header'> <button aria-controls='navbar' aria-expanded='false' class='navbar-toggle collapsed' data-target='#navbar' data-toggle='collapse' type='button'> <span class='sr-only'>Menu<\/span> <span class='icon-bar'><\/span> <span class='icon-bar'><\/span> <span class='icon-bar'><\/span> <\/button> <\/div> <div class='navbar-collapse collapse' id='navbar'> <ul class='nav navbar-nav'> <li class='active'> <a href='#home'>HOME<\/a> <\/li> <li> <a href='#prices'>CENNIK<\/a> <\/li> <li> <a href='#calendar'>GRAFIK<\/a> <\/li> <li> <a href='#reservation'>REZERWACJA<\/a> <\/li> <li> <a href='#room'>SALA<\/a> <\/li> <li> <a href='#studio'>STUDIO<\/a> <\/li> <li class='dropdown'> <a aria-expanded='false' class='dropdown-toggle' data-toggle='dropdown' href='#' role='button'> GALERIA <span class='caret'><\/span> <\/a> <ul class='dropdown-menu' role='menu'> <li> <a href='#galleryRoom'>SALA TWIN PEAKS<\/a> <\/li> <li> <a href='#galleryBuild'>BUDOWA SALI<\/a> <\/li> <\/ul> <\/li> <li> <a href='#regulations'>REGULAMIN<\/a> <\/li> <li> <a href='#faq'>FAQ<\/a> <\/li> <li> <a href='#contact'>KONTAKT<\/a> <\/li> <\/ul> <\/div> <\/div> <\/nav>");
   return new OnlyToBeUsedInGeneratedCodeStringBlessedAsSafeHtml_1_g$(sb_0_g$.toString$());
 }
 ;
@@ -76126,6 +75966,6 @@ $sendStats('moduleStartup', 'moduleEvalEnd');
 gwtOnLoad(__gwtModuleFunction.__errFn, __gwtModuleFunction.__moduleName, __gwtModuleFunction.__moduleBase, __gwtModuleFunction.__softPermutationId,__gwtModuleFunction.__computePropValue);
 $sendStats('moduleStartup', 'end');
 $gwt && $gwt.permProps && __gwtModuleFunction.__moduleStartupDone($gwt.permProps);
-//# sourceMappingURL=http://127.0.0.1:9876/sourcemaps/baduuum/425F1509FBDBA43D0424F31E0CDE16E6_sourcemap.json 
+//# sourceMappingURL=http://127.0.0.1:9876/sourcemaps/baduuum/9DFDB7DA8C9112F9B14108A429E7B9A8_sourcemap.json 
 //# sourceURL=baduuum-0.js
 
