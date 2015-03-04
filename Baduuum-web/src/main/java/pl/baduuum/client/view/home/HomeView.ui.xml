@@ -61,9 +61,9 @@
 				<iframe width="900" height="450" frameborder="0" style="border:0"
 					src="https://www.google.com/maps/embed/v1/place?q=Sala%20Pr%C3%B3b%20Baduuum%2C%20Kapr%C3%B3w%2C%20Gda%C5%84sk%2C%20Polska&amp;key=AIzaSyA68SN7UAeCcY9i7hCAwOecVlXUc0dTfIM"></iframe>
 
-			</div>
+			</div> -->
 
-			<c:FooterWidgetView ui:field="footer" /> -->
+			<c:FooterWidgetView ui:field="footer" /> 
 		</div>
 		</div>
 	</g:HTMLPanel>
