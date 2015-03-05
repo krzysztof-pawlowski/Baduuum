@@ -17,3 +17,16 @@
 	padding: 20px;
 	
 }
+
+.footer {
+	padding: 5px 15px;
+	border: 0;
+	background: #444;
+}
+
+.footerMenuItem {
+	float: left;
+	padding: 5px;
+	color: white;
+	
+}

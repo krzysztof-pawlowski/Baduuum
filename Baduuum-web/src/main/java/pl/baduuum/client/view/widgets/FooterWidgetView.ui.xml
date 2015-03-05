@@ -3,13 +3,26 @@
 <ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
 	xmlns:g="urn:import:com.google.gwt.user.client.ui">
 	<g:HTMLPanel>
+	      <div class="container-fluid">
+	    <div class="row footer">
 	    
-	    <div class="row">
-				<div class="col-md-6">
-					<div id="footerMenuItem"> <a href="#home" style="color:#DCDCDC"><i class="fa fa-caret-right"></i>&nbsp;Home</a> </div>	    
+	    
+				<div class="col-md-7 ">
+
+					<span class="footerMenuItem"> <a href="#home" style="color:#DCDCDC"><i class="fa fa-caret-right"></i>&nbsp;Home</a> </span>	
+						<span class="footerMenuItem"><a href="#prices" style="color:#DCDCDC"><i class="fa fa-caret-right"></i>&nbsp;Cennik</a> </span>
+			<span class="footerMenuItem"> <a href="#calendar" style="color:#DCDCDC"><i class="fa fa-caret-right"></i>&nbsp;Grafik</a> </span>
+			<span class="footerMenuItem"> <a href="#room" style="color:#DCDCDC"><i class="fa fa-caret-right"></i>&nbsp;Sala</a> </span>
+		<span class="footerMenuItem"> <a href="#reservation" style="color:#DCDCDC"><i class="fa fa-caret-right"></i>&nbsp;Rezerwacja</a> </span>
+			<span class="footerMenuItem"> <a href="#galleryRoom" style="color:#DCDCDC"><i class="fa fa-caret-right"></i>&nbsp;Galeria</a> </span>
+			<span class="footerMenuItem"><a href="#regulations" style="color:#DCDCDC"><i class="fa fa-caret-right"></i>&nbsp;Regulamin</a> </span>
+			<span class="footerMenuItem"> <a href="#faq" style="color:#DCDCDC"><i class="fa fa-caret-right"></i>&nbsp;FAQ</a> </span>
+			<span class="footerMenuItem"> <a href="#contact" style="color:#DCDCDC"><i class="fa fa-caret-right"></i>&nbsp;Kontakt</a> </span>	    
+
+
 				</div>
 		 </div>
-				    
+				    </div>
 	    
 <!--  	<div id="footer">
 		<div id="footerMenu">
