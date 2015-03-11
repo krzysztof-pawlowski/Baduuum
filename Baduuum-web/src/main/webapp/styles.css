@@ -31,3 +31,10 @@
 	color: white;
 	
 }
+
+#custom-bootstrap-menu.navbar-inverse {
+    font-size: 12px;
+    background-color: rgba(96, 145, 186, 1);
+    border-width: 0px;
+    border-radius: 0px;
+}
