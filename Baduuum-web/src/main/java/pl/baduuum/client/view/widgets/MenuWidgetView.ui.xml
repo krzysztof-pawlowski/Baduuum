@@ -5,7 +5,7 @@
 	<g:HTMLPanel>
 
       <!-- Static navbar -->
-	<nav class="navbar navbar-default">
+	  <nav id="custom-bootstrap-menu" class="navbar navbar-inverse" role="navigation">
 		<div class="container-fluid">
 			<div class="navbar-header">
 				<button type="button" class="navbar-toggle collapsed"
@@ -52,11 +52,9 @@
 							</li>
 						</ul>
 					</li>
-
 					<li>
 						<a data-toggle="collapse" data-target=".navbar-collapse" href="#regulations">REGULAMIN</a>
 					</li>
-
 					<li>
 						<a data-toggle="collapse" data-target=".navbar-collapse" href="#faq">FAQ</a>
 					</li>
@@ -64,8 +62,8 @@
 						<a data-toggle="collapse" data-target=".navbar-collapse" href="#contact">KONTAKT</a>
 					</li>
 				</ul>
-			</div><!--/.nav-collapse -->
-		</div><!--/.container-fluid -->
-	</nav>
+			</div>
+		</div>
+			</nav> 
 	</g:HTMLPanel>
 </ui:UiBinder>  
