@@ -11,7 +11,7 @@
 		<div class="container">
 		
 		  	<c:HeaderWidgetView ui:field="header" /> 
-			<c:MenuWidgetView ui:field="menu" />
+	<c:MenuWidgetView ui:field="menu" activeMenuItem="contact"/>
 
 contact
 

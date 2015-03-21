@@ -3,7 +3,7 @@ var __gwtModuleFunction = $wnd.baduuum;
 var $sendStats = __gwtModuleFunction.__sendStats;
 $sendStats('moduleStartup', 'moduleEvalStart');
 var $gwt_version = "2.7.0";
-var $strongName = '8488C374BBBF98D4A3074FDDD9D99B63';
+var $strongName = '3DED692FAAB4C73FA397E1A891FE0DA4';
 var $gwt = {};
 var $doc = $wnd.document;
 var $moduleName, $moduleBase;
@@ -69861,7 +69861,7 @@ _.doOpenPage_1_g$ = function doOpenPage_0_g$(page_0_g$){
 _.go_2_g$ = function go_0_g$(container_0_g$){
   this.container_1_g$ = container_0_g$;
   if (equals_Ljava_lang_Object__Z__devirtual$_1_g$('', getToken_0_g$())) {
-    newItem_0_g$('home');
+    newItem_0_g$(dynamicCastToString_0_g$('home'));
   }
    else {
     fireCurrentHistoryState_0_g$();
@@ -69872,37 +69872,37 @@ _.onValueChange_5_g$ = function onValueChange_4_g$(event_0_g$){
   var token_0_g$;
   token_0_g$ = dynamicCastToString_0_g$(event_0_g$.getValue_27_g$());
   if (jsNotEquals_0_g$(token_0_g$, null)) {
-    if (equals_Ljava_lang_Object__Z__devirtual$_1_g$(token_0_g$, 'home')) {
+    if (equals_Ljava_lang_Object__Z__devirtual$_1_g$(token_0_g$, dynamicCastToString_0_g$('home'))) {
       runAsync_0_g$(new AppController$12_1_g$(this));
     }
-     else if (equals_Ljava_lang_Object__Z__devirtual$_1_g$(token_0_g$, 'prices')) {
+     else if (equals_Ljava_lang_Object__Z__devirtual$_1_g$(token_0_g$, dynamicCastToString_0_g$('prices'))) {
       runAsync_0_g$(new AppController$13_1_g$(this));
     }
-     else if (equals_Ljava_lang_Object__Z__devirtual$_1_g$(token_0_g$, 'calendar')) {
+     else if (equals_Ljava_lang_Object__Z__devirtual$_1_g$(token_0_g$, dynamicCastToString_0_g$('calendar'))) {
       runAsync_0_g$(new AppController$14_1_g$(this));
     }
-     else if (equals_Ljava_lang_Object__Z__devirtual$_1_g$(token_0_g$, 'room')) {
+     else if (equals_Ljava_lang_Object__Z__devirtual$_1_g$(token_0_g$, dynamicCastToString_0_g$('room'))) {
       runAsync_0_g$(new AppController$15_1_g$(this));
     }
-     else if (equals_Ljava_lang_Object__Z__devirtual$_1_g$(token_0_g$, 'reservation')) {
+     else if (equals_Ljava_lang_Object__Z__devirtual$_1_g$(token_0_g$, dynamicCastToString_0_g$('reservation'))) {
       runAsync_0_g$(new AppController$16_1_g$(this));
     }
-     else if (equals_Ljava_lang_Object__Z__devirtual$_1_g$(token_0_g$, 'studio')) {
+     else if (equals_Ljava_lang_Object__Z__devirtual$_1_g$(token_0_g$, dynamicCastToString_0_g$('studio'))) {
       runAsync_0_g$(new AppController$17_1_g$(this));
     }
-     else if (equals_Ljava_lang_Object__Z__devirtual$_1_g$(token_0_g$, 'galleryBuild')) {
+     else if (equals_Ljava_lang_Object__Z__devirtual$_1_g$(token_0_g$, dynamicCastToString_0_g$('galleryBuild'))) {
       runAsync_0_g$(new AppController$18_1_g$(this));
     }
-     else if (equals_Ljava_lang_Object__Z__devirtual$_1_g$(token_0_g$, 'galleryRoom')) {
+     else if (equals_Ljava_lang_Object__Z__devirtual$_1_g$(token_0_g$, dynamicCastToString_0_g$('galleryRoom'))) {
       runAsync_0_g$(new AppController$19_1_g$(this));
     }
-     else if (equals_Ljava_lang_Object__Z__devirtual$_1_g$(token_0_g$, 'regulations')) {
+     else if (equals_Ljava_lang_Object__Z__devirtual$_1_g$(token_0_g$, dynamicCastToString_0_g$('regulations'))) {
       runAsync_0_g$(new AppController$20_1_g$(this));
     }
-     else if (equals_Ljava_lang_Object__Z__devirtual$_1_g$(token_0_g$, 'faq')) {
+     else if (equals_Ljava_lang_Object__Z__devirtual$_1_g$(token_0_g$, dynamicCastToString_0_g$('faq'))) {
       runAsync_0_g$(new AppController$21_1_g$(this));
     }
-     else if (equals_Ljava_lang_Object__Z__devirtual$_1_g$(token_0_g$, 'contact')) {
+     else if (equals_Ljava_lang_Object__Z__devirtual$_1_g$(token_0_g$, dynamicCastToString_0_g$('contact'))) {
       runAsync_0_g$(new AppController$22_1_g$(this));
     }
   }
@@ -69928,7 +69928,7 @@ _.$init_2247_g$ = function $init_1066_g$(){
 }
 ;
 _.onGoHome_1_g$ = function onGoHome_0_g$(event_0_g$){
-  this.this$01_56_g$.doOpenPage_1_g$('home');
+  this.this$01_56_g$.doOpenPage_1_g$(dynamicCastToString_0_g$('home'));
 }
 ;
 var Lpl_baduuum_client_AppController$1_2_classLit_0_g$ = createForClass_0_g$('pl.baduuum.client', 'AppController/1', 1642, Ljava_lang_Object_2_classLit_0_g$);
@@ -69950,7 +69950,7 @@ _.$init_2248_g$ = function $init_1067_g$(){
 }
 ;
 _.onGoRoom_1_g$ = function onGoRoom_0_g$(event_0_g$){
-  this.this$01_57_g$.doOpenPage_1_g$('room');
+  this.this$01_57_g$.doOpenPage_1_g$(dynamicCastToString_0_g$('room'));
 }
 ;
 var Lpl_baduuum_client_AppController$10_2_classLit_0_g$ = createForClass_0_g$('pl.baduuum.client', 'AppController/10', 1643, Ljava_lang_Object_2_classLit_0_g$);
@@ -69972,7 +69972,7 @@ _.$init_2249_g$ = function $init_1068_g$(){
 }
 ;
 _.onGoStudio_1_g$ = function onGoStudio_0_g$(event_0_g$){
-  this.this$01_58_g$.doOpenPage_1_g$('studio');
+  this.this$01_58_g$.doOpenPage_1_g$(dynamicCastToString_0_g$('studio'));
 }
 ;
 var Lpl_baduuum_client_AppController$11_2_classLit_0_g$ = createForClass_0_g$('pl.baduuum.client', 'AppController/11', 1644, Ljava_lang_Object_2_classLit_0_g$);
@@ -70218,7 +70218,7 @@ _.$init_2258_g$ = function $init_1077_g$(){
 }
 ;
 _.onGoPrices_1_g$ = function onGoPrices_0_g$(event_0_g$){
-  this.this$01_67_g$.doOpenPage_1_g$('prices');
+  this.this$01_67_g$.doOpenPage_1_g$(dynamicCastToString_0_g$('prices'));
 }
 ;
 var Lpl_baduuum_client_AppController$2_2_classLit_0_g$ = createForClass_0_g$('pl.baduuum.client', 'AppController/2', 1653, Ljava_lang_Object_2_classLit_0_g$);
@@ -70324,7 +70324,7 @@ _.$init_2262_g$ = function $init_1081_g$(){
 }
 ;
 _.onGoCalendar_1_g$ = function onGoCalendar_0_g$(event_0_g$){
-  this.this$01_71_g$.doOpenPage_1_g$('calendar');
+  this.this$01_71_g$.doOpenPage_1_g$(dynamicCastToString_0_g$('calendar'));
 }
 ;
 var Lpl_baduuum_client_AppController$3_2_classLit_0_g$ = createForClass_0_g$('pl.baduuum.client', 'AppController/3', 1657, Ljava_lang_Object_2_classLit_0_g$);
@@ -70346,7 +70346,7 @@ _.$init_2263_g$ = function $init_1082_g$(){
 }
 ;
 _.onGoContact_1_g$ = function onGoContact_0_g$(event_0_g$){
-  this.this$01_72_g$.doOpenPage_1_g$('contact');
+  this.this$01_72_g$.doOpenPage_1_g$(dynamicCastToString_0_g$('contact'));
 }
 ;
 var Lpl_baduuum_client_AppController$4_2_classLit_0_g$ = createForClass_0_g$('pl.baduuum.client', 'AppController/4', 1658, Ljava_lang_Object_2_classLit_0_g$);
@@ -70368,7 +70368,7 @@ _.$init_2264_g$ = function $init_1083_g$(){
 }
 ;
 _.onGoFaq_1_g$ = function onGoFaq_0_g$(event_0_g$){
-  this.this$01_73_g$.doOpenPage_1_g$('faq');
+  this.this$01_73_g$.doOpenPage_1_g$(dynamicCastToString_0_g$('faq'));
 }
 ;
 var Lpl_baduuum_client_AppController$5_2_classLit_0_g$ = createForClass_0_g$('pl.baduuum.client', 'AppController/5', 1659, Ljava_lang_Object_2_classLit_0_g$);
@@ -70390,7 +70390,7 @@ _.$init_2265_g$ = function $init_1084_g$(){
 }
 ;
 _.onGoGalleryBuild_1_g$ = function onGoGalleryBuild_0_g$(event_0_g$){
-  this.this$01_74_g$.doOpenPage_1_g$('galleryBuild');
+  this.this$01_74_g$.doOpenPage_1_g$(dynamicCastToString_0_g$('galleryBuild'));
 }
 ;
 var Lpl_baduuum_client_AppController$6_2_classLit_0_g$ = createForClass_0_g$('pl.baduuum.client', 'AppController/6', 1660, Ljava_lang_Object_2_classLit_0_g$);
@@ -70412,7 +70412,7 @@ _.$init_2266_g$ = function $init_1085_g$(){
 }
 ;
 _.onGoGalleryRoom_1_g$ = function onGoGalleryRoom_0_g$(event_0_g$){
-  this.this$01_75_g$.doOpenPage_1_g$('galleryRoom');
+  this.this$01_75_g$.doOpenPage_1_g$(dynamicCastToString_0_g$('galleryRoom'));
 }
 ;
 var Lpl_baduuum_client_AppController$7_2_classLit_0_g$ = createForClass_0_g$('pl.baduuum.client', 'AppController/7', 1661, Ljava_lang_Object_2_classLit_0_g$);
@@ -70434,7 +70434,7 @@ _.$init_2267_g$ = function $init_1086_g$(){
 }
 ;
 _.onGoRegulations_1_g$ = function onGoRegulations_0_g$(event_0_g$){
-  this.this$01_76_g$.doOpenPage_1_g$('regulations');
+  this.this$01_76_g$.doOpenPage_1_g$(dynamicCastToString_0_g$('regulations'));
 }
 ;
 var Lpl_baduuum_client_AppController$8_2_classLit_0_g$ = createForClass_0_g$('pl.baduuum.client', 'AppController/8', 1662, Ljava_lang_Object_2_classLit_0_g$);
@@ -70456,7 +70456,7 @@ _.$init_2268_g$ = function $init_1087_g$(){
 }
 ;
 _.onGoReservation_1_g$ = function onGoReservation_0_g$(event_0_g$){
-  this.this$01_77_g$.doOpenPage_1_g$('reservation');
+  this.this$01_77_g$.doOpenPage_1_g$(dynamicCastToString_0_g$('reservation'));
 }
 ;
 var Lpl_baduuum_client_AppController$9_2_classLit_0_g$ = createForClass_0_g$('pl.baduuum.client', 'AppController/9', 1663, Ljava_lang_Object_2_classLit_0_g$);
@@ -71422,7 +71422,7 @@ _.createAndBindUi_28_g$ = function createAndBindUi_0_g$(owner_0_g$){
 }
 ;
 _.createAndBindUi_29_g$ = function createAndBindUi_1_g$(owner_0_g$){
-  return (new CalendarViewImpl_BaduuumCalendarViewUiBinderImpl$Widgets_1_g$(this, owner_0_g$)).get_f_HTMLPanel1_14_g$();
+  return (new CalendarViewImpl_BaduuumCalendarViewUiBinderImpl$Widgets_1_g$(this, owner_0_g$)).get_f_HTMLPanel1_13_g$();
 }
 ;
 var Lpl_baduuum_client_view_calendar_CalendarViewImpl_1BaduuumCalendarViewUiBinderImpl_2_classLit_0_g$ = createForClass_0_g$('pl.baduuum.client.view.calendar', 'CalendarViewImpl_BaduuumCalendarViewUiBinderImpl', 1707, Ljava_lang_Object_2_classLit_0_g$);
@@ -71497,7 +71497,7 @@ _.build_domId2Element_11_g$ = function build_domId2Element_0_g$(){
   return this.domId2Element_0_g$;
 }
 ;
-_.build_f_HTMLPanel1_14_g$ = function build_f_HTMLPanel1_0_g$(){
+_.build_f_HTMLPanel1_13_g$ = function build_f_HTMLPanel1_0_g$(){
   $clinit_CalendarViewImpl_BaduuumCalendarViewUiBinderImpl$Widgets_0_g$();
   var __attachRecord___0_g$, f_HTMLPanel1_0_g$;
   f_HTMLPanel1_0_g$ = new HTMLPanel_3_g$(this.template_html1_14_g$().asString_4_g$());
@@ -71538,7 +71538,7 @@ _.build_images_12_g$ = function build_images_0_g$(){
 _.build_menu_11_g$ = function build_menu_0_g$(){
   $clinit_CalendarViewImpl_BaduuumCalendarViewUiBinderImpl$Widgets_0_g$();
   var menu_0_g$;
-  menu_0_g$ = dynamicCast_0_g$(dynamicCast_0_g$(new MenuWidgetView_1_g$, 1809), 1809);
+  menu_0_g$ = new MenuWidgetView_2_g$('calendar');
   return menu_0_g$;
 }
 ;
@@ -71584,9 +71584,9 @@ _.get_domId2Element_11_g$ = function get_domId2Element_0_g$(){
   return this.domId2Element_0_g$;
 }
 ;
-_.get_f_HTMLPanel1_14_g$ = function get_f_HTMLPanel1_0_g$(){
+_.get_f_HTMLPanel1_13_g$ = function get_f_HTMLPanel1_0_g$(){
   $clinit_CalendarViewImpl_BaduuumCalendarViewUiBinderImpl$Widgets_0_g$();
-  return this.build_f_HTMLPanel1_14_g$();
+  return this.build_f_HTMLPanel1_13_g$();
 }
 ;
 _.get_footer_11_g$ = function get_footer_0_g$(){
@@ -71746,7 +71746,7 @@ _.createAndBindUi_28_g$ = function createAndBindUi_2_g$(owner_0_g$){
 }
 ;
 _.createAndBindUi_30_g$ = function createAndBindUi_3_g$(owner_0_g$){
-  return (new ContactViewImpl_BaduuumContactViewUiBinderImpl$Widgets_1_g$(this, owner_0_g$)).get_f_HTMLPanel1_15_g$();
+  return (new ContactViewImpl_BaduuumContactViewUiBinderImpl$Widgets_1_g$(this, owner_0_g$)).get_f_HTMLPanel1_14_g$();
 }
 ;
 var Lpl_baduuum_client_view_contact_ContactViewImpl_1BaduuumContactViewUiBinderImpl_2_classLit_0_g$ = createForClass_0_g$('pl.baduuum.client.view.contact', 'ContactViewImpl_BaduuumContactViewUiBinderImpl', 1715, Ljava_lang_Object_2_classLit_0_g$);
@@ -71821,7 +71821,7 @@ _.build_domId2Element_12_g$ = function build_domId2Element_1_g$(){
   return this.domId2Element_1_g$;
 }
 ;
-_.build_f_HTMLPanel1_15_g$ = function build_f_HTMLPanel1_1_g$(){
+_.build_f_HTMLPanel1_14_g$ = function build_f_HTMLPanel1_1_g$(){
   $clinit_ContactViewImpl_BaduuumContactViewUiBinderImpl$Widgets_0_g$();
   var __attachRecord___0_g$, f_HTMLPanel1_0_g$;
   f_HTMLPanel1_0_g$ = new HTMLPanel_3_g$(this.template_html1_15_g$().asString_4_g$());
@@ -71862,7 +71862,7 @@ _.build_images_13_g$ = function build_images_1_g$(){
 _.build_menu_12_g$ = function build_menu_1_g$(){
   $clinit_ContactViewImpl_BaduuumContactViewUiBinderImpl$Widgets_0_g$();
   var menu_0_g$;
-  menu_0_g$ = dynamicCast_0_g$(dynamicCast_0_g$(new MenuWidgetView_1_g$, 1809), 1809);
+  menu_0_g$ = new MenuWidgetView_2_g$('contact');
   return menu_0_g$;
 }
 ;
@@ -71908,9 +71908,9 @@ _.get_domId2Element_12_g$ = function get_domId2Element_1_g$(){
   return this.domId2Element_1_g$;
 }
 ;
-_.get_f_HTMLPanel1_15_g$ = function get_f_HTMLPanel1_1_g$(){
+_.get_f_HTMLPanel1_14_g$ = function get_f_HTMLPanel1_1_g$(){
   $clinit_ContactViewImpl_BaduuumContactViewUiBinderImpl$Widgets_0_g$();
-  return this.build_f_HTMLPanel1_15_g$();
+  return this.build_f_HTMLPanel1_14_g$();
 }
 ;
 _.get_footer_12_g$ = function get_footer_1_g$(){
@@ -72070,7 +72070,7 @@ _.createAndBindUi_28_g$ = function createAndBindUi_4_g$(owner_0_g$){
 }
 ;
 _.createAndBindUi_31_g$ = function createAndBindUi_5_g$(owner_0_g$){
-  return (new FaqViewImpl_BaduuumFaqViewUiBinderImpl$Widgets_1_g$(this, owner_0_g$)).get_f_HTMLPanel1_16_g$();
+  return (new FaqViewImpl_BaduuumFaqViewUiBinderImpl$Widgets_1_g$(this, owner_0_g$)).get_f_HTMLPanel1_15_g$();
 }
 ;
 var Lpl_baduuum_client_view_faq_FaqViewImpl_1BaduuumFaqViewUiBinderImpl_2_classLit_0_g$ = createForClass_0_g$('pl.baduuum.client.view.faq', 'FaqViewImpl_BaduuumFaqViewUiBinderImpl', 1723, Ljava_lang_Object_2_classLit_0_g$);
@@ -72145,7 +72145,7 @@ _.build_domId2Element_13_g$ = function build_domId2Element_2_g$(){
   return this.domId2Element_2_g$;
 }
 ;
-_.build_f_HTMLPanel1_16_g$ = function build_f_HTMLPanel1_2_g$(){
+_.build_f_HTMLPanel1_15_g$ = function build_f_HTMLPanel1_2_g$(){
   $clinit_FaqViewImpl_BaduuumFaqViewUiBinderImpl$Widgets_0_g$();
   var __attachRecord___0_g$, f_HTMLPanel1_0_g$;
   f_HTMLPanel1_0_g$ = new HTMLPanel_3_g$(this.template_html1_16_g$().asString_4_g$());
@@ -72186,7 +72186,7 @@ _.build_images_14_g$ = function build_images_2_g$(){
 _.build_menu_13_g$ = function build_menu_2_g$(){
   $clinit_FaqViewImpl_BaduuumFaqViewUiBinderImpl$Widgets_0_g$();
   var menu_0_g$;
-  menu_0_g$ = dynamicCast_0_g$(dynamicCast_0_g$(new MenuWidgetView_1_g$, 1809), 1809);
+  menu_0_g$ = new MenuWidgetView_2_g$('faq');
   return menu_0_g$;
 }
 ;
@@ -72232,9 +72232,9 @@ _.get_domId2Element_13_g$ = function get_domId2Element_2_g$(){
   return this.domId2Element_2_g$;
 }
 ;
-_.get_f_HTMLPanel1_16_g$ = function get_f_HTMLPanel1_2_g$(){
+_.get_f_HTMLPanel1_15_g$ = function get_f_HTMLPanel1_2_g$(){
   $clinit_FaqViewImpl_BaduuumFaqViewUiBinderImpl$Widgets_0_g$();
-  return this.build_f_HTMLPanel1_16_g$();
+  return this.build_f_HTMLPanel1_15_g$();
 }
 ;
 _.get_footer_13_g$ = function get_footer_2_g$(){
@@ -72394,7 +72394,7 @@ _.createAndBindUi_28_g$ = function createAndBindUi_6_g$(owner_0_g$){
 }
 ;
 _.createAndBindUi_32_g$ = function createAndBindUi_7_g$(owner_0_g$){
-  return (new GalleryBuildViewImpl_BaduuumGalleryBuildViewUiBinderImpl$Widgets_1_g$(this, owner_0_g$)).get_f_HTMLPanel1_17_g$();
+  return (new GalleryBuildViewImpl_BaduuumGalleryBuildViewUiBinderImpl$Widgets_1_g$(this, owner_0_g$)).get_f_HTMLPanel1_16_g$();
 }
 ;
 var Lpl_baduuum_client_view_gallery_GalleryBuildViewImpl_1BaduuumGalleryBuildViewUiBinderImpl_2_classLit_0_g$ = createForClass_0_g$('pl.baduuum.client.view.gallery', 'GalleryBuildViewImpl_BaduuumGalleryBuildViewUiBinderImpl', 1731, Ljava_lang_Object_2_classLit_0_g$);
@@ -72469,7 +72469,7 @@ _.build_domId2Element_14_g$ = function build_domId2Element_3_g$(){
   return this.domId2Element_3_g$;
 }
 ;
-_.build_f_HTMLPanel1_17_g$ = function build_f_HTMLPanel1_3_g$(){
+_.build_f_HTMLPanel1_16_g$ = function build_f_HTMLPanel1_3_g$(){
   $clinit_GalleryBuildViewImpl_BaduuumGalleryBuildViewUiBinderImpl$Widgets_0_g$();
   var __attachRecord___0_g$, f_HTMLPanel1_0_g$;
   f_HTMLPanel1_0_g$ = new HTMLPanel_3_g$(this.template_html1_17_g$().asString_4_g$());
@@ -72510,7 +72510,7 @@ _.build_images_15_g$ = function build_images_3_g$(){
 _.build_menu_14_g$ = function build_menu_3_g$(){
   $clinit_GalleryBuildViewImpl_BaduuumGalleryBuildViewUiBinderImpl$Widgets_0_g$();
   var menu_0_g$;
-  menu_0_g$ = dynamicCast_0_g$(dynamicCast_0_g$(new MenuWidgetView_1_g$, 1809), 1809);
+  menu_0_g$ = new MenuWidgetView_2_g$('gallery');
   return menu_0_g$;
 }
 ;
@@ -72556,9 +72556,9 @@ _.get_domId2Element_14_g$ = function get_domId2Element_3_g$(){
   return this.domId2Element_3_g$;
 }
 ;
-_.get_f_HTMLPanel1_17_g$ = function get_f_HTMLPanel1_3_g$(){
+_.get_f_HTMLPanel1_16_g$ = function get_f_HTMLPanel1_3_g$(){
   $clinit_GalleryBuildViewImpl_BaduuumGalleryBuildViewUiBinderImpl$Widgets_0_g$();
-  return this.build_f_HTMLPanel1_17_g$();
+  return this.build_f_HTMLPanel1_16_g$();
 }
 ;
 _.get_footer_14_g$ = function get_footer_3_g$(){
@@ -72718,7 +72718,7 @@ _.createAndBindUi_28_g$ = function createAndBindUi_8_g$(owner_0_g$){
 }
 ;
 _.createAndBindUi_33_g$ = function createAndBindUi_9_g$(owner_0_g$){
-  return (new GalleryRoomViewImpl_BaduuumGalleryRoomViewUiBinderImpl$Widgets_1_g$(this, owner_0_g$)).get_f_HTMLPanel1_18_g$();
+  return (new GalleryRoomViewImpl_BaduuumGalleryRoomViewUiBinderImpl$Widgets_1_g$(this, owner_0_g$)).get_f_HTMLPanel1_17_g$();
 }
 ;
 var Lpl_baduuum_client_view_gallery_GalleryRoomViewImpl_1BaduuumGalleryRoomViewUiBinderImpl_2_classLit_0_g$ = createForClass_0_g$('pl.baduuum.client.view.gallery', 'GalleryRoomViewImpl_BaduuumGalleryRoomViewUiBinderImpl', 1739, Ljava_lang_Object_2_classLit_0_g$);
@@ -72793,7 +72793,7 @@ _.build_domId2Element_15_g$ = function build_domId2Element_4_g$(){
   return this.domId2Element_4_g$;
 }
 ;
-_.build_f_HTMLPanel1_18_g$ = function build_f_HTMLPanel1_4_g$(){
+_.build_f_HTMLPanel1_17_g$ = function build_f_HTMLPanel1_4_g$(){
   $clinit_GalleryRoomViewImpl_BaduuumGalleryRoomViewUiBinderImpl$Widgets_0_g$();
   var __attachRecord___0_g$, f_HTMLPanel1_0_g$;
   f_HTMLPanel1_0_g$ = new HTMLPanel_3_g$(this.template_html1_18_g$().asString_4_g$());
@@ -72834,7 +72834,7 @@ _.build_images_16_g$ = function build_images_4_g$(){
 _.build_menu_15_g$ = function build_menu_4_g$(){
   $clinit_GalleryRoomViewImpl_BaduuumGalleryRoomViewUiBinderImpl$Widgets_0_g$();
   var menu_0_g$;
-  menu_0_g$ = dynamicCast_0_g$(dynamicCast_0_g$(new MenuWidgetView_1_g$, 1809), 1809);
+  menu_0_g$ = new MenuWidgetView_2_g$('gallery');
   return menu_0_g$;
 }
 ;
@@ -72880,9 +72880,9 @@ _.get_domId2Element_15_g$ = function get_domId2Element_4_g$(){
   return this.domId2Element_4_g$;
 }
 ;
-_.get_f_HTMLPanel1_18_g$ = function get_f_HTMLPanel1_4_g$(){
+_.get_f_HTMLPanel1_17_g$ = function get_f_HTMLPanel1_4_g$(){
   $clinit_GalleryRoomViewImpl_BaduuumGalleryRoomViewUiBinderImpl$Widgets_0_g$();
-  return this.build_f_HTMLPanel1_18_g$();
+  return this.build_f_HTMLPanel1_17_g$();
 }
 ;
 _.get_footer_15_g$ = function get_footer_4_g$(){
@@ -73043,7 +73043,7 @@ _.createAndBindUi_28_g$ = function createAndBindUi_10_g$(owner_0_g$){
 }
 ;
 _.createAndBindUi_34_g$ = function createAndBindUi_11_g$(owner_0_g$){
-  return (new HomeViewImpl_BaduuumHomeViewUiBinderImpl$Widgets_1_g$(this, owner_0_g$)).get_f_HTMLPanel1_19_g$();
+  return (new HomeViewImpl_BaduuumHomeViewUiBinderImpl$Widgets_1_g$(this, owner_0_g$)).get_f_HTMLPanel1_18_g$();
 }
 ;
 var Lpl_baduuum_client_view_home_HomeViewImpl_1BaduuumHomeViewUiBinderImpl_2_classLit_0_g$ = createForClass_0_g$('pl.baduuum.client.view.home', 'HomeViewImpl_BaduuumHomeViewUiBinderImpl', 1747, Ljava_lang_Object_2_classLit_0_g$);
@@ -73119,7 +73119,7 @@ _.build_domId2Element_16_g$ = function build_domId2Element_5_g$(){
   return this.domId2Element_5_g$;
 }
 ;
-_.build_f_HTMLPanel1_19_g$ = function build_f_HTMLPanel1_5_g$(){
+_.build_f_HTMLPanel1_18_g$ = function build_f_HTMLPanel1_5_g$(){
   $clinit_HomeViewImpl_BaduuumHomeViewUiBinderImpl$Widgets_0_g$();
   var __attachRecord___0_g$, f_HTMLPanel1_0_g$;
   f_HTMLPanel1_0_g$ = new HTMLPanel_3_g$(this.template_html1_19_g$().asString_4_g$());
@@ -73160,7 +73160,8 @@ _.build_images_17_g$ = function build_images_5_g$(){
 _.build_menu_16_g$ = function build_menu_5_g$(){
   $clinit_HomeViewImpl_BaduuumHomeViewUiBinderImpl$Widgets_0_g$();
   var menu_0_g$;
-  menu_0_g$ = dynamicCast_0_g$(dynamicCast_0_g$(new MenuWidgetView_1_g$, 1809), 1809);
+  menu_0_g$ = new MenuWidgetView_2_g$('home');
+  this.owner_6_g$.menu_1_g$ = menu_0_g$;
   return menu_0_g$;
 }
 ;
@@ -73207,9 +73208,9 @@ _.get_domId2Element_16_g$ = function get_domId2Element_5_g$(){
   return this.domId2Element_5_g$;
 }
 ;
-_.get_f_HTMLPanel1_19_g$ = function get_f_HTMLPanel1_5_g$(){
+_.get_f_HTMLPanel1_18_g$ = function get_f_HTMLPanel1_5_g$(){
   $clinit_HomeViewImpl_BaduuumHomeViewUiBinderImpl$Widgets_0_g$();
-  return this.build_f_HTMLPanel1_19_g$();
+  return this.build_f_HTMLPanel1_18_g$();
 }
 ;
 _.get_footer_16_g$ = function get_footer_5_g$(){
@@ -73369,7 +73370,7 @@ _.createAndBindUi_28_g$ = function createAndBindUi_12_g$(owner_0_g$){
 }
 ;
 _.createAndBindUi_35_g$ = function createAndBindUi_13_g$(owner_0_g$){
-  return (new PricesViewImpl_BaduuumPricesViewUiBinderImpl$Widgets_1_g$(this, owner_0_g$)).get_f_HTMLPanel1_20_g$();
+  return (new PricesViewImpl_BaduuumPricesViewUiBinderImpl$Widgets_1_g$(this, owner_0_g$)).get_f_HTMLPanel1_19_g$();
 }
 ;
 var Lpl_baduuum_client_view_prices_PricesViewImpl_1BaduuumPricesViewUiBinderImpl_2_classLit_0_g$ = createForClass_0_g$('pl.baduuum.client.view.prices', 'PricesViewImpl_BaduuumPricesViewUiBinderImpl', 1755, Ljava_lang_Object_2_classLit_0_g$);
@@ -73444,7 +73445,7 @@ _.build_domId2Element_17_g$ = function build_domId2Element_6_g$(){
   return this.domId2Element_6_g$;
 }
 ;
-_.build_f_HTMLPanel1_20_g$ = function build_f_HTMLPanel1_6_g$(){
+_.build_f_HTMLPanel1_19_g$ = function build_f_HTMLPanel1_6_g$(){
   $clinit_PricesViewImpl_BaduuumPricesViewUiBinderImpl$Widgets_0_g$();
   var __attachRecord___0_g$, f_HTMLPanel1_0_g$;
   f_HTMLPanel1_0_g$ = new HTMLPanel_3_g$(this.template_html1_20_g$().asString_4_g$());
@@ -73485,7 +73486,7 @@ _.build_images_18_g$ = function build_images_6_g$(){
 _.build_menu_17_g$ = function build_menu_6_g$(){
   $clinit_PricesViewImpl_BaduuumPricesViewUiBinderImpl$Widgets_0_g$();
   var menu_0_g$;
-  menu_0_g$ = dynamicCast_0_g$(dynamicCast_0_g$(new MenuWidgetView_1_g$, 1809), 1809);
+  menu_0_g$ = new MenuWidgetView_2_g$('prices');
   return menu_0_g$;
 }
 ;
@@ -73531,9 +73532,9 @@ _.get_domId2Element_17_g$ = function get_domId2Element_6_g$(){
   return this.domId2Element_6_g$;
 }
 ;
-_.get_f_HTMLPanel1_20_g$ = function get_f_HTMLPanel1_6_g$(){
+_.get_f_HTMLPanel1_19_g$ = function get_f_HTMLPanel1_6_g$(){
   $clinit_PricesViewImpl_BaduuumPricesViewUiBinderImpl$Widgets_0_g$();
-  return this.build_f_HTMLPanel1_20_g$();
+  return this.build_f_HTMLPanel1_19_g$();
 }
 ;
 _.get_footer_17_g$ = function get_footer_6_g$(){
@@ -73693,7 +73694,7 @@ _.createAndBindUi_28_g$ = function createAndBindUi_14_g$(owner_0_g$){
 }
 ;
 _.createAndBindUi_36_g$ = function createAndBindUi_15_g$(owner_0_g$){
-  return (new RegulationsViewImpl_BaduuumRegulaionsViewUiBinderImpl$Widgets_1_g$(this, owner_0_g$)).get_f_HTMLPanel1_21_g$();
+  return (new RegulationsViewImpl_BaduuumRegulaionsViewUiBinderImpl$Widgets_1_g$(this, owner_0_g$)).get_f_HTMLPanel1_20_g$();
 }
 ;
 var Lpl_baduuum_client_view_regulations_RegulationsViewImpl_1BaduuumRegulaionsViewUiBinderImpl_2_classLit_0_g$ = createForClass_0_g$('pl.baduuum.client.view.regulations', 'RegulationsViewImpl_BaduuumRegulaionsViewUiBinderImpl', 1763, Ljava_lang_Object_2_classLit_0_g$);
@@ -73768,7 +73769,7 @@ _.build_domId2Element_18_g$ = function build_domId2Element_7_g$(){
   return this.domId2Element_7_g$;
 }
 ;
-_.build_f_HTMLPanel1_21_g$ = function build_f_HTMLPanel1_7_g$(){
+_.build_f_HTMLPanel1_20_g$ = function build_f_HTMLPanel1_7_g$(){
   $clinit_RegulationsViewImpl_BaduuumRegulaionsViewUiBinderImpl$Widgets_0_g$();
   var __attachRecord___0_g$, f_HTMLPanel1_0_g$;
   f_HTMLPanel1_0_g$ = new HTMLPanel_3_g$(this.template_html1_21_g$().asString_4_g$());
@@ -73809,7 +73810,7 @@ _.build_images_19_g$ = function build_images_7_g$(){
 _.build_menu_18_g$ = function build_menu_7_g$(){
   $clinit_RegulationsViewImpl_BaduuumRegulaionsViewUiBinderImpl$Widgets_0_g$();
   var menu_0_g$;
-  menu_0_g$ = dynamicCast_0_g$(dynamicCast_0_g$(new MenuWidgetView_1_g$, 1809), 1809);
+  menu_0_g$ = new MenuWidgetView_2_g$('regulations');
   return menu_0_g$;
 }
 ;
@@ -73855,9 +73856,9 @@ _.get_domId2Element_18_g$ = function get_domId2Element_7_g$(){
   return this.domId2Element_7_g$;
 }
 ;
-_.get_f_HTMLPanel1_21_g$ = function get_f_HTMLPanel1_7_g$(){
+_.get_f_HTMLPanel1_20_g$ = function get_f_HTMLPanel1_7_g$(){
   $clinit_RegulationsViewImpl_BaduuumRegulaionsViewUiBinderImpl$Widgets_0_g$();
-  return this.build_f_HTMLPanel1_21_g$();
+  return this.build_f_HTMLPanel1_20_g$();
 }
 ;
 _.get_footer_18_g$ = function get_footer_7_g$(){
@@ -74017,7 +74018,7 @@ _.createAndBindUi_28_g$ = function createAndBindUi_16_g$(owner_0_g$){
 }
 ;
 _.createAndBindUi_37_g$ = function createAndBindUi_17_g$(owner_0_g$){
-  return (new ReservationViewImpl_BaduuumReservationViewUiBinderImpl$Widgets_1_g$(this, owner_0_g$)).get_f_HTMLPanel1_22_g$();
+  return (new ReservationViewImpl_BaduuumReservationViewUiBinderImpl$Widgets_1_g$(this, owner_0_g$)).get_f_HTMLPanel1_21_g$();
 }
 ;
 var Lpl_baduuum_client_view_reservation_ReservationViewImpl_1BaduuumReservationViewUiBinderImpl_2_classLit_0_g$ = createForClass_0_g$('pl.baduuum.client.view.reservation', 'ReservationViewImpl_BaduuumReservationViewUiBinderImpl', 1771, Ljava_lang_Object_2_classLit_0_g$);
@@ -74092,7 +74093,7 @@ _.build_domId2Element_19_g$ = function build_domId2Element_8_g$(){
   return this.domId2Element_8_g$;
 }
 ;
-_.build_f_HTMLPanel1_22_g$ = function build_f_HTMLPanel1_8_g$(){
+_.build_f_HTMLPanel1_21_g$ = function build_f_HTMLPanel1_8_g$(){
   $clinit_ReservationViewImpl_BaduuumReservationViewUiBinderImpl$Widgets_0_g$();
   var __attachRecord___0_g$, f_HTMLPanel1_0_g$;
   f_HTMLPanel1_0_g$ = new HTMLPanel_3_g$(this.template_html1_22_g$().asString_4_g$());
@@ -74133,7 +74134,7 @@ _.build_images_20_g$ = function build_images_8_g$(){
 _.build_menu_19_g$ = function build_menu_8_g$(){
   $clinit_ReservationViewImpl_BaduuumReservationViewUiBinderImpl$Widgets_0_g$();
   var menu_0_g$;
-  menu_0_g$ = dynamicCast_0_g$(dynamicCast_0_g$(new MenuWidgetView_1_g$, 1809), 1809);
+  menu_0_g$ = new MenuWidgetView_2_g$('reservation');
   return menu_0_g$;
 }
 ;
@@ -74179,9 +74180,9 @@ _.get_domId2Element_19_g$ = function get_domId2Element_8_g$(){
   return this.domId2Element_8_g$;
 }
 ;
-_.get_f_HTMLPanel1_22_g$ = function get_f_HTMLPanel1_8_g$(){
+_.get_f_HTMLPanel1_21_g$ = function get_f_HTMLPanel1_8_g$(){
   $clinit_ReservationViewImpl_BaduuumReservationViewUiBinderImpl$Widgets_0_g$();
-  return this.build_f_HTMLPanel1_22_g$();
+  return this.build_f_HTMLPanel1_21_g$();
 }
 ;
 _.get_footer_19_g$ = function get_footer_8_g$(){
@@ -74341,7 +74342,7 @@ _.createAndBindUi_28_g$ = function createAndBindUi_18_g$(owner_0_g$){
 }
 ;
 _.createAndBindUi_38_g$ = function createAndBindUi_19_g$(owner_0_g$){
-  return (new RoomViewImpl_BaduuumRoomViewUiBinderImpl$Widgets_1_g$(this, owner_0_g$)).get_f_HTMLPanel1_23_g$();
+  return (new RoomViewImpl_BaduuumRoomViewUiBinderImpl$Widgets_1_g$(this, owner_0_g$)).get_f_HTMLPanel1_22_g$();
 }
 ;
 var Lpl_baduuum_client_view_room_RoomViewImpl_1BaduuumRoomViewUiBinderImpl_2_classLit_0_g$ = createForClass_0_g$('pl.baduuum.client.view.room', 'RoomViewImpl_BaduuumRoomViewUiBinderImpl', 1779, Ljava_lang_Object_2_classLit_0_g$);
@@ -74416,7 +74417,7 @@ _.build_domId2Element_20_g$ = function build_domId2Element_9_g$(){
   return this.domId2Element_9_g$;
 }
 ;
-_.build_f_HTMLPanel1_23_g$ = function build_f_HTMLPanel1_9_g$(){
+_.build_f_HTMLPanel1_22_g$ = function build_f_HTMLPanel1_9_g$(){
   $clinit_RoomViewImpl_BaduuumRoomViewUiBinderImpl$Widgets_0_g$();
   var __attachRecord___0_g$, f_HTMLPanel1_0_g$;
   f_HTMLPanel1_0_g$ = new HTMLPanel_3_g$(this.template_html1_23_g$().asString_4_g$());
@@ -74457,7 +74458,7 @@ _.build_images_21_g$ = function build_images_9_g$(){
 _.build_menu_20_g$ = function build_menu_9_g$(){
   $clinit_RoomViewImpl_BaduuumRoomViewUiBinderImpl$Widgets_0_g$();
   var menu_0_g$;
-  menu_0_g$ = dynamicCast_0_g$(dynamicCast_0_g$(new MenuWidgetView_1_g$, 1809), 1809);
+  menu_0_g$ = new MenuWidgetView_2_g$('room');
   return menu_0_g$;
 }
 ;
@@ -74503,9 +74504,9 @@ _.get_domId2Element_20_g$ = function get_domId2Element_9_g$(){
   return this.domId2Element_9_g$;
 }
 ;
-_.get_f_HTMLPanel1_23_g$ = function get_f_HTMLPanel1_9_g$(){
+_.get_f_HTMLPanel1_22_g$ = function get_f_HTMLPanel1_9_g$(){
   $clinit_RoomViewImpl_BaduuumRoomViewUiBinderImpl$Widgets_0_g$();
-  return this.build_f_HTMLPanel1_23_g$();
+  return this.build_f_HTMLPanel1_22_g$();
 }
 ;
 _.get_footer_20_g$ = function get_footer_9_g$(){
@@ -74608,7 +74609,7 @@ _.html1_14_g$ = function html1_9_g$(arg0_0_g$, arg1_0_g$, arg2_0_g$){
   sb_0_g$.append_78_g$(htmlEscape_1_g$(arg0_0_g$));
   sb_0_g$.append_78_g$("'><\/span>  <span id='");
   sb_0_g$.append_78_g$(htmlEscape_1_g$(arg1_0_g$));
-  sb_0_g$.append_78_g$("'><\/span>room  <span id='");
+  sb_0_g$.append_78_g$("'><\/span> room  <span id='");
   sb_0_g$.append_78_g$(htmlEscape_1_g$(arg2_0_g$));
   sb_0_g$.append_78_g$("'><\/span>  <\/div> <\/div>");
   return new OnlyToBeUsedInGeneratedCodeStringBlessedAsSafeHtml_1_g$(sb_0_g$.toString$());
@@ -74665,7 +74666,7 @@ _.createAndBindUi_28_g$ = function createAndBindUi_20_g$(owner_0_g$){
 }
 ;
 _.createAndBindUi_39_g$ = function createAndBindUi_21_g$(owner_0_g$){
-  return (new StudioViewImpl_BaduuumStudioViewUiBinderImpl$Widgets_1_g$(this, owner_0_g$)).get_f_HTMLPanel1_24_g$();
+  return (new StudioViewImpl_BaduuumStudioViewUiBinderImpl$Widgets_1_g$(this, owner_0_g$)).get_f_HTMLPanel1_23_g$();
 }
 ;
 var Lpl_baduuum_client_view_studio_StudioViewImpl_1BaduuumStudioViewUiBinderImpl_2_classLit_0_g$ = createForClass_0_g$('pl.baduuum.client.view.studio', 'StudioViewImpl_BaduuumStudioViewUiBinderImpl', 1787, Ljava_lang_Object_2_classLit_0_g$);
@@ -74740,7 +74741,7 @@ _.build_domId2Element_21_g$ = function build_domId2Element_10_g$(){
   return this.domId2Element_10_g$;
 }
 ;
-_.build_f_HTMLPanel1_24_g$ = function build_f_HTMLPanel1_10_g$(){
+_.build_f_HTMLPanel1_23_g$ = function build_f_HTMLPanel1_10_g$(){
   $clinit_StudioViewImpl_BaduuumStudioViewUiBinderImpl$Widgets_0_g$();
   var __attachRecord___0_g$, f_HTMLPanel1_0_g$;
   f_HTMLPanel1_0_g$ = new HTMLPanel_3_g$(this.template_html1_24_g$().asString_4_g$());
@@ -74781,7 +74782,7 @@ _.build_images_22_g$ = function build_images_10_g$(){
 _.build_menu_21_g$ = function build_menu_10_g$(){
   $clinit_StudioViewImpl_BaduuumStudioViewUiBinderImpl$Widgets_0_g$();
   var menu_0_g$;
-  menu_0_g$ = dynamicCast_0_g$(dynamicCast_0_g$(new MenuWidgetView_1_g$, 1809), 1809);
+  menu_0_g$ = new MenuWidgetView_2_g$('studio');
   return menu_0_g$;
 }
 ;
@@ -74827,9 +74828,9 @@ _.get_domId2Element_21_g$ = function get_domId2Element_10_g$(){
   return this.domId2Element_10_g$;
 }
 ;
-_.get_f_HTMLPanel1_24_g$ = function get_f_HTMLPanel1_10_g$(){
+_.get_f_HTMLPanel1_23_g$ = function get_f_HTMLPanel1_10_g$(){
   $clinit_StudioViewImpl_BaduuumStudioViewUiBinderImpl$Widgets_0_g$();
-  return this.build_f_HTMLPanel1_24_g$();
+  return this.build_f_HTMLPanel1_23_g$();
 }
 ;
 _.get_footer_21_g$ = function get_footer_10_g$(){
@@ -74985,7 +74986,7 @@ _.createAndBindUi_28_g$ = function createAndBindUi_22_g$(owner_0_g$){
 }
 ;
 _.createAndBindUi_40_g$ = function createAndBindUi_23_g$(owner_0_g$){
-  return (new FooterWidgetView_FooterWidgetViewUiBinderImpl$Widgets_1_g$(this, owner_0_g$)).get_f_HTMLPanel1_25_g$();
+  return (new FooterWidgetView_FooterWidgetViewUiBinderImpl$Widgets_1_g$(this, owner_0_g$)).get_f_HTMLPanel1_24_g$();
 }
 ;
 var Lpl_baduuum_client_view_widgets_FooterWidgetView_1FooterWidgetViewUiBinderImpl_2_classLit_0_g$ = createForClass_0_g$('pl.baduuum.client.view.widgets', 'FooterWidgetView_FooterWidgetViewUiBinderImpl', 1795, Ljava_lang_Object_2_classLit_0_g$);
@@ -75018,7 +75019,7 @@ _.build_clientBundleFieldNameUnlikelyToCollideWithUserSpecifiedFieldOkay_25_g$ =
   return clientBundleFieldNameUnlikelyToCollideWithUserSpecifiedFieldOkay_0_g$;
 }
 ;
-_.build_f_HTMLPanel1_25_g$ = function build_f_HTMLPanel1_11_g$(){
+_.build_f_HTMLPanel1_24_g$ = function build_f_HTMLPanel1_11_g$(){
   $clinit_FooterWidgetView_FooterWidgetViewUiBinderImpl$Widgets_0_g$();
   var f_HTMLPanel1_0_g$;
   f_HTMLPanel1_0_g$ = new HTMLPanel_3_g$(this.template_html1_25_g$().asString_4_g$());
@@ -75030,9 +75031,9 @@ _.get_clientBundleFieldNameUnlikelyToCollideWithUserSpecifiedFieldOkay_25_g$ = f
   return this.build_clientBundleFieldNameUnlikelyToCollideWithUserSpecifiedFieldOkay_25_g$();
 }
 ;
-_.get_f_HTMLPanel1_25_g$ = function get_f_HTMLPanel1_11_g$(){
+_.get_f_HTMLPanel1_24_g$ = function get_f_HTMLPanel1_11_g$(){
   $clinit_FooterWidgetView_FooterWidgetViewUiBinderImpl$Widgets_0_g$();
-  return this.build_f_HTMLPanel1_25_g$();
+  return this.build_f_HTMLPanel1_24_g$();
 }
 ;
 _.template_html1_25_g$ = function template_html1_11_g$(){
@@ -75157,7 +75158,7 @@ _.createAndBindUi_28_g$ = function createAndBindUi_24_g$(owner_0_g$){
 }
 ;
 _.createAndBindUi_41_g$ = function createAndBindUi_25_g$(owner_0_g$){
-  return (new HeaderWidgetView_HeaderWidgetViewUiBinderImpl$Widgets_1_g$(this, owner_0_g$)).get_f_HTMLPanel1_26_g$();
+  return (new HeaderWidgetView_HeaderWidgetViewUiBinderImpl$Widgets_1_g$(this, owner_0_g$)).get_f_HTMLPanel1_25_g$();
 }
 ;
 var Lpl_baduuum_client_view_widgets_HeaderWidgetView_1HeaderWidgetViewUiBinderImpl_2_classLit_0_g$ = createForClass_0_g$('pl.baduuum.client.view.widgets', 'HeaderWidgetView_HeaderWidgetViewUiBinderImpl', 1803, Ljava_lang_Object_2_classLit_0_g$);
@@ -75204,7 +75205,7 @@ _.build_domId0Element_23_g$ = function build_domId0Element_11_g$(){
   return this.domId0Element_11_g$;
 }
 ;
-_.build_f_HTMLPanel1_26_g$ = function build_f_HTMLPanel1_12_g$(){
+_.build_f_HTMLPanel1_25_g$ = function build_f_HTMLPanel1_12_g$(){
   $clinit_HeaderWidgetView_HeaderWidgetViewUiBinderImpl$Widgets_0_g$();
   var __attachRecord___0_g$, f_HTMLPanel1_0_g$;
   f_HTMLPanel1_0_g$ = new HTMLPanel_3_g$(this.template_html1_26_g$().asString_4_g$());
@@ -75246,9 +75247,9 @@ _.get_domId0Element_23_g$ = function get_domId0Element_11_g$(){
   return this.domId0Element_11_g$;
 }
 ;
-_.get_f_HTMLPanel1_26_g$ = function get_f_HTMLPanel1_12_g$(){
+_.get_f_HTMLPanel1_25_g$ = function get_f_HTMLPanel1_12_g$(){
   $clinit_HeaderWidgetView_HeaderWidgetViewUiBinderImpl$Widgets_0_g$();
-  return this.build_f_HTMLPanel1_26_g$();
+  return this.build_f_HTMLPanel1_25_g$();
 }
 ;
 _.get_f_Image2_1_g$ = function get_f_Image2_0_g$(){
@@ -75342,175 +75343,1580 @@ var Lpl_baduuum_client_view_widgets_HeaderWidgetView_1HeaderWidgetViewUiBinderIm
 function $clinit_MenuWidgetView_0_g$(){
   $clinit_MenuWidgetView_0_g$ = emptyMethod_0_g$;
   $clinit_Composite_0_g$();
-  uiBinder_13_g$ = dynamicCast_0_g$(new MenuWidgetView_MenuWidgetViewUiBinderImpl_1_g$, 1810);
 }
 
 function MenuWidgetView_1_g$(){
   $clinit_MenuWidgetView_0_g$();
   Composite_1_g$.call(this);
   this.$init_2357_g$();
+  uiBinder_13_g$ = dynamicCast_0_g$(new MenuWidgetView_MenuWidgetViewHomeUiBinderImpl_1_g$, 1071);
   this.initWidget_1_g$(dynamicCast_0_g$(uiBinder_13_g$.createAndBindUi_28_g$(this), 1415));
 }
 
-defineClass_0_g$(1809, 1191, {863:1, 886:1, 1092:1, 1191:1, 1261:1, 1278:1, 1280:1, 1401:1, 1415:1, 1:1, 1809:1}, MenuWidgetView_1_g$);
+function MenuWidgetView_2_g$(activeMenuItem_0_g$){
+  $clinit_MenuWidgetView_0_g$();
+  Composite_1_g$.call(this);
+  this.$init_2357_g$();
+  if (equals_Ljava_lang_Object__Z__devirtual$_1_g$(activeMenuItem_0_g$, 'home')) {
+    uiBinder_13_g$ = dynamicCast_0_g$(new MenuWidgetView_MenuWidgetViewHomeUiBinderImpl_1_g$, 1071);
+  }
+   else if (equals_Ljava_lang_Object__Z__devirtual$_1_g$(activeMenuItem_0_g$, 'prices')) {
+    uiBinder_13_g$ = dynamicCast_0_g$(new MenuWidgetView_MenuWidgetViewPricesUiBinderImpl_1_g$, 1071);
+  }
+   else if (equals_Ljava_lang_Object__Z__devirtual$_1_g$(activeMenuItem_0_g$, 'calendar')) {
+    uiBinder_13_g$ = dynamicCast_0_g$(new MenuWidgetView_MenuWidgetViewCalendarUiBinderImpl_1_g$, 1071);
+  }
+   else if (equals_Ljava_lang_Object__Z__devirtual$_1_g$(activeMenuItem_0_g$, 'contact')) {
+    uiBinder_13_g$ = dynamicCast_0_g$(new MenuWidgetView_MenuWidgetViewContactUiBinderImpl_1_g$, 1071);
+  }
+   else if (equals_Ljava_lang_Object__Z__devirtual$_1_g$(activeMenuItem_0_g$, 'faq')) {
+    uiBinder_13_g$ = dynamicCast_0_g$(new MenuWidgetView_MenuWidgetViewFaqUiBinderImpl_1_g$, 1071);
+  }
+   else if (equals_Ljava_lang_Object__Z__devirtual$_1_g$(activeMenuItem_0_g$, 'gallery')) {
+    uiBinder_13_g$ = dynamicCast_0_g$(new MenuWidgetView_MenuWidgetViewGalleryUiBinderImpl_1_g$, 1071);
+  }
+   else if (equals_Ljava_lang_Object__Z__devirtual$_1_g$(activeMenuItem_0_g$, 'regulations')) {
+    uiBinder_13_g$ = dynamicCast_0_g$(new MenuWidgetView_MenuWidgetViewRegulationsUiBinderImpl_1_g$, 1071);
+  }
+   else if (equals_Ljava_lang_Object__Z__devirtual$_1_g$(activeMenuItem_0_g$, 'reservation')) {
+    uiBinder_13_g$ = dynamicCast_0_g$(new MenuWidgetView_MenuWidgetViewReservationUiBinderImpl_1_g$, 1071);
+  }
+   else if (equals_Ljava_lang_Object__Z__devirtual$_1_g$(activeMenuItem_0_g$, 'room')) {
+    uiBinder_13_g$ = dynamicCast_0_g$(new MenuWidgetView_MenuWidgetViewRoomUiBinderImpl_1_g$, 1071);
+  }
+   else if (equals_Ljava_lang_Object__Z__devirtual$_1_g$(activeMenuItem_0_g$, 'studio')) {
+    uiBinder_13_g$ = dynamicCast_0_g$(new MenuWidgetView_MenuWidgetViewStudioUiBinderImpl_1_g$, 1071);
+  }
+  this.initWidget_1_g$(dynamicCast_0_g$(uiBinder_13_g$.createAndBindUi_28_g$(this), 1415));
+}
+
+defineClass_0_g$(1809, 1191, {863:1, 886:1, 1092:1, 1191:1, 1261:1, 1278:1, 1280:1, 1401:1, 1415:1, 1:1, 1809:1}, MenuWidgetView_1_g$, MenuWidgetView_2_g$);
 _.$init_2357_g$ = function $init_1176_g$(){
   $clinit_MenuWidgetView_0_g$();
 }
 ;
 var uiBinder_13_g$;
 var Lpl_baduuum_client_view_widgets_MenuWidgetView_2_classLit_0_g$ = createForClass_0_g$('pl.baduuum.client.view.widgets', 'MenuWidgetView', 1809, Lcom_google_gwt_user_client_ui_Composite_2_classLit_0_g$);
-function $clinit_MenuWidgetView$MenuWidgetViewUiBinder_0_g$(){
-  $clinit_MenuWidgetView$MenuWidgetViewUiBinder_0_g$ = emptyMethod_0_g$;
+function $clinit_MenuWidgetView$MenuWidgetViewCalendarUiBinder_0_g$(){
+  $clinit_MenuWidgetView$MenuWidgetViewCalendarUiBinder_0_g$ = emptyMethod_0_g$;
 }
 
-function $clinit_MenuWidgetView_MenuWidgetViewUiBinderImpl_0_g$(){
-  $clinit_MenuWidgetView_MenuWidgetViewUiBinderImpl_0_g$ = emptyMethod_0_g$;
+function $clinit_MenuWidgetView$MenuWidgetViewContactUiBinder_0_g$(){
+  $clinit_MenuWidgetView$MenuWidgetViewContactUiBinder_0_g$ = emptyMethod_0_g$;
+}
+
+function $clinit_MenuWidgetView$MenuWidgetViewFaqUiBinder_0_g$(){
+  $clinit_MenuWidgetView$MenuWidgetViewFaqUiBinder_0_g$ = emptyMethod_0_g$;
+}
+
+function $clinit_MenuWidgetView$MenuWidgetViewGalleryUiBinder_0_g$(){
+  $clinit_MenuWidgetView$MenuWidgetViewGalleryUiBinder_0_g$ = emptyMethod_0_g$;
+}
+
+function $clinit_MenuWidgetView$MenuWidgetViewHomeUiBinder_0_g$(){
+  $clinit_MenuWidgetView$MenuWidgetViewHomeUiBinder_0_g$ = emptyMethod_0_g$;
+}
+
+function $clinit_MenuWidgetView$MenuWidgetViewPricesUiBinder_0_g$(){
+  $clinit_MenuWidgetView$MenuWidgetViewPricesUiBinder_0_g$ = emptyMethod_0_g$;
+}
+
+function $clinit_MenuWidgetView$MenuWidgetViewRegulationsUiBinder_0_g$(){
+  $clinit_MenuWidgetView$MenuWidgetViewRegulationsUiBinder_0_g$ = emptyMethod_0_g$;
+}
+
+function $clinit_MenuWidgetView$MenuWidgetViewReservationUiBinder_0_g$(){
+  $clinit_MenuWidgetView$MenuWidgetViewReservationUiBinder_0_g$ = emptyMethod_0_g$;
+}
+
+function $clinit_MenuWidgetView$MenuWidgetViewRoomUiBinder_0_g$(){
+  $clinit_MenuWidgetView$MenuWidgetViewRoomUiBinder_0_g$ = emptyMethod_0_g$;
+}
+
+function $clinit_MenuWidgetView$MenuWidgetViewStudioUiBinder_0_g$(){
+  $clinit_MenuWidgetView$MenuWidgetViewStudioUiBinder_0_g$ = emptyMethod_0_g$;
+}
+
+function $clinit_MenuWidgetView_MenuWidgetViewCalendarUiBinderImpl_0_g$(){
+  $clinit_MenuWidgetView_MenuWidgetViewCalendarUiBinderImpl_0_g$ = emptyMethod_0_g$;
   $clinit_Object_0_g$();
 }
 
-function MenuWidgetView_MenuWidgetViewUiBinderImpl_1_g$(){
-  $clinit_MenuWidgetView_MenuWidgetViewUiBinderImpl_0_g$();
+function MenuWidgetView_MenuWidgetViewCalendarUiBinderImpl_1_g$(){
+  $clinit_MenuWidgetView_MenuWidgetViewCalendarUiBinderImpl_0_g$();
   Object_1_g$.call(this);
-  this.$init_2358_g$();
+  this.$init_2410_g$();
 }
 
-defineClass_0_g$(1811, 1, {1071:1, 1:1, 1810:1, 1811:1}, MenuWidgetView_MenuWidgetViewUiBinderImpl_1_g$);
-_.$init_2358_g$ = function $init_1177_g$(){
-  $clinit_MenuWidgetView_MenuWidgetViewUiBinderImpl_0_g$();
-  this.template_15_g$ = dynamicCast_0_g$(new MenuWidgetView_MenuWidgetViewUiBinderImpl_TemplateImpl_1_g$, 1812);
+defineClass_0_g$(1840, 1, {1071:1, 1:1, 1832:1, 1840:1}, MenuWidgetView_MenuWidgetViewCalendarUiBinderImpl_1_g$);
+_.$init_2410_g$ = function $init_2378_g$(){
+  $clinit_MenuWidgetView_MenuWidgetViewCalendarUiBinderImpl_0_g$();
+  this.template_18_g$ = dynamicCast_0_g$(new MenuWidgetView_MenuWidgetViewCalendarUiBinderImpl_TemplateImpl_1_g$, 1841);
 }
 ;
-_.createAndBindUi_28_g$ = function createAndBindUi_26_g$(owner_0_g$){
+_.createAndBindUi_28_g$ = function createAndBindUi_47_g$(owner_0_g$){
   return this.createAndBindUi_42_g$(dynamicCast_0_g$(owner_0_g$, 1809));
 }
 ;
-_.createAndBindUi_42_g$ = function createAndBindUi_27_g$(owner_0_g$){
-  return (new MenuWidgetView_MenuWidgetViewUiBinderImpl$Widgets_1_g$(this, owner_0_g$)).get_f_HTMLPanel1_27_g$();
+_.createAndBindUi_42_g$ = function createAndBindUi_48_g$(owner_0_g$){
+  return (new MenuWidgetView_MenuWidgetViewCalendarUiBinderImpl$Widgets_1_g$(this, owner_0_g$)).get_navNenu_14_g$();
 }
 ;
-var Lpl_baduuum_client_view_widgets_MenuWidgetView_1MenuWidgetViewUiBinderImpl_2_classLit_0_g$ = createForClass_0_g$('pl.baduuum.client.view.widgets', 'MenuWidgetView_MenuWidgetViewUiBinderImpl', 1811, Ljava_lang_Object_2_classLit_0_g$);
-function $clinit_MenuWidgetView_MenuWidgetViewUiBinderImpl$Template_0_g$(){
-  $clinit_MenuWidgetView_MenuWidgetViewUiBinderImpl$Template_0_g$ = emptyMethod_0_g$;
+var Lpl_baduuum_client_view_widgets_MenuWidgetView_1MenuWidgetViewCalendarUiBinderImpl_2_classLit_0_g$ = createForClass_0_g$('pl.baduuum.client.view.widgets', 'MenuWidgetView_MenuWidgetViewCalendarUiBinderImpl', 1840, Ljava_lang_Object_2_classLit_0_g$);
+function $clinit_MenuWidgetView_MenuWidgetViewCalendarUiBinderImpl$Template_0_g$(){
+  $clinit_MenuWidgetView_MenuWidgetViewCalendarUiBinderImpl$Template_0_g$ = emptyMethod_0_g$;
 }
 
-function $clinit_MenuWidgetView_MenuWidgetViewUiBinderImpl$Widgets_0_g$(){
-  $clinit_MenuWidgetView_MenuWidgetViewUiBinderImpl$Widgets_0_g$ = emptyMethod_0_g$;
+function $clinit_MenuWidgetView_MenuWidgetViewCalendarUiBinderImpl$Widgets_0_g$(){
+  $clinit_MenuWidgetView_MenuWidgetViewCalendarUiBinderImpl$Widgets_0_g$ = emptyMethod_0_g$;
   $clinit_Object_0_g$();
 }
 
-function MenuWidgetView_MenuWidgetViewUiBinderImpl$Widgets_1_g$(this$0_0_g$, owner_0_g$){
-  $clinit_MenuWidgetView_MenuWidgetViewUiBinderImpl$Widgets_0_g$();
-  this.this$01_92_g$ = this$0_0_g$;
+function MenuWidgetView_MenuWidgetViewCalendarUiBinderImpl$Widgets_1_g$(this$0_0_g$, owner_0_g$){
+  $clinit_MenuWidgetView_MenuWidgetViewCalendarUiBinderImpl$Widgets_0_g$();
+  this.this$01_95_g$ = this$0_0_g$;
   Object_1_g$.call(this);
-  this.$init_2359_g$();
-  this.owner_14_g$ = owner_0_g$;
+  this.$init_2411_g$();
+  this.owner_17_g$ = owner_0_g$;
 }
 
-defineClass_0_g$(1813, 1, {1:1, 1813:1}, MenuWidgetView_MenuWidgetViewUiBinderImpl$Widgets_1_g$);
-_.$init_2359_g$ = function $init_1178_g$(){
-  $clinit_MenuWidgetView_MenuWidgetViewUiBinderImpl$Widgets_0_g$();
+defineClass_0_g$(1842, 1, {1:1, 1842:1}, MenuWidgetView_MenuWidgetViewCalendarUiBinderImpl$Widgets_1_g$);
+_.$init_2411_g$ = function $init_2379_g$(){
+  $clinit_MenuWidgetView_MenuWidgetViewCalendarUiBinderImpl$Widgets_0_g$();
 }
 ;
-_.build_clientBundleFieldNameUnlikelyToCollideWithUserSpecifiedFieldOkay_27_g$ = function build_clientBundleFieldNameUnlikelyToCollideWithUserSpecifiedFieldOkay_13_g$(){
-  $clinit_MenuWidgetView_MenuWidgetViewUiBinderImpl$Widgets_0_g$();
+_.build_clientBundleFieldNameUnlikelyToCollideWithUserSpecifiedFieldOkay_40_g$ = function build_clientBundleFieldNameUnlikelyToCollideWithUserSpecifiedFieldOkay_32_g$(){
+  $clinit_MenuWidgetView_MenuWidgetViewCalendarUiBinderImpl$Widgets_0_g$();
   var clientBundleFieldNameUnlikelyToCollideWithUserSpecifiedFieldOkay_0_g$;
-  clientBundleFieldNameUnlikelyToCollideWithUserSpecifiedFieldOkay_0_g$ = dynamicCast_0_g$(dynamicCast_0_g$(new MenuWidgetView_MenuWidgetViewUiBinderImpl_GenBundle_default_InlineClientBundleGenerator_1_g$, 1814), 1814);
+  clientBundleFieldNameUnlikelyToCollideWithUserSpecifiedFieldOkay_0_g$ = dynamicCast_0_g$(dynamicCast_0_g$(new MenuWidgetView_MenuWidgetViewCalendarUiBinderImpl_GenBundle_default_InlineClientBundleGenerator_1_g$, 1843), 1843);
   return clientBundleFieldNameUnlikelyToCollideWithUserSpecifiedFieldOkay_0_g$;
 }
 ;
-_.build_f_HTMLPanel1_27_g$ = function build_f_HTMLPanel1_13_g$(){
-  $clinit_MenuWidgetView_MenuWidgetViewUiBinderImpl$Widgets_0_g$();
-  var f_HTMLPanel1_0_g$;
-  f_HTMLPanel1_0_g$ = new HTMLPanel_3_g$(this.template_html1_27_g$().asString_4_g$());
-  return f_HTMLPanel1_0_g$;
+_.build_navNenu_14_g$ = function build_navNenu_6_g$(){
+  $clinit_MenuWidgetView_MenuWidgetViewCalendarUiBinderImpl$Widgets_0_g$();
+  var navNenu_0_g$;
+  navNenu_0_g$ = new HTMLPanel_3_g$(this.template_html1_40_g$().asString_4_g$());
+  return navNenu_0_g$;
 }
 ;
-_.get_clientBundleFieldNameUnlikelyToCollideWithUserSpecifiedFieldOkay_27_g$ = function get_clientBundleFieldNameUnlikelyToCollideWithUserSpecifiedFieldOkay_13_g$(){
-  $clinit_MenuWidgetView_MenuWidgetViewUiBinderImpl$Widgets_0_g$();
-  return this.build_clientBundleFieldNameUnlikelyToCollideWithUserSpecifiedFieldOkay_27_g$();
+_.get_clientBundleFieldNameUnlikelyToCollideWithUserSpecifiedFieldOkay_40_g$ = function get_clientBundleFieldNameUnlikelyToCollideWithUserSpecifiedFieldOkay_32_g$(){
+  $clinit_MenuWidgetView_MenuWidgetViewCalendarUiBinderImpl$Widgets_0_g$();
+  return this.build_clientBundleFieldNameUnlikelyToCollideWithUserSpecifiedFieldOkay_40_g$();
 }
 ;
-_.get_f_HTMLPanel1_27_g$ = function get_f_HTMLPanel1_13_g$(){
-  $clinit_MenuWidgetView_MenuWidgetViewUiBinderImpl$Widgets_0_g$();
-  return this.build_f_HTMLPanel1_27_g$();
+_.get_navNenu_14_g$ = function get_navNenu_6_g$(){
+  $clinit_MenuWidgetView_MenuWidgetViewCalendarUiBinderImpl$Widgets_0_g$();
+  return this.build_navNenu_14_g$();
 }
 ;
-_.template_html1_27_g$ = function template_html1_13_g$(){
-  return this.this$01_92_g$.template_15_g$.html1_15_g$();
+_.template_html1_40_g$ = function template_html1_32_g$(){
+  return this.this$01_95_g$.template_18_g$.html1_15_g$();
 }
 ;
-var Lpl_baduuum_client_view_widgets_MenuWidgetView_1MenuWidgetViewUiBinderImpl$Widgets_2_classLit_0_g$ = createForClass_0_g$('pl.baduuum.client.view.widgets', 'MenuWidgetView_MenuWidgetViewUiBinderImpl/Widgets', 1813, Ljava_lang_Object_2_classLit_0_g$);
-function $clinit_MenuWidgetView_MenuWidgetViewUiBinderImpl_GenBundle_0_g$(){
-  $clinit_MenuWidgetView_MenuWidgetViewUiBinderImpl_GenBundle_0_g$ = emptyMethod_0_g$;
+var Lpl_baduuum_client_view_widgets_MenuWidgetView_1MenuWidgetViewCalendarUiBinderImpl$Widgets_2_classLit_0_g$ = createForClass_0_g$('pl.baduuum.client.view.widgets', 'MenuWidgetView_MenuWidgetViewCalendarUiBinderImpl/Widgets', 1842, Ljava_lang_Object_2_classLit_0_g$);
+function $clinit_MenuWidgetView_MenuWidgetViewCalendarUiBinderImpl_GenBundle_0_g$(){
+  $clinit_MenuWidgetView_MenuWidgetViewCalendarUiBinderImpl_GenBundle_0_g$ = emptyMethod_0_g$;
 }
 
-function $clinit_MenuWidgetView_MenuWidgetViewUiBinderImpl_GenBundle_default_InlineClientBundleGenerator_0_g$(){
-  $clinit_MenuWidgetView_MenuWidgetViewUiBinderImpl_GenBundle_default_InlineClientBundleGenerator_0_g$ = emptyMethod_0_g$;
+function $clinit_MenuWidgetView_MenuWidgetViewCalendarUiBinderImpl_GenBundle_default_InlineClientBundleGenerator_0_g$(){
+  $clinit_MenuWidgetView_MenuWidgetViewCalendarUiBinderImpl_GenBundle_default_InlineClientBundleGenerator_0_g$ = emptyMethod_0_g$;
   $clinit_Object_0_g$();
-  _instance0_19_g$ = new MenuWidgetView_MenuWidgetViewUiBinderImpl_GenBundle_default_InlineClientBundleGenerator_1_g$;
+  _instance0_22_g$ = new MenuWidgetView_MenuWidgetViewCalendarUiBinderImpl_GenBundle_default_InlineClientBundleGenerator_1_g$;
 }
 
-function MenuWidgetView_MenuWidgetViewUiBinderImpl_GenBundle_default_InlineClientBundleGenerator_1_g$(){
-  $clinit_MenuWidgetView_MenuWidgetViewUiBinderImpl_GenBundle_default_InlineClientBundleGenerator_0_g$();
+function MenuWidgetView_MenuWidgetViewCalendarUiBinderImpl_GenBundle_default_InlineClientBundleGenerator_1_g$(){
+  $clinit_MenuWidgetView_MenuWidgetViewCalendarUiBinderImpl_GenBundle_default_InlineClientBundleGenerator_0_g$();
   Object_1_g$.call(this);
-  this.$init_2360_g$();
+  this.$init_2412_g$();
 }
 
-defineClass_0_g$(1815, 1, {1001:1, 1:1, 1814:1, 1815:1}, MenuWidgetView_MenuWidgetViewUiBinderImpl_GenBundle_default_InlineClientBundleGenerator_1_g$);
-_.$init_2360_g$ = function $init_1179_g$(){
-  $clinit_MenuWidgetView_MenuWidgetViewUiBinderImpl_GenBundle_default_InlineClientBundleGenerator_0_g$();
+defineClass_0_g$(1844, 1, {1001:1, 1:1, 1843:1, 1844:1}, MenuWidgetView_MenuWidgetViewCalendarUiBinderImpl_GenBundle_default_InlineClientBundleGenerator_1_g$);
+_.$init_2412_g$ = function $init_2380_g$(){
+  $clinit_MenuWidgetView_MenuWidgetViewCalendarUiBinderImpl_GenBundle_default_InlineClientBundleGenerator_0_g$();
 }
 ;
-_.getResource_20_g$ = function getResource_19_g$(name_0_g$){
+_.getResource_20_g$ = function getResource_23_g$(name_0_g$){
   if (isScript_0_g$()) {
-    return this.getResourceNative_39_g$(name_0_g$);
+    return this.getResourceNative_52_g$(name_0_g$);
   }
    else {
-    if (isNull_0_g$(resourceMap_19_g$)) {
-      resourceMap_19_g$ = new HashMap_1_g$;
+    if (isNull_0_g$(resourceMap_22_g$)) {
+      resourceMap_22_g$ = new HashMap_1_g$;
     }
-    return dynamicCast_0_g$(resourceMap_19_g$.get_74_g$(name_0_g$), 1016);
+    return dynamicCast_0_g$(resourceMap_22_g$.get_74_g$(name_0_g$), 1016);
   }
 }
 ;
-_.getResourceNative_39_g$ = function getResourceNative_19_g$(name_0_g$){
-  $clinit_MenuWidgetView_MenuWidgetViewUiBinderImpl_GenBundle_default_InlineClientBundleGenerator_0_g$();
+_.getResourceNative_52_g$ = function getResourceNative_44_g$(name_0_g$){
+  $clinit_MenuWidgetView_MenuWidgetViewCalendarUiBinderImpl_GenBundle_default_InlineClientBundleGenerator_0_g$();
   switch (name_0_g$) {
   }
   ;
   return null;
 }
 ;
-_.getResources_20_g$ = function getResources_19_g$(){
+_.getResources_20_g$ = function getResources_23_g$(){
   return initValues_0_g$(getClassLiteralForArray_0_g$(Lcom_google_gwt_resources_client_ResourcePrototype_2_classLit_0_g$, 1), {1017:1, 1462:1, 1485:1, 1:1, 1514:1}, 1016, 0, []);
 }
 ;
-var _instance0_19_g$, resourceMap_19_g$;
-var Lpl_baduuum_client_view_widgets_MenuWidgetView_1MenuWidgetViewUiBinderImpl_1GenBundle_1default_1InlineClientBundleGenerator_2_classLit_0_g$ = createForClass_0_g$('pl.baduuum.client.view.widgets', 'MenuWidgetView_MenuWidgetViewUiBinderImpl_GenBundle_default_InlineClientBundleGenerator', 1815, Ljava_lang_Object_2_classLit_0_g$);
-function $clinit_MenuWidgetView_MenuWidgetViewUiBinderImpl_TemplateImpl_0_g$(){
-  $clinit_MenuWidgetView_MenuWidgetViewUiBinderImpl_TemplateImpl_0_g$ = emptyMethod_0_g$;
+var _instance0_22_g$, resourceMap_22_g$;
+var Lpl_baduuum_client_view_widgets_MenuWidgetView_1MenuWidgetViewCalendarUiBinderImpl_1GenBundle_1default_1InlineClientBundleGenerator_2_classLit_0_g$ = createForClass_0_g$('pl.baduuum.client.view.widgets', 'MenuWidgetView_MenuWidgetViewCalendarUiBinderImpl_GenBundle_default_InlineClientBundleGenerator', 1844, Ljava_lang_Object_2_classLit_0_g$);
+function $clinit_MenuWidgetView_MenuWidgetViewCalendarUiBinderImpl_TemplateImpl_0_g$(){
+  $clinit_MenuWidgetView_MenuWidgetViewCalendarUiBinderImpl_TemplateImpl_0_g$ = emptyMethod_0_g$;
   $clinit_Object_0_g$();
 }
 
-function MenuWidgetView_MenuWidgetViewUiBinderImpl_TemplateImpl_1_g$(){
-  $clinit_MenuWidgetView_MenuWidgetViewUiBinderImpl_TemplateImpl_0_g$();
+function MenuWidgetView_MenuWidgetViewCalendarUiBinderImpl_TemplateImpl_1_g$(){
+  $clinit_MenuWidgetView_MenuWidgetViewCalendarUiBinderImpl_TemplateImpl_0_g$();
   Object_1_g$.call(this);
-  this.$init_2361_g$();
+  this.$init_2413_g$();
 }
 
-defineClass_0_g$(1816, 1, {1030:1, 1:1, 1812:1, 1816:1}, MenuWidgetView_MenuWidgetViewUiBinderImpl_TemplateImpl_1_g$);
-_.$init_2361_g$ = function $init_1180_g$(){
-  $clinit_MenuWidgetView_MenuWidgetViewUiBinderImpl_TemplateImpl_0_g$();
+defineClass_0_g$(1845, 1, {1030:1, 1:1, 1841:1, 1845:1}, MenuWidgetView_MenuWidgetViewCalendarUiBinderImpl_TemplateImpl_1_g$);
+_.$init_2413_g$ = function $init_2381_g$(){
+  $clinit_MenuWidgetView_MenuWidgetViewCalendarUiBinderImpl_TemplateImpl_0_g$();
 }
 ;
-_.html1_15_g$ = function html1_13_g$(){
+_.html1_15_g$ = function html1_19_g$(){
   var sb_0_g$;
   sb_0_g$ = new StringBuilder_1_g$;
-  sb_0_g$.append_78_g$("<nav class='main-nav' role='navigation'> <div class='container'> <div class='navbar-header'> <button class='navbar-toggle' data-target='#navbar-collapse' data-toggle='collapse' type='button'> <span class='sr-only'>Toggle navigation<\/span> <span class='icon-bar'><\/span> <span class='icon-bar'><\/span> <span class='icon-bar'><\/span> <\/button> <\/div> <div class='navbar-collapse collapse' id='navbar-collapse'> <ul class='nav navbar-nav'> <li class='nav-item sibling'> <a class='nav-link' href='#home'>Home <\/a> <\/li> <li class='nav-item sibling'> <a class='nav-link' href='#prices'>Cennik<\/a> <\/li> <li class='nav-item sibling'> <a class='nav-link' href='#calendar'>Grafik<\/a> <\/li> <li class='nav-item sibling'> <a class='nav-link' href='#room'>Sala<\/a> <\/li>  <li class='nav-item sibling'> <a class='nav-link' href='#studio'>Studio<\/a> <\/li>  <li class='nav-item sibling'> <a class='nav-link' href='#reservation'>Rezerwacja<\/a> <\/li> <li class='nav-item dropdown sibling'> <a class='dropdown-toggle nav-link' data-toggle='dropdown' href='#'> Galeria <i class='fa fa-angle-down'><\/i> <\/a> <ul aria-labelledby='dLabel' class='dropdown-menu pull-left' role='menu'> <li class='arrow-up'><\/li> <li class='nav-item'> <a class='nav-link' href='#galleryRoom'>Sala Twin Peaks<\/a> <\/li> <li class='nav-item'> <a class='nav-link' href='#galleryBuild'>Budowa sali<\/a> <\/li> <\/ul> <\/li> <li class='nav-item sibling'> <a class='nav-link' href='#regulations'>Regulamin<\/a> <\/li> <li class='nav-item sibling'> <a class='nav-link' href='#faq'>FAQ<\/a> <\/li> <li class='nav-item sibling'> <a class='nav-link' href='#contact'>Kontakt<\/a> <\/li> <\/ul> <\/div> <\/div> <\/nav>");
+  sb_0_g$.append_78_g$("<nav class='main-nav' role='navigation'> <div class='container'> <div class='navbar-header'> <button class='navbar-toggle' data-target='#navbar-collapse' data-toggle='collapse' type='button'> <span class='sr-only'>Toggle navigation<\/span> <span class='icon-bar'><\/span> <span class='icon-bar'><\/span> <span class='icon-bar'><\/span> <\/button> <\/div> <div class='navbar-collapse collapse' id='navbar-collapse'> <ul class='nav navbar-nav'> <li class='nav-item sibling'> <a class='nav-link' data-target='.navbar-collapse' data-toggle='collapse' href='#home'>Home <\/a> <\/li> <li class='nav-item sibling'> <a class='nav-link' data-target='.navbar-collapse' data-toggle='collapse' href='#prices'>Cennik<\/a> <\/li> <li class='nav-item activeMenu'> <a class='nav-link' data-target='.navbar-collapse' data-toggle='collapse' href='#calendar'>Grafik<\/a> <\/li> <li class='nav-item sibling'> <a class='nav-link' data-target='.navbar-collapse' data-toggle='collapse' href='#room'>Sala<\/a> <\/li>  <li class='nav-item sibling'> <a class='nav-link' data-target='.navbar-collapse' data-toggle='collapse' href='#studio'>Studio<\/a> <\/li>  <li class='nav-item sibling'> <a class='nav-link' data-target='.navbar-collapse' data-toggle='collapse' href='#reservation'>Rezerwacja<\/a> <\/li> <li class='nav-item dropdown sibling'> <a class='dropdown-toggle nav-link' data-toggle='dropdown' href='#'> Galeria <i class='fa fa-angle-down'><\/i> <\/a> <ul aria-labelledby='dLabel' class='dropdown-menu pull-left' role='menu'> <li class='arrow-up'><\/li> <li class='nav-item'> <a class='nav-link' data-target='.navbar-collapse' data-toggle='collapse' href='#galleryRoom'>Sala Twin Peaks<\/a> <\/li> <li class='nav-item'> <a class='nav-link' data-target='.navbar-collapse' data-toggle='collapse' href='#galleryBuild'>Budowa sali<\/a> <\/li> <\/ul> <\/li> <li class='nav-item sibling'> <a class='nav-link' data-target='.navbar-collapse' data-toggle='collapse' href='#regulations'>Regulamin<\/a> <\/li> <li class='nav-item sibling'> <a class='nav-link' data-target='.navbar-collapse' data-toggle='collapse' href='#faq'>FAQ<\/a> <\/li> <li class='nav-item sibling'> <a class='nav-link' data-target='.navbar-collapse' data-toggle='collapse' href='#contact'>Kontakt<\/a> <\/li> <\/ul> <\/div> <\/div> <\/nav>");
   return new OnlyToBeUsedInGeneratedCodeStringBlessedAsSafeHtml_1_g$(sb_0_g$.toString$());
 }
 ;
-var Lpl_baduuum_client_view_widgets_MenuWidgetView_1MenuWidgetViewUiBinderImpl_1TemplateImpl_2_classLit_0_g$ = createForClass_0_g$('pl.baduuum.client.view.widgets', 'MenuWidgetView_MenuWidgetViewUiBinderImpl_TemplateImpl', 1816, Ljava_lang_Object_2_classLit_0_g$);
+var Lpl_baduuum_client_view_widgets_MenuWidgetView_1MenuWidgetViewCalendarUiBinderImpl_1TemplateImpl_2_classLit_0_g$ = createForClass_0_g$('pl.baduuum.client.view.widgets', 'MenuWidgetView_MenuWidgetViewCalendarUiBinderImpl_TemplateImpl', 1845, Ljava_lang_Object_2_classLit_0_g$);
+function $clinit_MenuWidgetView_MenuWidgetViewContactUiBinderImpl_0_g$(){
+  $clinit_MenuWidgetView_MenuWidgetViewContactUiBinderImpl_0_g$ = emptyMethod_0_g$;
+  $clinit_Object_0_g$();
+}
+
+function MenuWidgetView_MenuWidgetViewContactUiBinderImpl_1_g$(){
+  $clinit_MenuWidgetView_MenuWidgetViewContactUiBinderImpl_0_g$();
+  Object_1_g$.call(this);
+  this.$init_2414_g$();
+}
+
+defineClass_0_g$(1846, 1, {1071:1, 1:1, 1833:1, 1846:1}, MenuWidgetView_MenuWidgetViewContactUiBinderImpl_1_g$);
+_.$init_2414_g$ = function $init_2382_g$(){
+  $clinit_MenuWidgetView_MenuWidgetViewContactUiBinderImpl_0_g$();
+  this.template_19_g$ = dynamicCast_0_g$(new MenuWidgetView_MenuWidgetViewContactUiBinderImpl_TemplateImpl_1_g$, 1847);
+}
+;
+_.createAndBindUi_28_g$ = function createAndBindUi_49_g$(owner_0_g$){
+  return this.createAndBindUi_42_g$(dynamicCast_0_g$(owner_0_g$, 1809));
+}
+;
+_.createAndBindUi_42_g$ = function createAndBindUi_50_g$(owner_0_g$){
+  return (new MenuWidgetView_MenuWidgetViewContactUiBinderImpl$Widgets_1_g$(this, owner_0_g$)).get_navNenu_15_g$();
+}
+;
+var Lpl_baduuum_client_view_widgets_MenuWidgetView_1MenuWidgetViewContactUiBinderImpl_2_classLit_0_g$ = createForClass_0_g$('pl.baduuum.client.view.widgets', 'MenuWidgetView_MenuWidgetViewContactUiBinderImpl', 1846, Ljava_lang_Object_2_classLit_0_g$);
+function $clinit_MenuWidgetView_MenuWidgetViewContactUiBinderImpl$Template_0_g$(){
+  $clinit_MenuWidgetView_MenuWidgetViewContactUiBinderImpl$Template_0_g$ = emptyMethod_0_g$;
+}
+
+function $clinit_MenuWidgetView_MenuWidgetViewContactUiBinderImpl$Widgets_0_g$(){
+  $clinit_MenuWidgetView_MenuWidgetViewContactUiBinderImpl$Widgets_0_g$ = emptyMethod_0_g$;
+  $clinit_Object_0_g$();
+}
+
+function MenuWidgetView_MenuWidgetViewContactUiBinderImpl$Widgets_1_g$(this$0_0_g$, owner_0_g$){
+  $clinit_MenuWidgetView_MenuWidgetViewContactUiBinderImpl$Widgets_0_g$();
+  this.this$01_96_g$ = this$0_0_g$;
+  Object_1_g$.call(this);
+  this.$init_2415_g$();
+  this.owner_18_g$ = owner_0_g$;
+}
+
+defineClass_0_g$(1848, 1, {1:1, 1848:1}, MenuWidgetView_MenuWidgetViewContactUiBinderImpl$Widgets_1_g$);
+_.$init_2415_g$ = function $init_2383_g$(){
+  $clinit_MenuWidgetView_MenuWidgetViewContactUiBinderImpl$Widgets_0_g$();
+}
+;
+_.build_clientBundleFieldNameUnlikelyToCollideWithUserSpecifiedFieldOkay_41_g$ = function build_clientBundleFieldNameUnlikelyToCollideWithUserSpecifiedFieldOkay_33_g$(){
+  $clinit_MenuWidgetView_MenuWidgetViewContactUiBinderImpl$Widgets_0_g$();
+  var clientBundleFieldNameUnlikelyToCollideWithUserSpecifiedFieldOkay_0_g$;
+  clientBundleFieldNameUnlikelyToCollideWithUserSpecifiedFieldOkay_0_g$ = dynamicCast_0_g$(dynamicCast_0_g$(new MenuWidgetView_MenuWidgetViewContactUiBinderImpl_GenBundle_default_InlineClientBundleGenerator_1_g$, 1849), 1849);
+  return clientBundleFieldNameUnlikelyToCollideWithUserSpecifiedFieldOkay_0_g$;
+}
+;
+_.build_navNenu_15_g$ = function build_navNenu_7_g$(){
+  $clinit_MenuWidgetView_MenuWidgetViewContactUiBinderImpl$Widgets_0_g$();
+  var navNenu_0_g$;
+  navNenu_0_g$ = new HTMLPanel_3_g$(this.template_html1_41_g$().asString_4_g$());
+  return navNenu_0_g$;
+}
+;
+_.get_clientBundleFieldNameUnlikelyToCollideWithUserSpecifiedFieldOkay_41_g$ = function get_clientBundleFieldNameUnlikelyToCollideWithUserSpecifiedFieldOkay_33_g$(){
+  $clinit_MenuWidgetView_MenuWidgetViewContactUiBinderImpl$Widgets_0_g$();
+  return this.build_clientBundleFieldNameUnlikelyToCollideWithUserSpecifiedFieldOkay_41_g$();
+}
+;
+_.get_navNenu_15_g$ = function get_navNenu_7_g$(){
+  $clinit_MenuWidgetView_MenuWidgetViewContactUiBinderImpl$Widgets_0_g$();
+  return this.build_navNenu_15_g$();
+}
+;
+_.template_html1_41_g$ = function template_html1_33_g$(){
+  return this.this$01_96_g$.template_19_g$.html1_15_g$();
+}
+;
+var Lpl_baduuum_client_view_widgets_MenuWidgetView_1MenuWidgetViewContactUiBinderImpl$Widgets_2_classLit_0_g$ = createForClass_0_g$('pl.baduuum.client.view.widgets', 'MenuWidgetView_MenuWidgetViewContactUiBinderImpl/Widgets', 1848, Ljava_lang_Object_2_classLit_0_g$);
+function $clinit_MenuWidgetView_MenuWidgetViewContactUiBinderImpl_GenBundle_0_g$(){
+  $clinit_MenuWidgetView_MenuWidgetViewContactUiBinderImpl_GenBundle_0_g$ = emptyMethod_0_g$;
+}
+
+function $clinit_MenuWidgetView_MenuWidgetViewContactUiBinderImpl_GenBundle_default_InlineClientBundleGenerator_0_g$(){
+  $clinit_MenuWidgetView_MenuWidgetViewContactUiBinderImpl_GenBundle_default_InlineClientBundleGenerator_0_g$ = emptyMethod_0_g$;
+  $clinit_Object_0_g$();
+  _instance0_23_g$ = new MenuWidgetView_MenuWidgetViewContactUiBinderImpl_GenBundle_default_InlineClientBundleGenerator_1_g$;
+}
+
+function MenuWidgetView_MenuWidgetViewContactUiBinderImpl_GenBundle_default_InlineClientBundleGenerator_1_g$(){
+  $clinit_MenuWidgetView_MenuWidgetViewContactUiBinderImpl_GenBundle_default_InlineClientBundleGenerator_0_g$();
+  Object_1_g$.call(this);
+  this.$init_2416_g$();
+}
+
+defineClass_0_g$(1850, 1, {1001:1, 1:1, 1849:1, 1850:1}, MenuWidgetView_MenuWidgetViewContactUiBinderImpl_GenBundle_default_InlineClientBundleGenerator_1_g$);
+_.$init_2416_g$ = function $init_2384_g$(){
+  $clinit_MenuWidgetView_MenuWidgetViewContactUiBinderImpl_GenBundle_default_InlineClientBundleGenerator_0_g$();
+}
+;
+_.getResource_20_g$ = function getResource_24_g$(name_0_g$){
+  if (isScript_0_g$()) {
+    return this.getResourceNative_53_g$(name_0_g$);
+  }
+   else {
+    if (isNull_0_g$(resourceMap_23_g$)) {
+      resourceMap_23_g$ = new HashMap_1_g$;
+    }
+    return dynamicCast_0_g$(resourceMap_23_g$.get_74_g$(name_0_g$), 1016);
+  }
+}
+;
+_.getResourceNative_53_g$ = function getResourceNative_45_g$(name_0_g$){
+  $clinit_MenuWidgetView_MenuWidgetViewContactUiBinderImpl_GenBundle_default_InlineClientBundleGenerator_0_g$();
+  switch (name_0_g$) {
+  }
+  ;
+  return null;
+}
+;
+_.getResources_20_g$ = function getResources_24_g$(){
+  return initValues_0_g$(getClassLiteralForArray_0_g$(Lcom_google_gwt_resources_client_ResourcePrototype_2_classLit_0_g$, 1), {1017:1, 1462:1, 1485:1, 1:1, 1514:1}, 1016, 0, []);
+}
+;
+var _instance0_23_g$, resourceMap_23_g$;
+var Lpl_baduuum_client_view_widgets_MenuWidgetView_1MenuWidgetViewContactUiBinderImpl_1GenBundle_1default_1InlineClientBundleGenerator_2_classLit_0_g$ = createForClass_0_g$('pl.baduuum.client.view.widgets', 'MenuWidgetView_MenuWidgetViewContactUiBinderImpl_GenBundle_default_InlineClientBundleGenerator', 1850, Ljava_lang_Object_2_classLit_0_g$);
+function $clinit_MenuWidgetView_MenuWidgetViewContactUiBinderImpl_TemplateImpl_0_g$(){
+  $clinit_MenuWidgetView_MenuWidgetViewContactUiBinderImpl_TemplateImpl_0_g$ = emptyMethod_0_g$;
+  $clinit_Object_0_g$();
+}
+
+function MenuWidgetView_MenuWidgetViewContactUiBinderImpl_TemplateImpl_1_g$(){
+  $clinit_MenuWidgetView_MenuWidgetViewContactUiBinderImpl_TemplateImpl_0_g$();
+  Object_1_g$.call(this);
+  this.$init_2417_g$();
+}
+
+defineClass_0_g$(1851, 1, {1030:1, 1:1, 1847:1, 1851:1}, MenuWidgetView_MenuWidgetViewContactUiBinderImpl_TemplateImpl_1_g$);
+_.$init_2417_g$ = function $init_2385_g$(){
+  $clinit_MenuWidgetView_MenuWidgetViewContactUiBinderImpl_TemplateImpl_0_g$();
+}
+;
+_.html1_15_g$ = function html1_20_g$(){
+  var sb_0_g$;
+  sb_0_g$ = new StringBuilder_1_g$;
+  sb_0_g$.append_78_g$("<nav class='main-nav' role='navigation'> <div class='container'> <div class='navbar-header'> <button class='navbar-toggle' data-target='#navbar-collapse' data-toggle='collapse' type='button'> <span class='sr-only'>Toggle navigation<\/span> <span class='icon-bar'><\/span> <span class='icon-bar'><\/span> <span class='icon-bar'><\/span> <\/button> <\/div> <div class='navbar-collapse collapse' id='navbar-collapse'> <ul class='nav navbar-nav'> <li class='nav-item sibling'> <a class='nav-link' data-target='.navbar-collapse' data-toggle='collapse' href='#home'>Home <\/a> <\/li> <li class='nav-item sibling'> <a class='nav-link' data-target='.navbar-collapse' data-toggle='collapse' href='#prices'>Cennik<\/a> <\/li> <li class='nav-item sibling'> <a class='nav-link' data-target='.navbar-collapse' data-toggle='collapse' href='#calendar'>Grafik<\/a> <\/li> <li class='nav-item sibling'> <a class='nav-link' data-target='.navbar-collapse' data-toggle='collapse' href='#room'>Sala<\/a> <\/li>  <li class='nav-item sibling'> <a class='nav-link' data-target='.navbar-collapse' data-toggle='collapse' href='#studio'>Studio<\/a> <\/li>  <li class='nav-item sibling'> <a class='nav-link' data-target='.navbar-collapse' data-toggle='collapse' href='#reservation'>Rezerwacja<\/a> <\/li> <li class='nav-item dropdown sibling'> <a class='dropdown-toggle nav-link' data-toggle='dropdown' href='#'> Galeria <i class='fa fa-angle-down'><\/i> <\/a> <ul aria-labelledby='dLabel' class='dropdown-menu pull-left' role='menu'> <li class='arrow-up'><\/li> <li class='nav-item'> <a class='nav-link' data-target='.navbar-collapse' data-toggle='collapse' href='#galleryRoom'>Sala Twin Peaks<\/a> <\/li> <li class='nav-item'> <a class='nav-link' data-target='.navbar-collapse' data-toggle='collapse' href='#galleryBuild'>Budowa sali<\/a> <\/li> <\/ul> <\/li> <li class='nav-item sibling'> <a class='nav-link' data-target='.navbar-collapse' data-toggle='collapse' href='#regulations'>Regulamin<\/a> <\/li> <li class='nav-item sibling'> <a class='nav-link' data-target='.navbar-collapse' data-toggle='collapse' href='#faq'>FAQ<\/a> <\/li> <li class='nav-item activeMenu'> <a class='nav-link' data-target='.navbar-collapse' data-toggle='collapse' href='#contact'>Kontakt<\/a> <\/li> <\/ul> <\/div> <\/div> <\/nav>");
+  return new OnlyToBeUsedInGeneratedCodeStringBlessedAsSafeHtml_1_g$(sb_0_g$.toString$());
+}
+;
+var Lpl_baduuum_client_view_widgets_MenuWidgetView_1MenuWidgetViewContactUiBinderImpl_1TemplateImpl_2_classLit_0_g$ = createForClass_0_g$('pl.baduuum.client.view.widgets', 'MenuWidgetView_MenuWidgetViewContactUiBinderImpl_TemplateImpl', 1851, Ljava_lang_Object_2_classLit_0_g$);
+function $clinit_MenuWidgetView_MenuWidgetViewFaqUiBinderImpl_0_g$(){
+  $clinit_MenuWidgetView_MenuWidgetViewFaqUiBinderImpl_0_g$ = emptyMethod_0_g$;
+  $clinit_Object_0_g$();
+}
+
+function MenuWidgetView_MenuWidgetViewFaqUiBinderImpl_1_g$(){
+  $clinit_MenuWidgetView_MenuWidgetViewFaqUiBinderImpl_0_g$();
+  Object_1_g$.call(this);
+  this.$init_2418_g$();
+}
+
+defineClass_0_g$(1852, 1, {1071:1, 1:1, 1834:1, 1852:1}, MenuWidgetView_MenuWidgetViewFaqUiBinderImpl_1_g$);
+_.$init_2418_g$ = function $init_2386_g$(){
+  $clinit_MenuWidgetView_MenuWidgetViewFaqUiBinderImpl_0_g$();
+  this.template_20_g$ = dynamicCast_0_g$(new MenuWidgetView_MenuWidgetViewFaqUiBinderImpl_TemplateImpl_1_g$, 1853);
+}
+;
+_.createAndBindUi_28_g$ = function createAndBindUi_51_g$(owner_0_g$){
+  return this.createAndBindUi_42_g$(dynamicCast_0_g$(owner_0_g$, 1809));
+}
+;
+_.createAndBindUi_42_g$ = function createAndBindUi_52_g$(owner_0_g$){
+  return (new MenuWidgetView_MenuWidgetViewFaqUiBinderImpl$Widgets_1_g$(this, owner_0_g$)).get_navNenu_16_g$();
+}
+;
+var Lpl_baduuum_client_view_widgets_MenuWidgetView_1MenuWidgetViewFaqUiBinderImpl_2_classLit_0_g$ = createForClass_0_g$('pl.baduuum.client.view.widgets', 'MenuWidgetView_MenuWidgetViewFaqUiBinderImpl', 1852, Ljava_lang_Object_2_classLit_0_g$);
+function $clinit_MenuWidgetView_MenuWidgetViewFaqUiBinderImpl$Template_0_g$(){
+  $clinit_MenuWidgetView_MenuWidgetViewFaqUiBinderImpl$Template_0_g$ = emptyMethod_0_g$;
+}
+
+function $clinit_MenuWidgetView_MenuWidgetViewFaqUiBinderImpl$Widgets_0_g$(){
+  $clinit_MenuWidgetView_MenuWidgetViewFaqUiBinderImpl$Widgets_0_g$ = emptyMethod_0_g$;
+  $clinit_Object_0_g$();
+}
+
+function MenuWidgetView_MenuWidgetViewFaqUiBinderImpl$Widgets_1_g$(this$0_0_g$, owner_0_g$){
+  $clinit_MenuWidgetView_MenuWidgetViewFaqUiBinderImpl$Widgets_0_g$();
+  this.this$01_97_g$ = this$0_0_g$;
+  Object_1_g$.call(this);
+  this.$init_2419_g$();
+  this.owner_19_g$ = owner_0_g$;
+}
+
+defineClass_0_g$(1854, 1, {1:1, 1854:1}, MenuWidgetView_MenuWidgetViewFaqUiBinderImpl$Widgets_1_g$);
+_.$init_2419_g$ = function $init_2387_g$(){
+  $clinit_MenuWidgetView_MenuWidgetViewFaqUiBinderImpl$Widgets_0_g$();
+}
+;
+_.build_clientBundleFieldNameUnlikelyToCollideWithUserSpecifiedFieldOkay_42_g$ = function build_clientBundleFieldNameUnlikelyToCollideWithUserSpecifiedFieldOkay_34_g$(){
+  $clinit_MenuWidgetView_MenuWidgetViewFaqUiBinderImpl$Widgets_0_g$();
+  var clientBundleFieldNameUnlikelyToCollideWithUserSpecifiedFieldOkay_0_g$;
+  clientBundleFieldNameUnlikelyToCollideWithUserSpecifiedFieldOkay_0_g$ = dynamicCast_0_g$(dynamicCast_0_g$(new MenuWidgetView_MenuWidgetViewFaqUiBinderImpl_GenBundle_default_InlineClientBundleGenerator_1_g$, 1855), 1855);
+  return clientBundleFieldNameUnlikelyToCollideWithUserSpecifiedFieldOkay_0_g$;
+}
+;
+_.build_navNenu_16_g$ = function build_navNenu_8_g$(){
+  $clinit_MenuWidgetView_MenuWidgetViewFaqUiBinderImpl$Widgets_0_g$();
+  var navNenu_0_g$;
+  navNenu_0_g$ = new HTMLPanel_3_g$(this.template_html1_42_g$().asString_4_g$());
+  return navNenu_0_g$;
+}
+;
+_.get_clientBundleFieldNameUnlikelyToCollideWithUserSpecifiedFieldOkay_42_g$ = function get_clientBundleFieldNameUnlikelyToCollideWithUserSpecifiedFieldOkay_34_g$(){
+  $clinit_MenuWidgetView_MenuWidgetViewFaqUiBinderImpl$Widgets_0_g$();
+  return this.build_clientBundleFieldNameUnlikelyToCollideWithUserSpecifiedFieldOkay_42_g$();
+}
+;
+_.get_navNenu_16_g$ = function get_navNenu_8_g$(){
+  $clinit_MenuWidgetView_MenuWidgetViewFaqUiBinderImpl$Widgets_0_g$();
+  return this.build_navNenu_16_g$();
+}
+;
+_.template_html1_42_g$ = function template_html1_34_g$(){
+  return this.this$01_97_g$.template_20_g$.html1_15_g$();
+}
+;
+var Lpl_baduuum_client_view_widgets_MenuWidgetView_1MenuWidgetViewFaqUiBinderImpl$Widgets_2_classLit_0_g$ = createForClass_0_g$('pl.baduuum.client.view.widgets', 'MenuWidgetView_MenuWidgetViewFaqUiBinderImpl/Widgets', 1854, Ljava_lang_Object_2_classLit_0_g$);
+function $clinit_MenuWidgetView_MenuWidgetViewFaqUiBinderImpl_GenBundle_0_g$(){
+  $clinit_MenuWidgetView_MenuWidgetViewFaqUiBinderImpl_GenBundle_0_g$ = emptyMethod_0_g$;
+}
+
+function $clinit_MenuWidgetView_MenuWidgetViewFaqUiBinderImpl_GenBundle_default_InlineClientBundleGenerator_0_g$(){
+  $clinit_MenuWidgetView_MenuWidgetViewFaqUiBinderImpl_GenBundle_default_InlineClientBundleGenerator_0_g$ = emptyMethod_0_g$;
+  $clinit_Object_0_g$();
+  _instance0_24_g$ = new MenuWidgetView_MenuWidgetViewFaqUiBinderImpl_GenBundle_default_InlineClientBundleGenerator_1_g$;
+}
+
+function MenuWidgetView_MenuWidgetViewFaqUiBinderImpl_GenBundle_default_InlineClientBundleGenerator_1_g$(){
+  $clinit_MenuWidgetView_MenuWidgetViewFaqUiBinderImpl_GenBundle_default_InlineClientBundleGenerator_0_g$();
+  Object_1_g$.call(this);
+  this.$init_2420_g$();
+}
+
+defineClass_0_g$(1856, 1, {1001:1, 1:1, 1855:1, 1856:1}, MenuWidgetView_MenuWidgetViewFaqUiBinderImpl_GenBundle_default_InlineClientBundleGenerator_1_g$);
+_.$init_2420_g$ = function $init_2388_g$(){
+  $clinit_MenuWidgetView_MenuWidgetViewFaqUiBinderImpl_GenBundle_default_InlineClientBundleGenerator_0_g$();
+}
+;
+_.getResource_20_g$ = function getResource_25_g$(name_0_g$){
+  if (isScript_0_g$()) {
+    return this.getResourceNative_54_g$(name_0_g$);
+  }
+   else {
+    if (isNull_0_g$(resourceMap_24_g$)) {
+      resourceMap_24_g$ = new HashMap_1_g$;
+    }
+    return dynamicCast_0_g$(resourceMap_24_g$.get_74_g$(name_0_g$), 1016);
+  }
+}
+;
+_.getResourceNative_54_g$ = function getResourceNative_46_g$(name_0_g$){
+  $clinit_MenuWidgetView_MenuWidgetViewFaqUiBinderImpl_GenBundle_default_InlineClientBundleGenerator_0_g$();
+  switch (name_0_g$) {
+  }
+  ;
+  return null;
+}
+;
+_.getResources_20_g$ = function getResources_25_g$(){
+  return initValues_0_g$(getClassLiteralForArray_0_g$(Lcom_google_gwt_resources_client_ResourcePrototype_2_classLit_0_g$, 1), {1017:1, 1462:1, 1485:1, 1:1, 1514:1}, 1016, 0, []);
+}
+;
+var _instance0_24_g$, resourceMap_24_g$;
+var Lpl_baduuum_client_view_widgets_MenuWidgetView_1MenuWidgetViewFaqUiBinderImpl_1GenBundle_1default_1InlineClientBundleGenerator_2_classLit_0_g$ = createForClass_0_g$('pl.baduuum.client.view.widgets', 'MenuWidgetView_MenuWidgetViewFaqUiBinderImpl_GenBundle_default_InlineClientBundleGenerator', 1856, Ljava_lang_Object_2_classLit_0_g$);
+function $clinit_MenuWidgetView_MenuWidgetViewFaqUiBinderImpl_TemplateImpl_0_g$(){
+  $clinit_MenuWidgetView_MenuWidgetViewFaqUiBinderImpl_TemplateImpl_0_g$ = emptyMethod_0_g$;
+  $clinit_Object_0_g$();
+}
+
+function MenuWidgetView_MenuWidgetViewFaqUiBinderImpl_TemplateImpl_1_g$(){
+  $clinit_MenuWidgetView_MenuWidgetViewFaqUiBinderImpl_TemplateImpl_0_g$();
+  Object_1_g$.call(this);
+  this.$init_2421_g$();
+}
+
+defineClass_0_g$(1857, 1, {1030:1, 1:1, 1853:1, 1857:1}, MenuWidgetView_MenuWidgetViewFaqUiBinderImpl_TemplateImpl_1_g$);
+_.$init_2421_g$ = function $init_2389_g$(){
+  $clinit_MenuWidgetView_MenuWidgetViewFaqUiBinderImpl_TemplateImpl_0_g$();
+}
+;
+_.html1_15_g$ = function html1_21_g$(){
+  var sb_0_g$;
+  sb_0_g$ = new StringBuilder_1_g$;
+  sb_0_g$.append_78_g$("<nav class='main-nav' role='navigation'> <div class='container'> <div class='navbar-header'> <button class='navbar-toggle' data-target='#navbar-collapse' data-toggle='collapse' type='button'> <span class='sr-only'>Toggle navigation<\/span> <span class='icon-bar'><\/span> <span class='icon-bar'><\/span> <span class='icon-bar'><\/span> <\/button> <\/div> <div class='navbar-collapse collapse' id='navbar-collapse'> <ul class='nav navbar-nav'> <li class='nav-item sibling'> <a class='nav-link' data-target='.navbar-collapse' data-toggle='collapse' href='#home'>Home <\/a> <\/li> <li class='nav-item sibling'> <a class='nav-link' data-target='.navbar-collapse' data-toggle='collapse' href='#prices'>Cennik<\/a> <\/li> <li class='nav-item sibling'> <a class='nav-link' data-target='.navbar-collapse' data-toggle='collapse' href='#calendar'>Grafik<\/a> <\/li> <li class='nav-item sibling'> <a class='nav-link' data-target='.navbar-collapse' data-toggle='collapse' href='#room'>Sala<\/a> <\/li>  <li class='nav-item sibling'> <a class='nav-link' data-target='.navbar-collapse' data-toggle='collapse' href='#studio'>Studio<\/a> <\/li>  <li class='nav-item sibling'> <a class='nav-link' data-target='.navbar-collapse' data-toggle='collapse' href='#reservation'>Rezerwacja<\/a> <\/li> <li class='nav-item dropdown sibling'> <a class='dropdown-toggle nav-link' data-toggle='dropdown' href='#'> Galeria <i class='fa fa-angle-down'><\/i> <\/a> <ul aria-labelledby='dLabel' class='dropdown-menu pull-left' role='menu'> <li class='arrow-up'><\/li> <li class='nav-item'> <a class='nav-link' data-target='.navbar-collapse' data-toggle='collapse' href='#galleryRoom'>Sala Twin Peaks<\/a> <\/li> <li class='nav-item'> <a class='nav-link' data-target='.navbar-collapse' data-toggle='collapse' href='#galleryBuild'>Budowa sali<\/a> <\/li> <\/ul> <\/li> <li class='nav-item sibling'> <a class='nav-link' data-target='.navbar-collapse' data-toggle='collapse' href='#regulations'>Regulamin<\/a> <\/li> <li class='nav-item activeMenu'> <a class='nav-link' data-target='.navbar-collapse' data-toggle='collapse' href='#faq'>FAQ<\/a> <\/li> <li class='nav-item sibling'> <a class='nav-link' data-target='.navbar-collapse' data-toggle='collapse' href='#contact'>Kontakt<\/a> <\/li> <\/ul> <\/div> <\/div> <\/nav>");
+  return new OnlyToBeUsedInGeneratedCodeStringBlessedAsSafeHtml_1_g$(sb_0_g$.toString$());
+}
+;
+var Lpl_baduuum_client_view_widgets_MenuWidgetView_1MenuWidgetViewFaqUiBinderImpl_1TemplateImpl_2_classLit_0_g$ = createForClass_0_g$('pl.baduuum.client.view.widgets', 'MenuWidgetView_MenuWidgetViewFaqUiBinderImpl_TemplateImpl', 1857, Ljava_lang_Object_2_classLit_0_g$);
+function $clinit_MenuWidgetView_MenuWidgetViewGalleryUiBinderImpl_0_g$(){
+  $clinit_MenuWidgetView_MenuWidgetViewGalleryUiBinderImpl_0_g$ = emptyMethod_0_g$;
+  $clinit_Object_0_g$();
+}
+
+function MenuWidgetView_MenuWidgetViewGalleryUiBinderImpl_1_g$(){
+  $clinit_MenuWidgetView_MenuWidgetViewGalleryUiBinderImpl_0_g$();
+  Object_1_g$.call(this);
+  this.$init_2422_g$();
+}
+
+defineClass_0_g$(1858, 1, {1071:1, 1:1, 1835:1, 1858:1}, MenuWidgetView_MenuWidgetViewGalleryUiBinderImpl_1_g$);
+_.$init_2422_g$ = function $init_2390_g$(){
+  $clinit_MenuWidgetView_MenuWidgetViewGalleryUiBinderImpl_0_g$();
+  this.template_21_g$ = dynamicCast_0_g$(new MenuWidgetView_MenuWidgetViewGalleryUiBinderImpl_TemplateImpl_1_g$, 1859);
+}
+;
+_.createAndBindUi_28_g$ = function createAndBindUi_53_g$(owner_0_g$){
+  return this.createAndBindUi_42_g$(dynamicCast_0_g$(owner_0_g$, 1809));
+}
+;
+_.createAndBindUi_42_g$ = function createAndBindUi_54_g$(owner_0_g$){
+  return (new MenuWidgetView_MenuWidgetViewGalleryUiBinderImpl$Widgets_1_g$(this, owner_0_g$)).get_navNenu_17_g$();
+}
+;
+var Lpl_baduuum_client_view_widgets_MenuWidgetView_1MenuWidgetViewGalleryUiBinderImpl_2_classLit_0_g$ = createForClass_0_g$('pl.baduuum.client.view.widgets', 'MenuWidgetView_MenuWidgetViewGalleryUiBinderImpl', 1858, Ljava_lang_Object_2_classLit_0_g$);
+function $clinit_MenuWidgetView_MenuWidgetViewGalleryUiBinderImpl$Template_0_g$(){
+  $clinit_MenuWidgetView_MenuWidgetViewGalleryUiBinderImpl$Template_0_g$ = emptyMethod_0_g$;
+}
+
+function $clinit_MenuWidgetView_MenuWidgetViewGalleryUiBinderImpl$Widgets_0_g$(){
+  $clinit_MenuWidgetView_MenuWidgetViewGalleryUiBinderImpl$Widgets_0_g$ = emptyMethod_0_g$;
+  $clinit_Object_0_g$();
+}
+
+function MenuWidgetView_MenuWidgetViewGalleryUiBinderImpl$Widgets_1_g$(this$0_0_g$, owner_0_g$){
+  $clinit_MenuWidgetView_MenuWidgetViewGalleryUiBinderImpl$Widgets_0_g$();
+  this.this$01_98_g$ = this$0_0_g$;
+  Object_1_g$.call(this);
+  this.$init_2423_g$();
+  this.owner_20_g$ = owner_0_g$;
+}
+
+defineClass_0_g$(1860, 1, {1:1, 1860:1}, MenuWidgetView_MenuWidgetViewGalleryUiBinderImpl$Widgets_1_g$);
+_.$init_2423_g$ = function $init_2391_g$(){
+  $clinit_MenuWidgetView_MenuWidgetViewGalleryUiBinderImpl$Widgets_0_g$();
+}
+;
+_.build_clientBundleFieldNameUnlikelyToCollideWithUserSpecifiedFieldOkay_43_g$ = function build_clientBundleFieldNameUnlikelyToCollideWithUserSpecifiedFieldOkay_35_g$(){
+  $clinit_MenuWidgetView_MenuWidgetViewGalleryUiBinderImpl$Widgets_0_g$();
+  var clientBundleFieldNameUnlikelyToCollideWithUserSpecifiedFieldOkay_0_g$;
+  clientBundleFieldNameUnlikelyToCollideWithUserSpecifiedFieldOkay_0_g$ = dynamicCast_0_g$(dynamicCast_0_g$(new MenuWidgetView_MenuWidgetViewGalleryUiBinderImpl_GenBundle_default_InlineClientBundleGenerator_1_g$, 1861), 1861);
+  return clientBundleFieldNameUnlikelyToCollideWithUserSpecifiedFieldOkay_0_g$;
+}
+;
+_.build_navNenu_17_g$ = function build_navNenu_9_g$(){
+  $clinit_MenuWidgetView_MenuWidgetViewGalleryUiBinderImpl$Widgets_0_g$();
+  var navNenu_0_g$;
+  navNenu_0_g$ = new HTMLPanel_3_g$(this.template_html1_43_g$().asString_4_g$());
+  return navNenu_0_g$;
+}
+;
+_.get_clientBundleFieldNameUnlikelyToCollideWithUserSpecifiedFieldOkay_43_g$ = function get_clientBundleFieldNameUnlikelyToCollideWithUserSpecifiedFieldOkay_35_g$(){
+  $clinit_MenuWidgetView_MenuWidgetViewGalleryUiBinderImpl$Widgets_0_g$();
+  return this.build_clientBundleFieldNameUnlikelyToCollideWithUserSpecifiedFieldOkay_43_g$();
+}
+;
+_.get_navNenu_17_g$ = function get_navNenu_9_g$(){
+  $clinit_MenuWidgetView_MenuWidgetViewGalleryUiBinderImpl$Widgets_0_g$();
+  return this.build_navNenu_17_g$();
+}
+;
+_.template_html1_43_g$ = function template_html1_35_g$(){
+  return this.this$01_98_g$.template_21_g$.html1_15_g$();
+}
+;
+var Lpl_baduuum_client_view_widgets_MenuWidgetView_1MenuWidgetViewGalleryUiBinderImpl$Widgets_2_classLit_0_g$ = createForClass_0_g$('pl.baduuum.client.view.widgets', 'MenuWidgetView_MenuWidgetViewGalleryUiBinderImpl/Widgets', 1860, Ljava_lang_Object_2_classLit_0_g$);
+function $clinit_MenuWidgetView_MenuWidgetViewGalleryUiBinderImpl_GenBundle_0_g$(){
+  $clinit_MenuWidgetView_MenuWidgetViewGalleryUiBinderImpl_GenBundle_0_g$ = emptyMethod_0_g$;
+}
+
+function $clinit_MenuWidgetView_MenuWidgetViewGalleryUiBinderImpl_GenBundle_default_InlineClientBundleGenerator_0_g$(){
+  $clinit_MenuWidgetView_MenuWidgetViewGalleryUiBinderImpl_GenBundle_default_InlineClientBundleGenerator_0_g$ = emptyMethod_0_g$;
+  $clinit_Object_0_g$();
+  _instance0_25_g$ = new MenuWidgetView_MenuWidgetViewGalleryUiBinderImpl_GenBundle_default_InlineClientBundleGenerator_1_g$;
+}
+
+function MenuWidgetView_MenuWidgetViewGalleryUiBinderImpl_GenBundle_default_InlineClientBundleGenerator_1_g$(){
+  $clinit_MenuWidgetView_MenuWidgetViewGalleryUiBinderImpl_GenBundle_default_InlineClientBundleGenerator_0_g$();
+  Object_1_g$.call(this);
+  this.$init_2424_g$();
+}
+
+defineClass_0_g$(1862, 1, {1001:1, 1:1, 1861:1, 1862:1}, MenuWidgetView_MenuWidgetViewGalleryUiBinderImpl_GenBundle_default_InlineClientBundleGenerator_1_g$);
+_.$init_2424_g$ = function $init_2392_g$(){
+  $clinit_MenuWidgetView_MenuWidgetViewGalleryUiBinderImpl_GenBundle_default_InlineClientBundleGenerator_0_g$();
+}
+;
+_.getResource_20_g$ = function getResource_26_g$(name_0_g$){
+  if (isScript_0_g$()) {
+    return this.getResourceNative_55_g$(name_0_g$);
+  }
+   else {
+    if (isNull_0_g$(resourceMap_25_g$)) {
+      resourceMap_25_g$ = new HashMap_1_g$;
+    }
+    return dynamicCast_0_g$(resourceMap_25_g$.get_74_g$(name_0_g$), 1016);
+  }
+}
+;
+_.getResourceNative_55_g$ = function getResourceNative_47_g$(name_0_g$){
+  $clinit_MenuWidgetView_MenuWidgetViewGalleryUiBinderImpl_GenBundle_default_InlineClientBundleGenerator_0_g$();
+  switch (name_0_g$) {
+  }
+  ;
+  return null;
+}
+;
+_.getResources_20_g$ = function getResources_26_g$(){
+  return initValues_0_g$(getClassLiteralForArray_0_g$(Lcom_google_gwt_resources_client_ResourcePrototype_2_classLit_0_g$, 1), {1017:1, 1462:1, 1485:1, 1:1, 1514:1}, 1016, 0, []);
+}
+;
+var _instance0_25_g$, resourceMap_25_g$;
+var Lpl_baduuum_client_view_widgets_MenuWidgetView_1MenuWidgetViewGalleryUiBinderImpl_1GenBundle_1default_1InlineClientBundleGenerator_2_classLit_0_g$ = createForClass_0_g$('pl.baduuum.client.view.widgets', 'MenuWidgetView_MenuWidgetViewGalleryUiBinderImpl_GenBundle_default_InlineClientBundleGenerator', 1862, Ljava_lang_Object_2_classLit_0_g$);
+function $clinit_MenuWidgetView_MenuWidgetViewGalleryUiBinderImpl_TemplateImpl_0_g$(){
+  $clinit_MenuWidgetView_MenuWidgetViewGalleryUiBinderImpl_TemplateImpl_0_g$ = emptyMethod_0_g$;
+  $clinit_Object_0_g$();
+}
+
+function MenuWidgetView_MenuWidgetViewGalleryUiBinderImpl_TemplateImpl_1_g$(){
+  $clinit_MenuWidgetView_MenuWidgetViewGalleryUiBinderImpl_TemplateImpl_0_g$();
+  Object_1_g$.call(this);
+  this.$init_2425_g$();
+}
+
+defineClass_0_g$(1863, 1, {1030:1, 1:1, 1859:1, 1863:1}, MenuWidgetView_MenuWidgetViewGalleryUiBinderImpl_TemplateImpl_1_g$);
+_.$init_2425_g$ = function $init_2393_g$(){
+  $clinit_MenuWidgetView_MenuWidgetViewGalleryUiBinderImpl_TemplateImpl_0_g$();
+}
+;
+_.html1_15_g$ = function html1_22_g$(){
+  var sb_0_g$;
+  sb_0_g$ = new StringBuilder_1_g$;
+  sb_0_g$.append_78_g$("<nav class='main-nav' role='navigation'> <div class='container'> <div class='navbar-header'> <button class='navbar-toggle' data-target='#navbar-collapse' data-toggle='collapse' type='button'> <span class='sr-only'>Toggle navigation<\/span> <span class='icon-bar'><\/span> <span class='icon-bar'><\/span> <span class='icon-bar'><\/span> <\/button> <\/div> <div class='navbar-collapse collapse' id='navbar-collapse'> <ul class='nav navbar-nav'> <li class='nav-item sibling'> <a class='nav-link' data-target='.navbar-collapse' data-toggle='collapse' href='#home'>Home <\/a> <\/li> <li class='nav-item sibling'> <a class='nav-link' data-target='.navbar-collapse' data-toggle='collapse' href='#prices'>Cennik<\/a> <\/li> <li class='nav-item sibling'> <a class='nav-link' data-target='.navbar-collapse' data-toggle='collapse' href='#calendar'>Grafik<\/a> <\/li> <li class='nav-item sibling'> <a class='nav-link' data-target='.navbar-collapse' data-toggle='collapse' href='#room'>Sala<\/a> <\/li>  <li class='nav-item sibling'> <a class='nav-link' data-target='.navbar-collapse' data-toggle='collapse' href='#studio'>Studio<\/a> <\/li>  <li class='nav-item sibling'> <a class='nav-link' data-target='.navbar-collapse' data-toggle='collapse' href='#reservation'>Rezerwacja<\/a> <\/li> <li class='nav-item dropdown activeMenu'> <a class='dropdown-toggle nav-link' data-toggle='dropdown' href='#'> Galeria <i class='fa fa-angle-down'><\/i> <\/a> <ul aria-labelledby='dLabel' class='dropdown-menu pull-left' role='menu'> <li class='arrow-up'><\/li> <li class='nav-item'> <a class='nav-link' data-target='.navbar-collapse' data-toggle='collapse' href='#galleryRoom'>Sala Twin Peaks<\/a> <\/li> <li class='nav-item'> <a class='nav-link' data-target='.navbar-collapse' data-toggle='collapse' href='#galleryBuild'>Budowa sali<\/a> <\/li> <\/ul> <\/li> <li class='nav-item sibling'> <a class='nav-link' data-target='.navbar-collapse' data-toggle='collapse' href='#regulations'>Regulamin<\/a> <\/li> <li class='nav-item sibling'> <a class='nav-link' data-target='.navbar-collapse' data-toggle='collapse' href='#faq'>FAQ<\/a> <\/li> <li class='nav-item sibling'> <a class='nav-link' data-target='.navbar-collapse' data-toggle='collapse' href='#contact'>Kontakt<\/a> <\/li> <\/ul> <\/div> <\/div> <\/nav>");
+  return new OnlyToBeUsedInGeneratedCodeStringBlessedAsSafeHtml_1_g$(sb_0_g$.toString$());
+}
+;
+var Lpl_baduuum_client_view_widgets_MenuWidgetView_1MenuWidgetViewGalleryUiBinderImpl_1TemplateImpl_2_classLit_0_g$ = createForClass_0_g$('pl.baduuum.client.view.widgets', 'MenuWidgetView_MenuWidgetViewGalleryUiBinderImpl_TemplateImpl', 1863, Ljava_lang_Object_2_classLit_0_g$);
+function $clinit_MenuWidgetView_MenuWidgetViewHomeUiBinderImpl_0_g$(){
+  $clinit_MenuWidgetView_MenuWidgetViewHomeUiBinderImpl_0_g$ = emptyMethod_0_g$;
+  $clinit_Object_0_g$();
+}
+
+function MenuWidgetView_MenuWidgetViewHomeUiBinderImpl_1_g$(){
+  $clinit_MenuWidgetView_MenuWidgetViewHomeUiBinderImpl_0_g$();
+  Object_1_g$.call(this);
+  this.$init_2370_g$();
+}
+
+defineClass_0_g$(1820, 1, {1071:1, 1:1, 1818:1, 1820:1}, MenuWidgetView_MenuWidgetViewHomeUiBinderImpl_1_g$);
+_.$init_2370_g$ = function $init_2362_g$(){
+  $clinit_MenuWidgetView_MenuWidgetViewHomeUiBinderImpl_0_g$();
+  this.template_16_g$ = dynamicCast_0_g$(new MenuWidgetView_MenuWidgetViewHomeUiBinderImpl_TemplateImpl_1_g$, 1821);
+}
+;
+_.createAndBindUi_28_g$ = function createAndBindUi_43_g$(owner_0_g$){
+  return this.createAndBindUi_42_g$(dynamicCast_0_g$(owner_0_g$, 1809));
+}
+;
+_.createAndBindUi_42_g$ = function createAndBindUi_44_g$(owner_0_g$){
+  return (new MenuWidgetView_MenuWidgetViewHomeUiBinderImpl$Widgets_1_g$(this, owner_0_g$)).get_navNenu_4_g$();
+}
+;
+var Lpl_baduuum_client_view_widgets_MenuWidgetView_1MenuWidgetViewHomeUiBinderImpl_2_classLit_0_g$ = createForClass_0_g$('pl.baduuum.client.view.widgets', 'MenuWidgetView_MenuWidgetViewHomeUiBinderImpl', 1820, Ljava_lang_Object_2_classLit_0_g$);
+function $clinit_MenuWidgetView_MenuWidgetViewHomeUiBinderImpl$Template_0_g$(){
+  $clinit_MenuWidgetView_MenuWidgetViewHomeUiBinderImpl$Template_0_g$ = emptyMethod_0_g$;
+}
+
+function $clinit_MenuWidgetView_MenuWidgetViewHomeUiBinderImpl$Widgets_0_g$(){
+  $clinit_MenuWidgetView_MenuWidgetViewHomeUiBinderImpl$Widgets_0_g$ = emptyMethod_0_g$;
+  $clinit_Object_0_g$();
+}
+
+function MenuWidgetView_MenuWidgetViewHomeUiBinderImpl$Widgets_1_g$(this$0_0_g$, owner_0_g$){
+  $clinit_MenuWidgetView_MenuWidgetViewHomeUiBinderImpl$Widgets_0_g$();
+  this.this$01_93_g$ = this$0_0_g$;
+  Object_1_g$.call(this);
+  this.$init_2371_g$();
+  this.owner_15_g$ = owner_0_g$;
+}
+
+defineClass_0_g$(1822, 1, {1:1, 1822:1}, MenuWidgetView_MenuWidgetViewHomeUiBinderImpl$Widgets_1_g$);
+_.$init_2371_g$ = function $init_2363_g$(){
+  $clinit_MenuWidgetView_MenuWidgetViewHomeUiBinderImpl$Widgets_0_g$();
+}
+;
+_.build_clientBundleFieldNameUnlikelyToCollideWithUserSpecifiedFieldOkay_30_g$ = function build_clientBundleFieldNameUnlikelyToCollideWithUserSpecifiedFieldOkay_28_g$(){
+  $clinit_MenuWidgetView_MenuWidgetViewHomeUiBinderImpl$Widgets_0_g$();
+  var clientBundleFieldNameUnlikelyToCollideWithUserSpecifiedFieldOkay_0_g$;
+  clientBundleFieldNameUnlikelyToCollideWithUserSpecifiedFieldOkay_0_g$ = dynamicCast_0_g$(dynamicCast_0_g$(new MenuWidgetView_MenuWidgetViewHomeUiBinderImpl_GenBundle_default_InlineClientBundleGenerator_1_g$, 1823), 1823);
+  return clientBundleFieldNameUnlikelyToCollideWithUserSpecifiedFieldOkay_0_g$;
+}
+;
+_.build_navNenu_4_g$ = function build_navNenu_2_g$(){
+  $clinit_MenuWidgetView_MenuWidgetViewHomeUiBinderImpl$Widgets_0_g$();
+  var navNenu_0_g$;
+  navNenu_0_g$ = new HTMLPanel_3_g$(this.template_html1_30_g$().asString_4_g$());
+  return navNenu_0_g$;
+}
+;
+_.get_clientBundleFieldNameUnlikelyToCollideWithUserSpecifiedFieldOkay_30_g$ = function get_clientBundleFieldNameUnlikelyToCollideWithUserSpecifiedFieldOkay_28_g$(){
+  $clinit_MenuWidgetView_MenuWidgetViewHomeUiBinderImpl$Widgets_0_g$();
+  return this.build_clientBundleFieldNameUnlikelyToCollideWithUserSpecifiedFieldOkay_30_g$();
+}
+;
+_.get_navNenu_4_g$ = function get_navNenu_2_g$(){
+  $clinit_MenuWidgetView_MenuWidgetViewHomeUiBinderImpl$Widgets_0_g$();
+  return this.build_navNenu_4_g$();
+}
+;
+_.template_html1_30_g$ = function template_html1_28_g$(){
+  return this.this$01_93_g$.template_16_g$.html1_15_g$();
+}
+;
+var Lpl_baduuum_client_view_widgets_MenuWidgetView_1MenuWidgetViewHomeUiBinderImpl$Widgets_2_classLit_0_g$ = createForClass_0_g$('pl.baduuum.client.view.widgets', 'MenuWidgetView_MenuWidgetViewHomeUiBinderImpl/Widgets', 1822, Ljava_lang_Object_2_classLit_0_g$);
+function $clinit_MenuWidgetView_MenuWidgetViewHomeUiBinderImpl_GenBundle_0_g$(){
+  $clinit_MenuWidgetView_MenuWidgetViewHomeUiBinderImpl_GenBundle_0_g$ = emptyMethod_0_g$;
+}
+
+function $clinit_MenuWidgetView_MenuWidgetViewHomeUiBinderImpl_GenBundle_default_InlineClientBundleGenerator_0_g$(){
+  $clinit_MenuWidgetView_MenuWidgetViewHomeUiBinderImpl_GenBundle_default_InlineClientBundleGenerator_0_g$ = emptyMethod_0_g$;
+  $clinit_Object_0_g$();
+  _instance0_20_g$ = new MenuWidgetView_MenuWidgetViewHomeUiBinderImpl_GenBundle_default_InlineClientBundleGenerator_1_g$;
+}
+
+function MenuWidgetView_MenuWidgetViewHomeUiBinderImpl_GenBundle_default_InlineClientBundleGenerator_1_g$(){
+  $clinit_MenuWidgetView_MenuWidgetViewHomeUiBinderImpl_GenBundle_default_InlineClientBundleGenerator_0_g$();
+  Object_1_g$.call(this);
+  this.$init_2372_g$();
+}
+
+defineClass_0_g$(1824, 1, {1001:1, 1:1, 1823:1, 1824:1}, MenuWidgetView_MenuWidgetViewHomeUiBinderImpl_GenBundle_default_InlineClientBundleGenerator_1_g$);
+_.$init_2372_g$ = function $init_2364_g$(){
+  $clinit_MenuWidgetView_MenuWidgetViewHomeUiBinderImpl_GenBundle_default_InlineClientBundleGenerator_0_g$();
+}
+;
+_.getResource_20_g$ = function getResource_21_g$(name_0_g$){
+  if (isScript_0_g$()) {
+    return this.getResourceNative_42_g$(name_0_g$);
+  }
+   else {
+    if (isNull_0_g$(resourceMap_20_g$)) {
+      resourceMap_20_g$ = new HashMap_1_g$;
+    }
+    return dynamicCast_0_g$(resourceMap_20_g$.get_74_g$(name_0_g$), 1016);
+  }
+}
+;
+_.getResourceNative_42_g$ = function getResourceNative_40_g$(name_0_g$){
+  $clinit_MenuWidgetView_MenuWidgetViewHomeUiBinderImpl_GenBundle_default_InlineClientBundleGenerator_0_g$();
+  switch (name_0_g$) {
+  }
+  ;
+  return null;
+}
+;
+_.getResources_20_g$ = function getResources_21_g$(){
+  return initValues_0_g$(getClassLiteralForArray_0_g$(Lcom_google_gwt_resources_client_ResourcePrototype_2_classLit_0_g$, 1), {1017:1, 1462:1, 1485:1, 1:1, 1514:1}, 1016, 0, []);
+}
+;
+var _instance0_20_g$, resourceMap_20_g$;
+var Lpl_baduuum_client_view_widgets_MenuWidgetView_1MenuWidgetViewHomeUiBinderImpl_1GenBundle_1default_1InlineClientBundleGenerator_2_classLit_0_g$ = createForClass_0_g$('pl.baduuum.client.view.widgets', 'MenuWidgetView_MenuWidgetViewHomeUiBinderImpl_GenBundle_default_InlineClientBundleGenerator', 1824, Ljava_lang_Object_2_classLit_0_g$);
+function $clinit_MenuWidgetView_MenuWidgetViewHomeUiBinderImpl_TemplateImpl_0_g$(){
+  $clinit_MenuWidgetView_MenuWidgetViewHomeUiBinderImpl_TemplateImpl_0_g$ = emptyMethod_0_g$;
+  $clinit_Object_0_g$();
+}
+
+function MenuWidgetView_MenuWidgetViewHomeUiBinderImpl_TemplateImpl_1_g$(){
+  $clinit_MenuWidgetView_MenuWidgetViewHomeUiBinderImpl_TemplateImpl_0_g$();
+  Object_1_g$.call(this);
+  this.$init_2373_g$();
+}
+
+defineClass_0_g$(1825, 1, {1030:1, 1:1, 1821:1, 1825:1}, MenuWidgetView_MenuWidgetViewHomeUiBinderImpl_TemplateImpl_1_g$);
+_.$init_2373_g$ = function $init_2365_g$(){
+  $clinit_MenuWidgetView_MenuWidgetViewHomeUiBinderImpl_TemplateImpl_0_g$();
+}
+;
+_.html1_15_g$ = function html1_17_g$(){
+  var sb_0_g$;
+  sb_0_g$ = new StringBuilder_1_g$;
+  sb_0_g$.append_78_g$("<nav class='main-nav' role='navigation'> <div class='container'> <div class='navbar-header'> <button class='navbar-toggle' data-target='#navbar-collapse' data-toggle='collapse' type='button'> <span class='sr-only'>Toggle navigation<\/span> <span class='icon-bar'><\/span> <span class='icon-bar'><\/span> <span class='icon-bar'><\/span> <\/button> <\/div> <div class='navbar-collapse collapse' id='navbar-collapse'> <ul class='nav navbar-nav'> <li class='nav-item activeMenu'> <a class='nav-link' data-target='.navbar-collapse' data-toggle='collapse' href='#home'>Home <\/a> <\/li> <li class='nav-item sibling'> <a class='nav-link' data-target='.navbar-collapse' data-toggle='collapse' href='#prices'>Cennik<\/a> <\/li> <li class='nav-item sibling'> <a class='nav-link' data-target='.navbar-collapse' data-toggle='collapse' href='#calendar'>Grafik<\/a> <\/li> <li class='nav-item sibling'> <a class='nav-link' data-target='.navbar-collapse' data-toggle='collapse' href='#room'>Sala<\/a> <\/li>  <li class='nav-item sibling'> <a class='nav-link' data-target='.navbar-collapse' data-toggle='collapse' href='#studio'>Studio<\/a> <\/li>  <li class='nav-item sibling'> <a class='nav-link' data-target='.navbar-collapse' data-toggle='collapse' href='#reservation'>Rezerwacja<\/a> <\/li> <li class='nav-item dropdown sibling'> <a class='dropdown-toggle nav-link' data-toggle='dropdown' href='#'> Galeria <i class='fa fa-angle-down'><\/i> <\/a> <ul aria-labelledby='dLabel' class='dropdown-menu pull-left' role='menu'> <li class='arrow-up'><\/li> <li class='nav-item'> <a class='nav-link' data-target='.navbar-collapse' data-toggle='collapse' href='#galleryRoom'>Sala Twin Peaks<\/a> <\/li> <li class='nav-item'> <a class='nav-link' data-target='.navbar-collapse' data-toggle='collapse' href='#galleryBuild'>Budowa sali<\/a> <\/li> <\/ul> <\/li> <li class='nav-item sibling'> <a class='nav-link' data-target='.navbar-collapse' data-toggle='collapse' href='#regulations'>Regulamin<\/a> <\/li> <li class='nav-item sibling'> <a class='nav-link' data-target='.navbar-collapse' data-toggle='collapse' href='#faq'>FAQ<\/a> <\/li> <li class='nav-item sibling'> <a class='nav-link' data-target='.navbar-collapse' data-toggle='collapse' href='#contact'>Kontakt<\/a> <\/li> <\/ul> <\/div> <\/div> <\/nav>");
+  return new OnlyToBeUsedInGeneratedCodeStringBlessedAsSafeHtml_1_g$(sb_0_g$.toString$());
+}
+;
+var Lpl_baduuum_client_view_widgets_MenuWidgetView_1MenuWidgetViewHomeUiBinderImpl_1TemplateImpl_2_classLit_0_g$ = createForClass_0_g$('pl.baduuum.client.view.widgets', 'MenuWidgetView_MenuWidgetViewHomeUiBinderImpl_TemplateImpl', 1825, Ljava_lang_Object_2_classLit_0_g$);
+function $clinit_MenuWidgetView_MenuWidgetViewPricesUiBinderImpl_0_g$(){
+  $clinit_MenuWidgetView_MenuWidgetViewPricesUiBinderImpl_0_g$ = emptyMethod_0_g$;
+  $clinit_Object_0_g$();
+}
+
+function MenuWidgetView_MenuWidgetViewPricesUiBinderImpl_1_g$(){
+  $clinit_MenuWidgetView_MenuWidgetViewPricesUiBinderImpl_0_g$();
+  Object_1_g$.call(this);
+  this.$init_2374_g$();
+}
+
+defineClass_0_g$(1826, 1, {1071:1, 1:1, 1819:1, 1826:1}, MenuWidgetView_MenuWidgetViewPricesUiBinderImpl_1_g$);
+_.$init_2374_g$ = function $init_2366_g$(){
+  $clinit_MenuWidgetView_MenuWidgetViewPricesUiBinderImpl_0_g$();
+  this.template_17_g$ = dynamicCast_0_g$(new MenuWidgetView_MenuWidgetViewPricesUiBinderImpl_TemplateImpl_1_g$, 1827);
+}
+;
+_.createAndBindUi_28_g$ = function createAndBindUi_45_g$(owner_0_g$){
+  return this.createAndBindUi_42_g$(dynamicCast_0_g$(owner_0_g$, 1809));
+}
+;
+_.createAndBindUi_42_g$ = function createAndBindUi_46_g$(owner_0_g$){
+  return (new MenuWidgetView_MenuWidgetViewPricesUiBinderImpl$Widgets_1_g$(this, owner_0_g$)).get_navNenu_5_g$();
+}
+;
+var Lpl_baduuum_client_view_widgets_MenuWidgetView_1MenuWidgetViewPricesUiBinderImpl_2_classLit_0_g$ = createForClass_0_g$('pl.baduuum.client.view.widgets', 'MenuWidgetView_MenuWidgetViewPricesUiBinderImpl', 1826, Ljava_lang_Object_2_classLit_0_g$);
+function $clinit_MenuWidgetView_MenuWidgetViewPricesUiBinderImpl$Template_0_g$(){
+  $clinit_MenuWidgetView_MenuWidgetViewPricesUiBinderImpl$Template_0_g$ = emptyMethod_0_g$;
+}
+
+function $clinit_MenuWidgetView_MenuWidgetViewPricesUiBinderImpl$Widgets_0_g$(){
+  $clinit_MenuWidgetView_MenuWidgetViewPricesUiBinderImpl$Widgets_0_g$ = emptyMethod_0_g$;
+  $clinit_Object_0_g$();
+}
+
+function MenuWidgetView_MenuWidgetViewPricesUiBinderImpl$Widgets_1_g$(this$0_0_g$, owner_0_g$){
+  $clinit_MenuWidgetView_MenuWidgetViewPricesUiBinderImpl$Widgets_0_g$();
+  this.this$01_94_g$ = this$0_0_g$;
+  Object_1_g$.call(this);
+  this.$init_2375_g$();
+  this.owner_16_g$ = owner_0_g$;
+}
+
+defineClass_0_g$(1828, 1, {1:1, 1828:1}, MenuWidgetView_MenuWidgetViewPricesUiBinderImpl$Widgets_1_g$);
+_.$init_2375_g$ = function $init_2367_g$(){
+  $clinit_MenuWidgetView_MenuWidgetViewPricesUiBinderImpl$Widgets_0_g$();
+}
+;
+_.build_clientBundleFieldNameUnlikelyToCollideWithUserSpecifiedFieldOkay_31_g$ = function build_clientBundleFieldNameUnlikelyToCollideWithUserSpecifiedFieldOkay_29_g$(){
+  $clinit_MenuWidgetView_MenuWidgetViewPricesUiBinderImpl$Widgets_0_g$();
+  var clientBundleFieldNameUnlikelyToCollideWithUserSpecifiedFieldOkay_0_g$;
+  clientBundleFieldNameUnlikelyToCollideWithUserSpecifiedFieldOkay_0_g$ = dynamicCast_0_g$(dynamicCast_0_g$(new MenuWidgetView_MenuWidgetViewPricesUiBinderImpl_GenBundle_default_InlineClientBundleGenerator_1_g$, 1829), 1829);
+  return clientBundleFieldNameUnlikelyToCollideWithUserSpecifiedFieldOkay_0_g$;
+}
+;
+_.build_navNenu_5_g$ = function build_navNenu_3_g$(){
+  $clinit_MenuWidgetView_MenuWidgetViewPricesUiBinderImpl$Widgets_0_g$();
+  var navNenu_0_g$;
+  navNenu_0_g$ = new HTMLPanel_3_g$(this.template_html1_31_g$().asString_4_g$());
+  return navNenu_0_g$;
+}
+;
+_.get_clientBundleFieldNameUnlikelyToCollideWithUserSpecifiedFieldOkay_31_g$ = function get_clientBundleFieldNameUnlikelyToCollideWithUserSpecifiedFieldOkay_29_g$(){
+  $clinit_MenuWidgetView_MenuWidgetViewPricesUiBinderImpl$Widgets_0_g$();
+  return this.build_clientBundleFieldNameUnlikelyToCollideWithUserSpecifiedFieldOkay_31_g$();
+}
+;
+_.get_navNenu_5_g$ = function get_navNenu_3_g$(){
+  $clinit_MenuWidgetView_MenuWidgetViewPricesUiBinderImpl$Widgets_0_g$();
+  return this.build_navNenu_5_g$();
+}
+;
+_.template_html1_31_g$ = function template_html1_29_g$(){
+  return this.this$01_94_g$.template_17_g$.html1_15_g$();
+}
+;
+var Lpl_baduuum_client_view_widgets_MenuWidgetView_1MenuWidgetViewPricesUiBinderImpl$Widgets_2_classLit_0_g$ = createForClass_0_g$('pl.baduuum.client.view.widgets', 'MenuWidgetView_MenuWidgetViewPricesUiBinderImpl/Widgets', 1828, Ljava_lang_Object_2_classLit_0_g$);
+function $clinit_MenuWidgetView_MenuWidgetViewPricesUiBinderImpl_GenBundle_0_g$(){
+  $clinit_MenuWidgetView_MenuWidgetViewPricesUiBinderImpl_GenBundle_0_g$ = emptyMethod_0_g$;
+}
+
+function $clinit_MenuWidgetView_MenuWidgetViewPricesUiBinderImpl_GenBundle_default_InlineClientBundleGenerator_0_g$(){
+  $clinit_MenuWidgetView_MenuWidgetViewPricesUiBinderImpl_GenBundle_default_InlineClientBundleGenerator_0_g$ = emptyMethod_0_g$;
+  $clinit_Object_0_g$();
+  _instance0_21_g$ = new MenuWidgetView_MenuWidgetViewPricesUiBinderImpl_GenBundle_default_InlineClientBundleGenerator_1_g$;
+}
+
+function MenuWidgetView_MenuWidgetViewPricesUiBinderImpl_GenBundle_default_InlineClientBundleGenerator_1_g$(){
+  $clinit_MenuWidgetView_MenuWidgetViewPricesUiBinderImpl_GenBundle_default_InlineClientBundleGenerator_0_g$();
+  Object_1_g$.call(this);
+  this.$init_2376_g$();
+}
+
+defineClass_0_g$(1830, 1, {1001:1, 1:1, 1829:1, 1830:1}, MenuWidgetView_MenuWidgetViewPricesUiBinderImpl_GenBundle_default_InlineClientBundleGenerator_1_g$);
+_.$init_2376_g$ = function $init_2368_g$(){
+  $clinit_MenuWidgetView_MenuWidgetViewPricesUiBinderImpl_GenBundle_default_InlineClientBundleGenerator_0_g$();
+}
+;
+_.getResource_20_g$ = function getResource_22_g$(name_0_g$){
+  if (isScript_0_g$()) {
+    return this.getResourceNative_43_g$(name_0_g$);
+  }
+   else {
+    if (isNull_0_g$(resourceMap_21_g$)) {
+      resourceMap_21_g$ = new HashMap_1_g$;
+    }
+    return dynamicCast_0_g$(resourceMap_21_g$.get_74_g$(name_0_g$), 1016);
+  }
+}
+;
+_.getResourceNative_43_g$ = function getResourceNative_41_g$(name_0_g$){
+  $clinit_MenuWidgetView_MenuWidgetViewPricesUiBinderImpl_GenBundle_default_InlineClientBundleGenerator_0_g$();
+  switch (name_0_g$) {
+  }
+  ;
+  return null;
+}
+;
+_.getResources_20_g$ = function getResources_22_g$(){
+  return initValues_0_g$(getClassLiteralForArray_0_g$(Lcom_google_gwt_resources_client_ResourcePrototype_2_classLit_0_g$, 1), {1017:1, 1462:1, 1485:1, 1:1, 1514:1}, 1016, 0, []);
+}
+;
+var _instance0_21_g$, resourceMap_21_g$;
+var Lpl_baduuum_client_view_widgets_MenuWidgetView_1MenuWidgetViewPricesUiBinderImpl_1GenBundle_1default_1InlineClientBundleGenerator_2_classLit_0_g$ = createForClass_0_g$('pl.baduuum.client.view.widgets', 'MenuWidgetView_MenuWidgetViewPricesUiBinderImpl_GenBundle_default_InlineClientBundleGenerator', 1830, Ljava_lang_Object_2_classLit_0_g$);
+function $clinit_MenuWidgetView_MenuWidgetViewPricesUiBinderImpl_TemplateImpl_0_g$(){
+  $clinit_MenuWidgetView_MenuWidgetViewPricesUiBinderImpl_TemplateImpl_0_g$ = emptyMethod_0_g$;
+  $clinit_Object_0_g$();
+}
+
+function MenuWidgetView_MenuWidgetViewPricesUiBinderImpl_TemplateImpl_1_g$(){
+  $clinit_MenuWidgetView_MenuWidgetViewPricesUiBinderImpl_TemplateImpl_0_g$();
+  Object_1_g$.call(this);
+  this.$init_2377_g$();
+}
+
+defineClass_0_g$(1831, 1, {1030:1, 1:1, 1827:1, 1831:1}, MenuWidgetView_MenuWidgetViewPricesUiBinderImpl_TemplateImpl_1_g$);
+_.$init_2377_g$ = function $init_2369_g$(){
+  $clinit_MenuWidgetView_MenuWidgetViewPricesUiBinderImpl_TemplateImpl_0_g$();
+}
+;
+_.html1_15_g$ = function html1_18_g$(){
+  var sb_0_g$;
+  sb_0_g$ = new StringBuilder_1_g$;
+  sb_0_g$.append_78_g$("<nav class='main-nav' role='navigation'> <div class='container'> <div class='navbar-header'> <button class='navbar-toggle' data-target='#navbar-collapse' data-toggle='collapse' type='button'> <span class='sr-only'>Toggle navigation<\/span> <span class='icon-bar'><\/span> <span class='icon-bar'><\/span> <span class='icon-bar'><\/span> <\/button> <\/div> <div class='navbar-collapse collapse' id='navbar-collapse'> <ul class='nav navbar-nav'> <li class='nav-item sibling'> <a class='nav-link' data-target='.navbar-collapse' data-toggle='collapse' href='#home'>Home <\/a> <\/li> <li class='nav-item activeMenu'> <a class='nav-link' data-target='.navbar-collapse' data-toggle='collapse' href='#prices'>Cennik<\/a> <\/li> <li class='nav-item sibling'> <a class='nav-link' data-target='.navbar-collapse' data-toggle='collapse' href='#calendar'>Grafik<\/a> <\/li> <li class='nav-item sibling'> <a class='nav-link' data-target='.navbar-collapse' data-toggle='collapse' href='#room'>Sala<\/a> <\/li>  <li class='nav-item sibling'> <a class='nav-link' data-target='.navbar-collapse' data-toggle='collapse' href='#studio'>Studio<\/a> <\/li>  <li class='nav-item sibling'> <a class='nav-link' data-target='.navbar-collapse' data-toggle='collapse' href='#reservation'>Rezerwacja<\/a> <\/li> <li class='nav-item dropdown sibling'> <a class='dropdown-toggle nav-link' data-toggle='dropdown' href='#'> Galeria <i class='fa fa-angle-down'><\/i> <\/a> <ul aria-labelledby='dLabel' class='dropdown-menu pull-left' role='menu'> <li class='arrow-up'><\/li> <li class='nav-item'> <a class='nav-link' data-target='.navbar-collapse' data-toggle='collapse' href='#galleryRoom'>Sala Twin Peaks<\/a> <\/li> <li class='nav-item'> <a class='nav-link' data-target='.navbar-collapse' data-toggle='collapse' href='#galleryBuild'>Budowa sali<\/a> <\/li> <\/ul> <\/li> <li class='nav-item sibling'> <a class='nav-link' data-target='.navbar-collapse' data-toggle='collapse' href='#regulations'>Regulamin<\/a> <\/li> <li class='nav-item sibling'> <a class='nav-link' data-target='.navbar-collapse' data-toggle='collapse' href='#faq'>FAQ<\/a> <\/li> <li class='nav-item sibling'> <a class='nav-link' data-target='.navbar-collapse' data-toggle='collapse' href='#contact'>Kontakt<\/a> <\/li> <\/ul> <\/div> <\/div> <\/nav>");
+  return new OnlyToBeUsedInGeneratedCodeStringBlessedAsSafeHtml_1_g$(sb_0_g$.toString$());
+}
+;
+var Lpl_baduuum_client_view_widgets_MenuWidgetView_1MenuWidgetViewPricesUiBinderImpl_1TemplateImpl_2_classLit_0_g$ = createForClass_0_g$('pl.baduuum.client.view.widgets', 'MenuWidgetView_MenuWidgetViewPricesUiBinderImpl_TemplateImpl', 1831, Ljava_lang_Object_2_classLit_0_g$);
+function $clinit_MenuWidgetView_MenuWidgetViewRegulationsUiBinderImpl_0_g$(){
+  $clinit_MenuWidgetView_MenuWidgetViewRegulationsUiBinderImpl_0_g$ = emptyMethod_0_g$;
+  $clinit_Object_0_g$();
+}
+
+function MenuWidgetView_MenuWidgetViewRegulationsUiBinderImpl_1_g$(){
+  $clinit_MenuWidgetView_MenuWidgetViewRegulationsUiBinderImpl_0_g$();
+  Object_1_g$.call(this);
+  this.$init_2426_g$();
+}
+
+defineClass_0_g$(1864, 1, {1071:1, 1:1, 1836:1, 1864:1}, MenuWidgetView_MenuWidgetViewRegulationsUiBinderImpl_1_g$);
+_.$init_2426_g$ = function $init_2394_g$(){
+  $clinit_MenuWidgetView_MenuWidgetViewRegulationsUiBinderImpl_0_g$();
+  this.template_22_g$ = dynamicCast_0_g$(new MenuWidgetView_MenuWidgetViewRegulationsUiBinderImpl_TemplateImpl_1_g$, 1865);
+}
+;
+_.createAndBindUi_28_g$ = function createAndBindUi_55_g$(owner_0_g$){
+  return this.createAndBindUi_42_g$(dynamicCast_0_g$(owner_0_g$, 1809));
+}
+;
+_.createAndBindUi_42_g$ = function createAndBindUi_56_g$(owner_0_g$){
+  return (new MenuWidgetView_MenuWidgetViewRegulationsUiBinderImpl$Widgets_1_g$(this, owner_0_g$)).get_navNenu_18_g$();
+}
+;
+var Lpl_baduuum_client_view_widgets_MenuWidgetView_1MenuWidgetViewRegulationsUiBinderImpl_2_classLit_0_g$ = createForClass_0_g$('pl.baduuum.client.view.widgets', 'MenuWidgetView_MenuWidgetViewRegulationsUiBinderImpl', 1864, Ljava_lang_Object_2_classLit_0_g$);
+function $clinit_MenuWidgetView_MenuWidgetViewRegulationsUiBinderImpl$Template_0_g$(){
+  $clinit_MenuWidgetView_MenuWidgetViewRegulationsUiBinderImpl$Template_0_g$ = emptyMethod_0_g$;
+}
+
+function $clinit_MenuWidgetView_MenuWidgetViewRegulationsUiBinderImpl$Widgets_0_g$(){
+  $clinit_MenuWidgetView_MenuWidgetViewRegulationsUiBinderImpl$Widgets_0_g$ = emptyMethod_0_g$;
+  $clinit_Object_0_g$();
+}
+
+function MenuWidgetView_MenuWidgetViewRegulationsUiBinderImpl$Widgets_1_g$(this$0_0_g$, owner_0_g$){
+  $clinit_MenuWidgetView_MenuWidgetViewRegulationsUiBinderImpl$Widgets_0_g$();
+  this.this$01_99_g$ = this$0_0_g$;
+  Object_1_g$.call(this);
+  this.$init_2427_g$();
+  this.owner_21_g$ = owner_0_g$;
+}
+
+defineClass_0_g$(1866, 1, {1:1, 1866:1}, MenuWidgetView_MenuWidgetViewRegulationsUiBinderImpl$Widgets_1_g$);
+_.$init_2427_g$ = function $init_2395_g$(){
+  $clinit_MenuWidgetView_MenuWidgetViewRegulationsUiBinderImpl$Widgets_0_g$();
+}
+;
+_.build_clientBundleFieldNameUnlikelyToCollideWithUserSpecifiedFieldOkay_44_g$ = function build_clientBundleFieldNameUnlikelyToCollideWithUserSpecifiedFieldOkay_36_g$(){
+  $clinit_MenuWidgetView_MenuWidgetViewRegulationsUiBinderImpl$Widgets_0_g$();
+  var clientBundleFieldNameUnlikelyToCollideWithUserSpecifiedFieldOkay_0_g$;
+  clientBundleFieldNameUnlikelyToCollideWithUserSpecifiedFieldOkay_0_g$ = dynamicCast_0_g$(dynamicCast_0_g$(new MenuWidgetView_MenuWidgetViewRegulationsUiBinderImpl_GenBundle_default_InlineClientBundleGenerator_1_g$, 1867), 1867);
+  return clientBundleFieldNameUnlikelyToCollideWithUserSpecifiedFieldOkay_0_g$;
+}
+;
+_.build_navNenu_18_g$ = function build_navNenu_10_g$(){
+  $clinit_MenuWidgetView_MenuWidgetViewRegulationsUiBinderImpl$Widgets_0_g$();
+  var navNenu_0_g$;
+  navNenu_0_g$ = new HTMLPanel_3_g$(this.template_html1_44_g$().asString_4_g$());
+  return navNenu_0_g$;
+}
+;
+_.get_clientBundleFieldNameUnlikelyToCollideWithUserSpecifiedFieldOkay_44_g$ = function get_clientBundleFieldNameUnlikelyToCollideWithUserSpecifiedFieldOkay_36_g$(){
+  $clinit_MenuWidgetView_MenuWidgetViewRegulationsUiBinderImpl$Widgets_0_g$();
+  return this.build_clientBundleFieldNameUnlikelyToCollideWithUserSpecifiedFieldOkay_44_g$();
+}
+;
+_.get_navNenu_18_g$ = function get_navNenu_10_g$(){
+  $clinit_MenuWidgetView_MenuWidgetViewRegulationsUiBinderImpl$Widgets_0_g$();
+  return this.build_navNenu_18_g$();
+}
+;
+_.template_html1_44_g$ = function template_html1_36_g$(){
+  return this.this$01_99_g$.template_22_g$.html1_15_g$();
+}
+;
+var Lpl_baduuum_client_view_widgets_MenuWidgetView_1MenuWidgetViewRegulationsUiBinderImpl$Widgets_2_classLit_0_g$ = createForClass_0_g$('pl.baduuum.client.view.widgets', 'MenuWidgetView_MenuWidgetViewRegulationsUiBinderImpl/Widgets', 1866, Ljava_lang_Object_2_classLit_0_g$);
+function $clinit_MenuWidgetView_MenuWidgetViewRegulationsUiBinderImpl_GenBundle_0_g$(){
+  $clinit_MenuWidgetView_MenuWidgetViewRegulationsUiBinderImpl_GenBundle_0_g$ = emptyMethod_0_g$;
+}
+
+function $clinit_MenuWidgetView_MenuWidgetViewRegulationsUiBinderImpl_GenBundle_default_InlineClientBundleGenerator_0_g$(){
+  $clinit_MenuWidgetView_MenuWidgetViewRegulationsUiBinderImpl_GenBundle_default_InlineClientBundleGenerator_0_g$ = emptyMethod_0_g$;
+  $clinit_Object_0_g$();
+  _instance0_26_g$ = new MenuWidgetView_MenuWidgetViewRegulationsUiBinderImpl_GenBundle_default_InlineClientBundleGenerator_1_g$;
+}
+
+function MenuWidgetView_MenuWidgetViewRegulationsUiBinderImpl_GenBundle_default_InlineClientBundleGenerator_1_g$(){
+  $clinit_MenuWidgetView_MenuWidgetViewRegulationsUiBinderImpl_GenBundle_default_InlineClientBundleGenerator_0_g$();
+  Object_1_g$.call(this);
+  this.$init_2428_g$();
+}
+
+defineClass_0_g$(1868, 1, {1001:1, 1:1, 1867:1, 1868:1}, MenuWidgetView_MenuWidgetViewRegulationsUiBinderImpl_GenBundle_default_InlineClientBundleGenerator_1_g$);
+_.$init_2428_g$ = function $init_2396_g$(){
+  $clinit_MenuWidgetView_MenuWidgetViewRegulationsUiBinderImpl_GenBundle_default_InlineClientBundleGenerator_0_g$();
+}
+;
+_.getResource_20_g$ = function getResource_27_g$(name_0_g$){
+  if (isScript_0_g$()) {
+    return this.getResourceNative_56_g$(name_0_g$);
+  }
+   else {
+    if (isNull_0_g$(resourceMap_26_g$)) {
+      resourceMap_26_g$ = new HashMap_1_g$;
+    }
+    return dynamicCast_0_g$(resourceMap_26_g$.get_74_g$(name_0_g$), 1016);
+  }
+}
+;
+_.getResourceNative_56_g$ = function getResourceNative_48_g$(name_0_g$){
+  $clinit_MenuWidgetView_MenuWidgetViewRegulationsUiBinderImpl_GenBundle_default_InlineClientBundleGenerator_0_g$();
+  switch (name_0_g$) {
+  }
+  ;
+  return null;
+}
+;
+_.getResources_20_g$ = function getResources_27_g$(){
+  return initValues_0_g$(getClassLiteralForArray_0_g$(Lcom_google_gwt_resources_client_ResourcePrototype_2_classLit_0_g$, 1), {1017:1, 1462:1, 1485:1, 1:1, 1514:1}, 1016, 0, []);
+}
+;
+var _instance0_26_g$, resourceMap_26_g$;
+var Lpl_baduuum_client_view_widgets_MenuWidgetView_1MenuWidgetViewRegulationsUiBinderImpl_1GenBundle_1default_1InlineClientBundleGenerator_2_classLit_0_g$ = createForClass_0_g$('pl.baduuum.client.view.widgets', 'MenuWidgetView_MenuWidgetViewRegulationsUiBinderImpl_GenBundle_default_InlineClientBundleGenerator', 1868, Ljava_lang_Object_2_classLit_0_g$);
+function $clinit_MenuWidgetView_MenuWidgetViewRegulationsUiBinderImpl_TemplateImpl_0_g$(){
+  $clinit_MenuWidgetView_MenuWidgetViewRegulationsUiBinderImpl_TemplateImpl_0_g$ = emptyMethod_0_g$;
+  $clinit_Object_0_g$();
+}
+
+function MenuWidgetView_MenuWidgetViewRegulationsUiBinderImpl_TemplateImpl_1_g$(){
+  $clinit_MenuWidgetView_MenuWidgetViewRegulationsUiBinderImpl_TemplateImpl_0_g$();
+  Object_1_g$.call(this);
+  this.$init_2429_g$();
+}
+
+defineClass_0_g$(1869, 1, {1030:1, 1:1, 1865:1, 1869:1}, MenuWidgetView_MenuWidgetViewRegulationsUiBinderImpl_TemplateImpl_1_g$);
+_.$init_2429_g$ = function $init_2397_g$(){
+  $clinit_MenuWidgetView_MenuWidgetViewRegulationsUiBinderImpl_TemplateImpl_0_g$();
+}
+;
+_.html1_15_g$ = function html1_23_g$(){
+  var sb_0_g$;
+  sb_0_g$ = new StringBuilder_1_g$;
+  sb_0_g$.append_78_g$("<nav class='main-nav' role='navigation'> <div class='container'> <div class='navbar-header'> <button class='navbar-toggle' data-target='#navbar-collapse' data-toggle='collapse' type='button'> <span class='sr-only'>Toggle navigation<\/span> <span class='icon-bar'><\/span> <span class='icon-bar'><\/span> <span class='icon-bar'><\/span> <\/button> <\/div> <div class='navbar-collapse collapse' id='navbar-collapse'> <ul class='nav navbar-nav'> <li class='nav-item sibling'> <a class='nav-link' data-target='.navbar-collapse' data-toggle='collapse' href='#home'>Home <\/a> <\/li> <li class='nav-item sibling'> <a class='nav-link' data-target='.navbar-collapse' data-toggle='collapse' href='#prices'>Cennik<\/a> <\/li> <li class='nav-item sibling'> <a class='nav-link' data-target='.navbar-collapse' data-toggle='collapse' href='#calendar'>Grafik<\/a> <\/li> <li class='nav-item sibling'> <a class='nav-link' data-target='.navbar-collapse' data-toggle='collapse' href='#room'>Sala<\/a> <\/li>  <li class='nav-item sibling'> <a class='nav-link' data-target='.navbar-collapse' data-toggle='collapse' href='#studio'>Studio<\/a> <\/li>  <li class='nav-item sibling'> <a class='nav-link' data-target='.navbar-collapse' data-toggle='collapse' href='#reservation'>Rezerwacja<\/a> <\/li> <li class='nav-item dropdown sibling'> <a class='dropdown-toggle nav-link' data-toggle='dropdown' href='#'> Galeria <i class='fa fa-angle-down'><\/i> <\/a> <ul aria-labelledby='dLabel' class='dropdown-menu pull-left' role='menu'> <li class='arrow-up'><\/li> <li class='nav-item'> <a class='nav-link' data-target='.navbar-collapse' data-toggle='collapse' href='#galleryRoom'>Sala Twin Peaks<\/a> <\/li> <li class='nav-item'> <a class='nav-link' data-target='.navbar-collapse' data-toggle='collapse' href='#galleryBuild'>Budowa sali<\/a> <\/li> <\/ul> <\/li> <li class='nav-item activeMenu'> <a class='nav-link' data-target='.navbar-collapse' data-toggle='collapse' href='#regulations'>Regulamin<\/a> <\/li> <li class='nav-item sibling'> <a class='nav-link' data-target='.navbar-collapse' data-toggle='collapse' href='#faq'>FAQ<\/a> <\/li> <li class='nav-item activeMenu'> <a class='nav-link' data-target='.navbar-collapse' data-toggle='collapse' href='#contact'>Kontakt<\/a> <\/li> <\/ul> <\/div> <\/div> <\/nav>");
+  return new OnlyToBeUsedInGeneratedCodeStringBlessedAsSafeHtml_1_g$(sb_0_g$.toString$());
+}
+;
+var Lpl_baduuum_client_view_widgets_MenuWidgetView_1MenuWidgetViewRegulationsUiBinderImpl_1TemplateImpl_2_classLit_0_g$ = createForClass_0_g$('pl.baduuum.client.view.widgets', 'MenuWidgetView_MenuWidgetViewRegulationsUiBinderImpl_TemplateImpl', 1869, Ljava_lang_Object_2_classLit_0_g$);
+function $clinit_MenuWidgetView_MenuWidgetViewReservationUiBinderImpl_0_g$(){
+  $clinit_MenuWidgetView_MenuWidgetViewReservationUiBinderImpl_0_g$ = emptyMethod_0_g$;
+  $clinit_Object_0_g$();
+}
+
+function MenuWidgetView_MenuWidgetViewReservationUiBinderImpl_1_g$(){
+  $clinit_MenuWidgetView_MenuWidgetViewReservationUiBinderImpl_0_g$();
+  Object_1_g$.call(this);
+  this.$init_2430_g$();
+}
+
+defineClass_0_g$(1870, 1, {1071:1, 1:1, 1837:1, 1870:1}, MenuWidgetView_MenuWidgetViewReservationUiBinderImpl_1_g$);
+_.$init_2430_g$ = function $init_2398_g$(){
+  $clinit_MenuWidgetView_MenuWidgetViewReservationUiBinderImpl_0_g$();
+  this.template_23_g$ = dynamicCast_0_g$(new MenuWidgetView_MenuWidgetViewReservationUiBinderImpl_TemplateImpl_1_g$, 1871);
+}
+;
+_.createAndBindUi_28_g$ = function createAndBindUi_57_g$(owner_0_g$){
+  return this.createAndBindUi_42_g$(dynamicCast_0_g$(owner_0_g$, 1809));
+}
+;
+_.createAndBindUi_42_g$ = function createAndBindUi_58_g$(owner_0_g$){
+  return (new MenuWidgetView_MenuWidgetViewReservationUiBinderImpl$Widgets_1_g$(this, owner_0_g$)).get_navNenu_19_g$();
+}
+;
+var Lpl_baduuum_client_view_widgets_MenuWidgetView_1MenuWidgetViewReservationUiBinderImpl_2_classLit_0_g$ = createForClass_0_g$('pl.baduuum.client.view.widgets', 'MenuWidgetView_MenuWidgetViewReservationUiBinderImpl', 1870, Ljava_lang_Object_2_classLit_0_g$);
+function $clinit_MenuWidgetView_MenuWidgetViewReservationUiBinderImpl$Template_0_g$(){
+  $clinit_MenuWidgetView_MenuWidgetViewReservationUiBinderImpl$Template_0_g$ = emptyMethod_0_g$;
+}
+
+function $clinit_MenuWidgetView_MenuWidgetViewReservationUiBinderImpl$Widgets_0_g$(){
+  $clinit_MenuWidgetView_MenuWidgetViewReservationUiBinderImpl$Widgets_0_g$ = emptyMethod_0_g$;
+  $clinit_Object_0_g$();
+}
+
+function MenuWidgetView_MenuWidgetViewReservationUiBinderImpl$Widgets_1_g$(this$0_0_g$, owner_0_g$){
+  $clinit_MenuWidgetView_MenuWidgetViewReservationUiBinderImpl$Widgets_0_g$();
+  this.this$01_100_g$ = this$0_0_g$;
+  Object_1_g$.call(this);
+  this.$init_2431_g$();
+  this.owner_22_g$ = owner_0_g$;
+}
+
+defineClass_0_g$(1872, 1, {1:1, 1872:1}, MenuWidgetView_MenuWidgetViewReservationUiBinderImpl$Widgets_1_g$);
+_.$init_2431_g$ = function $init_2399_g$(){
+  $clinit_MenuWidgetView_MenuWidgetViewReservationUiBinderImpl$Widgets_0_g$();
+}
+;
+_.build_clientBundleFieldNameUnlikelyToCollideWithUserSpecifiedFieldOkay_45_g$ = function build_clientBundleFieldNameUnlikelyToCollideWithUserSpecifiedFieldOkay_37_g$(){
+  $clinit_MenuWidgetView_MenuWidgetViewReservationUiBinderImpl$Widgets_0_g$();
+  var clientBundleFieldNameUnlikelyToCollideWithUserSpecifiedFieldOkay_0_g$;
+  clientBundleFieldNameUnlikelyToCollideWithUserSpecifiedFieldOkay_0_g$ = dynamicCast_0_g$(dynamicCast_0_g$(new MenuWidgetView_MenuWidgetViewReservationUiBinderImpl_GenBundle_default_InlineClientBundleGenerator_1_g$, 1873), 1873);
+  return clientBundleFieldNameUnlikelyToCollideWithUserSpecifiedFieldOkay_0_g$;
+}
+;
+_.build_navNenu_19_g$ = function build_navNenu_11_g$(){
+  $clinit_MenuWidgetView_MenuWidgetViewReservationUiBinderImpl$Widgets_0_g$();
+  var navNenu_0_g$;
+  navNenu_0_g$ = new HTMLPanel_3_g$(this.template_html1_45_g$().asString_4_g$());
+  return navNenu_0_g$;
+}
+;
+_.get_clientBundleFieldNameUnlikelyToCollideWithUserSpecifiedFieldOkay_45_g$ = function get_clientBundleFieldNameUnlikelyToCollideWithUserSpecifiedFieldOkay_37_g$(){
+  $clinit_MenuWidgetView_MenuWidgetViewReservationUiBinderImpl$Widgets_0_g$();
+  return this.build_clientBundleFieldNameUnlikelyToCollideWithUserSpecifiedFieldOkay_45_g$();
+}
+;
+_.get_navNenu_19_g$ = function get_navNenu_11_g$(){
+  $clinit_MenuWidgetView_MenuWidgetViewReservationUiBinderImpl$Widgets_0_g$();
+  return this.build_navNenu_19_g$();
+}
+;
+_.template_html1_45_g$ = function template_html1_37_g$(){
+  return this.this$01_100_g$.template_23_g$.html1_15_g$();
+}
+;
+var Lpl_baduuum_client_view_widgets_MenuWidgetView_1MenuWidgetViewReservationUiBinderImpl$Widgets_2_classLit_0_g$ = createForClass_0_g$('pl.baduuum.client.view.widgets', 'MenuWidgetView_MenuWidgetViewReservationUiBinderImpl/Widgets', 1872, Ljava_lang_Object_2_classLit_0_g$);
+function $clinit_MenuWidgetView_MenuWidgetViewReservationUiBinderImpl_GenBundle_0_g$(){
+  $clinit_MenuWidgetView_MenuWidgetViewReservationUiBinderImpl_GenBundle_0_g$ = emptyMethod_0_g$;
+}
+
+function $clinit_MenuWidgetView_MenuWidgetViewReservationUiBinderImpl_GenBundle_default_InlineClientBundleGenerator_0_g$(){
+  $clinit_MenuWidgetView_MenuWidgetViewReservationUiBinderImpl_GenBundle_default_InlineClientBundleGenerator_0_g$ = emptyMethod_0_g$;
+  $clinit_Object_0_g$();
+  _instance0_27_g$ = new MenuWidgetView_MenuWidgetViewReservationUiBinderImpl_GenBundle_default_InlineClientBundleGenerator_1_g$;
+}
+
+function MenuWidgetView_MenuWidgetViewReservationUiBinderImpl_GenBundle_default_InlineClientBundleGenerator_1_g$(){
+  $clinit_MenuWidgetView_MenuWidgetViewReservationUiBinderImpl_GenBundle_default_InlineClientBundleGenerator_0_g$();
+  Object_1_g$.call(this);
+  this.$init_2432_g$();
+}
+
+defineClass_0_g$(1874, 1, {1001:1, 1:1, 1873:1, 1874:1}, MenuWidgetView_MenuWidgetViewReservationUiBinderImpl_GenBundle_default_InlineClientBundleGenerator_1_g$);
+_.$init_2432_g$ = function $init_2400_g$(){
+  $clinit_MenuWidgetView_MenuWidgetViewReservationUiBinderImpl_GenBundle_default_InlineClientBundleGenerator_0_g$();
+}
+;
+_.getResource_20_g$ = function getResource_28_g$(name_0_g$){
+  if (isScript_0_g$()) {
+    return this.getResourceNative_57_g$(name_0_g$);
+  }
+   else {
+    if (isNull_0_g$(resourceMap_27_g$)) {
+      resourceMap_27_g$ = new HashMap_1_g$;
+    }
+    return dynamicCast_0_g$(resourceMap_27_g$.get_74_g$(name_0_g$), 1016);
+  }
+}
+;
+_.getResourceNative_57_g$ = function getResourceNative_49_g$(name_0_g$){
+  $clinit_MenuWidgetView_MenuWidgetViewReservationUiBinderImpl_GenBundle_default_InlineClientBundleGenerator_0_g$();
+  switch (name_0_g$) {
+  }
+  ;
+  return null;
+}
+;
+_.getResources_20_g$ = function getResources_28_g$(){
+  return initValues_0_g$(getClassLiteralForArray_0_g$(Lcom_google_gwt_resources_client_ResourcePrototype_2_classLit_0_g$, 1), {1017:1, 1462:1, 1485:1, 1:1, 1514:1}, 1016, 0, []);
+}
+;
+var _instance0_27_g$, resourceMap_27_g$;
+var Lpl_baduuum_client_view_widgets_MenuWidgetView_1MenuWidgetViewReservationUiBinderImpl_1GenBundle_1default_1InlineClientBundleGenerator_2_classLit_0_g$ = createForClass_0_g$('pl.baduuum.client.view.widgets', 'MenuWidgetView_MenuWidgetViewReservationUiBinderImpl_GenBundle_default_InlineClientBundleGenerator', 1874, Ljava_lang_Object_2_classLit_0_g$);
+function $clinit_MenuWidgetView_MenuWidgetViewReservationUiBinderImpl_TemplateImpl_0_g$(){
+  $clinit_MenuWidgetView_MenuWidgetViewReservationUiBinderImpl_TemplateImpl_0_g$ = emptyMethod_0_g$;
+  $clinit_Object_0_g$();
+}
+
+function MenuWidgetView_MenuWidgetViewReservationUiBinderImpl_TemplateImpl_1_g$(){
+  $clinit_MenuWidgetView_MenuWidgetViewReservationUiBinderImpl_TemplateImpl_0_g$();
+  Object_1_g$.call(this);
+  this.$init_2433_g$();
+}
+
+defineClass_0_g$(1875, 1, {1030:1, 1:1, 1871:1, 1875:1}, MenuWidgetView_MenuWidgetViewReservationUiBinderImpl_TemplateImpl_1_g$);
+_.$init_2433_g$ = function $init_2401_g$(){
+  $clinit_MenuWidgetView_MenuWidgetViewReservationUiBinderImpl_TemplateImpl_0_g$();
+}
+;
+_.html1_15_g$ = function html1_24_g$(){
+  var sb_0_g$;
+  sb_0_g$ = new StringBuilder_1_g$;
+  sb_0_g$.append_78_g$("<nav class='main-nav' role='navigation'> <div class='container'> <div class='navbar-header'> <button class='navbar-toggle' data-target='#navbar-collapse' data-toggle='collapse' type='button'> <span class='sr-only'>Toggle navigation<\/span> <span class='icon-bar'><\/span> <span class='icon-bar'><\/span> <span class='icon-bar'><\/span> <\/button> <\/div> <div class='navbar-collapse collapse' id='navbar-collapse'> <ul class='nav navbar-nav'> <li class='nav-item sibling'> <a class='nav-link' data-target='.navbar-collapse' data-toggle='collapse' href='#home'>Home <\/a> <\/li> <li class='nav-item sibling'> <a class='nav-link' data-target='.navbar-collapse' data-toggle='collapse' href='#prices'>Cennik<\/a> <\/li> <li class='nav-item sibling'> <a class='nav-link' data-target='.navbar-collapse' data-toggle='collapse' href='#calendar'>Grafik<\/a> <\/li> <li class='nav-item sibling'> <a class='nav-link' data-target='.navbar-collapse' data-toggle='collapse' href='#room'>Sala<\/a> <\/li>  <li class='nav-item sibling'> <a class='nav-link' data-target='.navbar-collapse' data-toggle='collapse' href='#studio'>Studio<\/a> <\/li>  <li class='nav-item activeMenu'> <a class='nav-link' data-target='.navbar-collapse' data-toggle='collapse' href='#reservation'>Rezerwacja<\/a> <\/li> <li class='nav-item dropdown sibling'> <a class='dropdown-toggle nav-link' data-toggle='dropdown' href='#'> Galeria <i class='fa fa-angle-down'><\/i> <\/a> <ul aria-labelledby='dLabel' class='dropdown-menu pull-left' role='menu'> <li class='arrow-up'><\/li> <li class='nav-item'> <a class='nav-link' data-target='.navbar-collapse' data-toggle='collapse' href='#galleryRoom'>Sala Twin Peaks<\/a> <\/li> <li class='nav-item'> <a class='nav-link' data-target='.navbar-collapse' data-toggle='collapse' href='#galleryBuild'>Budowa sali<\/a> <\/li> <\/ul> <\/li> <li class='nav-item sibling'> <a class='nav-link' data-target='.navbar-collapse' data-toggle='collapse' href='#regulations'>Regulamin<\/a> <\/li> <li class='nav-item sibling'> <a class='nav-link' data-target='.navbar-collapse' data-toggle='collapse' href='#faq'>FAQ<\/a> <\/li> <li class='nav-item activeMenu'> <a class='nav-link' data-target='.navbar-collapse' data-toggle='collapse' href='#contact'>Kontakt<\/a> <\/li> <\/ul> <\/div> <\/div> <\/nav>");
+  return new OnlyToBeUsedInGeneratedCodeStringBlessedAsSafeHtml_1_g$(sb_0_g$.toString$());
+}
+;
+var Lpl_baduuum_client_view_widgets_MenuWidgetView_1MenuWidgetViewReservationUiBinderImpl_1TemplateImpl_2_classLit_0_g$ = createForClass_0_g$('pl.baduuum.client.view.widgets', 'MenuWidgetView_MenuWidgetViewReservationUiBinderImpl_TemplateImpl', 1875, Ljava_lang_Object_2_classLit_0_g$);
+function $clinit_MenuWidgetView_MenuWidgetViewRoomUiBinderImpl_0_g$(){
+  $clinit_MenuWidgetView_MenuWidgetViewRoomUiBinderImpl_0_g$ = emptyMethod_0_g$;
+  $clinit_Object_0_g$();
+}
+
+function MenuWidgetView_MenuWidgetViewRoomUiBinderImpl_1_g$(){
+  $clinit_MenuWidgetView_MenuWidgetViewRoomUiBinderImpl_0_g$();
+  Object_1_g$.call(this);
+  this.$init_2434_g$();
+}
+
+defineClass_0_g$(1876, 1, {1071:1, 1:1, 1838:1, 1876:1}, MenuWidgetView_MenuWidgetViewRoomUiBinderImpl_1_g$);
+_.$init_2434_g$ = function $init_2402_g$(){
+  $clinit_MenuWidgetView_MenuWidgetViewRoomUiBinderImpl_0_g$();
+  this.template_24_g$ = dynamicCast_0_g$(new MenuWidgetView_MenuWidgetViewRoomUiBinderImpl_TemplateImpl_1_g$, 1877);
+}
+;
+_.createAndBindUi_28_g$ = function createAndBindUi_59_g$(owner_0_g$){
+  return this.createAndBindUi_42_g$(dynamicCast_0_g$(owner_0_g$, 1809));
+}
+;
+_.createAndBindUi_42_g$ = function createAndBindUi_60_g$(owner_0_g$){
+  return (new MenuWidgetView_MenuWidgetViewRoomUiBinderImpl$Widgets_1_g$(this, owner_0_g$)).get_navNenu_20_g$();
+}
+;
+var Lpl_baduuum_client_view_widgets_MenuWidgetView_1MenuWidgetViewRoomUiBinderImpl_2_classLit_0_g$ = createForClass_0_g$('pl.baduuum.client.view.widgets', 'MenuWidgetView_MenuWidgetViewRoomUiBinderImpl', 1876, Ljava_lang_Object_2_classLit_0_g$);
+function $clinit_MenuWidgetView_MenuWidgetViewRoomUiBinderImpl$Template_0_g$(){
+  $clinit_MenuWidgetView_MenuWidgetViewRoomUiBinderImpl$Template_0_g$ = emptyMethod_0_g$;
+}
+
+function $clinit_MenuWidgetView_MenuWidgetViewRoomUiBinderImpl$Widgets_0_g$(){
+  $clinit_MenuWidgetView_MenuWidgetViewRoomUiBinderImpl$Widgets_0_g$ = emptyMethod_0_g$;
+  $clinit_Object_0_g$();
+}
+
+function MenuWidgetView_MenuWidgetViewRoomUiBinderImpl$Widgets_1_g$(this$0_0_g$, owner_0_g$){
+  $clinit_MenuWidgetView_MenuWidgetViewRoomUiBinderImpl$Widgets_0_g$();
+  this.this$01_101_g$ = this$0_0_g$;
+  Object_1_g$.call(this);
+  this.$init_2435_g$();
+  this.owner_23_g$ = owner_0_g$;
+}
+
+defineClass_0_g$(1878, 1, {1:1, 1878:1}, MenuWidgetView_MenuWidgetViewRoomUiBinderImpl$Widgets_1_g$);
+_.$init_2435_g$ = function $init_2403_g$(){
+  $clinit_MenuWidgetView_MenuWidgetViewRoomUiBinderImpl$Widgets_0_g$();
+}
+;
+_.build_clientBundleFieldNameUnlikelyToCollideWithUserSpecifiedFieldOkay_46_g$ = function build_clientBundleFieldNameUnlikelyToCollideWithUserSpecifiedFieldOkay_38_g$(){
+  $clinit_MenuWidgetView_MenuWidgetViewRoomUiBinderImpl$Widgets_0_g$();
+  var clientBundleFieldNameUnlikelyToCollideWithUserSpecifiedFieldOkay_0_g$;
+  clientBundleFieldNameUnlikelyToCollideWithUserSpecifiedFieldOkay_0_g$ = dynamicCast_0_g$(dynamicCast_0_g$(new MenuWidgetView_MenuWidgetViewRoomUiBinderImpl_GenBundle_default_InlineClientBundleGenerator_1_g$, 1879), 1879);
+  return clientBundleFieldNameUnlikelyToCollideWithUserSpecifiedFieldOkay_0_g$;
+}
+;
+_.build_navNenu_20_g$ = function build_navNenu_12_g$(){
+  $clinit_MenuWidgetView_MenuWidgetViewRoomUiBinderImpl$Widgets_0_g$();
+  var navNenu_0_g$;
+  navNenu_0_g$ = new HTMLPanel_3_g$(this.template_html1_46_g$().asString_4_g$());
+  return navNenu_0_g$;
+}
+;
+_.get_clientBundleFieldNameUnlikelyToCollideWithUserSpecifiedFieldOkay_46_g$ = function get_clientBundleFieldNameUnlikelyToCollideWithUserSpecifiedFieldOkay_38_g$(){
+  $clinit_MenuWidgetView_MenuWidgetViewRoomUiBinderImpl$Widgets_0_g$();
+  return this.build_clientBundleFieldNameUnlikelyToCollideWithUserSpecifiedFieldOkay_46_g$();
+}
+;
+_.get_navNenu_20_g$ = function get_navNenu_12_g$(){
+  $clinit_MenuWidgetView_MenuWidgetViewRoomUiBinderImpl$Widgets_0_g$();
+  return this.build_navNenu_20_g$();
+}
+;
+_.template_html1_46_g$ = function template_html1_38_g$(){
+  return this.this$01_101_g$.template_24_g$.html1_15_g$();
+}
+;
+var Lpl_baduuum_client_view_widgets_MenuWidgetView_1MenuWidgetViewRoomUiBinderImpl$Widgets_2_classLit_0_g$ = createForClass_0_g$('pl.baduuum.client.view.widgets', 'MenuWidgetView_MenuWidgetViewRoomUiBinderImpl/Widgets', 1878, Ljava_lang_Object_2_classLit_0_g$);
+function $clinit_MenuWidgetView_MenuWidgetViewRoomUiBinderImpl_GenBundle_0_g$(){
+  $clinit_MenuWidgetView_MenuWidgetViewRoomUiBinderImpl_GenBundle_0_g$ = emptyMethod_0_g$;
+}
+
+function $clinit_MenuWidgetView_MenuWidgetViewRoomUiBinderImpl_GenBundle_default_InlineClientBundleGenerator_0_g$(){
+  $clinit_MenuWidgetView_MenuWidgetViewRoomUiBinderImpl_GenBundle_default_InlineClientBundleGenerator_0_g$ = emptyMethod_0_g$;
+  $clinit_Object_0_g$();
+  _instance0_28_g$ = new MenuWidgetView_MenuWidgetViewRoomUiBinderImpl_GenBundle_default_InlineClientBundleGenerator_1_g$;
+}
+
+function MenuWidgetView_MenuWidgetViewRoomUiBinderImpl_GenBundle_default_InlineClientBundleGenerator_1_g$(){
+  $clinit_MenuWidgetView_MenuWidgetViewRoomUiBinderImpl_GenBundle_default_InlineClientBundleGenerator_0_g$();
+  Object_1_g$.call(this);
+  this.$init_2436_g$();
+}
+
+defineClass_0_g$(1880, 1, {1001:1, 1:1, 1879:1, 1880:1}, MenuWidgetView_MenuWidgetViewRoomUiBinderImpl_GenBundle_default_InlineClientBundleGenerator_1_g$);
+_.$init_2436_g$ = function $init_2404_g$(){
+  $clinit_MenuWidgetView_MenuWidgetViewRoomUiBinderImpl_GenBundle_default_InlineClientBundleGenerator_0_g$();
+}
+;
+_.getResource_20_g$ = function getResource_29_g$(name_0_g$){
+  if (isScript_0_g$()) {
+    return this.getResourceNative_58_g$(name_0_g$);
+  }
+   else {
+    if (isNull_0_g$(resourceMap_28_g$)) {
+      resourceMap_28_g$ = new HashMap_1_g$;
+    }
+    return dynamicCast_0_g$(resourceMap_28_g$.get_74_g$(name_0_g$), 1016);
+  }
+}
+;
+_.getResourceNative_58_g$ = function getResourceNative_50_g$(name_0_g$){
+  $clinit_MenuWidgetView_MenuWidgetViewRoomUiBinderImpl_GenBundle_default_InlineClientBundleGenerator_0_g$();
+  switch (name_0_g$) {
+  }
+  ;
+  return null;
+}
+;
+_.getResources_20_g$ = function getResources_29_g$(){
+  return initValues_0_g$(getClassLiteralForArray_0_g$(Lcom_google_gwt_resources_client_ResourcePrototype_2_classLit_0_g$, 1), {1017:1, 1462:1, 1485:1, 1:1, 1514:1}, 1016, 0, []);
+}
+;
+var _instance0_28_g$, resourceMap_28_g$;
+var Lpl_baduuum_client_view_widgets_MenuWidgetView_1MenuWidgetViewRoomUiBinderImpl_1GenBundle_1default_1InlineClientBundleGenerator_2_classLit_0_g$ = createForClass_0_g$('pl.baduuum.client.view.widgets', 'MenuWidgetView_MenuWidgetViewRoomUiBinderImpl_GenBundle_default_InlineClientBundleGenerator', 1880, Ljava_lang_Object_2_classLit_0_g$);
+function $clinit_MenuWidgetView_MenuWidgetViewRoomUiBinderImpl_TemplateImpl_0_g$(){
+  $clinit_MenuWidgetView_MenuWidgetViewRoomUiBinderImpl_TemplateImpl_0_g$ = emptyMethod_0_g$;
+  $clinit_Object_0_g$();
+}
+
+function MenuWidgetView_MenuWidgetViewRoomUiBinderImpl_TemplateImpl_1_g$(){
+  $clinit_MenuWidgetView_MenuWidgetViewRoomUiBinderImpl_TemplateImpl_0_g$();
+  Object_1_g$.call(this);
+  this.$init_2437_g$();
+}
+
+defineClass_0_g$(1881, 1, {1030:1, 1:1, 1877:1, 1881:1}, MenuWidgetView_MenuWidgetViewRoomUiBinderImpl_TemplateImpl_1_g$);
+_.$init_2437_g$ = function $init_2405_g$(){
+  $clinit_MenuWidgetView_MenuWidgetViewRoomUiBinderImpl_TemplateImpl_0_g$();
+}
+;
+_.html1_15_g$ = function html1_25_g$(){
+  var sb_0_g$;
+  sb_0_g$ = new StringBuilder_1_g$;
+  sb_0_g$.append_78_g$("<nav class='main-nav' role='navigation'> <div class='container'> <div class='navbar-header'> <button class='navbar-toggle' data-target='#navbar-collapse' data-toggle='collapse' type='button'> <span class='sr-only'>Toggle navigation<\/span> <span class='icon-bar'><\/span> <span class='icon-bar'><\/span> <span class='icon-bar'><\/span> <\/button> <\/div> <div class='navbar-collapse collapse' id='navbar-collapse'> <ul class='nav navbar-nav'> <li class='nav-item sibling'> <a class='nav-link' data-target='.navbar-collapse' data-toggle='collapse' href='#home'>Home <\/a> <\/li> <li class='nav-item sibling'> <a class='nav-link' data-target='.navbar-collapse' data-toggle='collapse' href='#prices'>Cennik<\/a> <\/li> <li class='nav-item sibling'> <a class='nav-link' data-target='.navbar-collapse' data-toggle='collapse' href='#calendar'>Grafik<\/a> <\/li> <li class='nav-item activeMenu'> <a class='nav-link' data-target='.navbar-collapse' data-toggle='collapse' href='#room'>Sala<\/a> <\/li>  <li class='nav-item sibling'> <a class='nav-link' data-target='.navbar-collapse' data-toggle='collapse' href='#studio'>Studio<\/a> <\/li>  <li class='nav-item sibling'> <a class='nav-link' data-target='.navbar-collapse' data-toggle='collapse' href='#reservation'>Rezerwacja<\/a> <\/li> <li class='nav-item dropdown sibling'> <a class='dropdown-toggle nav-link' data-toggle='dropdown' href='#'> Galeria <i class='fa fa-angle-down'><\/i> <\/a> <ul aria-labelledby='dLabel' class='dropdown-menu pull-left' role='menu'> <li class='arrow-up'><\/li> <li class='nav-item'> <a class='nav-link' data-target='.navbar-collapse' data-toggle='collapse' href='#galleryRoom'>Sala Twin Peaks<\/a> <\/li> <li class='nav-item'> <a class='nav-link' data-target='.navbar-collapse' data-toggle='collapse' href='#galleryBuild'>Budowa sali<\/a> <\/li> <\/ul> <\/li> <li class='nav-item sibling'> <a class='nav-link' data-target='.navbar-collapse' data-toggle='collapse' href='#regulations'>Regulamin<\/a> <\/li> <li class='nav-item sibling'> <a class='nav-link' data-target='.navbar-collapse' data-toggle='collapse' href='#faq'>FAQ<\/a> <\/li> <li class='nav-item activeMenu'> <a class='nav-link' data-target='.navbar-collapse' data-toggle='collapse' href='#contact'>Kontakt<\/a> <\/li> <\/ul> <\/div> <\/div> <\/nav>");
+  return new OnlyToBeUsedInGeneratedCodeStringBlessedAsSafeHtml_1_g$(sb_0_g$.toString$());
+}
+;
+var Lpl_baduuum_client_view_widgets_MenuWidgetView_1MenuWidgetViewRoomUiBinderImpl_1TemplateImpl_2_classLit_0_g$ = createForClass_0_g$('pl.baduuum.client.view.widgets', 'MenuWidgetView_MenuWidgetViewRoomUiBinderImpl_TemplateImpl', 1881, Ljava_lang_Object_2_classLit_0_g$);
+function $clinit_MenuWidgetView_MenuWidgetViewStudioUiBinderImpl_0_g$(){
+  $clinit_MenuWidgetView_MenuWidgetViewStudioUiBinderImpl_0_g$ = emptyMethod_0_g$;
+  $clinit_Object_0_g$();
+}
+
+function MenuWidgetView_MenuWidgetViewStudioUiBinderImpl_1_g$(){
+  $clinit_MenuWidgetView_MenuWidgetViewStudioUiBinderImpl_0_g$();
+  Object_1_g$.call(this);
+  this.$init_2438_g$();
+}
+
+defineClass_0_g$(1882, 1, {1071:1, 1:1, 1839:1, 1882:1}, MenuWidgetView_MenuWidgetViewStudioUiBinderImpl_1_g$);
+_.$init_2438_g$ = function $init_2406_g$(){
+  $clinit_MenuWidgetView_MenuWidgetViewStudioUiBinderImpl_0_g$();
+  this.template_25_g$ = dynamicCast_0_g$(new MenuWidgetView_MenuWidgetViewStudioUiBinderImpl_TemplateImpl_1_g$, 1883);
+}
+;
+_.createAndBindUi_28_g$ = function createAndBindUi_61_g$(owner_0_g$){
+  return this.createAndBindUi_42_g$(dynamicCast_0_g$(owner_0_g$, 1809));
+}
+;
+_.createAndBindUi_42_g$ = function createAndBindUi_62_g$(owner_0_g$){
+  return (new MenuWidgetView_MenuWidgetViewStudioUiBinderImpl$Widgets_1_g$(this, owner_0_g$)).get_navNenu_21_g$();
+}
+;
+var Lpl_baduuum_client_view_widgets_MenuWidgetView_1MenuWidgetViewStudioUiBinderImpl_2_classLit_0_g$ = createForClass_0_g$('pl.baduuum.client.view.widgets', 'MenuWidgetView_MenuWidgetViewStudioUiBinderImpl', 1882, Ljava_lang_Object_2_classLit_0_g$);
+function $clinit_MenuWidgetView_MenuWidgetViewStudioUiBinderImpl$Template_0_g$(){
+  $clinit_MenuWidgetView_MenuWidgetViewStudioUiBinderImpl$Template_0_g$ = emptyMethod_0_g$;
+}
+
+function $clinit_MenuWidgetView_MenuWidgetViewStudioUiBinderImpl$Widgets_0_g$(){
+  $clinit_MenuWidgetView_MenuWidgetViewStudioUiBinderImpl$Widgets_0_g$ = emptyMethod_0_g$;
+  $clinit_Object_0_g$();
+}
+
+function MenuWidgetView_MenuWidgetViewStudioUiBinderImpl$Widgets_1_g$(this$0_0_g$, owner_0_g$){
+  $clinit_MenuWidgetView_MenuWidgetViewStudioUiBinderImpl$Widgets_0_g$();
+  this.this$01_102_g$ = this$0_0_g$;
+  Object_1_g$.call(this);
+  this.$init_2439_g$();
+  this.owner_24_g$ = owner_0_g$;
+}
+
+defineClass_0_g$(1884, 1, {1:1, 1884:1}, MenuWidgetView_MenuWidgetViewStudioUiBinderImpl$Widgets_1_g$);
+_.$init_2439_g$ = function $init_2407_g$(){
+  $clinit_MenuWidgetView_MenuWidgetViewStudioUiBinderImpl$Widgets_0_g$();
+}
+;
+_.build_clientBundleFieldNameUnlikelyToCollideWithUserSpecifiedFieldOkay_47_g$ = function build_clientBundleFieldNameUnlikelyToCollideWithUserSpecifiedFieldOkay_39_g$(){
+  $clinit_MenuWidgetView_MenuWidgetViewStudioUiBinderImpl$Widgets_0_g$();
+  var clientBundleFieldNameUnlikelyToCollideWithUserSpecifiedFieldOkay_0_g$;
+  clientBundleFieldNameUnlikelyToCollideWithUserSpecifiedFieldOkay_0_g$ = dynamicCast_0_g$(dynamicCast_0_g$(new MenuWidgetView_MenuWidgetViewStudioUiBinderImpl_GenBundle_default_InlineClientBundleGenerator_1_g$, 1885), 1885);
+  return clientBundleFieldNameUnlikelyToCollideWithUserSpecifiedFieldOkay_0_g$;
+}
+;
+_.build_navNenu_21_g$ = function build_navNenu_13_g$(){
+  $clinit_MenuWidgetView_MenuWidgetViewStudioUiBinderImpl$Widgets_0_g$();
+  var navNenu_0_g$;
+  navNenu_0_g$ = new HTMLPanel_3_g$(this.template_html1_47_g$().asString_4_g$());
+  return navNenu_0_g$;
+}
+;
+_.get_clientBundleFieldNameUnlikelyToCollideWithUserSpecifiedFieldOkay_47_g$ = function get_clientBundleFieldNameUnlikelyToCollideWithUserSpecifiedFieldOkay_39_g$(){
+  $clinit_MenuWidgetView_MenuWidgetViewStudioUiBinderImpl$Widgets_0_g$();
+  return this.build_clientBundleFieldNameUnlikelyToCollideWithUserSpecifiedFieldOkay_47_g$();
+}
+;
+_.get_navNenu_21_g$ = function get_navNenu_13_g$(){
+  $clinit_MenuWidgetView_MenuWidgetViewStudioUiBinderImpl$Widgets_0_g$();
+  return this.build_navNenu_21_g$();
+}
+;
+_.template_html1_47_g$ = function template_html1_39_g$(){
+  return this.this$01_102_g$.template_25_g$.html1_15_g$();
+}
+;
+var Lpl_baduuum_client_view_widgets_MenuWidgetView_1MenuWidgetViewStudioUiBinderImpl$Widgets_2_classLit_0_g$ = createForClass_0_g$('pl.baduuum.client.view.widgets', 'MenuWidgetView_MenuWidgetViewStudioUiBinderImpl/Widgets', 1884, Ljava_lang_Object_2_classLit_0_g$);
+function $clinit_MenuWidgetView_MenuWidgetViewStudioUiBinderImpl_GenBundle_0_g$(){
+  $clinit_MenuWidgetView_MenuWidgetViewStudioUiBinderImpl_GenBundle_0_g$ = emptyMethod_0_g$;
+}
+
+function $clinit_MenuWidgetView_MenuWidgetViewStudioUiBinderImpl_GenBundle_default_InlineClientBundleGenerator_0_g$(){
+  $clinit_MenuWidgetView_MenuWidgetViewStudioUiBinderImpl_GenBundle_default_InlineClientBundleGenerator_0_g$ = emptyMethod_0_g$;
+  $clinit_Object_0_g$();
+  _instance0_29_g$ = new MenuWidgetView_MenuWidgetViewStudioUiBinderImpl_GenBundle_default_InlineClientBundleGenerator_1_g$;
+}
+
+function MenuWidgetView_MenuWidgetViewStudioUiBinderImpl_GenBundle_default_InlineClientBundleGenerator_1_g$(){
+  $clinit_MenuWidgetView_MenuWidgetViewStudioUiBinderImpl_GenBundle_default_InlineClientBundleGenerator_0_g$();
+  Object_1_g$.call(this);
+  this.$init_2440_g$();
+}
+
+defineClass_0_g$(1886, 1, {1001:1, 1:1, 1885:1, 1886:1}, MenuWidgetView_MenuWidgetViewStudioUiBinderImpl_GenBundle_default_InlineClientBundleGenerator_1_g$);
+_.$init_2440_g$ = function $init_2408_g$(){
+  $clinit_MenuWidgetView_MenuWidgetViewStudioUiBinderImpl_GenBundle_default_InlineClientBundleGenerator_0_g$();
+}
+;
+_.getResource_20_g$ = function getResource_30_g$(name_0_g$){
+  if (isScript_0_g$()) {
+    return this.getResourceNative_59_g$(name_0_g$);
+  }
+   else {
+    if (isNull_0_g$(resourceMap_29_g$)) {
+      resourceMap_29_g$ = new HashMap_1_g$;
+    }
+    return dynamicCast_0_g$(resourceMap_29_g$.get_74_g$(name_0_g$), 1016);
+  }
+}
+;
+_.getResourceNative_59_g$ = function getResourceNative_51_g$(name_0_g$){
+  $clinit_MenuWidgetView_MenuWidgetViewStudioUiBinderImpl_GenBundle_default_InlineClientBundleGenerator_0_g$();
+  switch (name_0_g$) {
+  }
+  ;
+  return null;
+}
+;
+_.getResources_20_g$ = function getResources_30_g$(){
+  return initValues_0_g$(getClassLiteralForArray_0_g$(Lcom_google_gwt_resources_client_ResourcePrototype_2_classLit_0_g$, 1), {1017:1, 1462:1, 1485:1, 1:1, 1514:1}, 1016, 0, []);
+}
+;
+var _instance0_29_g$, resourceMap_29_g$;
+var Lpl_baduuum_client_view_widgets_MenuWidgetView_1MenuWidgetViewStudioUiBinderImpl_1GenBundle_1default_1InlineClientBundleGenerator_2_classLit_0_g$ = createForClass_0_g$('pl.baduuum.client.view.widgets', 'MenuWidgetView_MenuWidgetViewStudioUiBinderImpl_GenBundle_default_InlineClientBundleGenerator', 1886, Ljava_lang_Object_2_classLit_0_g$);
+function $clinit_MenuWidgetView_MenuWidgetViewStudioUiBinderImpl_TemplateImpl_0_g$(){
+  $clinit_MenuWidgetView_MenuWidgetViewStudioUiBinderImpl_TemplateImpl_0_g$ = emptyMethod_0_g$;
+  $clinit_Object_0_g$();
+}
+
+function MenuWidgetView_MenuWidgetViewStudioUiBinderImpl_TemplateImpl_1_g$(){
+  $clinit_MenuWidgetView_MenuWidgetViewStudioUiBinderImpl_TemplateImpl_0_g$();
+  Object_1_g$.call(this);
+  this.$init_2441_g$();
+}
+
+defineClass_0_g$(1887, 1, {1030:1, 1:1, 1883:1, 1887:1}, MenuWidgetView_MenuWidgetViewStudioUiBinderImpl_TemplateImpl_1_g$);
+_.$init_2441_g$ = function $init_2409_g$(){
+  $clinit_MenuWidgetView_MenuWidgetViewStudioUiBinderImpl_TemplateImpl_0_g$();
+}
+;
+_.html1_15_g$ = function html1_26_g$(){
+  var sb_0_g$;
+  sb_0_g$ = new StringBuilder_1_g$;
+  sb_0_g$.append_78_g$("<nav class='main-nav' role='navigation'> <div class='container'> <div class='navbar-header'> <button class='navbar-toggle' data-target='#navbar-collapse' data-toggle='collapse' type='button'> <span class='sr-only'>Toggle navigation<\/span> <span class='icon-bar'><\/span> <span class='icon-bar'><\/span> <span class='icon-bar'><\/span> <\/button> <\/div> <div class='navbar-collapse collapse' id='navbar-collapse'> <ul class='nav navbar-nav'> <li class='nav-item sibling'> <a class='nav-link' data-target='.navbar-collapse' data-toggle='collapse' href='#home'>Home <\/a> <\/li> <li class='nav-item sibling'> <a class='nav-link' data-target='.navbar-collapse' data-toggle='collapse' href='#prices'>Cennik<\/a> <\/li> <li class='nav-item sibling'> <a class='nav-link' data-target='.navbar-collapse' data-toggle='collapse' href='#calendar'>Grafik<\/a> <\/li> <li class='nav-item sibling'> <a class='nav-link' data-target='.navbar-collapse' data-toggle='collapse' href='#room'>Sala<\/a> <\/li>  <li class='nav-item activeMenu'> <a class='nav-link' data-target='.navbar-collapse' data-toggle='collapse' href='#studio'>Studio<\/a> <\/li>  <li class='nav-item sibling'> <a class='nav-link' data-target='.navbar-collapse' data-toggle='collapse' href='#reservation'>Rezerwacja<\/a> <\/li> <li class='nav-item dropdown sibling'> <a class='dropdown-toggle nav-link' data-toggle='dropdown' href='#'> Galeria <i class='fa fa-angle-down'><\/i> <\/a> <ul aria-labelledby='dLabel' class='dropdown-menu pull-left' role='menu'> <li class='arrow-up'><\/li> <li class='nav-item'> <a class='nav-link' data-target='.navbar-collapse' data-toggle='collapse' href='#galleryRoom'>Sala Twin Peaks<\/a> <\/li> <li class='nav-item'> <a class='nav-link' data-target='.navbar-collapse' data-toggle='collapse' href='#galleryBuild'>Budowa sali<\/a> <\/li> <\/ul> <\/li> <li class='nav-item sibling'> <a class='nav-link' data-target='.navbar-collapse' data-toggle='collapse' href='#regulations'>Regulamin<\/a> <\/li> <li class='nav-item sibling'> <a class='nav-link' data-target='.navbar-collapse' data-toggle='collapse' href='#faq'>FAQ<\/a> <\/li> <li class='nav-item activeMenu'> <a class='nav-link' data-target='.navbar-collapse' data-toggle='collapse' href='#contact'>Kontakt<\/a> <\/li> <\/ul> <\/div> <\/div> <\/nav>");
+  return new OnlyToBeUsedInGeneratedCodeStringBlessedAsSafeHtml_1_g$(sb_0_g$.toString$());
+}
+;
+var Lpl_baduuum_client_view_widgets_MenuWidgetView_1MenuWidgetViewStudioUiBinderImpl_1TemplateImpl_2_classLit_0_g$ = createForClass_0_g$('pl.baduuum.client.view.widgets', 'MenuWidgetView_MenuWidgetViewStudioUiBinderImpl_TemplateImpl', 1887, Ljava_lang_Object_2_classLit_0_g$);
 var C_classLit_0_g$ = createForPrimitive_0_g$('char', 'C'), B_classLit_0_g$ = createForPrimitive_0_g$('byte', 'B'), I_classLit_0_g$ = createForPrimitive_0_g$('int', 'I'), Z_classLit_0_g$ = createForPrimitive_0_g$('boolean', 'Z'), Lcom_google_gwt_core_client_impl_AsyncFragmentLoader$LoadTerminatedHandler_2_classLit_0_g$ = createForInterface_0_g$('com.google.gwt.core.client.impl', 'AsyncFragmentLoader/LoadTerminatedHandler', 261, null), Lcom_google_gwt_core_client_RunAsyncCallback_2_classLit_0_g$ = createForInterface_0_g$('com.google.gwt.core.client', 'RunAsyncCallback', 248, null), D_classLit_0_g$ = createForPrimitive_0_g$('double', 'D'), J_classLit_0_g$ = createForPrimitive_0_g$('long', 'J'), Lcom_google_gwt_lang_ClassLiteralHolder_2_classLit_0_g$ = createForClass_0_g$('com.google.gwt.lang', 'ClassLiteralHolder', 979, Ljava_lang_Object_2_classLit_0_g$), Lcom_google_gwt_lang_CollapsedPropertyHolder_2_classLit_0_g$ = createForClass_0_g$('com.google.gwt.lang', 'CollapsedPropertyHolder', 980, Ljava_lang_Object_2_classLit_0_g$), Lcom_google_gwt_lang_JavaClassHierarchySetupUtil_2_classLit_0_g$ = createForClass_0_g$('com.google.gwt.lang', 'JavaClassHierarchySetupUtil', 982, Ljava_lang_Object_2_classLit_0_g$), Lcom_google_gwt_lang_ModuleUtils_2_classLit_0_g$ = createForClass_0_g$('com.google.gwt.lang', 'ModuleUtils', 988, Ljava_lang_Object_2_classLit_0_g$), F_classLit_0_g$ = createForPrimitive_0_g$('float', 'F'), S_classLit_0_g$ = createForPrimitive_0_g$('short', 'S'), V_classLit_0_g$ = createForPrimitive_0_g$('void', 'V'), Ljava_util_Map$Entry_2_classLit_0_g$ = createForInterface_0_g$('java.util', 'Map/Entry', 1624, null), Lcom_google_gwt_resources_client_ResourcePrototype_2_classLit_0_g$ = createForInterface_0_g$('com.google.gwt.resources.client', 'ResourcePrototype', 1016, null);
 var $entry_0_g$ = registerEntry_1_g$();
 var gwtOnLoad = gwtOnLoad = gwtOnLoad_0_g$;
@@ -75520,6 +76926,6 @@ $sendStats('moduleStartup', 'moduleEvalEnd');
 gwtOnLoad(__gwtModuleFunction.__errFn, __gwtModuleFunction.__moduleName, __gwtModuleFunction.__moduleBase, __gwtModuleFunction.__softPermutationId,__gwtModuleFunction.__computePropValue);
 $sendStats('moduleStartup', 'end');
 $gwt && $gwt.permProps && __gwtModuleFunction.__moduleStartupDone($gwt.permProps);
-//# sourceMappingURL=http://127.0.0.1:9876/sourcemaps/baduuum/8488C374BBBF98D4A3074FDDD9D99B63_sourcemap.json 
+//# sourceMappingURL=http://127.0.0.1:9876/sourcemaps/baduuum/3DED692FAAB4C73FA397E1A891FE0DA4_sourcemap.json 
 //# sourceURL=baduuum-0.js
 

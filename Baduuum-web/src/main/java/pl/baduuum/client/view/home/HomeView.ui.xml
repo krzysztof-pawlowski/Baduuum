@@ -11,7 +11,7 @@
 			<div class="container">
 
 				<c:HeaderWidgetView ui:field="header" />
-				<c:MenuWidgetView ui:field="menu" />
+				<c:MenuWidgetView ui:field="menu" activeMenuItem="home"/>
 
 				<div class="row">
 					<div class="col-xs-10 col-xs-offset-1 contentHome">

@@ -11,7 +11,8 @@
 		<div class="container">
 		
 		  	<c:HeaderWidgetView ui:field="header" /> 
-			<c:MenuWidgetView ui:field="menu" />room
+			<c:MenuWidgetView ui:field="menu" activeMenuItem="room"/>
+			room
 			
 			<c:FooterWidgetView ui:field="footer" /> 
 		</div>
