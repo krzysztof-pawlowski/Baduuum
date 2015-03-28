@@ -1,0 +1,29 @@
+{
+    "port": 8080,
+    "host": "localhost",
+    "ssl": true,
+    "bridge": true,
+    "inbound_permitted": [
+      {
+        "address": "vertx.basicauthmanager.login"
+      },
+      {
+        "address" : "vertx.mongopersistor",
+        "match" : {
+            "action" : "find",
+            "collection" : "albums"
+          }
+      },
+      {
+        "address" : "vertx.mongopersistor",
+        "requires_auth" : true,  // User must be logged in to send let these through
+        "match" : {
+           "action" : "save",
+           "collection" : "orders"
+        }
+      }
+    ],
+    "outbound_permitted": [
+      {}
+    ]
+}
