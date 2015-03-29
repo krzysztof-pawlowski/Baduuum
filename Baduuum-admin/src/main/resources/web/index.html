@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Bootstrap 101 Template</title>
+    <title>Baduuum Admin</title>
 
     <!-- Bootstrap -->
     <link href="js3rdparty/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -24,21 +24,22 @@
 
     <form class="form-signin">
         <h2 class="form-signin-heading">Baduuum Admin</h2>
-        <label for="inputEmail" class="sr-only">Login</label>
-        <input type="email" id="inputEmail" class="form-control" placeholder="login" required="" autofocus="">
+        <label for="inputUsername" class="sr-only">Login</label>
+        <input type="email" id="inputUsername" class="form-control" placeholder="username" required="" autofocus="" data-bind="value: username">
         <label for="inputPassword" class="sr-only">Password</label>
-        <input type="password" id="inputPassword" class="form-control" placeholder="password" required="">
-        <div class="checkbox">
+        <input type="password" id="inputPassword" class="form-control" placeholder="password" required="" data-bind="value: password">
+        <!-- <div class="checkbox">
             <label>
                 <input type="checkbox" value="remember-me"> Remember me
             </label>
-        </div>
-        <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+        </div> -->
+        <button class="btn btn-lg btn-primary btn-block" data-bind="click: login">Sign in</button>
     </form>
 
 </div>
 <h2 data-bind="visible: loggedIn()">Test</h2>
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+</body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="js3rdparty/bootstrap/js/bootstrap.min.js"></script>
@@ -46,5 +47,4 @@
 <script src='js3rdparty/sockjs-min-0.3.4.js'></script>
 <script src='js/vertxbus.js'></script>
 <script src='js/admin_app.js'></script>
-</body>
 </html>

@@ -55,9 +55,6 @@ $("#myModal").modal('show');
     that.password = ko.observable('');
     that.loggedIn = ko.observable(false);
 
-    ko.applyBindings(that);
-
-
     that.login = function() {
         if (that.username().trim() != '' && that.password().trim() != '') {
             eb.login(that.username(), that.password(), function (reply) {
@@ -66,11 +63,14 @@ $("#myModal").modal('show');
                     setCookie(
                         sessionId, reply.sessionID, 1
                     )
+                    ko.applyBindings(that);
                 } else {
                     alert('invalid login');
                 }
             });
         }
     }
+
+    ko.applyBindings(that);
 
 })();
