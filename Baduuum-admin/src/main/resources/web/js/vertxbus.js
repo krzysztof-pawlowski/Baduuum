@@ -42,12 +42,23 @@ var vertx = vertx || {};
     that.onclose = null;
 
     that.login = function(username, password, replyHandler) {
-      sendOrPub("send", 'vertx.basicauthmanager.login', {username: username, password: password}, function(reply) {
+      sendOrPub("send", 'vertx.basicauthmanager.login', {"username": username, "password": password}, function(reply) {
         if (reply.status === 'ok') {
           that.sessionID = reply.sessionID;
+          sendOrPub("send", 'vertx.basicauthmanager.authorise', {"sessionID": sessionId}, function(reply) {
+
+          });
         }
         if (replyHandler) {
-          delete reply.sessionID;
+          replyHandler(reply)
+        }
+      });
+    }
+
+    that.logout = function(sessionId, replyHandler) {
+      sendOrPub("send", 'vertx.basicauthmanager.logout', {"sessionID": sessionId}, function(reply) {
+        if (reply.status === 'ok') {
+          that.sessionID = '';
           replyHandler(reply)
         }
       });

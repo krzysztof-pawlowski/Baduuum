@@ -54,14 +54,16 @@ $("#myModal").modal('show');
     that.username = ko.observable('');
     that.password = ko.observable('');
     that.loggedIn = ko.observable(false);
+    that.sessionId = '';
 
     that.login = function() {
         if (that.username().trim() != '' && that.password().trim() != '') {
             eb.login(that.username(), that.password(), function (reply) {
                 if (reply.status === 'ok') {
                     that.loggedIn(true);
+                    that.sessionId = reply.sessionID;
                     setCookie(
-                        sessionId, reply.sessionID, 1
+                        "sessionId", reply.sessionID, 1
                     )
                     ko.applyBindings(that);
                 } else {
@@ -69,6 +71,16 @@ $("#myModal").modal('show');
                 }
             });
         }
+    }
+
+    that.logout = function() {
+        eb.logout(that.sessionId, function (reply) {
+            that.loggedIn(false);
+            that.sessionId = '';
+            that.username('');
+            that.password('');
+            ko.applyBindings(that);
+        });
     }
 
     ko.applyBindings(that);
