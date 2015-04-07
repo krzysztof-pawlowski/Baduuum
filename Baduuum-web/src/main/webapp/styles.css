@@ -9,13 +9,11 @@
 }
 
 .container {
-	
 	padding: 0px !important;
 }
 
 .wraper {
-	padding: 20px;
-	
+	padding: 10px;
 }
 
 .footer {
@@ -29,8 +27,20 @@
 	float: left;
 	padding: 5px;
 	color: white;
-	
 }
+
+.contentHome {
+	font-family: verdana, sans-serif;
+	font-size: 13px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: normal !important;
+	background-color: rgb(68, 68, 68);
+	padding: 35px;
+	color: #fff;
+	letter-spacing: normal;
+line-height: 20px;
+	}
 
 .main-nav {
   background: #6091ba;
@@ -72,6 +82,15 @@ background-color: red;
 	background-color: rgb(70, 120, 161);;	
 }
 
+.imagePadding {
+	padding-top: 20px;
+}
+
+      #map-outer {height: 440px; padding: 20px; border: 2px solid #CCC; margin-bottom: 20px; background-color:#FFF }
+	  #map-container { height: 400px }
+	  @media all and (max-width: 991px) {
+		#map-outer  { height: 650px }
+		}
 
 .main-nav .nav .nav-item a {
   color: #dce7f0;
@@ -139,7 +158,6 @@ a.nav-link:hover {
 	border: none;
 }
 
-
 @media (max-width: 767px) {
   .wrapper {
     min-height: inherit;
@@ -187,4 +205,20 @@ a.nav-link:hover {
   .wrapper:after {
     content: none;
   }
+  
+  
+  
+    .google-maps {
+        position: relative;
+        padding-bottom: 75%; // This is the aspect ratio
+        height: 0;
+        overflow: hidden;
+    }
+    .google-maps iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100% !important;
+        height: 100% !important;
+    }
 }
