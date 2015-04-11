@@ -58,31 +58,51 @@
 				</div>
 
 
-				<div class="row">
+				<div class="row imageMargin">
 					<div class="col-lg-4 col-sm-6 col-xs-12">
-						<g:Image resource='{images.homePage2}' styleName="img-responsive imagePadding" />
+						<g:Image resource='{images.homePage2}'
+							styleName="img-responsive imagePadding imageMargin" />
 					</div>
 					<div class="col-lg-4 col-sm-6 col-xs-12">
-						<g:Image resource='{images.homePage3}' styleName="img-responsive imagePadding" />
+						<g:Image resource='{images.homePage3}'
+							styleName="img-responsive imagePadding imageMargin" />
 					</div>
 					<div class="col-lg-4 col-sm-6 col-xs-12">
-						<g:Image resource='{images.homePage1}' styleName="img-responsive imagePadding" />
+						<g:Image resource='{images.homePage1}'
+							styleName="img-responsive imagePadding imageMargin" />
 					</div>
 				</div>
 
 				<div class="row">
+					<div class="col-xs-12">&nbsp;</div>
+				</div>
 
-<div class="col-xs-4">
-adres </div>
-<div class="col-xs-8"><div class="google-maps">
-    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d7098.94326104394!2d78.0430654485247!3d27.172909818538997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2s!4v1385710909804" width="100%" height="100%"  frameborder="0" style="border:0"></iframe>
-</div></div>
+				<div class="row">
+
+					<div class="col-xs-4">
+						<strong>Tu jesteśmy: </strong>
+						<br />
+						<br />
+						Gdańsk,
+						<br />
+						ul. Kaprów 17a
+
+					</div>
+					<div class="col-xs-8">
+						<div class="google-maps">
+							<iframe
+								src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2322.079569444666!2d18.566240999999987!3d54.408570999999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46fd7532e372bc1b%3A0x51acf56cd3851a0a!2sSala+Pr%C3%B3b+Baduuum!5e0!3m2!1spl!2spl!4v1428792047971"
+								width="100%" height="100%" frameborder="0" style="border:0"></iframe>
+						</div>
+					</div>
 
 
 
 
 				</div> <!-- /row -->
-
+				<div class="row">
+					<div class="col-xs-12">&nbsp;</div>
+				</div>
 				<c:FooterWidgetView ui:field="footer" />
 			</div>
 		</div>

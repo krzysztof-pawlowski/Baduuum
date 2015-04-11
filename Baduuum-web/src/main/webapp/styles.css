@@ -86,6 +86,9 @@ background-color: red;
 	padding-top: 20px;
 }
 
+.imageMargin {
+	}
+
       #map-outer {height: 440px; padding: 20px; border: 2px solid #CCC; margin-bottom: 20px; background-color:#FFF }
 	  #map-container { height: 400px }
 	  @media all and (max-width: 991px) {

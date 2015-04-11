@@ -3,7 +3,7 @@ var __gwtModuleFunction = $wnd.baduuum;
 var $sendStats = __gwtModuleFunction.__sendStats;
 $sendStats('moduleStartup', 'moduleEvalStart');
 var $gwt_version = "2.7.0";
-var $strongName = 'EF867DF406C2C05C2825D93D73342765';
+var $strongName = 'C333FE96E1FA1F06052910612D1B1809';
 var $gwt = {};
 var $doc = $wnd.document;
 var $moduleName, $moduleBase;
@@ -73189,7 +73189,7 @@ _.build_f_Image2_2_g$ = function build_f_Image2_0_g$(){
   $clinit_HomeViewImpl_BaduuumHomeViewUiBinderImpl$Widgets_0_g$();
   var f_Image2_0_g$;
   f_Image2_0_g$ = new Image_3_g$(this.get_images_17_g$().homePage2_2_g$());
-  f_Image2_0_g$.setStyleName_7_g$('img-responsive imagePadding');
+  f_Image2_0_g$.setStyleName_7_g$('img-responsive imagePadding imageMargin');
   return f_Image2_0_g$;
 }
 ;
@@ -73197,7 +73197,7 @@ _.build_f_Image3_1_g$ = function build_f_Image3_0_g$(){
   $clinit_HomeViewImpl_BaduuumHomeViewUiBinderImpl$Widgets_0_g$();
   var f_Image3_0_g$;
   f_Image3_0_g$ = new Image_3_g$(this.get_images_17_g$().homePage3_2_g$());
-  f_Image3_0_g$.setStyleName_7_g$('img-responsive imagePadding');
+  f_Image3_0_g$.setStyleName_7_g$('img-responsive imagePadding imageMargin');
   return f_Image3_0_g$;
 }
 ;
@@ -73205,7 +73205,7 @@ _.build_f_Image4_1_g$ = function build_f_Image4_0_g$(){
   $clinit_HomeViewImpl_BaduuumHomeViewUiBinderImpl$Widgets_0_g$();
   var f_Image4_0_g$;
   f_Image4_0_g$ = new Image_3_g$(this.get_images_17_g$().homePage1_2_g$());
-  f_Image4_0_g$.setStyleName_7_g$('img-responsive imagePadding');
+  f_Image4_0_g$.setStyleName_7_g$('img-responsive imagePadding imageMargin');
   return f_Image4_0_g$;
 }
 ;
@@ -73430,13 +73430,13 @@ _.html1_24_g$ = function html1_5_g$(arg0_0_g$, arg1_0_g$, arg2_0_g$, arg3_0_g$, 
   sb_0_g$.append_78_g$(htmlEscape_1_g$(arg0_0_g$));
   sb_0_g$.append_78_g$("'><\/span> <span id='");
   sb_0_g$.append_78_g$(htmlEscape_1_g$(arg1_0_g$));
-  sb_0_g$.append_78_g$("'><\/span> <div class='row'> <div class='col-xs-12'> <div class='contentHome'> <h3>Witaj na stronie sali pr\xF3b Baduuum!<\/h3> <p>Baduuum to miejsce wyj\u0105tkowe, powsta\u0142e wskutek realizacji marzenia o sali pr\xF3b gdzie ka\u017Cdy mo\u017Ce po\u0107wiczy\u0107 sam lub z w\u0142asnym zespo\u0142em w doskona\u0142ych warunkach akustycznych i na porz\u0105dnym sprz\u0119cie. <\/p> <p> Miejsce dla muzyk\xF3w profesjonalnych i amator\xF3w, dla tych kt\xF3rzy wol\u0105 korzysta\u0107 z w\u0142asnego sprz\u0119tu jak i dla tych kt\xF3rzy chc\u0105 rozpocz\u0105\u0107 swoj\u0105 muzyczn\u0105 przygod\u0119, a nie maj\u0105 na czym gra\u0107 lub z gara\u017Cu ju\u017C przegonili ich s\u0105siedzi :). Baduuum to miejsce gdzie pr\xF3by niezale\u017Cnie od swego rozmiaru, tego czy s\u0105 ha\u0142a\u015Bliwe czy kameralne, to z pewno\u015Bci\u0105 przynios\u0105 rado\u015B\u0107 z tworzenia. <\/p> <p> Staramy si\u0119 tworzy\u0107 miejsce inspiruj\u0105ce nie tylko poprzez mo\u017Cliwo\u015B\u0107 korzystania z nowego, sprawnego sprz\u0119tu czy z du\u017C\u0105 dba\u0142o\u015Bci\u0105 zaprojektowanej akustyki, ale te\u017C przez superprzyjazn\u0105 atmosfer\u0119 oraz nietypowy wystr\xF3j sali. <\/p> <\/div> <\/div> <\/div> <div class='row'> <div class='col-lg-4 col-sm-6 col-xs-12'> <span id='");
+  sb_0_g$.append_78_g$("'><\/span> <div class='row'> <div class='col-xs-12'> <div class='contentHome'> <h3>Witaj na stronie sali pr\xF3b Baduuum!<\/h3> <p>Baduuum to miejsce wyj\u0105tkowe, powsta\u0142e wskutek realizacji marzenia o sali pr\xF3b gdzie ka\u017Cdy mo\u017Ce po\u0107wiczy\u0107 sam lub z w\u0142asnym zespo\u0142em w doskona\u0142ych warunkach akustycznych i na porz\u0105dnym sprz\u0119cie. <\/p> <p> Miejsce dla muzyk\xF3w profesjonalnych i amator\xF3w, dla tych kt\xF3rzy wol\u0105 korzysta\u0107 z w\u0142asnego sprz\u0119tu jak i dla tych kt\xF3rzy chc\u0105 rozpocz\u0105\u0107 swoj\u0105 muzyczn\u0105 przygod\u0119, a nie maj\u0105 na czym gra\u0107 lub z gara\u017Cu ju\u017C przegonili ich s\u0105siedzi :). Baduuum to miejsce gdzie pr\xF3by niezale\u017Cnie od swego rozmiaru, tego czy s\u0105 ha\u0142a\u015Bliwe czy kameralne, to z pewno\u015Bci\u0105 przynios\u0105 rado\u015B\u0107 z tworzenia. <\/p> <p> Staramy si\u0119 tworzy\u0107 miejsce inspiruj\u0105ce nie tylko poprzez mo\u017Cliwo\u015B\u0107 korzystania z nowego, sprawnego sprz\u0119tu czy z du\u017C\u0105 dba\u0142o\u015Bci\u0105 zaprojektowanej akustyki, ale te\u017C przez superprzyjazn\u0105 atmosfer\u0119 oraz nietypowy wystr\xF3j sali. <\/p> <\/div> <\/div> <\/div> <div class='row imageMargin'> <div class='col-lg-4 col-sm-6 col-xs-12'> <span id='");
   sb_0_g$.append_78_g$(htmlEscape_1_g$(arg2_0_g$));
   sb_0_g$.append_78_g$("'><\/span> <\/div> <div class='col-lg-4 col-sm-6 col-xs-12'> <span id='");
   sb_0_g$.append_78_g$(htmlEscape_1_g$(arg3_0_g$));
   sb_0_g$.append_78_g$("'><\/span> <\/div> <div class='col-lg-4 col-sm-6 col-xs-12'> <span id='");
   sb_0_g$.append_78_g$(htmlEscape_1_g$(arg4_0_g$));
-  sb_0_g$.append_78_g$("'><\/span> <\/div> <\/div> <div class='row'> <div class='col-xs-4'> adres <\/div> <div class='col-xs-8'><div class='google-maps'> <iframe frameborder='0' height='100%' src='https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d7098.94326104394!2d78.0430654485247!3d27.172909818538997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2s!4v1385710909804' style='border:0' width='100%'><\/iframe> <\/div><\/div> <\/div>  <span id='");
+  sb_0_g$.append_78_g$("'><\/span> <\/div> <\/div> <div class='row'> <div class='col-xs-12'>\xA0<\/div> <\/div> <div class='row'> <div class='col-xs-4'> <strong>Tu jeste\u015Bmy: <\/strong> <br> <br> Gda\u0144sk, <br> ul. Kapr\xF3w 17a <\/div> <div class='col-xs-8'> <div class='google-maps'> <iframe frameborder='0' height='100%' src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2322.079569444666!2d18.566240999999987!3d54.408570999999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46fd7532e372bc1b%3A0x51acf56cd3851a0a!2sSala+Pr%C3%B3b+Baduuum!5e0!3m2!1spl!2spl!4v1428792047971' style='border:0' width='100%'><\/iframe> <\/div> <\/div> <\/div>  <div class='row'> <div class='col-xs-12'>\xA0<\/div> <\/div> <span id='");
   sb_0_g$.append_78_g$(htmlEscape_1_g$(arg5_0_g$));
   sb_0_g$.append_78_g$("'><\/span> <\/div> <\/div>");
   return new OnlyToBeUsedInGeneratedCodeStringBlessedAsSafeHtml_1_g$(sb_0_g$.toString$());
@@ -77049,6 +77049,6 @@ $sendStats('moduleStartup', 'moduleEvalEnd');
 gwtOnLoad(__gwtModuleFunction.__errFn, __gwtModuleFunction.__moduleName, __gwtModuleFunction.__moduleBase, __gwtModuleFunction.__softPermutationId,__gwtModuleFunction.__computePropValue);
 $sendStats('moduleStartup', 'end');
 $gwt && $gwt.permProps && __gwtModuleFunction.__moduleStartupDone($gwt.permProps);
-//# sourceMappingURL=http://127.0.0.1:9876/sourcemaps/baduuum/EF867DF406C2C05C2825D93D73342765_sourcemap.json 
+//# sourceMappingURL=http://127.0.0.1:9876/sourcemaps/baduuum/C333FE96E1FA1F06052910612D1B1809_sourcemap.json 
 //# sourceURL=baduuum-0.js
 
