@@ -3,7 +3,7 @@ var __gwtModuleFunction = $wnd.baduuum;
 var $sendStats = __gwtModuleFunction.__sendStats;
 $sendStats('moduleStartup', 'moduleEvalStart');
 var $gwt_version = "2.7.0";
-var $strongName = 'C333FE96E1FA1F06052910612D1B1809';
+var $strongName = '1F76E00F4C20EA109EEC527E1EA830D1';
 var $gwt = {};
 var $doc = $wnd.document;
 var $moduleName, $moduleBase;
@@ -73758,11 +73758,11 @@ _.html1_23_g$ = function html1_6_g$(arg0_0_g$, arg1_0_g$, arg2_0_g$){
   sb_0_g$ = new StringBuilder_1_g$;
   sb_0_g$.append_78_g$("<div class='wraper'> <div class='container'> <span id='");
   sb_0_g$.append_78_g$(htmlEscape_1_g$(arg0_0_g$));
-  sb_0_g$.append_78_g$("'><\/span>  <span id='");
+  sb_0_g$.append_78_g$("'><\/span> <span id='");
   sb_0_g$.append_78_g$(htmlEscape_1_g$(arg1_0_g$));
-  sb_0_g$.append_78_g$("'><\/span> prices <span id='");
+  sb_0_g$.append_78_g$("'><\/span> <div class='table-responsive'> <table class='table table-hover table-bordered'> <caption> <h4>opcje jednorazowej rezerwcji<\/h4> <\/caption> <thead> <tr> <th>nazwa<\/th> <th>cena w PLN<\/th> <\/tr> <\/thead> <tr> <td class='cena'>pierwsza godzina dla nowych zespo\u0142\xF3w<\/td> <td width='30%'>0 z\u0142<\/td> <\/tr> <tr> <td class='cena'>cena za godzin\u0119<\/td> <td width='30%'>30 z\u0142<\/td> <\/tr> <tr> <td class='cena'>trzecia godzina i nast\u0119pne<\/td> <td width='30%'>20 z\u0142<\/td> <\/tr> <tr> <td class='cena'>karnet 10h<\/td> <td width='30%'>200 z\u0142<\/td> <\/tr>  <\/table> <\/div> <div class='table-responsive'> <table class='table table-hover table-bordered'> <caption> <h4>p\u0142atne dodatkowo<\/h4> <\/caption> <thead> <tr> <th>nazwa<\/th> <th>cena w PLN<\/th> <\/tr> <\/thead> <tr> <td class='cena'>wypo\u017Cyczenie zestawu blach<\/td> <td width='30%'>5z\u0142 / pr\xF3ba<\/td> <\/tr> <tr> <td class='cena'>wypo\u017Cyczenie pianina cyfrowego Korg<\/td> <td width='30%'>5z\u0142 / pr\xF3ba<\/td> <\/tr> <tr> <td class='cena'>wypo\u017Cyczenie sprz\u0119tu z sali na zewn\u0105trz<\/td> <td width='30%'>do negocjacji<\/td> <\/tr>  <\/table> <\/div> <div class='table-responsive'> <table class='table table-hover table-bordered'> <caption> <h4>magazyn<\/h4> <\/caption> <thead> <tr> <th>nazwa<\/th> <th>cena w PLN<\/th> <\/tr> <\/thead> <tr> <td class='cena'>magazynowanie b\u0119bn\xF3w<\/td> <td width='30%'>100 z\u0142 / miesi\u0105c<\/td> <\/tr> <tr> <td class='cena'>magazynowanie paczki+g\u0142owy / comba<\/td> <td width='30%'>50 z\u0142 / miesi\u0105c<\/td> <\/tr> <tr> <td class='cena'>magazynowanie gitary, keybordu, blach, itp.<\/td> <td width='30%'>10 z\u0142 / miesi\u0105c<\/td> <\/tr>  <\/table> <\/div> <div class='row'> <div class='col-xs-12'> <h4>Uwagi:<\/h4> <p>Sprz\u0119t typu powermikser, kolumny, wzmacniacze gitarowe i basowy, mikrofony, perkusja (bez talerzy) w cenie wynajmu sali.<\/p> <p>W cenie wynajmu sali r\xF3wnie\u017C rejestracja pr\xF3by (na \u017Cyczenie) rejestratorem cyfrowym Olympus LS-14.<\/p> <p>Ceny dla szk\xF3\u0142 \u015Bpiewu, szk\xF3\u0142 gry na instrumentach ustalane s\u0105 indywidualnie.<\/p> <p>Wszystkie podane ceny to ceny brutto dla os\xF3b prywatnych, natomiast dla firm do podanych cen doliczamy 23% VAT.<\/p> <p> dane do p\u0142atno\u015Bci przelewem: <br> mstudio Mariusz Paw\u0142owski <br> ul. Kapr\xF3w 17a <br> 80-316 Gda\u0144sk <br> numer konta: 62 1910 1048 2267 3365 4941 0001 <\/p> <\/div> <\/div> <\/div> <\/div> <span id='");
   sb_0_g$.append_78_g$(htmlEscape_1_g$(arg2_0_g$));
-  sb_0_g$.append_78_g$("'><\/span>  <\/div> <\/div>");
+  sb_0_g$.append_78_g$("'><\/span>");
   return new OnlyToBeUsedInGeneratedCodeStringBlessedAsSafeHtml_1_g$(sb_0_g$.toString$());
 }
 ;
@@ -77049,6 +77049,6 @@ $sendStats('moduleStartup', 'moduleEvalEnd');
 gwtOnLoad(__gwtModuleFunction.__errFn, __gwtModuleFunction.__moduleName, __gwtModuleFunction.__moduleBase, __gwtModuleFunction.__softPermutationId,__gwtModuleFunction.__computePropValue);
 $sendStats('moduleStartup', 'end');
 $gwt && $gwt.permProps && __gwtModuleFunction.__moduleStartupDone($gwt.permProps);
-//# sourceMappingURL=http://127.0.0.1:9876/sourcemaps/baduuum/C333FE96E1FA1F06052910612D1B1809_sourcemap.json 
+//# sourceMappingURL=http://127.0.0.1:9876/sourcemaps/baduuum/1F76E00F4C20EA109EEC527E1EA830D1_sourcemap.json 
 //# sourceURL=baduuum-0.js
 
