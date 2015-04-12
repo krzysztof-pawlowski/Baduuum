@@ -283,7 +283,7 @@ function baduuum(){
     }
     var strongName;
     try {
-      strongName = '318FB6728D1FC65E6AD067F7A9075EB7';
+      strongName = '1F76E00F4C20EA109EEC527E1EA830D1';
       var idx = strongName.indexOf(':');
       if (idx != -1) {
         softPermutationId = parseInt(strongName.substring(idx + 1), 10);
@@ -312,6 +312,8 @@ function baduuum(){
 
     sendStats('loadExternalRefs', 'begin');
     installOneStylesheet('gwt/standard/standard.css');
+    installOneStylesheet('css/font-awesome-4.3.0.min.cache.css');
+    installOneStylesheet('css/bootstrap-3.3.2.min.cache.css');
     sendStats('loadExternalRefs', 'end');
   }
 

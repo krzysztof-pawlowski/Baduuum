@@ -1,31 +1,22 @@
+<?xml version='1.0'?>
 <!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
 <ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
 	xmlns:g="urn:import:com.google.gwt.user.client.ui" xmlns:c="urn:import:pl.baduuum.client.view.widgets">
 
+    <ui:with field='images' type='pl.baduuum.client.ImageResources' />
 	<ui:with field='res' type='pl.baduuum.client.StyleResources' />
 
-	<ui:style>
-	
-	</ui:style>
-
 	<g:HTMLPanel>
-		<div id="pagewrap">
-			<c:HeaderWidgetView ui:field="header" />
-			<c:MenuWidgetView ui:field="menu" />
+		<div class="wraper">
+		<div class="container">
+		
+		  	<c:HeaderWidgetView ui:field="header" /> 
+		<c:MenuWidgetView ui:field="menu" activeMenuItem="gallery"/>
 
-			<div id="content">
-				<h2>1st Content Area</h2>
-				<p>gallery room</p>
-			</div>
+gallery room
 
-
-
-			<c:FooterWidgetView ui:field="footer" />
-
+			<c:FooterWidgetView ui:field="footer" /> 
 		</div>
-
-
+		</div>
 	</g:HTMLPanel>
-
-
 </ui:UiBinder> 

@@ -8,13 +8,13 @@ public interface ImageResources extends ClientBundle {
 	@Source("images/logo.jpg")
 	ImageResource logo();
 	
-	@Source("images/gallery/room/DSC_3526.jpg")
+	@Source("images/gallery/room/DSC_3526_tn.jpg")
 	ImageResource homePage1();
 	
-	@Source("images/gallery/room/DSC_1651.jpg")
+	@Source("images/gallery/room/DSC_1651_tn.jpg")
 	ImageResource homePage2();
 	
-	@Source("images/gallery/room/DSC_3022.jpg")
+	@Source("images/gallery/room/DSC_3025_tn.jpg")
 	ImageResource homePage3(); 
 	
 }

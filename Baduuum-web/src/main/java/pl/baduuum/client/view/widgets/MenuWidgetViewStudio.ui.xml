@@ -1,0 +1,67 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui">
+	<g:HTMLPanel ui:field="navNenu">
+		<!-- ******NAV****** -->
+		<nav class="main-nav" role="navigation">
+			<div class="container">
+				<div class="navbar-header">
+					<button class="navbar-toggle" type="button" data-toggle="collapse"
+						data-target="#navbar-collapse">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button><!--//nav-toggle -->
+				</div><!--//navbar-header -->
+				<div class="navbar-collapse collapse" id="navbar-collapse">
+					<ul class="nav navbar-nav">
+						<li class="nav-item sibling">
+							<a data-toggle="collapse" data-target=".navbar-collapse" href="#home" class="nav-link">Home </a>
+						</li>
+						<li class="nav-item sibling">
+							<a data-toggle="collapse" data-target=".navbar-collapse" href="#prices" class="nav-link">Cennik</a>
+						</li>
+						<li class="nav-item sibling">
+							<a data-toggle="collapse" data-target=".navbar-collapse" href="#calendar" class="nav-link">Grafik</a>
+						</li>
+						<li class="nav-item sibling">
+							<a data-toggle="collapse" data-target=".navbar-collapse" href="#room" class="nav-link">Sala</a>
+						</li>						
+						<li class="nav-item activeMenu">
+							<a data-toggle="collapse" data-target=".navbar-collapse" href="#studio" class="nav-link">Studio</a>
+						</li>						
+						<li class="nav-item sibling">
+							<a data-toggle="collapse" data-target=".navbar-collapse" href="#reservation" class="nav-link">Rezerwacja</a>
+						</li>
+						<li class="nav-item dropdown sibling">
+							<a class="dropdown-toggle nav-link" data-toggle="dropdown" href="#">
+								Galeria
+								<i class="fa fa-angle-down"></i>
+							</a>
+							<ul class="dropdown-menu pull-left" role="menu"
+								aria-labelledby="dLabel">
+								<li class="arrow-up"></li>
+								<li class="nav-item   ">
+									<a data-toggle="collapse" data-target=".navbar-collapse" href="#galleryRoom" class="nav-link">Sala Twin Peaks</a>
+								</li>
+								<li class="nav-item   ">
+									<a data-toggle="collapse" data-target=".navbar-collapse" href="#galleryBuild" class="nav-link">Budowa sali</a>
+								</li>
+							</ul>
+						</li>
+						<li class="nav-item sibling">
+							<a data-toggle="collapse" data-target=".navbar-collapse" href="#regulations" class="nav-link">Regulamin</a>
+						</li>
+						<li class="nav-item sibling">
+							<a data-toggle="collapse" data-target=".navbar-collapse" href="#faq" class="nav-link">FAQ</a>
+						</li>
+						<li class="nav-item sibling">
+							<a data-toggle="collapse" data-target=".navbar-collapse" href="#contact" class="nav-link">Kontakt</a>
+						</li>
+					</ul><!--//nav -->
+				</div><!--//navabr-collapse -->
+			</div><!--//container -->
+		</nav><!--//main-nav -->
+	</g:HTMLPanel>
+</ui:UiBinder>  
