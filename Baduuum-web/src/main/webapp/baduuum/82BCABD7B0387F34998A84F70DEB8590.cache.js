@@ -3,7 +3,7 @@ var __gwtModuleFunction = $wnd.baduuum;
 var $sendStats = __gwtModuleFunction.__sendStats;
 $sendStats('moduleStartup', 'moduleEvalStart');
 var $gwt_version = "2.7.0";
-var $strongName = '9FCEA85A49DFBA23E3205BDF3941FB7F';
+var $strongName = '82BCABD7B0387F34998A84F70DEB8590';
 var $gwt = {};
 var $doc = $wnd.document;
 var $moduleName, $moduleBase;
@@ -74731,7 +74731,7 @@ _.build_f_Image3_3_g$ = function build_f_Image3_1_g$(){
   $clinit_RoomViewImpl_BaduuumRoomViewUiBinderImpl$Widgets_0_g$();
   var f_Image3_0_g$;
   f_Image3_0_g$ = new Image_3_g$(this.get_images_21_g$().roomPage2_2_g$());
-  f_Image3_0_g$.setStyleName_7_g$('img-responsive');
+  f_Image3_0_g$.setStyleName_7_g$('img-responsive imagePadding imageMargin');
   return f_Image3_0_g$;
 }
 ;
@@ -74739,7 +74739,7 @@ _.build_f_Image4_3_g$ = function build_f_Image4_1_g$(){
   $clinit_RoomViewImpl_BaduuumRoomViewUiBinderImpl$Widgets_0_g$();
   var f_Image4_0_g$;
   f_Image4_0_g$ = new Image_3_g$(this.get_images_21_g$().roomPage3_2_g$());
-  f_Image4_0_g$.setStyleName_7_g$('img-responsive');
+  f_Image4_0_g$.setStyleName_7_g$('img-responsive imagePadding imageMargin');
   return f_Image4_0_g$;
 }
 ;
@@ -74962,11 +74962,11 @@ _.html1_24_g$ = function html1_9_g$(arg0_0_g$, arg1_0_g$, arg2_0_g$, arg3_0_g$, 
   sb_0_g$.append_78_g$(htmlEscape_1_g$(arg0_0_g$));
   sb_0_g$.append_78_g$("'><\/span> <span id='");
   sb_0_g$.append_78_g$(htmlEscape_1_g$(arg1_0_g$));
-  sb_0_g$.append_78_g$("'><\/span> <div class='row'> <div class='col-xs-9'> <h4>Sala Twin Peaks <\/h4> <ul> <li>Sala jest wyposa\u017Cona w nowiutki, bardzo porz\u0105dny sprz\u0119t!<\/li> <li>Jest odpowiednio zaadaptowana akustycznie dzi\u0119ki panelom akustycznym poch\u0142aniaj\u0105cym to, co przeszkadza podczas grania :)<\/li> <li>Du\u017Ca powierzchnia sali pozwala na swobodn\u0105 ekspresj\u0119 i pracowanie w niej przez d\u0142uuuuugi czas.<\/li> <li>Sala wyposa\u017Cona jest w taki spos\xF3b, \u017Ce nadaje si\u0119 na sale pr\xF3b dla zespo\u0142\xF3w i solist\xF3w, profesjonalist\xF3w i zaczynaj\u0105cych swoj\u0105 przygod\u0119 z muzyk\u0105.<\/li> <li>Gdy nadejdzie inspiracja i jest wena, wszystko co si\u0119 urodzi\u0142o mo\u017Cna zapisa\u0107 na wsp\xF3lnej du\u017Cej tablicy widocznej dla wszystkich muzyk\xF3w.<\/li> <li>Wystr\xF3j zosta\u0142 zainspirowany scenografi\u0105 \u201ETwin Peaks\u201D, wi\u0119c ufamy \u017Ce budzi natchnienie i jest inaczej ni\u017C wsz\u0119dzie indziej ;). Ponadto dbamy o to, by sala by\u0142a czysta i nadawa\u0142a si\u0119 na d\u0142ugie sesje muzyczne w zdrowym otoczeniu.<\/li> <li>W sali znajduja si\u0119 sk\xF3rzane wygodne fotele, kanapa na kt\xF3rej mo\u017Cna odpocza\u0107 oraz sto\u0142ki.<\/li> <\/ul> <\/div> <div class='col-xs-3'> <span id='");
+  sb_0_g$.append_78_g$("'><\/span> <div class='row'> <div class='col-xs-12 col-md-10 col-lg-10'> <h4>Sala Twin Peaks <\/h4> <ul> <li>Sala jest wyposa\u017Cona w nowiutki, bardzo porz\u0105dny sprz\u0119t!<\/li> <li>Jest odpowiednio zaadaptowana akustycznie dzi\u0119ki panelom akustycznym poch\u0142aniaj\u0105cym to, co przeszkadza podczas grania :)<\/li> <li>Du\u017Ca powierzchnia sali pozwala na swobodn\u0105 ekspresj\u0119 i pracowanie w niej przez d\u0142uuuuugi czas.<\/li> <li>Sala wyposa\u017Cona jest w taki spos\xF3b, \u017Ce nadaje si\u0119 na sale pr\xF3b dla zespo\u0142\xF3w i solist\xF3w, profesjonalist\xF3w i zaczynaj\u0105cych swoj\u0105 przygod\u0119 z muzyk\u0105.<\/li> <li>Gdy nadejdzie inspiracja i jest wena, wszystko co si\u0119 urodzi\u0142o mo\u017Cna zapisa\u0107 na wsp\xF3lnej du\u017Cej tablicy widocznej dla wszystkich muzyk\xF3w.<\/li> <li>Wystr\xF3j zosta\u0142 zainspirowany scenografi\u0105 \u201ETwin Peaks\u201D, wi\u0119c ufamy \u017Ce budzi natchnienie i jest inaczej ni\u017C wsz\u0119dzie indziej ;). Ponadto dbamy o to, by sala by\u0142a czysta i nadawa\u0142a si\u0119 na d\u0142ugie sesje muzyczne w zdrowym otoczeniu.<\/li> <li>W sali znajduja si\u0119 sk\xF3rzane wygodne fotele, kanapa na kt\xF3rej mo\u017Cna odpocza\u0107 oraz sto\u0142ki.<\/li> <\/ul> <\/div> <div class='col-xs-0 col-md-2 col-lg-2'> <span id='");
   sb_0_g$.append_78_g$(htmlEscape_1_g$(arg2_0_g$));
-  sb_0_g$.append_78_g$("'><\/span> <\/div> <\/div> <div class='row'> <div class='col-xs-12'> <h5>Dost\u0119pny w sali sprz\u0119t:<\/h5> <ul> <li type='square'>Marshall DSL 100H + Marshall MX410A<\/li> <li type='square'>Jet City JCA100H + Marshall M410B<\/li>  <li type='square'>Peavey Tour 450 + Peavey TVX 115 + Peavey TVX 210 <\/li> <li type='square'>Korg SP-170 <\/li> <li type='square'>2 x Alto TS112 W<\/li> <li type='square'>Peavey PV10USB<\/li> <li type='square'>2 x Shure Beta 58A<\/li> <li type='square'>Audix OM3S<\/li> <li type='square'>Tama Swingstar<\/li> <li type='square'>zestaw talerzy Turkish Classic (hihat, ride, crash, splash, china)<\/li> <\/ul> <\/div> <\/div> <div class='row'> <div class='col-xs-6'><span id='");
+  sb_0_g$.append_78_g$("'><\/span> <\/div> <\/div> <div class='row'> <div class='col-xs-12'> <h5>Dost\u0119pny w sali sprz\u0119t:<\/h5> <ul> <li type='square'>Marshall DSL 100H + Marshall MX410A<\/li> <li type='square'>Jet City JCA100H + Marshall M410B<\/li> <li type='square'>Peavey Tour 450 + Peavey TVX 115 + Peavey TVX 210 <\/li> <li type='square'>Korg SP-170 <\/li> <li type='square'>2 x Alto TS112 W<\/li> <li type='square'>Peavey PV10USB<\/li> <li type='square'>2 x Shure Beta 58A<\/li> <li type='square'>Audix OM3S<\/li> <li type='square'>Tama Swingstar<\/li> <li type='square'>zestaw talerzy Turkish Classic (hihat, ride, crash, splash, china)<\/li> <\/ul> <p>\xA0<\/p> <\/div> <\/div> <div class='row'> <div class='col-lg-6 col-sm-6 col-xs-12'><span id='");
   sb_0_g$.append_78_g$(htmlEscape_1_g$(arg3_0_g$));
-  sb_0_g$.append_78_g$("'><\/span><\/div> <div class='col-xs-6'><span id='");
+  sb_0_g$.append_78_g$("'><\/span><\/div> <div class='col-lg-6 col-sm-6 col-xs-12'><span id='");
   sb_0_g$.append_78_g$(htmlEscape_1_g$(arg4_0_g$));
   sb_0_g$.append_78_g$("'><\/span><\/div> <\/div>  <div class='row'> <div class='col-xs-12'>\xA0<\/div> <\/div> <span id='");
   sb_0_g$.append_78_g$(htmlEscape_1_g$(arg5_0_g$));
@@ -75290,11 +75290,11 @@ _.html1_23_g$ = function html1_10_g$(arg0_0_g$, arg1_0_g$, arg2_0_g$){
   sb_0_g$ = new StringBuilder_1_g$;
   sb_0_g$.append_78_g$("<div class='wraper'> <div class='container'> <span id='");
   sb_0_g$.append_78_g$(htmlEscape_1_g$(arg0_0_g$));
-  sb_0_g$.append_78_g$("'><\/span>  <span id='");
+  sb_0_g$.append_78_g$("'><\/span> <span id='");
   sb_0_g$.append_78_g$(htmlEscape_1_g$(arg1_0_g$));
-  sb_0_g$.append_78_g$("'><\/span> studio <span id='");
+  sb_0_g$.append_78_g$("'><\/span> <div class='row'> <div class='col-xs-12'> <h4>Zapraszamy do nagrania dema u nas! <\/h4> <p>\xA0<\/p> <h5>Oferujemy:<\/h5> <ul> <li>Rejestracj\u0119 \u015Blad\xF3w<\/li> <li>Mix<\/li> <li>Mastering<\/li> <\/ul> <\/div> <\/div> <div class='row'> <div class='col-xs-12'> <h5>Sprz\u0119t jaki wykorzystujemy podczas nagra\u0144:<\/h5> <ul> <li type='square'>interfejs Motu 896mk3<\/li> <li type='square'>konsoleta Yamaha 01V<\/li> <li type='square'>mikrofony:<\/li> <ul> <li>1x Audix i5<\/li> <li>2x Audix D2<\/li> <li>1x Audix D6<\/li> <li>1x Audix D4<\/li> <li>3x Audix ADX-51<\/li> <li>1x Shure SM57 <\/li> <li>2x Shure SM58 <\/li> <\/ul> <li type='square'>monitory EMU PM5<\/li> <li type='square'>preamp s\u0142uchawkowy Behringer Powerplay PRO-XL<\/li> <\/ul> <\/div> <\/div> <span id='");
   sb_0_g$.append_78_g$(htmlEscape_1_g$(arg2_0_g$));
-  sb_0_g$.append_78_g$("'><\/span>  <\/div> <\/div>");
+  sb_0_g$.append_78_g$("'><\/span> <\/div> <\/div>");
   return new OnlyToBeUsedInGeneratedCodeStringBlessedAsSafeHtml_1_g$(sb_0_g$.toString$());
 }
 ;
@@ -77285,6 +77285,6 @@ $sendStats('moduleStartup', 'moduleEvalEnd');
 gwtOnLoad(__gwtModuleFunction.__errFn, __gwtModuleFunction.__moduleName, __gwtModuleFunction.__moduleBase, __gwtModuleFunction.__softPermutationId,__gwtModuleFunction.__computePropValue);
 $sendStats('moduleStartup', 'end');
 $gwt && $gwt.permProps && __gwtModuleFunction.__moduleStartupDone($gwt.permProps);
-//# sourceMappingURL=http://127.0.0.1:9876/sourcemaps/baduuum/9FCEA85A49DFBA23E3205BDF3941FB7F_sourcemap.json 
+//# sourceMappingURL=http://127.0.0.1:9876/sourcemaps/baduuum/82BCABD7B0387F34998A84F70DEB8590_sourcemap.json 
 //# sourceURL=baduuum-0.js
 
