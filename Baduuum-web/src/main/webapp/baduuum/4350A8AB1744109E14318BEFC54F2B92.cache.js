@@ -3,7 +3,7 @@ var __gwtModuleFunction = $wnd.baduuum;
 var $sendStats = __gwtModuleFunction.__sendStats;
 $sendStats('moduleStartup', 'moduleEvalStart');
 var $gwt_version = "2.7.0";
-var $strongName = 'DB601497E125EA0910105F42C808A6E5';
+var $strongName = '4350A8AB1744109E14318BEFC54F2B92';
 var $gwt = {};
 var $doc = $wnd.document;
 var $moduleName, $moduleBase;
@@ -72448,11 +72448,11 @@ _.html1_23_g$ = function html1_2_g$(arg0_0_g$, arg1_0_g$, arg2_0_g$){
   sb_0_g$ = new StringBuilder_1_g$;
   sb_0_g$.append_78_g$("<div class='wraper'> <div class='container'> <span id='");
   sb_0_g$.append_78_g$(htmlEscape_1_g$(arg0_0_g$));
-  sb_0_g$.append_78_g$("'><\/span>  <span id='");
+  sb_0_g$.append_78_g$("'><\/span> <span id='");
   sb_0_g$.append_78_g$(htmlEscape_1_g$(arg1_0_g$));
-  sb_0_g$.append_78_g$("'><\/span> faq <span id='");
+  sb_0_g$.append_78_g$("'><\/span> <div class='row'> <div class='col-xs-12 col-lg-6'> <div class='panel-group' id='accordion'> <div class='panel panel-default'> <div class='panel-heading'> <h4 class='panel-title'> <a data-parent='#accordion' data-toggle='collapse' href='#collapseOne'> Dlaczego tak drogo?<\/a> <\/h4> <\/div> <div class='panel-collapse collapse' id='collapseOne'> <div class='panel-body'> <p> Po pierwsze sala jest wyposa\u017Cona w nowy, wysokiej jako\u015Bci sprz\u0119t. Po drugie - zrobili\u015Bmy bardzo dobr\u0105 adaptacj\u0119 akustyczn\u0105. Chcemy Wam zapewni\u0107 jak najlepsze warunki do grania. A to wszystko niestety kosztuje, mamy jednak nadziej\u0119 \u017Ce warto wyda\u0107 te par\u0119 z\u0142otych wi\u0119cej i komfort gry to wynagrodzi :) <\/p> <\/div> <\/div> <\/div> <div class='panel panel-default'> <div class='panel-heading'> <h4 class='panel-title'> <a data-parent='#accordion' data-toggle='collapse' href='#collapseTwo'> Gdzie mo\u017Cna parkowa\u0107 samochodem?<\/a> <\/h4> <\/div> <div class='panel-collapse collapse' id='collapseTwo'> <div class='panel-body'> <p> Darmowy parking znajduje si\u0119 na ulicy Kapr\xF3w. Ze wzgl\u0119du na umow\u0119 z mieszka\u0144cami prosimy o nie parkowanie bezpo\u015Brednio pod sal\u0105. Istnieje jednak mo\u017Cliwo\u015B\u0107 podjechania pod drzwi sali w celu rozpakowania sprz\u0119tu. <\/p> <\/div> <\/div> <\/div> <div class='panel panel-default'> <div class='panel-heading'> <h4 class='panel-title'> <a data-parent='#accordion' data-toggle='collapse' href='#collapseThree'> Czy mo\u017Cliwe inne godziny otwarcia ni\u017C podane na stronie?<\/a> <\/h4> <\/div> <div class='panel-collapse collapse' id='collapseThree'> <div class='panel-body'> <p> Jasne, wszystko do ustalenia - prosimy o kontakt mailem, fb czy telefonem. <\/p> <\/div> <\/div> <\/div> <div class='panel panel-default'> <div class='panel-heading'> <h4 class='panel-title'> <a data-parent='#accordion' data-toggle='collapse' href='#collapseFour'> Gdzie jest najbli\u017Cszy sklep spo\u017Cywczy?<\/a> <\/h4> <\/div> <div class='panel-collapse collapse' id='collapseFour'> <div class='panel-body'> <p> Najbli\u017Cszy sklep jest po drugiej stronie ulicy, nie jest on jednak otwarty p\xF3\u017Anym wieczorem. Po drugiej stronie ulicy jest te\u017C Biedronka i \u017Babka. Natomiast w odleg\u0142o\u015Bci oko\u0142o 400 metr\xF3w (skrzy\u017Cowanie ul. Husa i ul. Derdowskiego) jest sklep, kr\xF3ry jest czynny do p\xF3\u0142nocy. <\/p> <\/div> <\/div> <\/div> <div class='panel panel-default'> <div class='panel-heading'> <h4 class='panel-title'> <a data-parent='#accordion' data-toggle='collapse' href='#collapseFive'> Jak w\u0142\u0105cza\u0107 i wy\u0142\u0105cza\u0107 piec lampowy?<\/a> <\/h4> <\/div> <div class='panel-collapse collapse' id='collapseFive'> <div class='panel-body'> <p> Najpierw w\u0142\u0105czasz power, czekasz oko\u0142o minuty i za\u0142\u0105czasz standby - wtedy mo\u017Cesz spokojnie gra\u0107. Jak sko\u0144czysz gra\u0107 to podobnie, najpierw wy\u0142\u0105czasz standby, czekasz oko\u0142o minuty i power. Nie stosowanie si\u0119 do powy\u017Cszej instrukcji powoduje szybsze zu\u017Cycie lamp oraz mo\u017Ce skutkowa\u0107 zepsuciem wzmacniacza. Staramy si\u0119 zapewni\u0107 Wam \u015Bwiatowej klasy, sprawny sprz\u0119t. Mamy nadzieje, \u017Ce docenicie to i b\u0119dziecie u\u017Cywa\u0107 go poprawnie. <\/p> <\/div> <\/div> <\/div> <\/div> <\/div> <\/div> <span id='");
   sb_0_g$.append_78_g$(htmlEscape_1_g$(arg2_0_g$));
-  sb_0_g$.append_78_g$("'><\/span>  <\/div> <\/div>");
+  sb_0_g$.append_78_g$("'><\/span> <\/div> <\/div>");
   return new OnlyToBeUsedInGeneratedCodeStringBlessedAsSafeHtml_1_g$(sb_0_g$.toString$());
 }
 ;
@@ -77285,6 +77285,6 @@ $sendStats('moduleStartup', 'moduleEvalEnd');
 gwtOnLoad(__gwtModuleFunction.__errFn, __gwtModuleFunction.__moduleName, __gwtModuleFunction.__moduleBase, __gwtModuleFunction.__softPermutationId,__gwtModuleFunction.__computePropValue);
 $sendStats('moduleStartup', 'end');
 $gwt && $gwt.permProps && __gwtModuleFunction.__moduleStartupDone($gwt.permProps);
-//# sourceMappingURL=http://127.0.0.1:9876/sourcemaps/baduuum/DB601497E125EA0910105F42C808A6E5_sourcemap.json 
+//# sourceMappingURL=http://127.0.0.1:9876/sourcemaps/baduuum/4350A8AB1744109E14318BEFC54F2B92_sourcemap.json 
 //# sourceURL=baduuum-0.js
 
