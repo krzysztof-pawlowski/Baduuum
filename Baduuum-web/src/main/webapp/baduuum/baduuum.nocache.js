@@ -283,7 +283,7 @@ function baduuum(){
     }
     var strongName;
     try {
-      strongName = '82BCABD7B0387F34998A84F70DEB8590';
+      strongName = 'DB601497E125EA0910105F42C808A6E5';
       var idx = strongName.indexOf(':');
       if (idx != -1) {
         softPermutationId = parseInt(strongName.substring(idx + 1), 10);
