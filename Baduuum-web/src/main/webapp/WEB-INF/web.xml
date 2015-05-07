@@ -5,15 +5,6 @@
 
 <web-app>
   
-  <servlet>
-    <servlet-name>baduuumServiceServlet</servlet-name>
-    <servlet-class>pl.baduuum.server.BaduuumServiceImpl</servlet-class>
-  </servlet>
-  
-  <servlet-mapping>
-    <servlet-name>baduuumServiceServlet</servlet-name>
-    <url-pattern>/baduuum/baduuumService</url-pattern>
-  </servlet-mapping>
 
   <!-- Default page to serve -->
   <welcome-file-list>

@@ -4,28 +4,30 @@
 	<ui:with field='images' type='pl.baduuum.client.ImageResources' />
 	<g:HTMLPanel>
 		<div class="row">
-		<div class="col-md-12">&nbsp;</div>
+			<div class="col-md-12">&nbsp;</div>
 		</div>
-			<div class="row">
-				<div class="col-md-6">
-					<g:Image resource='{images.logo}' />
-				</div>
-				<div class="col-md-2 headerFont">
-					<i class="fa fa-phone"></i>
-					&nbsp; +48 731 805 769
-				</div>
-				<div class="col-md-2 headerFont">
-					<a href="mailto:baduuum@baduuum.pl" style="color:#333">
-						<i class="fa fa-envelope"></i>
-						&nbsp; baduuum@baduuum.pl
-					</a>
-				</div>
-				<div class="col-md-2 headerFont">
-					<a href="https://www.facebook.com/SalaProbBaduuum" style="color:#333">
-						<i class="fa fa-facebook"></i>
-						&nbsp; SalaProbBaduuum
-					</a>
-				</div>
+		<div class="row">
+			<div class="col-md-6">
+				<g:Image resource='{images.logo}' />
 			</div>
+			<div class="col-md-2 headerFont">
+				<i class="fa fa-phone"></i>
+				&nbsp; +48 731 805 769
+			</div>
+			<div class="col-md-2 headerFont">
+				<i class="fa fa-envelope"></i>
+				&nbsp;
+				<a href="mailto:baduuum@baduuum.pl" style="color:#333">
+					baduuum@baduuum.pl
+				</a>
+			</div>
+			<div class="col-md-2 headerFont">
+				<i class="fa fa-facebook"></i>
+				&nbsp;
+				<a href="https://www.facebook.com/SalaProbBaduuum" style="color:#333">
+					SalaProbBaduuum
+				</a>
+			</div>
+		</div>
 	</g:HTMLPanel>
 </ui:UiBinder>  

@@ -3,20 +3,51 @@
 <ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
 	xmlns:g="urn:import:com.google.gwt.user.client.ui" xmlns:c="urn:import:pl.baduuum.client.view.widgets">
 
-    <ui:with field='images' type='pl.baduuum.client.ImageResources' />
+	<ui:with field='images' type='pl.baduuum.client.ImageResources' />
 	<ui:with field='res' type='pl.baduuum.client.StyleResources' />
 
 	<g:HTMLPanel>
 		<div class="wraper">
-		<div class="container">
-		
-		  	<c:HeaderWidgetView ui:field="header" /> 
-	<c:MenuWidgetView ui:field="menu" activeMenuItem="contact"/>
+			<div class="container">
 
-contact
+				<c:HeaderWidgetView ui:field="header" />
+				<c:MenuWidgetView ui:field="menu" activeMenuItem="contact" />
 
-			<c:FooterWidgetView ui:field="footer" /> 
-		</div>
+				<div class="row">
+					<div class="col-xs-12 col-lg-6 font-smooth">
+						<h4>Kontakt</h4>
+						<g:FormPanel ui:field="form">
+							<g:HTMLPanel>
+								<div class="form-group">
+									<g:TextBox styleName="form-control" ui:field="name" />
+								</div>
+								<div class="form-group">
+									<g:TextBox styleName="form-control" ui:field="email" />
+								</div>
+								<div class="form-group">
+									<g:TextArea styleName="form-control" ui:field="message"
+										visibleLines="14" />
+								</div>
+								<div class="form-group">
+									<g:Button text="Wyślij" ui:field="buttonSubmit"
+										styleName="btn btn-default" />
+								</div>
+							</g:HTMLPanel>
+						</g:FormPanel>
+					</div>
+
+					<div class="col-xs-12 col-lg-6 font-smooth">
+						<h4>Lokalizacja</h4>
+						<div class="google-maps">
+							<iframe
+								src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2322.079569444666!2d18.566240999999987!3d54.408570999999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46fd7532e372bc1b%3A0x51acf56cd3851a0a!2sSala+Pr%C3%B3b+Baduuum!5e0!3m2!1spl!2spl!4v1428792047971"
+								width="100%" height="100%" frameborder="0" style="border:0"></iframe>
+						</div>
+					</div>
+				</div>
+
+				<c:FooterWidgetView ui:field="footer" />
+			</div>
 		</div>
 	</g:HTMLPanel>
 </ui:UiBinder> 
