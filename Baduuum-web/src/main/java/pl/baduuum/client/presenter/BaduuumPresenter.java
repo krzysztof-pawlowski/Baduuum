@@ -1,6 +1,5 @@
 package pl.baduuum.client.presenter;
 
-import pl.baduuum.client.BaduuumServiceAsync;
 import pl.baduuum.client.event.GoCalendarEvent;
 import pl.baduuum.client.event.GoContactEvent;
 import pl.baduuum.client.event.GoFaqEvent;
@@ -18,12 +17,10 @@ import com.google.gwt.user.client.ui.HasWidgets;
 
 public class BaduuumPresenter implements Presenter, BaduuumView.Presenter {
 
-	private final BaduuumServiceAsync rpcService;
 	private final HandlerManager eventBus;
 	private final BaduuumView view;
 
-	public BaduuumPresenter(BaduuumServiceAsync rpcService, HandlerManager eventBus, BaduuumView view) {
-		this.rpcService = rpcService;
+	public BaduuumPresenter(HandlerManager eventBus, BaduuumView view) {
 		this.eventBus = eventBus;
 		this.view = view;
 	//	this.view.setPresenter(this);

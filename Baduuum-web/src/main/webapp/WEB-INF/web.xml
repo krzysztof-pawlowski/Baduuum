@@ -5,7 +5,16 @@
 
 <web-app>
   
-
+	<servlet>
+		<servlet-name>formServiceImpl</servlet-name>
+		<servlet-class>pl.baduuum.server.FormServiceImpl</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>formServiceImpl</servlet-name>
+		<url-pattern>/baduuum/formService</url-pattern>
+	</servlet-mapping>
+	
   <!-- Default page to serve -->
   <welcome-file-list>
     <welcome-file>Baduuum.html</welcome-file>

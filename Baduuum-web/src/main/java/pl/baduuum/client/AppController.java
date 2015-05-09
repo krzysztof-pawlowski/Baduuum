@@ -58,7 +58,6 @@ public class AppController implements Presenter, ValueChangeHandler<String> {
 	private static final String STUDIO = "studio";
 	
 	private final HandlerManager eventBus;
-	private final BaduuumServiceAsync rpcService;
 	private HasWidgets container;
 	
 	private HomeViewImpl baduuumHomeView = null;
@@ -74,9 +73,8 @@ public class AppController implements Presenter, ValueChangeHandler<String> {
 	private ContactViewImpl baduuumContactView = null;
 	
 
-	public AppController(BaduuumServiceAsync rpcService, HandlerManager eventBus) {
+	public AppController(HandlerManager eventBus) {
 		this.eventBus = eventBus;
-		this.rpcService = rpcService;
 		bind();
 	}
 
@@ -192,7 +190,7 @@ public class AppController implements Presenter, ValueChangeHandler<String> {
 							baduuumHomeView = new HomeViewImpl();
 
 						}
-						new BaduuumPresenter(rpcService, eventBus, baduuumHomeView).go(container);
+						new BaduuumPresenter(eventBus, baduuumHomeView).go(container);
 					}
 					
 					@Override
@@ -207,7 +205,7 @@ public class AppController implements Presenter, ValueChangeHandler<String> {
 						if (baduuumPricesView == null) {
 							baduuumPricesView = new PricesViewImpl();
 						}
-						new BaduuumPresenter(rpcService, eventBus, baduuumPricesView).go(container);
+						new BaduuumPresenter(eventBus, baduuumPricesView).go(container);
 					}
 					
 					@Override
@@ -222,7 +220,7 @@ public class AppController implements Presenter, ValueChangeHandler<String> {
 						if (baduuumCalendarView == null){
 							baduuumCalendarView = new CalendarViewImpl();
 						}
-						new BaduuumPresenter(rpcService, eventBus, baduuumCalendarView).go(container);
+						new BaduuumPresenter(eventBus, baduuumCalendarView).go(container);
 					}
 					
 					@Override
@@ -237,7 +235,7 @@ public class AppController implements Presenter, ValueChangeHandler<String> {
 						if (baduuumRoomView == null){
 							baduuumRoomView = new RoomViewImpl();
 						}
-						new BaduuumPresenter(rpcService, eventBus, baduuumRoomView).go(container);;
+						new BaduuumPresenter(eventBus, baduuumRoomView).go(container);;
 					}
 					
 					@Override
@@ -252,7 +250,7 @@ public class AppController implements Presenter, ValueChangeHandler<String> {
 						if (baduuumReservationView == null){
 							baduuumReservationView = new ReservationViewImpl();
 						}
-						new BaduuumPresenter(rpcService, eventBus, baduuumReservationView).go(container);
+						new BaduuumPresenter(eventBus, baduuumReservationView).go(container);
 					}
 					
 					@Override
@@ -267,7 +265,7 @@ public class AppController implements Presenter, ValueChangeHandler<String> {
 						if (studioViewImpl == null){
 							studioViewImpl = new StudioViewImpl();
 						}
-						new BaduuumPresenter(rpcService, eventBus, studioViewImpl).go(container);
+						new BaduuumPresenter(eventBus, studioViewImpl).go(container);
 					}
 					
 					@Override
@@ -282,7 +280,7 @@ public class AppController implements Presenter, ValueChangeHandler<String> {
 						if (baduuumGalleryBuildView == null){
 							baduuumGalleryBuildView = new GalleryBuildViewImpl();
 						}
-						new BaduuumPresenter(rpcService, eventBus, baduuumGalleryBuildView).go(container);
+						new BaduuumPresenter(eventBus, baduuumGalleryBuildView).go(container);
 					}
 					
 					@Override
@@ -297,7 +295,7 @@ public class AppController implements Presenter, ValueChangeHandler<String> {
 						if (baduuumGalleryRoomView == null){
 							baduuumGalleryRoomView = new GalleryRoomViewImpl();
 						}
-						new BaduuumPresenter(rpcService, eventBus, baduuumGalleryRoomView).go(container);
+						new BaduuumPresenter(eventBus, baduuumGalleryRoomView).go(container);
 					}
 					
 					@Override
@@ -312,7 +310,7 @@ public class AppController implements Presenter, ValueChangeHandler<String> {
 						if (baduuumRegulationsView == null){
 							baduuumRegulationsView = new RegulationsViewImpl();
 						}
-						new BaduuumPresenter(rpcService, eventBus, baduuumRegulationsView).go(container);
+						new BaduuumPresenter(eventBus, baduuumRegulationsView).go(container);
 					}
 					
 					@Override
@@ -327,7 +325,7 @@ public class AppController implements Presenter, ValueChangeHandler<String> {
 						if (baduuumFaqView == null){
 							baduuumFaqView = new FaqViewImpl();
 						}
-						new BaduuumPresenter(rpcService, eventBus, baduuumFaqView).go(container);
+						new BaduuumPresenter(eventBus, baduuumFaqView).go(container);
 					}
 					
 					@Override
@@ -342,7 +340,7 @@ public class AppController implements Presenter, ValueChangeHandler<String> {
 						if (baduuumContactView == null){
 							baduuumContactView = new ContactViewImpl();
 						}
-						new BaduuumPresenter(rpcService, eventBus, baduuumContactView).go(container);
+						new BaduuumPresenter(eventBus, baduuumContactView).go(container);
 					}
 					
 					@Override
@@ -350,7 +348,6 @@ public class AppController implements Presenter, ValueChangeHandler<String> {
 					}
 				});
 			}
-			
 		}
 	}
 }

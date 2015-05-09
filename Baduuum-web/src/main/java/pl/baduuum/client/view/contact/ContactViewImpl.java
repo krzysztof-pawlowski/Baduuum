@@ -1,7 +1,7 @@
 package pl.baduuum.client.view.contact;
 
-import pl.baduuum.client.BaduuumService;
-import pl.baduuum.client.BaduuumServiceAsync;
+import pl.baduuum.client.FormService;
+import pl.baduuum.client.FormServiceAsync;
 import pl.baduuum.client.view.BaduuumView;
 
 import com.google.gwt.core.client.GWT;
@@ -10,7 +10,6 @@ import com.google.gwt.uibinder.client.UiBinder;
 import com.google.gwt.uibinder.client.UiField;
 import com.google.gwt.uibinder.client.UiHandler;
 import com.google.gwt.uibinder.client.UiTemplate;
-import com.google.gwt.user.client.Window;
 import com.google.gwt.user.client.rpc.AsyncCallback;
 import com.google.gwt.user.client.ui.Composite;
 import com.google.gwt.user.client.ui.FormPanel;
@@ -32,9 +31,7 @@ public class ContactViewImpl extends Composite implements BaduuumView {
 	@UiField
 	FormPanel form;
 	
-	private final BaduuumServiceAsync service = GWT.create(BaduuumService.class);
-	
-	
+	private FormServiceAsync service = GWT.create(FormService.class);
 
 	@UiTemplate("ContactView.ui.xml")
 	interface BaduuumContactViewUiBinder extends
@@ -61,7 +58,28 @@ public class ContactViewImpl extends Composite implements BaduuumView {
 
 	@UiHandler("buttonSubmit")
 	void doClickSubmit(ClickEvent event) {
-		String host = "ssl0.ovh.net";
+		if (service == null){
+			service = GWT.create(FormService.class);
+		}
+		
+		AsyncCallback<Void> callback = new AsyncCallback<Void>() {
+
+			@Override
+			public void onFailure(Throwable caught) {
+				// TODO Auto-generated method stub
+				
+			}
+
+			@Override
+			public void onSuccess(Void result) {
+				// TODO Auto-generated method stub
+				
+			}
+		};
+		
+		service.submit(callback);
+		
+		
 	}
 
 }
