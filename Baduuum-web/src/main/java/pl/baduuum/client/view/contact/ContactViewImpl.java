@@ -1,5 +1,6 @@
 package pl.baduuum.client.view.contact;
 
+import pl.baduuum.PageConstants;
 import pl.baduuum.client.FormService;
 import pl.baduuum.client.FormServiceAsync;
 import pl.baduuum.client.view.BaduuumView;
@@ -10,6 +11,7 @@ import com.google.gwt.uibinder.client.UiBinder;
 import com.google.gwt.uibinder.client.UiField;
 import com.google.gwt.uibinder.client.UiHandler;
 import com.google.gwt.uibinder.client.UiTemplate;
+import com.google.gwt.user.client.History;
 import com.google.gwt.user.client.rpc.AsyncCallback;
 import com.google.gwt.user.client.ui.Composite;
 import com.google.gwt.user.client.ui.FormPanel;
@@ -66,19 +68,16 @@ public class ContactViewImpl extends Composite implements BaduuumView {
 
 			@Override
 			public void onFailure(Throwable caught) {
-				// TODO Auto-generated method stub
-				
+				History.newItem(PageConstants.CONTACT_FAILED);
 			}
 
 			@Override
 			public void onSuccess(Void result) {
-				// TODO Auto-generated method stub
-				
+				History.newItem(PageConstants.CONTACT_OK);
 			}
 		};
 		
-		service.submit(callback);
-		
+		service.submit(name.getText(), email.getText(), message.getText(), callback);
 		
 	}
 

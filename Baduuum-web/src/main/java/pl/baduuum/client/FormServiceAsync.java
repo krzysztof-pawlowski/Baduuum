@@ -4,6 +4,6 @@ import com.google.gwt.user.client.rpc.AsyncCallback;
 
 public interface FormServiceAsync {
 
-	void submit(AsyncCallback<Void> callback);
+	void submit(String name, String email, String message, AsyncCallback<Void> callback);
 
 }

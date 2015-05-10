@@ -1,0 +1,27 @@
+<?xml version='1.0'?>
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui" xmlns:c="urn:import:pl.baduuum.client.view.widgets">
+
+	<ui:with field='images' type='pl.baduuum.client.ImageResources' />
+	<ui:with field='res' type='pl.baduuum.client.StyleResources' />
+
+	<g:HTMLPanel>
+		<div class="wraper">
+			<div class="container">
+
+				<c:HeaderWidgetView ui:field="header" />
+				<c:MenuWidgetView ui:field="menu" activeMenuItem="contact" />
+
+				<div class="row">
+					<div class="col-xs-12 col-lg-6 font-smooth">
+						Niestety nie udało się wysłać wiadomości. Prosimy
+						spróbować później lub skorzystać z innej formy kontaktu: mail,
+						telefon, facebook.
+					</div>
+				</div>
+				<c:FooterWidgetView ui:field="footer" />
+			</div>
+		</div>
+	</g:HTMLPanel>
+</ui:UiBinder> 

@@ -5,5 +5,5 @@ import com.google.gwt.user.client.rpc.RemoteServiceRelativePath;
 
 @RemoteServiceRelativePath("formService")
 public interface FormService extends RemoteService {
-	public void submit();
+	public void submit(String name, String email, String message);
 }

@@ -1,9 +1,14 @@
 package pl.baduuum.client;
 
+import pl.baduuum.PageConstants;
 import pl.baduuum.client.event.GoCalendarEvent;
 import pl.baduuum.client.event.GoCalendarEventHandler;
 import pl.baduuum.client.event.GoContactEvent;
 import pl.baduuum.client.event.GoContactEventHandler;
+import pl.baduuum.client.event.GoContactFailedEvent;
+import pl.baduuum.client.event.GoContactFailedEventHandler;
+import pl.baduuum.client.event.GoContactOKEvent;
+import pl.baduuum.client.event.GoContactOKEventHandler;
 import pl.baduuum.client.event.GoFaqEvent;
 import pl.baduuum.client.event.GoFaqEventHandler;
 import pl.baduuum.client.event.GoGalleryBuildEvent;
@@ -25,6 +30,8 @@ import pl.baduuum.client.event.GoStudioEventHandler;
 import pl.baduuum.client.presenter.BaduuumPresenter;
 import pl.baduuum.client.presenter.Presenter;
 import pl.baduuum.client.view.calendar.CalendarViewImpl;
+import pl.baduuum.client.view.contact.ContactFailedViewImpl;
+import pl.baduuum.client.view.contact.ContactOKViewImpl;
 import pl.baduuum.client.view.contact.ContactViewImpl;
 import pl.baduuum.client.view.faq.FaqViewImpl;
 import pl.baduuum.client.view.gallery.GalleryBuildViewImpl;
@@ -45,17 +52,7 @@ import com.google.gwt.user.client.History;
 import com.google.gwt.user.client.ui.HasWidgets;
 
 public class AppController implements Presenter, ValueChangeHandler<String> {
-	private static final String ROOM = "room";
-	private static final String RESERVATION = "reservation";
-	private static final String REGULATIONS = "regulations";
-	private static final String GALLERY_ROOM = "galleryRoom";
-	private static final String GALLERY_BUILD = "galleryBuild";
-	private static final String FAQ = "faq";
-	private static final String CONTACT = "contact";
-	private static final String CALENDAR = "calendar";
-	private static final String PRICES = "prices";
-	private static final String HOME = "home";
-	private static final String STUDIO = "studio";
+
 	
 	private final HandlerManager eventBus;
 	private HasWidgets container;
@@ -71,6 +68,8 @@ public class AppController implements Presenter, ValueChangeHandler<String> {
 	private RegulationsViewImpl baduuumRegulationsView = null;
 	private FaqViewImpl baduuumFaqView = null;
 	private ContactViewImpl baduuumContactView = null;
+	private ContactOKViewImpl baduuumContactOKView = null;
+	private ContactFailedViewImpl baduuumContactFailedView = null;
 	
 
 	public AppController(HandlerManager eventBus) {
@@ -84,21 +83,21 @@ public class AppController implements Presenter, ValueChangeHandler<String> {
 		eventBus.addHandler(GoHomeEvent.TYPE, new GoHomeEventHandler() {
 			@Override
 			public void onGoHome(GoHomeEvent event) {
-				doOpenPage(HOME);
+				doOpenPage(PageConstants.HOME);
 			}
 		});
 
 		eventBus.addHandler(GoPricesEvent.TYPE, new GoPricesEventHandler() {
 			@Override
 			public void onGoPrices(GoPricesEvent event) {
-				doOpenPage(PRICES);
+				doOpenPage(PageConstants.PRICES);
 			}
 		});
 		
 		eventBus.addHandler(GoCalendarEvent.TYPE, new GoCalendarEventHandler() {
 			@Override
 			public void onGoCalendar(GoCalendarEvent event) {
-				doOpenPage(CALENDAR);
+				doOpenPage(PageConstants.CALENDAR);
 				
 			}
 		});
@@ -106,59 +105,72 @@ public class AppController implements Presenter, ValueChangeHandler<String> {
 		eventBus.addHandler(GoContactEvent.TYPE, new GoContactEventHandler() {
 			@Override
 			public void onGoContact(GoContactEvent event) {
-				doOpenPage(CONTACT);
+				doOpenPage(PageConstants.CONTACT);
 			}
 		});
 		
 		eventBus.addHandler(GoFaqEvent.TYPE, new GoFaqEventHandler() {
 			@Override
 			public void onGoFaq(GoFaqEvent event) {
-				doOpenPage(FAQ);
+				doOpenPage(PageConstants.FAQ);
 			}
 		});
 		
 		eventBus.addHandler(GoGalleryBuildEvent.TYPE, new GoGalleryBuildEventHandler() {
 			@Override
 			public void onGoGalleryBuild(GoGalleryBuildEvent event) {
-				doOpenPage(GALLERY_BUILD);
+				doOpenPage(PageConstants.GALLERY_BUILD);
 			}
 		});
 		
 		eventBus.addHandler(GoGalleryRoomEvent.TYPE, new GoGalleryRoomEventHandler() {
 			@Override
 			public void onGoGalleryRoom(GoGalleryRoomEvent event) {
-				doOpenPage(GALLERY_ROOM);
+				doOpenPage(PageConstants.GALLERY_ROOM);
 			}
 		});
 		
 		eventBus.addHandler(GoRegulationsEvent.TYPE, new GoRegulationsEventHandler() {
 			@Override
 			public void onGoRegulations(GoRegulationsEvent event) {
-				doOpenPage(REGULATIONS);
+				doOpenPage(PageConstants.REGULATIONS);
 			}
 		});
 		
 		eventBus.addHandler(GoReservationEvent.TYPE, new GoReservationEventHandler() {
 			@Override
 			public void onGoReservation(GoReservationEvent event) {
-				doOpenPage(RESERVATION);
+				doOpenPage(PageConstants.RESERVATION);
 			}
 		});
 		
 		eventBus.addHandler(GoRoomEvent.TYPE, new GoRoomEventHandler() {
 			@Override
 			public void onGoRoom(GoRoomEvent event) {
-				doOpenPage(ROOM);;
+				doOpenPage(PageConstants.ROOM);;
 			}
 		});
 		
 		eventBus.addHandler(GoStudioEvent.TYPE, new GoStudioEventHandler() {
 			@Override
 			public void onGoStudio(GoStudioEvent event) {
-				doOpenPage(STUDIO);
+				doOpenPage(PageConstants.STUDIO);
 			}
 		});
-
+		
+		eventBus.addHandler(GoContactOKEvent.TYPE, new GoContactOKEventHandler(){
+			@Override
+			public void onGoContactOK(GoContactOKEvent event) {
+				doOpenPage(PageConstants.CONTACT_OK);
+			}
+		});
+		
+		eventBus.addHandler(GoContactFailedEvent.TYPE, new GoContactFailedEventHandler() {
+			@Override
+			public void onGoContactFailed(GoContactFailedEvent event) {
+				doOpenPage(PageConstants.CONTACT_FAILED);
+			}
+		});
 	}
 	
 	private void doOpenPage(String page) {
@@ -169,7 +181,7 @@ public class AppController implements Presenter, ValueChangeHandler<String> {
 		this.container = container;
 
 		if ("".equals(History.getToken())) {
-			History.newItem(HOME);
+			History.newItem(PageConstants.HOME);
 		} else {
 			History.fireCurrentHistoryState();
 		}
@@ -179,7 +191,7 @@ public class AppController implements Presenter, ValueChangeHandler<String> {
 		String token = event.getValue();
 
 		if (token != null) {
-			if (token.equals(HOME)) {
+			if (token.equals(PageConstants.HOME)) {
 				GWT.runAsync(new RunAsyncCallback() {
 					
 					@Override
@@ -197,7 +209,7 @@ public class AppController implements Presenter, ValueChangeHandler<String> {
 					public void onFailure(Throwable caught) {
 					}
 				});
-			} else if (token.equals(PRICES) ) {
+			} else if (token.equals(PageConstants.PRICES) ) {
 				GWT.runAsync(new RunAsyncCallback() {
 					
 					@Override
@@ -212,7 +224,7 @@ public class AppController implements Presenter, ValueChangeHandler<String> {
 					public void onFailure(Throwable caught) {
 					}
 				});
-			} else if (token.equals(CALENDAR)) {
+			} else if (token.equals(PageConstants.CALENDAR)) {
 				GWT.runAsync( new RunAsyncCallback() {
 					
 					@Override
@@ -227,7 +239,7 @@ public class AppController implements Presenter, ValueChangeHandler<String> {
 					public void onFailure(Throwable reason) {
 					}
 				});
-			} else if (token.equals(ROOM)){
+			} else if (token.equals(PageConstants.ROOM)){
 				GWT.runAsync(new RunAsyncCallback() {
 					
 					@Override
@@ -242,7 +254,7 @@ public class AppController implements Presenter, ValueChangeHandler<String> {
 					public void onFailure(Throwable reason) {
 					}
 				});
-			} else if (token.equals(RESERVATION)){
+			} else if (token.equals(PageConstants.RESERVATION)){
 				GWT.runAsync(new RunAsyncCallback() {
 					
 					@Override
@@ -257,7 +269,7 @@ public class AppController implements Presenter, ValueChangeHandler<String> {
 					public void onFailure(Throwable reason) {
 					}
 				});
-			} else if (token.equals(STUDIO)){
+			} else if (token.equals(PageConstants.STUDIO)){
 				GWT.runAsync(new RunAsyncCallback() {
 					
 					@Override
@@ -272,7 +284,7 @@ public class AppController implements Presenter, ValueChangeHandler<String> {
 					public void onFailure(Throwable reason) {
 					}
 				});
-			} else if (token.equals(GALLERY_BUILD)){
+			} else if (token.equals(PageConstants.GALLERY_BUILD)){
 				GWT.runAsync(new RunAsyncCallback() {
 					
 					@Override
@@ -287,7 +299,7 @@ public class AppController implements Presenter, ValueChangeHandler<String> {
 					public void onFailure(Throwable reason) {
 					}
 				});
-			} else if (token.equals(GALLERY_ROOM)){
+			} else if (token.equals(PageConstants.GALLERY_ROOM)){
 				GWT.runAsync(new RunAsyncCallback() {
 					
 					@Override
@@ -302,7 +314,7 @@ public class AppController implements Presenter, ValueChangeHandler<String> {
 					public void onFailure(Throwable reason) {
 					}
 				});
-			} else if (token.equals(REGULATIONS)){
+			} else if (token.equals(PageConstants.REGULATIONS)){
 				GWT.runAsync(new RunAsyncCallback() {
 					
 					@Override
@@ -317,7 +329,7 @@ public class AppController implements Presenter, ValueChangeHandler<String> {
 					public void onFailure(Throwable reason) {
 					}
 				});
-			} else if (token.equals(FAQ)){
+			} else if (token.equals(PageConstants.FAQ)){
 				GWT.runAsync(new RunAsyncCallback() {
 					
 					@Override
@@ -332,7 +344,7 @@ public class AppController implements Presenter, ValueChangeHandler<String> {
 					public void onFailure(Throwable reason) {
 					}
 				});
-			} else if (token.equals(CONTACT)){
+			} else if (token.equals(PageConstants.CONTACT)){
 				GWT.runAsync(new RunAsyncCallback() {
 					
 					@Override
@@ -341,6 +353,36 @@ public class AppController implements Presenter, ValueChangeHandler<String> {
 							baduuumContactView = new ContactViewImpl();
 						}
 						new BaduuumPresenter(eventBus, baduuumContactView).go(container);
+					}
+					
+					@Override
+					public void onFailure(Throwable reason) {
+					}
+				});
+			} else if (token.equals(PageConstants.CONTACT_OK)){
+				GWT.runAsync(new RunAsyncCallback() {
+					
+					@Override
+					public void onSuccess() {
+						if (baduuumContactOKView == null){
+							baduuumContactOKView = new ContactOKViewImpl();
+						}
+						new BaduuumPresenter(eventBus, baduuumContactOKView).go(container);
+					}
+					
+					@Override
+					public void onFailure(Throwable reason) {
+					}
+				});
+			} else if (token.equals(PageConstants.CONTACT_FAILED)){
+				GWT.runAsync(new RunAsyncCallback() {
+					
+					@Override
+					public void onSuccess() {
+						if (baduuumContactFailedView == null){
+							baduuumContactFailedView = new ContactFailedViewImpl();
+						}
+						new BaduuumPresenter(eventBus, baduuumContactFailedView).go(container);
 					}
 					
 					@Override
