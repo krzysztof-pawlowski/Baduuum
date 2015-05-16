@@ -2,6 +2,7 @@ package pl.baduuum.server;
 
 import java.util.Properties;
 
+import javax.mail.Address;
 import javax.mail.Message;
 import javax.mail.MessagingException;
 import javax.mail.PasswordAuthentication;
@@ -17,9 +18,6 @@ import com.google.gwt.user.server.rpc.RemoteServiceServlet;
 public class FormServiceImpl extends RemoteServiceServlet implements
 		FormService {
 
-	/**
-	 * 
-	 */
 	private static final long serialVersionUID = 4759275195552762534L;
 
 	@Override
@@ -57,25 +55,24 @@ public class FormServiceImpl extends RemoteServiceServlet implements
 			// Set From: header field of the header.
 			message.setFrom(new InternetAddress(from));
 
+			Address[] addresses = { new InternetAddress(email) };
+			message.setReplyTo(addresses);
+
 			// Set To: header field of the header.
 			message.addRecipient(Message.RecipientType.TO, new InternetAddress(
 					to));
 
 			// Set Subject: header field
-			message.setSubject("This is the Subject Line!");
+			message.setSubject("Kontakt z formularza na stronie.");
 
 			// Now set the actual message
-			message.setText("This is actual message");
+			message.setText("Od: " + name + "\n" + "E-mail: " + email + "\n"
+					+ "Wiadomość: " + messageBody);
 
 			// Send message
 			Transport.send(message);
-			System.out.println("Sent message successfully....");
 		} catch (MessagingException mex) {
 			mex.printStackTrace();
 		}
-
-		// String host = "ssl0.ovh.net";
-
 	}
-
 }
