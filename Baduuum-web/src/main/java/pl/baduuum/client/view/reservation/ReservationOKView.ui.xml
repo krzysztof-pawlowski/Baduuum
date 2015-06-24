@@ -15,10 +15,11 @@
 
 				<div class="row">
 					<div class="col-xs-12 col-lg-6 font-smooth">
-						Wiadomość wysłana. Odpowiemy tak szybko, jak to
+						Rezerwacja wysłana. Odpowiemy tak szybko, jak to
 						możliwe.
 					</div>
 				</div>
+	
 				<c:FooterWidgetView ui:field="footer" />
 			</div>
 		</div>

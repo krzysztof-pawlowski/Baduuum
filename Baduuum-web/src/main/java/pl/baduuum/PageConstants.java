@@ -14,4 +14,6 @@ public class PageConstants {
 	public static final String PRICES = "prices";
 	public static final String HOME = "home";
 	public static final String STUDIO = "studio";
+	public static final String RESERVATION_FAILED = "reservationFailed";
+	public static final String RESERVATION_OK = "reservationOk";
 }

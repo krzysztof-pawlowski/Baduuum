@@ -15,8 +15,9 @@
 
 				<div class="row">
 					<div class="col-xs-12 col-lg-6 font-smooth">
-						Wiadomość wysłana. Odpowiemy tak szybko, jak to
-						możliwe.
+						Niestety nie udało się wysłać rezerwacji. Prosimy
+						spróbować później lub skorzystać z innej formy kontaktu: mail,
+						telefon, facebook.
 					</div>
 				</div>
 				<c:FooterWidgetView ui:field="footer" />

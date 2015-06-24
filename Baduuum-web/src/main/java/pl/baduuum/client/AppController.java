@@ -23,6 +23,10 @@ import pl.baduuum.client.event.GoRegulationsEvent;
 import pl.baduuum.client.event.GoRegulationsEventHandler;
 import pl.baduuum.client.event.GoReservationEvent;
 import pl.baduuum.client.event.GoReservationEventHandler;
+import pl.baduuum.client.event.GoReservationFailedEvent;
+import pl.baduuum.client.event.GoReservationFailedEventHandler;
+import pl.baduuum.client.event.GoReservationOKEvent;
+import pl.baduuum.client.event.GoReservationOKEventHandler;
 import pl.baduuum.client.event.GoRoomEvent;
 import pl.baduuum.client.event.GoRoomEventHandler;
 import pl.baduuum.client.event.GoStudioEvent;
@@ -39,6 +43,8 @@ import pl.baduuum.client.view.gallery.GalleryRoomViewImpl;
 import pl.baduuum.client.view.home.HomeViewImpl;
 import pl.baduuum.client.view.prices.PricesViewImpl;
 import pl.baduuum.client.view.regulations.RegulationsViewImpl;
+import pl.baduuum.client.view.reservation.ReservationFailedViewImpl;
+import pl.baduuum.client.view.reservation.ReservationOKViewImpl;
 import pl.baduuum.client.view.reservation.ReservationViewImpl;
 import pl.baduuum.client.view.room.RoomViewImpl;
 import pl.baduuum.client.view.studio.StudioViewImpl;
@@ -70,7 +76,8 @@ public class AppController implements Presenter, ValueChangeHandler<String> {
 	private ContactViewImpl baduuumContactView = null;
 	private ContactOKViewImpl baduuumContactOKView = null;
 	private ContactFailedViewImpl baduuumContactFailedView = null;
-	
+	private ReservationOKViewImpl baduuumReservationOKView = null;
+	private ReservationFailedViewImpl baduuumReservationFailedView = null;	
 
 	public AppController(HandlerManager eventBus) {
 		this.eventBus = eventBus;
@@ -169,6 +176,22 @@ public class AppController implements Presenter, ValueChangeHandler<String> {
 			@Override
 			public void onGoContactFailed(GoContactFailedEvent event) {
 				doOpenPage(PageConstants.CONTACT_FAILED);
+			}
+		});
+		
+		eventBus.addHandler(GoReservationOKEvent.TYPE, new GoReservationOKEventHandler(){
+
+			@Override
+			public void onGoReservationOK(GoReservationOKEvent event) {
+				doOpenPage(PageConstants.RESERVATION_OK);
+			}
+	
+		});
+		
+		eventBus.addHandler(GoReservationFailedEvent.TYPE, new GoReservationFailedEventHandler() {
+			@Override
+			public void onGoReservationFailed(GoReservationFailedEvent event) {
+				doOpenPage(PageConstants.RESERVATION_FAILED);				
 			}
 		});
 	}
@@ -383,6 +406,36 @@ public class AppController implements Presenter, ValueChangeHandler<String> {
 							baduuumContactFailedView = new ContactFailedViewImpl();
 						}
 						new BaduuumPresenter(eventBus, baduuumContactFailedView).go(container);
+					}
+					
+					@Override
+					public void onFailure(Throwable reason) {
+					}
+				});
+			} else if (token.equals(PageConstants.RESERVATION_OK)){
+				GWT.runAsync(new RunAsyncCallback() {
+					
+					@Override
+					public void onSuccess() {
+						if (baduuumReservationOKView == null){
+							baduuumReservationOKView = new ReservationOKViewImpl();
+						}
+						new BaduuumPresenter(eventBus, baduuumReservationOKView).go(container);
+					}
+					
+					@Override
+					public void onFailure(Throwable reason) {
+					}
+				});
+			} else if (token.equals(PageConstants.RESERVATION_FAILED)){
+				GWT.runAsync(new RunAsyncCallback() {
+					
+					@Override
+					public void onSuccess() {
+						if (baduuumReservationFailedView == null){
+							baduuumReservationFailedView = new ReservationFailedViewImpl();
+						}
+						new BaduuumPresenter(eventBus, baduuumReservationFailedView).go(container);
 					}
 					
 					@Override
