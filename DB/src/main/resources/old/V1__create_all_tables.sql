@@ -136,91 +136,91 @@ CREATE TABLE reservation_category (
 -- Reference:  carnet_client (table: carnet)
 
 
-ALTER TABLE carnet ADD CONSTRAINT carnet_client 
+ALTER TABLE carnet ADD CONSTRAINT carnet_client
     FOREIGN KEY (client_id)
     REFERENCES client (id)
-    NOT DEFERRABLE 
-    INITIALLY IMMEDIATE 
+    NOT DEFERRABLE
+    INITIALLY IMMEDIATE
 ;
 
 -- Reference:  carnet_usage_carnet (table: carnet_usage)
 
 
-ALTER TABLE carnet_usage ADD CONSTRAINT carnet_usage_carnet 
+ALTER TABLE carnet_usage ADD CONSTRAINT carnet_usage_carnet
     FOREIGN KEY (carnet_id)
     REFERENCES carnet (id)
-    NOT DEFERRABLE 
-    INITIALLY IMMEDIATE 
+    NOT DEFERRABLE
+    INITIALLY IMMEDIATE
 ;
 
 -- Reference:  carnet_usage_reservation (table: carnet_usage)
 
 
-ALTER TABLE carnet_usage ADD CONSTRAINT carnet_usage_reservation 
+ALTER TABLE carnet_usage ADD CONSTRAINT carnet_usage_reservation
     FOREIGN KEY (reservation_id)
     REFERENCES reservation (id)
-    NOT DEFERRABLE 
-    INITIALLY IMMEDIATE 
+    NOT DEFERRABLE
+    INITIALLY IMMEDIATE
 ;
 
 -- Reference:  cost_subcategory_cost (table: cost)
 
 
-ALTER TABLE cost ADD CONSTRAINT cost_subcategory_cost 
+ALTER TABLE cost ADD CONSTRAINT cost_subcategory_cost
     FOREIGN KEY (cost_subcategory_id)
     REFERENCES cost_subcategory (id)
-    NOT DEFERRABLE 
-    INITIALLY IMMEDIATE 
+    NOT DEFERRABLE
+    INITIALLY IMMEDIATE
 ;
 
 -- Reference:  cost_subcategory_cost_category (table: cost_subcategory)
 
 
-ALTER TABLE cost_subcategory ADD CONSTRAINT cost_subcategory_cost_category 
+ALTER TABLE cost_subcategory ADD CONSTRAINT cost_subcategory_cost_category
     FOREIGN KEY (cost_category_id)
     REFERENCES cost_category (id)
-    NOT DEFERRABLE 
-    INITIALLY IMMEDIATE 
+    NOT DEFERRABLE
+    INITIALLY IMMEDIATE
 ;
 
 -- Reference:  income_income_category (table: income)
 
 
-ALTER TABLE income ADD CONSTRAINT income_income_category 
+ALTER TABLE income ADD CONSTRAINT income_income_category
     FOREIGN KEY (income_category_id)
     REFERENCES income_category (id)
-    NOT DEFERRABLE 
-    INITIALLY IMMEDIATE 
+    NOT DEFERRABLE
+    INITIALLY IMMEDIATE
 ;
 
 -- Reference:  income_reservation (table: income)
 
 
-ALTER TABLE income ADD CONSTRAINT income_reservation 
+ALTER TABLE income ADD CONSTRAINT income_reservation
     FOREIGN KEY (reservation_id)
     REFERENCES reservation (id)
-    NOT DEFERRABLE 
-    INITIALLY IMMEDIATE 
+    NOT DEFERRABLE
+    INITIALLY IMMEDIATE
 ;
 
 -- Reference:  reservation_client (table: reservation)
 
 
-ALTER TABLE reservation ADD CONSTRAINT reservation_client 
+ALTER TABLE reservation ADD CONSTRAINT reservation_client
     FOREIGN KEY (client_id)
     REFERENCES client (id)
-    NOT DEFERRABLE 
-    INITIALLY IMMEDIATE 
+    NOT DEFERRABLE
+    INITIALLY IMMEDIATE
 ;
 
 -- Reference:  reservation_reservation_category (table: reservation)
 
 
-ALTER TABLE reservation ADD CONSTRAINT reservation_reservation_category 
+ALTER TABLE reservation ADD CONSTRAINT reservation_reservation_category
     FOREIGN KEY (reservation_category_id)
     REFERENCES reservation_category (id)
-    NOT DEFERRABLE 
-    INITIALLY IMMEDIATE 
+    NOT DEFERRABLE
+    INITIALLY IMMEDIATE
 ;
 
 
