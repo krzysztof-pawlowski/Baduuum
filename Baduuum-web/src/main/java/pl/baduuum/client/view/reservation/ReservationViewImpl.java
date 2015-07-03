@@ -26,25 +26,25 @@ public class ReservationViewImpl extends Composite implements BaduuumView {
 	FormPanel form;
 	
 	@UiField
-	TextBox name;
+	TextBox nameField;
 	
 	@UiField
-	TextBox band;
+	TextBox bandField;
 	
 	@UiField
-	TextBox email;
+	TextBox emailField;
 	
 	@UiField
-	TextBox phone;
+	TextBox phoneField;
 	
 	@UiField 
-	UTCDateBox date;
+	UTCDateBox dateField;
 	
 	@UiField 
-	UTCTimeBox timeStart;
+	UTCTimeBox timeStartField;
 	
 	@UiField 
-	UTCTimeBox timeEnd;
+	UTCTimeBox timeEndField;
 	
 	private ReservationServiceAsync service = GWT.create(ReservationService.class);
 
@@ -57,13 +57,13 @@ public class ReservationViewImpl extends Composite implements BaduuumView {
 	public ReservationViewImpl() {
 		initWidget(uiBinder.createAndBindUi(this));	
 		
-		name.getElement().setPropertyString("placeholder", "osoba kontaktowa");
-		band.getElement().setPropertyString("placeholder", "zespół");
-		email.getElement().setPropertyString("placeholder", "e-mail");
-		phone.getElement().setPropertyString("placeholder", "telefon");
-		date.getElement().setPropertyString("placeholder", "dzień");
-		timeStart.getElement().setPropertyString("placeholder", "godzina rozpoczęcia");
-		timeEnd.getElement().setPropertyString("placeholder", "godzina zakończenia");
+		nameField.getElement().setPropertyString("placeholder", "osoba kontaktowa");
+		bandField.getElement().setPropertyString("placeholder", "zespół");
+		emailField.getElement().setPropertyString("placeholder", "e-mail");
+		phoneField.getElement().setPropertyString("placeholder", "telefon");
+		dateField.getElement().setPropertyString("placeholder", "dzień");
+		timeStartField.getElement().setPropertyString("placeholder", "godzina rozpoczęcia");
+		timeEndField.getElement().setPropertyString("placeholder", "godzina zakończenia");
 		
 		form.setMethod(FormPanel.METHOD_POST);
 		form.setEncoding(FormPanel.ENCODING_MULTIPART);
@@ -88,7 +88,15 @@ public class ReservationViewImpl extends Composite implements BaduuumView {
 			}
 		};
 		
-		service.submit(callback);
+		String name = nameField.getText();
+		String band = bandField.getText();
+		String email = emailField.getText();
+		String phone = phoneField.getText();
+		Long date = dateField.getValue();
+		Long timeStart = timeStartField.getValue();
+		Long timeEnd = timeEndField.getValue();
+		
+		service.submit(name, band, email, phone, date, timeStart, timeEnd, callback);
 		
 	}
 

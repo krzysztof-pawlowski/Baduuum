@@ -17,7 +17,7 @@
 
 	<servlet>
 		<servlet-name>formServiceImpl</servlet-name>
-		<servlet-class>pl.baduuum.server.ContactFormServiceImpl</servlet-class>
+		<servlet-class>pl.baduuum.server.service.ContactFormServiceImpl</servlet-class>
 	</servlet>
 
 	<servlet-mapping>
@@ -27,7 +27,7 @@
 
 	<servlet>
 		<servlet-name>reservationServiceImpl</servlet-name>
-		<servlet-class>pl.baduuum.server.ReservationServiceImpl</servlet-class>
+		<servlet-class>pl.baduuum.server.service.ReservationServiceImpl</servlet-class>
 	</servlet>
 
 	<servlet-mapping>

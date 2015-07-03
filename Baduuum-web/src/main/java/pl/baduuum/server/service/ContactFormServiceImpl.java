@@ -1,4 +1,4 @@
-package pl.baduuum.server;
+package pl.baduuum.server.service;
 
 import java.util.Properties;
 

@@ -21,27 +21,27 @@
 						<g:FormPanel ui:field="form">
 							<g:HTMLPanel>
 								<div class="form-group">
-									<g:TextBox styleName="form-control" ui:field="name" />
+									<g:TextBox styleName="form-control" ui:field="nameField" />
 								</div>
 								<div class="form-group">
-									<g:TextBox styleName="form-control" ui:field="band" />
+									<g:TextBox styleName="form-control" ui:field="bandField" />
 								</div>
 								<div class="form-group">
-									<g:TextBox styleName="form-control" ui:field="email" />
+									<g:TextBox styleName="form-control" ui:field="emailField" />
 								</div>
 								<div class="form-group">
-									<g:TextBox styleName="form-control" ui:field="phone" />
+									<g:TextBox styleName="form-control" ui:field="phoneField" />
 
 
 								</div>
 								<div class="form-group">
-									<dp:UTCDateBox styleName="form-control" ui:field="date" />
+									<dp:UTCDateBox styleName="form-control" ui:field="dateField" />
 								</div>
 								<div class="form-group">
-									<dp:UTCTimeBox styleName="form-control" ui:field="timeStart" />
+									<dp:UTCTimeBox styleName="form-control" ui:field="timeStartField" />
 								</div>
 								<div class="form-group">
-									<dp:UTCTimeBox styleName="form-control" ui:field="timeEnd" />
+									<dp:UTCTimeBox styleName="form-control" ui:field="timeEndField" />
 								</div>
 								<div class="form-group">
 									<g:Button text="Wyślij" ui:field="buttonSubmit"

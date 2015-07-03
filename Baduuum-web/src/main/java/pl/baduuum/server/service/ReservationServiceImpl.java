@@ -1,4 +1,4 @@
-package pl.baduuum.server;
+package pl.baduuum.server.service;
 
 import pl.baduuum.client.ReservationService;
 
@@ -10,8 +10,14 @@ public class ReservationServiceImpl extends RemoteServiceServlet implements
 	private static final long serialVersionUID = -1947746928337740655L;
 
 	@Override
-	public void submit() {
-		System.out.println("submit reservation form");
+	public void submit(String name, String band, String email, String phone,
+			Long date, Long timeStart, Long timeEnd) {
+
+		// save to DB
+		
+		
+		// send email
+		
 	}
 
 }
