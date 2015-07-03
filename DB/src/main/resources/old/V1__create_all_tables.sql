@@ -82,7 +82,6 @@ CREATE TABLE income (
     id int  NOT NULL,
     amount decimal(3,2)  NOT NULL,
     income_category_id int  NOT NULL,
-    reservation_id int  NOT NULL,
     date date  NOT NULL,
     CONSTRAINT income_pk PRIMARY KEY (id)
 );
@@ -101,8 +100,9 @@ CREATE TABLE income_category (
 -- Table: reservation
 CREATE TABLE reservation (
     id int  NOT NULL,
-    client_id int  NOT NULL,
-    reservation_category_id int  NOT NULL,
+    client_id int,
+    reservation_category_id int,
+    income_id int,
     date date  NOT NULL,
     hour_start time  NOT NULL,
     hours_end time  NOT NULL,
@@ -116,7 +116,6 @@ CREATE TABLE reservation (
     conctact_person_email varchar(200)  NULL,
     CONSTRAINT reservation_pk PRIMARY KEY (id)
 );
-
 
 
 -- Table: reservation_category
@@ -193,15 +192,6 @@ ALTER TABLE income ADD CONSTRAINT income_income_category
     INITIALLY IMMEDIATE
 ;
 
--- Reference:  income_reservation (table: income)
-
-
-ALTER TABLE income ADD CONSTRAINT income_reservation
-    FOREIGN KEY (reservation_id)
-    REFERENCES reservation (id)
-    NOT DEFERRABLE
-    INITIALLY IMMEDIATE
-;
 
 -- Reference:  reservation_client (table: reservation)
 
@@ -224,6 +214,12 @@ ALTER TABLE reservation ADD CONSTRAINT reservation_reservation_category
 ;
 
 
+ALTER TABLE reservation ADD CONSTRAINT reservation_income
+    FOREIGN KEY (income_id)
+    REFERENCES income (id)
+    NOT DEFERRABLE
+    INITIALLY IMMEDIATE
+;
 
 
 
