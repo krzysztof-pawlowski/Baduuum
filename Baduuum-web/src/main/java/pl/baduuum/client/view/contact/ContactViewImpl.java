@@ -1,8 +1,8 @@
 package pl.baduuum.client.view.contact;
 
 import pl.baduuum.PageConstants;
-import pl.baduuum.client.FormService;
-import pl.baduuum.client.FormServiceAsync;
+import pl.baduuum.client.ContactFormService;
+import pl.baduuum.client.ContactFormServiceAsync;
 import pl.baduuum.client.view.BaduuumView;
 
 import com.google.gwt.core.client.GWT;
@@ -33,7 +33,7 @@ public class ContactViewImpl extends Composite implements BaduuumView {
 	@UiField
 	FormPanel form;
 	
-	private FormServiceAsync service = GWT.create(FormService.class);
+	private ContactFormServiceAsync service = GWT.create(ContactFormService.class);
 
 	@UiTemplate("ContactView.ui.xml")
 	interface BaduuumContactViewUiBinder extends
@@ -61,7 +61,7 @@ public class ContactViewImpl extends Composite implements BaduuumView {
 	@UiHandler("buttonSubmit")
 	void doClickSubmit(ClickEvent event) {
 		if (service == null){
-			service = GWT.create(FormService.class);
+			service = GWT.create(ContactFormService.class);
 		}
 		
 		AsyncCallback<Void> callback = new AsyncCallback<Void>() {

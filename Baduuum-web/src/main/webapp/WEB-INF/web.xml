@@ -17,7 +17,7 @@
 
 	<servlet>
 		<servlet-name>formServiceImpl</servlet-name>
-		<servlet-class>pl.baduuum.server.FormServiceImpl</servlet-class>
+		<servlet-class>pl.baduuum.server.ContactFormServiceImpl</servlet-class>
 	</servlet>
 
 	<servlet-mapping>

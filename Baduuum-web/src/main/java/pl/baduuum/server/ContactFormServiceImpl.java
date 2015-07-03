@@ -11,12 +11,12 @@ import javax.mail.Transport;
 import javax.mail.internet.InternetAddress;
 import javax.mail.internet.MimeMessage;
 
-import pl.baduuum.client.FormService;
+import pl.baduuum.client.ContactFormService;
 
 import com.google.gwt.user.server.rpc.RemoteServiceServlet;
 
-public class FormServiceImpl extends RemoteServiceServlet implements
-		FormService {
+public class ContactFormServiceImpl extends RemoteServiceServlet implements
+		ContactFormService {
 
 	private static final long serialVersionUID = 4759275195552762534L;
 
