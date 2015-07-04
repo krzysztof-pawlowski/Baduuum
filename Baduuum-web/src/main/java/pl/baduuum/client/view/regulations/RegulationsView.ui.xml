@@ -3,20 +3,68 @@
 <ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
 	xmlns:g="urn:import:com.google.gwt.user.client.ui" xmlns:c="urn:import:pl.baduuum.client.view.widgets">
 
-    <ui:with field='images' type='pl.baduuum.client.ImageResources' />
+	<ui:with field='images' type='pl.baduuum.client.ImageResources' />
 	<ui:with field='res' type='pl.baduuum.client.StyleResources' />
 
 	<g:HTMLPanel>
 		<div class="wraper">
-		<div class="container">
-		
-		  	<c:HeaderWidgetView ui:field="header" /> 
-		<c:MenuWidgetView ui:field="menu" activeMenuItem="regulations"/>
+			<div class="container">
 
-regulations
+				<c:HeaderWidgetView ui:field="header" />
+				<c:MenuWidgetView ui:field="menu" activeMenuItem="regulations" />
 
-			<c:FooterWidgetView ui:field="footer" /> 
-		</div>
+				<div class="row">
+					<div class="col-xs-12 font-smooth">
+						<h4>&nbsp;I Rerezerwacja jednorazowa</h4>
+						<ol>
+							<li>
+								Rezerwacji należy dokonać poprzez email lub telefon (może być
+								sms), conajmniej 24h przed planowaną próbą, podając: imię,
+								nazwisko, mail/tel kontaktowy, nazwę zespołu, termin próby i
+								długość jej trwania.
+							</li>
+							<li>Płatność dokonywana jest gotówką w sali, przedpłatą na konto,
+								lub poprzez wykorzystanie godzin z wykupionego wcześniej
+								karnetu.
+							</li>
+							<li>W przypadku dwukrotnego odwołania próby na mniej niż 24h
+								przed planowaną próbą, za kolejną rezerwowaną próbę należy
+								zapłacić z góry, gotówką w sali lub przelewem na konto. </li>
+							<li>Rezerwację sali prób uważa się za ważną tylko i wyłącznie po
+								mailowym i/lub telefonicznym potwierdzeniu przez obsługę sali.
+								Zespoły dokonujące płatności przelewem internetowym zobowiązane
+								są do przesłania potwierdzenia wykonania przelewu za Swoją
+								rezerwację na adres mailowy sali prób.</li>
+							<li>Rezerwacji można dokonać z wyprzedzeniem maksymalnie
+								jednomiesięcznym.</li>
+						</ol>
+						
+						<h4>&nbsp;II Zasady korzystania z sali</h4>
+						<ol>
+							<li>Obsługa sali może odmówić wynajęcia sali lub przerwać wynajęcie sali bez podania przyczyny (w takim wypadku jeśli sala byłą już opłacona - opłata ta jest zwracana)</li>
+							<li>W sali obowiązuje całkowity zakaz palenia czegokolwiek, jedzenia oraz spożywania napojów alkoholowych. </li>
+							<li>Spożywanie napojów/jedzenia możliwe jest w przedsionku sali.</li>
+							<li>Użytkowników sali prób prosimy o utrzymywanie należytego porządku w pomieszczeniach, z których korzystają oraz o pozostawienie po próbie po sobie takiego porządku, w jakim zastali salę przed próbą.</li>
+							<li>Nie należy przesuwać sprzętu muzycznego ani dokonywać innych przemeblowań bez zgody obsługi.</li>
+						</ol>
+						
+						<h4>&nbsp;III Użytkowanie sprzętu </h4>
+						<ol>
+							<li>Zaistniałe awarie sprzętu należy niezwłocznie zgłaszać obsłudze (przed rozpoczęciem próby).</li>
+							<li>Należy zapoznać się z instrukcją użytkowania sprzętu przed włączeniem któregokolwiek z nich oraz stosować się do niej.</li>
+							<li>Użytkownicy sali są zobowiązani do pokrycia kosztów napraw sprzętu, gdy awaria była wynikiem nieprawidłowego korzystania z sali lub z jej wyposażenia.</li>
+							<li>Do miksera należy podłączać tylko mikrofony i pianino; nie podłączamy gitar.</li>
+							<li>Nie należy stroić perkusji.</li>
+							<li>Bezwzględnia zabrania się siadania oraz stawiania przedmiotów na wzmacniaczach (szczególnie napojów).</li>						
+							<li>Mikrofony dostępne w sali służą do nagłaśniania wokalu; zabrania się nagłaśniania nimi instrumentów.</li>
+						</ol>
+						
+					</div>
+
+				</div>
+
+				<c:FooterWidgetView ui:field="footer" />
+			</div>
 		</div>
 	</g:HTMLPanel>
 </ui:UiBinder> 

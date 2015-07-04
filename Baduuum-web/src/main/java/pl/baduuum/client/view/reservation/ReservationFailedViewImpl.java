@@ -1,4 +1,4 @@
-package pl.baduuum.client.view.home;
+package pl.baduuum.client.view.reservation;
 
 import pl.baduuum.client.StyleResources;
 import pl.baduuum.client.view.BaduuumView;
@@ -11,19 +11,19 @@ import com.google.gwt.uibinder.client.UiTemplate;
 import com.google.gwt.user.client.ui.Composite;
 import com.google.gwt.user.client.ui.Widget;
 
-public class HomeViewImpl extends Composite implements BaduuumView {
+public class ReservationFailedViewImpl extends Composite implements BaduuumView {
 
 	@UiField StyleResources res;
 	
 	@UiField MenuWidgetView menu;
 	
-	@UiTemplate("HomeView.ui.xml")
-	interface BaduuumHomeViewUiBinder extends UiBinder<Widget, HomeViewImpl> {
+	@UiTemplate("ReservationFailedView.ui.xml")
+	interface ReservationFailedViewUiBinder extends UiBinder<Widget, ReservationFailedViewImpl> {
 	}
 
-	private static BaduuumHomeViewUiBinder uiBinder = GWT.create(BaduuumHomeViewUiBinder.class);
+	private static ReservationFailedViewUiBinder uiBinder = GWT.create(ReservationFailedViewUiBinder.class);
 	
-	public HomeViewImpl() {
+	public ReservationFailedViewImpl() {
 		initWidget(uiBinder.createAndBindUi(this));
 		res.style().ensureInjected();
 	}

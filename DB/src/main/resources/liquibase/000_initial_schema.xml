@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog" xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.4.xsd">
+    <changeSet author="mario (generated)" id="1435949923122-1">
+        <createTable tableName="carnet">
+            <column name="id" type="INT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="number" type="VARCHAR(20)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="purchase_date" type="date">
+                <constraints nullable="false"/>
+            </column>
+            <column name="client_id" type="INT">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+    </changeSet>
+    <changeSet author="mario (generated)" id="1435949923122-2">
+        <createTable tableName="carnet_usage">
+            <column name="id" type="INT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="hours" type="INT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="carnet_id" type="INT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="reservation_id" type="INT">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+    </changeSet>
+    <changeSet author="mario (generated)" id="1435949923122-3">
+        <createTable tableName="client">
+            <column name="id" type="INT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="name" type="VARCHAR(200)"/>
+            <column name="password" type="VARCHAR(200)"/>
+            <column name="band_name" type="VARCHAR(200)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="phone_numer" type="VARCHAR(200)"/>
+            <column name="email" type="VARCHAR(200)"/>
+            <column name="postal_code" type="VARCHAR(10)"/>
+            <column name="street" type="VARCHAR(200)"/>
+            <column name="city" type="INT"/>
+            <column name="nip" type="VARCHAR(10)"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="mario (generated)" id="1435949923122-4">
+        <createTable tableName="cost">
+            <column name="id" type="INT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="date" type="date">
+                <constraints nullable="false"/>
+            </column>
+            <column name="cost" type="numeric(5, 2)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="description" type="VARCHAR(200)"/>
+            <column name="cost_subcategory_id" type="INT">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+    </changeSet>
+    <changeSet author="mario (generated)" id="1435949923122-5">
+        <createTable tableName="cost_category">
+            <column name="id" type="INT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="name" type="VARCHAR(100)">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+    </changeSet>
+    <changeSet author="mario (generated)" id="1435949923122-6">
+        <createTable tableName="cost_subcategory">
+            <column name="id" type="INT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="name" type="VARCHAR(100)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="cost_category_id" type="INT">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+    </changeSet>
+    <changeSet author="mario (generated)" id="1435949923122-7">
+        <createTable tableName="income">
+            <column name="id" type="INT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="amount" type="numeric(3, 2)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="income_category_id" type="INT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="date" type="date">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+    </changeSet>
+    <changeSet author="mario (generated)" id="1435949923122-8">
+        <createTable tableName="income_category">
+            <column name="id" type="INT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="name" type="VARCHAR(100)">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+    </changeSet>
+    <changeSet author="mario (generated)" id="1435949923122-9">
+        <createTable tableName="reservation">
+            <column name="id" type="INT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="client_id" type="INT"/>
+            <column name="reservation_category_id" type="INT"/>
+            <column name="income_id" type="INT"/>
+            <column name="date" type="date">
+                <constraints nullable="false"/>
+            </column>
+            <column name="hour_start" type="TIME WITHOUT TIME ZONE">
+                <constraints nullable="false"/>
+            </column>
+            <column name="hours_end" type="TIME WITHOUT TIME ZONE">
+                <constraints nullable="false"/>
+            </column>
+            <column name="is_paid" type="BOOL">
+                <constraints nullable="false"/>
+            </column>
+            <column name="is_approved" type="BOOL">
+                <constraints nullable="false"/>
+            </column>
+            <column name="is_cymbals" type="BOOL">
+                <constraints nullable="false"/>
+            </column>
+            <column name="is_piano" type="BOOL">
+                <constraints nullable="false"/>
+            </column>
+            <column name="contact_person_name" type="VARCHAR(200)"/>
+            <column name="contact_person_phone" type="VARCHAR(200)"/>
+            <column name="band_name" type="VARCHAR(200)"/>
+            <column name="conctact_person_email" type="VARCHAR(200)"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="mario (generated)" id="1435949923122-10">
+        <createTable tableName="reservation_category">
+            <column name="id" type="INT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="name" type="VARCHAR(100)">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+    </changeSet>
+    <changeSet author="mario (generated)" id="1435949923122-11">
+        <addPrimaryKey columnNames="id" constraintName="carnet_pk" tableName="carnet"/>
+    </changeSet>
+    <changeSet author="mario (generated)" id="1435949923122-12">
+        <addPrimaryKey columnNames="id" constraintName="carnet_usage_pk" tableName="carnet_usage"/>
+    </changeSet>
+    <changeSet author="mario (generated)" id="1435949923122-13">
+        <addPrimaryKey columnNames="id" constraintName="client_pk" tableName="client"/>
+    </changeSet>
+    <changeSet author="mario (generated)" id="1435949923122-14">
+        <addPrimaryKey columnNames="id" constraintName="cost_category_pk" tableName="cost_category"/>
+    </changeSet>
+    <changeSet author="mario (generated)" id="1435949923122-15">
+        <addPrimaryKey columnNames="id" constraintName="cost_pk" tableName="cost"/>
+    </changeSet>
+    <changeSet author="mario (generated)" id="1435949923122-16">
+        <addPrimaryKey columnNames="id" constraintName="cost_subcategory_pk" tableName="cost_subcategory"/>
+    </changeSet>
+    <changeSet author="mario (generated)" id="1435949923122-17">
+        <addPrimaryKey columnNames="id" constraintName="income_category_pk" tableName="income_category"/>
+    </changeSet>
+    <changeSet author="mario (generated)" id="1435949923122-18">
+        <addPrimaryKey columnNames="id" constraintName="income_pk" tableName="income"/>
+    </changeSet>
+    <changeSet author="mario (generated)" id="1435949923122-19">
+        <addPrimaryKey columnNames="id" constraintName="reservation_category_pk" tableName="reservation_category"/>
+    </changeSet>
+    <changeSet author="mario (generated)" id="1435949923122-20">
+        <addPrimaryKey columnNames="id" constraintName="reservation_pk" tableName="reservation"/>
+    </changeSet>
+    <changeSet author="mario (generated)" id="1435949923122-21">
+        <addForeignKeyConstraint baseColumnNames="client_id" baseTableName="carnet" constraintName="carnet_client" deferrable="false" initiallyDeferred="false" onDelete="NO ACTION" onUpdate="NO ACTION" referencedColumnNames="id" referencedTableName="client"/>
+    </changeSet>
+    <changeSet author="mario (generated)" id="1435949923122-22">
+        <addForeignKeyConstraint baseColumnNames="carnet_id" baseTableName="carnet_usage" constraintName="carnet_usage_carnet" deferrable="false" initiallyDeferred="false" onDelete="NO ACTION" onUpdate="NO ACTION" referencedColumnNames="id" referencedTableName="carnet"/>
+    </changeSet>
+    <changeSet author="mario (generated)" id="1435949923122-23">
+        <addForeignKeyConstraint baseColumnNames="reservation_id" baseTableName="carnet_usage" constraintName="carnet_usage_reservation" deferrable="false" initiallyDeferred="false" onDelete="NO ACTION" onUpdate="NO ACTION" referencedColumnNames="id" referencedTableName="reservation"/>
+    </changeSet>
+    <changeSet author="mario (generated)" id="1435949923122-24">
+        <addForeignKeyConstraint baseColumnNames="cost_subcategory_id" baseTableName="cost" constraintName="cost_subcategory_cost" deferrable="false" initiallyDeferred="false" onDelete="NO ACTION" onUpdate="NO ACTION" referencedColumnNames="id" referencedTableName="cost_subcategory"/>
+    </changeSet>
+    <changeSet author="mario (generated)" id="1435949923122-25">
+        <addForeignKeyConstraint baseColumnNames="cost_category_id" baseTableName="cost_subcategory" constraintName="cost_subcategory_cost_category" deferrable="false" initiallyDeferred="false" onDelete="NO ACTION" onUpdate="NO ACTION" referencedColumnNames="id" referencedTableName="cost_category"/>
+    </changeSet>
+    <changeSet author="mario (generated)" id="1435949923122-26">
+        <addForeignKeyConstraint baseColumnNames="income_category_id" baseTableName="income" constraintName="income_income_category" deferrable="false" initiallyDeferred="false" onDelete="NO ACTION" onUpdate="NO ACTION" referencedColumnNames="id" referencedTableName="income_category"/>
+    </changeSet>
+    <changeSet author="mario (generated)" id="1435949923122-27">
+        <addForeignKeyConstraint baseColumnNames="client_id" baseTableName="reservation" constraintName="reservation_client" deferrable="false" initiallyDeferred="false" onDelete="NO ACTION" onUpdate="NO ACTION" referencedColumnNames="id" referencedTableName="client"/>
+    </changeSet>
+    <changeSet author="mario (generated)" id="1435949923122-28">
+        <addForeignKeyConstraint baseColumnNames="income_id" baseTableName="reservation" constraintName="reservation_income" deferrable="false" initiallyDeferred="false" onDelete="NO ACTION" onUpdate="NO ACTION" referencedColumnNames="id" referencedTableName="income"/>
+    </changeSet>
+    <changeSet author="mario (generated)" id="1435949923122-29">
+        <addForeignKeyConstraint baseColumnNames="reservation_category_id" baseTableName="reservation" constraintName="reservation_reservation_category" deferrable="false" initiallyDeferred="false" onDelete="NO ACTION" onUpdate="NO ACTION" referencedColumnNames="id" referencedTableName="reservation_category"/>
+    </changeSet>
+</databaseChangeLog>

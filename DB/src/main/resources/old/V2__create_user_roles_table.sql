@@ -7,7 +7,7 @@ WITH (
   OIDS=FALSE
 );
 ALTER TABLE "users" OWNER TO baduuum;
- 
+
 CREATE TABLE user_roles
 (
   user_name character varying(50),
@@ -17,4 +17,3 @@ WITH (
   OIDS=FALSE
 );
 ALTER TABLE user_roles OWNER TO baduuum;
-

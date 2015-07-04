@@ -4,20 +4,40 @@
     "http://java.sun.com/dtd/web-app_2_3.dtd">
 
 <web-app>
-  
-  <servlet>
-    <servlet-name>baduuumServiceServlet</servlet-name>
-    <servlet-class>pl.baduuum.server.BaduuumServiceImpl</servlet-class>
-  </servlet>
-  
-  <servlet-mapping>
-    <servlet-name>baduuumServiceServlet</servlet-name>
-    <url-pattern>/baduuum/baduuumService</url-pattern>
-  </servlet-mapping>
 
-  <!-- Default page to serve -->
-  <welcome-file-list>
-    <welcome-file>Baduuum.html</welcome-file>
-  </welcome-file-list>
+	<servlet>
+		<servlet-name>baduuumServiceServlet</servlet-name>
+		<servlet-class>pl.baduuum.server.BaduuumServiceImpl</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>baduuumServiceServlet</servlet-name>
+		<url-pattern>/baduuum/baduuumService</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>formServiceImpl</servlet-name>
+		<servlet-class>pl.baduuum.server.service.ContactFormServiceImpl</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>formServiceImpl</servlet-name>
+		<url-pattern>/baduuum/formService</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>reservationServiceImpl</servlet-name>
+		<servlet-class>pl.baduuum.server.service.ReservationServiceImpl</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>reservationServiceImpl</servlet-name>
+		<url-pattern>/baduuum/reservationService</url-pattern>
+	</servlet-mapping>
+
+	<!-- Default page to serve -->
+	<welcome-file-list>
+		<welcome-file>Baduuum.html</welcome-file>
+	</welcome-file-list>
 
 </web-app>

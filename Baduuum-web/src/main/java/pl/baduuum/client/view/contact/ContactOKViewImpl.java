@@ -1,4 +1,4 @@
-package pl.baduuum.client.view.home;
+package pl.baduuum.client.view.contact;
 
 import pl.baduuum.client.StyleResources;
 import pl.baduuum.client.view.BaduuumView;
@@ -11,19 +11,19 @@ import com.google.gwt.uibinder.client.UiTemplate;
 import com.google.gwt.user.client.ui.Composite;
 import com.google.gwt.user.client.ui.Widget;
 
-public class HomeViewImpl extends Composite implements BaduuumView {
+public class ContactOKViewImpl extends Composite implements BaduuumView {
 
 	@UiField StyleResources res;
 	
 	@UiField MenuWidgetView menu;
 	
-	@UiTemplate("HomeView.ui.xml")
-	interface BaduuumHomeViewUiBinder extends UiBinder<Widget, HomeViewImpl> {
+	@UiTemplate("ContactOKView.ui.xml")
+	interface BaduuumContactOKViewUiBinder extends UiBinder<Widget, ContactOKViewImpl> {
 	}
 
-	private static BaduuumHomeViewUiBinder uiBinder = GWT.create(BaduuumHomeViewUiBinder.class);
+	private static BaduuumContactOKViewUiBinder uiBinder = GWT.create(BaduuumContactOKViewUiBinder.class);
 	
-	public HomeViewImpl() {
+	public ContactOKViewImpl() {
 		initWidget(uiBinder.createAndBindUi(this));
 		res.style().ensureInjected();
 	}

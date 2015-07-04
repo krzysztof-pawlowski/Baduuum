@@ -3,20 +3,53 @@
 <ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
 	xmlns:g="urn:import:com.google.gwt.user.client.ui" xmlns:c="urn:import:pl.baduuum.client.view.widgets">
 
-    <ui:with field='images' type='pl.baduuum.client.ImageResources' />
+	<ui:with field='images' type='pl.baduuum.client.ImageResources' />
 	<ui:with field='res' type='pl.baduuum.client.StyleResources' />
 
 	<g:HTMLPanel>
 		<div class="wraper">
-		<div class="container">
-		
-		  	<c:HeaderWidgetView ui:field="header" /> 
-	<c:MenuWidgetView ui:field="menu" activeMenuItem="studio"/>
+			<div class="container">
 
-studio
+				<c:HeaderWidgetView ui:field="header" />
+				<c:MenuWidgetView ui:field="menu" activeMenuItem="studio" />
+				<div class="row">
+					<div class="col-xs-12 font-smooth">
 
-			<c:FooterWidgetView ui:field="footer" /> 
-		</div>
+						<h4>Zapraszamy do nagrania dema u nas! </h4>
+						<p>&nbsp;</p>
+						<h5>Oferujemy:</h5>
+						<ul>
+							<li>Rejestrację śladów</li>
+							<li>Mix</li>
+							<li>Mastering</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-xs-12 font-smooth">
+						<h5>Sprzęt jaki wykorzystujemy podczas nagrań:</h5>
+						<ul>
+							<li type="square">interfejs Motu 896mk3</li>
+							<li type="square">konsoleta Yamaha 01V</li>
+							<li type="square">mikrofony:</li>
+							<ul>
+								<li>1x Audix i5</li>
+								<li>2x Audix D2</li>
+								<li>1x Audix D6</li>
+								<li>1x Audix D4</li>
+								<li>3x Audix ADX-51</li>
+								<li>1x Shure SM57 </li>
+								<li>2x Shure SM58 </li>
+							</ul>
+							<li type="square">monitory EMU PM5</li>
+							<li type="square">preamp słuchawkowy Behringer Powerplay PRO-XL</li>
+						</ul>
+					</div>
+				</div>
+
+				<c:FooterWidgetView ui:field="footer" />
+			</div>
 		</div>
 	</g:HTMLPanel>
 </ui:UiBinder> 

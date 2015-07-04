@@ -1,9 +1,14 @@
 package pl.baduuum.client;
 
+import pl.baduuum.PageConstants;
 import pl.baduuum.client.event.GoCalendarEvent;
 import pl.baduuum.client.event.GoCalendarEventHandler;
 import pl.baduuum.client.event.GoContactEvent;
 import pl.baduuum.client.event.GoContactEventHandler;
+import pl.baduuum.client.event.GoContactFailedEvent;
+import pl.baduuum.client.event.GoContactFailedEventHandler;
+import pl.baduuum.client.event.GoContactOKEvent;
+import pl.baduuum.client.event.GoContactOKEventHandler;
 import pl.baduuum.client.event.GoFaqEvent;
 import pl.baduuum.client.event.GoFaqEventHandler;
 import pl.baduuum.client.event.GoGalleryBuildEvent;
@@ -18,6 +23,10 @@ import pl.baduuum.client.event.GoRegulationsEvent;
 import pl.baduuum.client.event.GoRegulationsEventHandler;
 import pl.baduuum.client.event.GoReservationEvent;
 import pl.baduuum.client.event.GoReservationEventHandler;
+import pl.baduuum.client.event.GoReservationFailedEvent;
+import pl.baduuum.client.event.GoReservationFailedEventHandler;
+import pl.baduuum.client.event.GoReservationOKEvent;
+import pl.baduuum.client.event.GoReservationOKEventHandler;
 import pl.baduuum.client.event.GoRoomEvent;
 import pl.baduuum.client.event.GoRoomEventHandler;
 import pl.baduuum.client.event.GoStudioEvent;
@@ -25,6 +34,8 @@ import pl.baduuum.client.event.GoStudioEventHandler;
 import pl.baduuum.client.presenter.BaduuumPresenter;
 import pl.baduuum.client.presenter.Presenter;
 import pl.baduuum.client.view.calendar.CalendarViewImpl;
+import pl.baduuum.client.view.contact.ContactFailedViewImpl;
+import pl.baduuum.client.view.contact.ContactOKViewImpl;
 import pl.baduuum.client.view.contact.ContactViewImpl;
 import pl.baduuum.client.view.faq.FaqViewImpl;
 import pl.baduuum.client.view.gallery.GalleryBuildViewImpl;
@@ -32,6 +43,8 @@ import pl.baduuum.client.view.gallery.GalleryRoomViewImpl;
 import pl.baduuum.client.view.home.HomeViewImpl;
 import pl.baduuum.client.view.prices.PricesViewImpl;
 import pl.baduuum.client.view.regulations.RegulationsViewImpl;
+import pl.baduuum.client.view.reservation.ReservationFailedViewImpl;
+import pl.baduuum.client.view.reservation.ReservationOKViewImpl;
 import pl.baduuum.client.view.reservation.ReservationViewImpl;
 import pl.baduuum.client.view.room.RoomViewImpl;
 import pl.baduuum.client.view.studio.StudioViewImpl;
@@ -45,20 +58,9 @@ import com.google.gwt.user.client.History;
 import com.google.gwt.user.client.ui.HasWidgets;
 
 public class AppController implements Presenter, ValueChangeHandler<String> {
-	private static final String ROOM = "room";
-	private static final String RESERVATION = "reservation";
-	private static final String REGULATIONS = "regulations";
-	private static final String GALLERY_ROOM = "galleryRoom";
-	private static final String GALLERY_BUILD = "galleryBuild";
-	private static final String FAQ = "faq";
-	private static final String CONTACT = "contact";
-	private static final String CALENDAR = "calendar";
-	private static final String PRICES = "prices";
-	private static final String HOME = "home";
-	private static final String STUDIO = "studio";
+
 	
 	private final HandlerManager eventBus;
-	private final BaduuumServiceAsync rpcService;
 	private HasWidgets container;
 	
 	private HomeViewImpl baduuumHomeView = null;
@@ -72,11 +74,13 @@ public class AppController implements Presenter, ValueChangeHandler<String> {
 	private RegulationsViewImpl baduuumRegulationsView = null;
 	private FaqViewImpl baduuumFaqView = null;
 	private ContactViewImpl baduuumContactView = null;
-	
+	private ContactOKViewImpl baduuumContactOKView = null;
+	private ContactFailedViewImpl baduuumContactFailedView = null;
+	private ReservationOKViewImpl baduuumReservationOKView = null;
+	private ReservationFailedViewImpl baduuumReservationFailedView = null;	
 
-	public AppController(BaduuumServiceAsync rpcService, HandlerManager eventBus) {
+	public AppController(HandlerManager eventBus) {
 		this.eventBus = eventBus;
-		this.rpcService = rpcService;
 		bind();
 	}
 
@@ -86,21 +90,21 @@ public class AppController implements Presenter, ValueChangeHandler<String> {
 		eventBus.addHandler(GoHomeEvent.TYPE, new GoHomeEventHandler() {
 			@Override
 			public void onGoHome(GoHomeEvent event) {
-				doOpenPage(HOME);
+				doOpenPage(PageConstants.HOME);
 			}
 		});
 
 		eventBus.addHandler(GoPricesEvent.TYPE, new GoPricesEventHandler() {
 			@Override
 			public void onGoPrices(GoPricesEvent event) {
-				doOpenPage(PRICES);
+				doOpenPage(PageConstants.PRICES);
 			}
 		});
 		
 		eventBus.addHandler(GoCalendarEvent.TYPE, new GoCalendarEventHandler() {
 			@Override
 			public void onGoCalendar(GoCalendarEvent event) {
-				doOpenPage(CALENDAR);
+				doOpenPage(PageConstants.CALENDAR);
 				
 			}
 		});
@@ -108,59 +112,88 @@ public class AppController implements Presenter, ValueChangeHandler<String> {
 		eventBus.addHandler(GoContactEvent.TYPE, new GoContactEventHandler() {
 			@Override
 			public void onGoContact(GoContactEvent event) {
-				doOpenPage(CONTACT);
+				doOpenPage(PageConstants.CONTACT);
 			}
 		});
 		
 		eventBus.addHandler(GoFaqEvent.TYPE, new GoFaqEventHandler() {
 			@Override
 			public void onGoFaq(GoFaqEvent event) {
-				doOpenPage(FAQ);
+				doOpenPage(PageConstants.FAQ);
 			}
 		});
 		
 		eventBus.addHandler(GoGalleryBuildEvent.TYPE, new GoGalleryBuildEventHandler() {
 			@Override
 			public void onGoGalleryBuild(GoGalleryBuildEvent event) {
-				doOpenPage(GALLERY_BUILD);
+				doOpenPage(PageConstants.GALLERY_BUILD);
 			}
 		});
 		
 		eventBus.addHandler(GoGalleryRoomEvent.TYPE, new GoGalleryRoomEventHandler() {
 			@Override
 			public void onGoGalleryRoom(GoGalleryRoomEvent event) {
-				doOpenPage(GALLERY_ROOM);
+				doOpenPage(PageConstants.GALLERY_ROOM);
 			}
 		});
 		
 		eventBus.addHandler(GoRegulationsEvent.TYPE, new GoRegulationsEventHandler() {
 			@Override
 			public void onGoRegulations(GoRegulationsEvent event) {
-				doOpenPage(REGULATIONS);
+				doOpenPage(PageConstants.REGULATIONS);
 			}
 		});
 		
 		eventBus.addHandler(GoReservationEvent.TYPE, new GoReservationEventHandler() {
 			@Override
 			public void onGoReservation(GoReservationEvent event) {
-				doOpenPage(RESERVATION);
+				doOpenPage(PageConstants.RESERVATION);
 			}
 		});
 		
 		eventBus.addHandler(GoRoomEvent.TYPE, new GoRoomEventHandler() {
 			@Override
 			public void onGoRoom(GoRoomEvent event) {
-				doOpenPage(ROOM);;
+				doOpenPage(PageConstants.ROOM);;
 			}
 		});
 		
 		eventBus.addHandler(GoStudioEvent.TYPE, new GoStudioEventHandler() {
 			@Override
 			public void onGoStudio(GoStudioEvent event) {
-				doOpenPage(STUDIO);
+				doOpenPage(PageConstants.STUDIO);
 			}
 		});
+		
+		eventBus.addHandler(GoContactOKEvent.TYPE, new GoContactOKEventHandler(){
+			@Override
+			public void onGoContactOK(GoContactOKEvent event) {
+				doOpenPage(PageConstants.CONTACT_OK);
+			}
+		});
+		
+		eventBus.addHandler(GoContactFailedEvent.TYPE, new GoContactFailedEventHandler() {
+			@Override
+			public void onGoContactFailed(GoContactFailedEvent event) {
+				doOpenPage(PageConstants.CONTACT_FAILED);
+			}
+		});
+		
+		eventBus.addHandler(GoReservationOKEvent.TYPE, new GoReservationOKEventHandler(){
 
+			@Override
+			public void onGoReservationOK(GoReservationOKEvent event) {
+				doOpenPage(PageConstants.RESERVATION_OK);
+			}
+	
+		});
+		
+		eventBus.addHandler(GoReservationFailedEvent.TYPE, new GoReservationFailedEventHandler() {
+			@Override
+			public void onGoReservationFailed(GoReservationFailedEvent event) {
+				doOpenPage(PageConstants.RESERVATION_FAILED);				
+			}
+		});
 	}
 	
 	private void doOpenPage(String page) {
@@ -171,7 +204,7 @@ public class AppController implements Presenter, ValueChangeHandler<String> {
 		this.container = container;
 
 		if ("".equals(History.getToken())) {
-			History.newItem(HOME);
+			History.newItem(PageConstants.HOME);
 		} else {
 			History.fireCurrentHistoryState();
 		}
@@ -181,7 +214,7 @@ public class AppController implements Presenter, ValueChangeHandler<String> {
 		String token = event.getValue();
 
 		if (token != null) {
-			if (token.equals(HOME)) {
+			if (token.equals(PageConstants.HOME)) {
 				GWT.runAsync(new RunAsyncCallback() {
 					
 					@Override
@@ -192,14 +225,14 @@ public class AppController implements Presenter, ValueChangeHandler<String> {
 							baduuumHomeView = new HomeViewImpl();
 
 						}
-						new BaduuumPresenter(rpcService, eventBus, baduuumHomeView).go(container);
+						new BaduuumPresenter(eventBus, baduuumHomeView).go(container);
 					}
 					
 					@Override
 					public void onFailure(Throwable caught) {
 					}
 				});
-			} else if (token.equals(PRICES) ) {
+			} else if (token.equals(PageConstants.PRICES) ) {
 				GWT.runAsync(new RunAsyncCallback() {
 					
 					@Override
@@ -207,14 +240,14 @@ public class AppController implements Presenter, ValueChangeHandler<String> {
 						if (baduuumPricesView == null) {
 							baduuumPricesView = new PricesViewImpl();
 						}
-						new BaduuumPresenter(rpcService, eventBus, baduuumPricesView).go(container);
+						new BaduuumPresenter(eventBus, baduuumPricesView).go(container);
 					}
 					
 					@Override
 					public void onFailure(Throwable caught) {
 					}
 				});
-			} else if (token.equals(CALENDAR)) {
+			} else if (token.equals(PageConstants.CALENDAR)) {
 				GWT.runAsync( new RunAsyncCallback() {
 					
 					@Override
@@ -222,14 +255,14 @@ public class AppController implements Presenter, ValueChangeHandler<String> {
 						if (baduuumCalendarView == null){
 							baduuumCalendarView = new CalendarViewImpl();
 						}
-						new BaduuumPresenter(rpcService, eventBus, baduuumCalendarView).go(container);
+						new BaduuumPresenter(eventBus, baduuumCalendarView).go(container);
 					}
 					
 					@Override
 					public void onFailure(Throwable reason) {
 					}
 				});
-			} else if (token.equals(ROOM)){
+			} else if (token.equals(PageConstants.ROOM)){
 				GWT.runAsync(new RunAsyncCallback() {
 					
 					@Override
@@ -237,14 +270,14 @@ public class AppController implements Presenter, ValueChangeHandler<String> {
 						if (baduuumRoomView == null){
 							baduuumRoomView = new RoomViewImpl();
 						}
-						new BaduuumPresenter(rpcService, eventBus, baduuumRoomView).go(container);;
+						new BaduuumPresenter(eventBus, baduuumRoomView).go(container);;
 					}
 					
 					@Override
 					public void onFailure(Throwable reason) {
 					}
 				});
-			} else if (token.equals(RESERVATION)){
+			} else if (token.equals(PageConstants.RESERVATION)){
 				GWT.runAsync(new RunAsyncCallback() {
 					
 					@Override
@@ -252,14 +285,14 @@ public class AppController implements Presenter, ValueChangeHandler<String> {
 						if (baduuumReservationView == null){
 							baduuumReservationView = new ReservationViewImpl();
 						}
-						new BaduuumPresenter(rpcService, eventBus, baduuumReservationView).go(container);
+						new BaduuumPresenter(eventBus, baduuumReservationView).go(container);
 					}
 					
 					@Override
 					public void onFailure(Throwable reason) {
 					}
 				});
-			} else if (token.equals(STUDIO)){
+			} else if (token.equals(PageConstants.STUDIO)){
 				GWT.runAsync(new RunAsyncCallback() {
 					
 					@Override
@@ -267,14 +300,14 @@ public class AppController implements Presenter, ValueChangeHandler<String> {
 						if (studioViewImpl == null){
 							studioViewImpl = new StudioViewImpl();
 						}
-						new BaduuumPresenter(rpcService, eventBus, studioViewImpl).go(container);
+						new BaduuumPresenter(eventBus, studioViewImpl).go(container);
 					}
 					
 					@Override
 					public void onFailure(Throwable reason) {
 					}
 				});
-			} else if (token.equals(GALLERY_BUILD)){
+			} else if (token.equals(PageConstants.GALLERY_BUILD)){
 				GWT.runAsync(new RunAsyncCallback() {
 					
 					@Override
@@ -282,14 +315,14 @@ public class AppController implements Presenter, ValueChangeHandler<String> {
 						if (baduuumGalleryBuildView == null){
 							baduuumGalleryBuildView = new GalleryBuildViewImpl();
 						}
-						new BaduuumPresenter(rpcService, eventBus, baduuumGalleryBuildView).go(container);
+						new BaduuumPresenter(eventBus, baduuumGalleryBuildView).go(container);
 					}
 					
 					@Override
 					public void onFailure(Throwable reason) {
 					}
 				});
-			} else if (token.equals(GALLERY_ROOM)){
+			} else if (token.equals(PageConstants.GALLERY_ROOM)){
 				GWT.runAsync(new RunAsyncCallback() {
 					
 					@Override
@@ -297,14 +330,14 @@ public class AppController implements Presenter, ValueChangeHandler<String> {
 						if (baduuumGalleryRoomView == null){
 							baduuumGalleryRoomView = new GalleryRoomViewImpl();
 						}
-						new BaduuumPresenter(rpcService, eventBus, baduuumGalleryRoomView).go(container);
+						new BaduuumPresenter(eventBus, baduuumGalleryRoomView).go(container);
 					}
 					
 					@Override
 					public void onFailure(Throwable reason) {
 					}
 				});
-			} else if (token.equals(REGULATIONS)){
+			} else if (token.equals(PageConstants.REGULATIONS)){
 				GWT.runAsync(new RunAsyncCallback() {
 					
 					@Override
@@ -312,14 +345,14 @@ public class AppController implements Presenter, ValueChangeHandler<String> {
 						if (baduuumRegulationsView == null){
 							baduuumRegulationsView = new RegulationsViewImpl();
 						}
-						new BaduuumPresenter(rpcService, eventBus, baduuumRegulationsView).go(container);
+						new BaduuumPresenter(eventBus, baduuumRegulationsView).go(container);
 					}
 					
 					@Override
 					public void onFailure(Throwable reason) {
 					}
 				});
-			} else if (token.equals(FAQ)){
+			} else if (token.equals(PageConstants.FAQ)){
 				GWT.runAsync(new RunAsyncCallback() {
 					
 					@Override
@@ -327,14 +360,14 @@ public class AppController implements Presenter, ValueChangeHandler<String> {
 						if (baduuumFaqView == null){
 							baduuumFaqView = new FaqViewImpl();
 						}
-						new BaduuumPresenter(rpcService, eventBus, baduuumFaqView).go(container);
+						new BaduuumPresenter(eventBus, baduuumFaqView).go(container);
 					}
 					
 					@Override
 					public void onFailure(Throwable reason) {
 					}
 				});
-			} else if (token.equals(CONTACT)){
+			} else if (token.equals(PageConstants.CONTACT)){
 				GWT.runAsync(new RunAsyncCallback() {
 					
 					@Override
@@ -342,7 +375,67 @@ public class AppController implements Presenter, ValueChangeHandler<String> {
 						if (baduuumContactView == null){
 							baduuumContactView = new ContactViewImpl();
 						}
-						new BaduuumPresenter(rpcService, eventBus, baduuumContactView).go(container);
+						new BaduuumPresenter(eventBus, baduuumContactView).go(container);
+					}
+					
+					@Override
+					public void onFailure(Throwable reason) {
+					}
+				});
+			} else if (token.equals(PageConstants.CONTACT_OK)){
+				GWT.runAsync(new RunAsyncCallback() {
+					
+					@Override
+					public void onSuccess() {
+						if (baduuumContactOKView == null){
+							baduuumContactOKView = new ContactOKViewImpl();
+						}
+						new BaduuumPresenter(eventBus, baduuumContactOKView).go(container);
+					}
+					
+					@Override
+					public void onFailure(Throwable reason) {
+					}
+				});
+			} else if (token.equals(PageConstants.CONTACT_FAILED)){
+				GWT.runAsync(new RunAsyncCallback() {
+					
+					@Override
+					public void onSuccess() {
+						if (baduuumContactFailedView == null){
+							baduuumContactFailedView = new ContactFailedViewImpl();
+						}
+						new BaduuumPresenter(eventBus, baduuumContactFailedView).go(container);
+					}
+					
+					@Override
+					public void onFailure(Throwable reason) {
+					}
+				});
+			} else if (token.equals(PageConstants.RESERVATION_OK)){
+				GWT.runAsync(new RunAsyncCallback() {
+					
+					@Override
+					public void onSuccess() {
+						if (baduuumReservationOKView == null){
+							baduuumReservationOKView = new ReservationOKViewImpl();
+						}
+						new BaduuumPresenter(eventBus, baduuumReservationOKView).go(container);
+					}
+					
+					@Override
+					public void onFailure(Throwable reason) {
+					}
+				});
+			} else if (token.equals(PageConstants.RESERVATION_FAILED)){
+				GWT.runAsync(new RunAsyncCallback() {
+					
+					@Override
+					public void onSuccess() {
+						if (baduuumReservationFailedView == null){
+							baduuumReservationFailedView = new ReservationFailedViewImpl();
+						}
+						new BaduuumPresenter(eventBus, baduuumReservationFailedView).go(container);
 					}
 					
 					@Override
@@ -350,7 +443,6 @@ public class AppController implements Presenter, ValueChangeHandler<String> {
 					}
 				});
 			}
-			
 		}
 	}
 }
