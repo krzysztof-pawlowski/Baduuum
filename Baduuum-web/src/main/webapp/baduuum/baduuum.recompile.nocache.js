@@ -28,7 +28,17 @@
   var __initPropertyProviders = function(__gwt_getMetaProperty, __gwt_isKnownPropertyValue){
     var providers = {};
 var values = {};
-providers['user.agent'] = function(){
+providers['supportsDateTimeInput'] = function(){
+  try {
+    var i = document.createElement('input');
+    i.setAttribute('type', 'datetime');
+    return i.type !== 'text'?'y':'n';
+  }
+   catch (e) {
+    return 'n';
+  }
+}
+;values['supportsDateTimeInput'] = {'n':0,'y':1};providers['user.agent'] = function(){
   var ua = navigator.userAgent.toLowerCase();
   var docMode = $doc.documentMode;
   if ((function() { 
