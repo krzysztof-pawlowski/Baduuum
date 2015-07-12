@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog" xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.4.xsd">
+    <changeSet author="mario" id="2-1">
+      <dropUniqueConstraint
+          constraintName="reservation_income"
+          tableName="reservation"
+          uniqueColumns="income_id"/>
+    </changeSet>
+    <changeSet author="liquibase-docs" id="2-2">
+    <dropColumn columnName="income_id"
+            tableName="reservation"/>
+    </changeSet>
+    <changeSet author="liquibase-docs" id="2-3">
+      <addColumn
+           tableName="income">
+           <column name="reservation_id" type="INT">
+             <constraints nullable="false"/>
+           </column>
+      </addColumn>
+    </changeSet>
+    <changeSet author="liquibase-docs" id="2-4">
+        <addForeignKeyConstraint baseColumnNames="reservation_id" baseTableName="income" constraintName="income_reservation" deferrable="false" initiallyDeferred="false"
+          onDelete="CASCADE" onUpdate="CASCADE" referencedColumnNames="id" referencedTableName="reservation"/>
+    </changeSet>
+</databaseChangeLog>
