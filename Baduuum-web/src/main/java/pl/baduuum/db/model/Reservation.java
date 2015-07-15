@@ -52,20 +52,16 @@ public class Reservation implements Serializable {
 	@Column(name="is_piano")
 	private Boolean isPiano;
 
-	//bi-directional many-to-one association to CarnetUsage
 	@OneToMany(mappedBy="reservation")
 	private List<CarnetUsage> carnetUsages;
 
-	//bi-directional many-to-one association to Income
 	@OneToMany(mappedBy="reservation")
 	private List<Income> incomes;
 
-	//bi-directional many-to-one association to Client
 	@ManyToOne
 	private Client client;
 
-	//bi-directional many-to-one association to ReservationCategory
-	@ManyToOne
+	@OneToOne
 	@JoinColumn(name="reservation_category_id")
 	private ReservationCategory reservationCategory;
 
