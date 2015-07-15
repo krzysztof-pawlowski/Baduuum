@@ -1,4 +1,4 @@
-package pl.baduuum.db.model;
+package pl.baduuum.shared.dto;
 
 import java.io.Serializable;
 import javax.persistence.*;
@@ -12,7 +12,7 @@ import java.util.List;
 @Entity
 @Table(name="cost_category")
 @NamedQuery(name="CostCategory.findAll", query="SELECT c FROM CostCategory c")
-public class CostCategory implements Serializable {
+public class CostCategoryDTO implements Serializable {
 	private static final long serialVersionUID = 1L;
 
 	@Id
@@ -22,9 +22,9 @@ public class CostCategory implements Serializable {
 
 	//bi-directional many-to-one association to CostSubcategory
 	@OneToMany(mappedBy="costCategory")
-	private List<CostSubcategory> costSubcategories;
+	private List<CostSubcategoryDTO> costSubcategories;
 
-	public CostCategory() {
+	public CostCategoryDTO() {
 	}
 
 	public Integer getId() {
@@ -43,22 +43,22 @@ public class CostCategory implements Serializable {
 		this.name = name;
 	}
 
-	public List<CostSubcategory> getCostSubcategories() {
+	public List<CostSubcategoryDTO> getCostSubcategories() {
 		return this.costSubcategories;
 	}
 
-	public void setCostSubcategories(List<CostSubcategory> costSubcategories) {
+	public void setCostSubcategories(List<CostSubcategoryDTO> costSubcategories) {
 		this.costSubcategories = costSubcategories;
 	}
 
-	public CostSubcategory addCostSubcategory(CostSubcategory costSubcategory) {
+	public CostSubcategoryDTO addCostSubcategory(CostSubcategoryDTO costSubcategory) {
 		getCostSubcategories().add(costSubcategory);
 		costSubcategory.setCostCategory(this);
 
 		return costSubcategory;
 	}
 
-	public CostSubcategory removeCostSubcategory(CostSubcategory costSubcategory) {
+	public CostSubcategoryDTO removeCostSubcategory(CostSubcategoryDTO costSubcategory) {
 		getCostSubcategories().remove(costSubcategory);
 		costSubcategory.setCostCategory(null);
 

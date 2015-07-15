@@ -1,4 +1,4 @@
-package pl.baduuum.db.model;
+package pl.baduuum.shared.dto;
 
 import java.io.Serializable;
 import javax.persistence.*;
@@ -11,8 +11,9 @@ import java.util.List;
  * 
  */
 @Entity
+@Table(name = "carnet")
 @NamedQuery(name="Carnet.findAll", query="SELECT c FROM Carnet c")
-public class Carnet implements Serializable {
+public class CarnetDTO implements Serializable {
 	private static final long serialVersionUID = 1L;
 
 	@Id
@@ -26,13 +27,13 @@ public class Carnet implements Serializable {
 
 	//bi-directional many-to-one association to Client
 	@ManyToOne
-	private Client client;
+	private ClientDTO client;
 
 	//bi-directional many-to-one association to CarnetUsage
 	@OneToMany(mappedBy="carnet")
-	private List<CarnetUsage> carnetUsages;
+	private List<CarnetUsageDTO> carnetUsages;
 
-	public Carnet() {
+	public CarnetDTO() {
 	}
 
 	public Integer getId() {
@@ -59,30 +60,30 @@ public class Carnet implements Serializable {
 		this.purchaseDate = purchaseDate;
 	}
 
-	public Client getClient() {
+	public ClientDTO getClient() {
 		return this.client;
 	}
 
-	public void setClient(Client client) {
+	public void setClient(ClientDTO client) {
 		this.client = client;
 	}
 
-	public List<CarnetUsage> getCarnetUsages() {
+	public List<CarnetUsageDTO> getCarnetUsages() {
 		return this.carnetUsages;
 	}
 
-	public void setCarnetUsages(List<CarnetUsage> carnetUsages) {
+	public void setCarnetUsages(List<CarnetUsageDTO> carnetUsages) {
 		this.carnetUsages = carnetUsages;
 	}
 
-	public CarnetUsage addCarnetUsage(CarnetUsage carnetUsage) {
+	public CarnetUsageDTO addCarnetUsage(CarnetUsageDTO carnetUsage) {
 		getCarnetUsages().add(carnetUsage);
 		carnetUsage.setCarnet(this);
 
 		return carnetUsage;
 	}
 
-	public CarnetUsage removeCarnetUsage(CarnetUsage carnetUsage) {
+	public CarnetUsageDTO removeCarnetUsage(CarnetUsageDTO carnetUsage) {
 		getCarnetUsages().remove(carnetUsage);
 		carnetUsage.setCarnet(null);
 

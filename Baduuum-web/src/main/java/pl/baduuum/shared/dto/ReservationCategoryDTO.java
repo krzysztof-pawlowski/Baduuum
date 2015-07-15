@@ -1,4 +1,4 @@
-package pl.baduuum.db.model;
+package pl.baduuum.shared.dto;
 
 import java.io.Serializable;
 import javax.persistence.*;
@@ -12,7 +12,7 @@ import java.util.List;
 @Entity
 @Table(name="reservation_category")
 @NamedQuery(name="ReservationCategory.findAll", query="SELECT r FROM ReservationCategory r")
-public class ReservationCategory implements Serializable {
+public class ReservationCategoryDTO implements Serializable {
 	private static final long serialVersionUID = 1L;
 
 	@Id
@@ -22,9 +22,9 @@ public class ReservationCategory implements Serializable {
 
 	//bi-directional many-to-one association to Reservation
 	@OneToMany(mappedBy="reservationCategory")
-	private List<Reservation> reservations;
+	private List<ReservationDTO> reservations;
 
-	public ReservationCategory() {
+	public ReservationCategoryDTO() {
 	}
 
 	public Integer getId() {
@@ -43,22 +43,22 @@ public class ReservationCategory implements Serializable {
 		this.name = name;
 	}
 
-	public List<Reservation> getReservations() {
+	public List<ReservationDTO> getReservations() {
 		return this.reservations;
 	}
 
-	public void setReservations(List<Reservation> reservations) {
+	public void setReservations(List<ReservationDTO> reservations) {
 		this.reservations = reservations;
 	}
 
-	public Reservation addReservation(Reservation reservation) {
+	public ReservationDTO addReservation(ReservationDTO reservation) {
 		getReservations().add(reservation);
 		reservation.setReservationCategory(this);
 
 		return reservation;
 	}
 
-	public Reservation removeReservation(Reservation reservation) {
+	public ReservationDTO removeReservation(ReservationDTO reservation) {
 		getReservations().remove(reservation);
 		reservation.setReservationCategory(null);
 

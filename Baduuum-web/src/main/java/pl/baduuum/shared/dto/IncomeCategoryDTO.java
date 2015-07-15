@@ -1,4 +1,4 @@
-package pl.baduuum.db.model;
+package pl.baduuum.shared.dto;
 
 import java.io.Serializable;
 import javax.persistence.*;
@@ -12,7 +12,7 @@ import java.util.List;
 @Entity
 @Table(name="income_category")
 @NamedQuery(name="IncomeCategory.findAll", query="SELECT i FROM IncomeCategory i")
-public class IncomeCategory implements Serializable {
+public class IncomeCategoryDTO implements Serializable {
 	private static final long serialVersionUID = 1L;
 
 	@Id
@@ -22,9 +22,9 @@ public class IncomeCategory implements Serializable {
 
 	//bi-directional many-to-one association to Income
 	@OneToMany(mappedBy="incomeCategory")
-	private List<Income> incomes;
+	private List<IncomeDTO> incomes;
 
-	public IncomeCategory() {
+	public IncomeCategoryDTO() {
 	}
 
 	public Integer getId() {
@@ -43,22 +43,22 @@ public class IncomeCategory implements Serializable {
 		this.name = name;
 	}
 
-	public List<Income> getIncomes() {
+	public List<IncomeDTO> getIncomes() {
 		return this.incomes;
 	}
 
-	public void setIncomes(List<Income> incomes) {
+	public void setIncomes(List<IncomeDTO> incomes) {
 		this.incomes = incomes;
 	}
 
-	public Income addIncome(Income income) {
+	public IncomeDTO addIncome(IncomeDTO income) {
 		getIncomes().add(income);
 		income.setIncomeCategory(this);
 
 		return income;
 	}
 
-	public Income removeIncome(Income income) {
+	public IncomeDTO removeIncome(IncomeDTO income) {
 		getIncomes().remove(income);
 		income.setIncomeCategory(null);
 

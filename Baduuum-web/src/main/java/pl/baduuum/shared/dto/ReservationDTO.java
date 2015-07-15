@@ -1,7 +1,9 @@
-package pl.baduuum.db.model;
+package pl.baduuum.shared.dto;
 
 import java.io.Serializable;
+
 import javax.persistence.*;
+
 import java.sql.Time;
 import java.util.Date;
 import java.util.List;
@@ -12,8 +14,9 @@ import java.util.List;
  * 
  */
 @Entity
+@Table(name = "reservation")
 @NamedQuery(name="Reservation.findAll", query="SELECT r FROM Reservation r")
-public class Reservation implements Serializable {
+public class ReservationDTO implements Serializable {
 	private static final long serialVersionUID = 1L;
 
 	@Id
@@ -53,19 +56,29 @@ public class Reservation implements Serializable {
 	private Boolean isPiano;
 
 	@OneToMany(mappedBy="reservation")
-	private List<CarnetUsage> carnetUsages;
+	private List<CarnetUsageDTO> carnetUsages;
 
 	@OneToMany(mappedBy="reservation")
-	private List<Income> incomes;
+	private List<IncomeDTO> incomes;
 
 	@ManyToOne
-	private Client client;
+	private ClientDTO client;
 
 	@OneToOne
 	@JoinColumn(name="reservation_category_id")
-	private ReservationCategory reservationCategory;
+	private ReservationCategoryDTO reservationCategory;
 
-	public Reservation() {
+	public ReservationDTO(int reservationId) {
+		this.id = reservationId;
+	}
+	
+	public ReservationDTO() {
+	}
+	
+	public ReservationDTO(Integer id, String bandName) {
+		this.id = id;
+		this.bandName = bandName;
+		
 	}
 
 	public Integer getId() {
@@ -164,63 +177,63 @@ public class Reservation implements Serializable {
 		this.isPiano = isPiano;
 	}
 
-	public List<CarnetUsage> getCarnetUsages() {
+	public List<CarnetUsageDTO> getCarnetUsages() {
 		return this.carnetUsages;
 	}
 
-	public void setCarnetUsages(List<CarnetUsage> carnetUsages) {
+	public void setCarnetUsages(List<CarnetUsageDTO> carnetUsages) {
 		this.carnetUsages = carnetUsages;
 	}
 
-	public CarnetUsage addCarnetUsage(CarnetUsage carnetUsage) {
+	public CarnetUsageDTO addCarnetUsage(CarnetUsageDTO carnetUsage) {
 		getCarnetUsages().add(carnetUsage);
 		carnetUsage.setReservation(this);
 
 		return carnetUsage;
 	}
 
-	public CarnetUsage removeCarnetUsage(CarnetUsage carnetUsage) {
+	public CarnetUsageDTO removeCarnetUsage(CarnetUsageDTO carnetUsage) {
 		getCarnetUsages().remove(carnetUsage);
 		carnetUsage.setReservation(null);
 
 		return carnetUsage;
 	}
 
-	public List<Income> getIncomes() {
+	public List<IncomeDTO> getIncomes() {
 		return this.incomes;
 	}
 
-	public void setIncomes(List<Income> incomes) {
+	public void setIncomes(List<IncomeDTO> incomes) {
 		this.incomes = incomes;
 	}
 
-	public Income addIncome(Income income) {
+	public IncomeDTO addIncome(IncomeDTO income) {
 		getIncomes().add(income);
 		income.setReservation(this);
 
 		return income;
 	}
 
-	public Income removeIncome(Income income) {
+	public IncomeDTO removeIncome(IncomeDTO income) {
 		getIncomes().remove(income);
 		income.setReservation(null);
 
 		return income;
 	}
 
-	public Client getClient() {
+	public ClientDTO getClient() {
 		return this.client;
 	}
 
-	public void setClient(Client client) {
+	public void setClient(ClientDTO client) {
 		this.client = client;
 	}
 
-	public ReservationCategory getReservationCategory() {
+	public ReservationCategoryDTO getReservationCategory() {
 		return this.reservationCategory;
 	}
 
-	public void setReservationCategory(ReservationCategory reservationCategory) {
+	public void setReservationCategory(ReservationCategoryDTO reservationCategory) {
 		this.reservationCategory = reservationCategory;
 	}
 

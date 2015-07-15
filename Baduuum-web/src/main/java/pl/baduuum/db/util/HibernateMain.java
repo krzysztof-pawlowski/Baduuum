@@ -2,12 +2,12 @@ package pl.baduuum.db.util;
 
 import org.hibernate.Session;
 
-import pl.baduuum.db.model.Reservation;
+import pl.baduuum.shared.dto.ReservationDTO;
 
 public class HibernateMain {
 	 
     public static void main(String[] args) {
-    	Reservation reservation = new Reservation();
+    	ReservationDTO reservation = new ReservationDTO();
          
         //Get Session
         Session session = HibernateUtil.getSessionFactory().getCurrentSession();

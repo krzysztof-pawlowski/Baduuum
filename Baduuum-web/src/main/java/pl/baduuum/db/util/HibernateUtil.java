@@ -1,13 +1,11 @@
 package pl.baduuum.db.util;
 
-import java.util.Properties;
-
 import org.hibernate.SessionFactory;
 import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
 import org.hibernate.cfg.Configuration;
 import org.hibernate.service.ServiceRegistry;
 
-import pl.baduuum.db.model.Reservation;
+import pl.baduuum.shared.dto.ReservationDTO;
 
 public class HibernateUtil {
 
@@ -25,7 +23,7 @@ public class HibernateUtil {
 			// Create the SessionFactory from hibernate.cfg.xml
 			Configuration configuration = new Configuration();
 			configuration.configure("hibernate.cfg.xml");
-			configuration.addAnnotatedClass(Reservation.class);
+			configuration.addAnnotatedClass(ReservationDTO.class);
 			System.out.println("Hibernate Configuration loaded");
 
 			ServiceRegistry serviceRegistry = new StandardServiceRegistryBuilder()
@@ -49,12 +47,7 @@ public class HibernateUtil {
 			Configuration configuration = new Configuration();
 			configuration.configure("hibernate.cfg.xml");
 
-		
-
-			// we can set mapping file or class with annotation
-			// addClass(Employee1.class) will look for resource
-			// com/journaldev/hibernate/model/Employee1.hbm.xml (not good)
-			configuration.addAnnotatedClass(Reservation.class);
+				configuration.addAnnotatedClass(ReservationDTO.class);
 
 			ServiceRegistry serviceRegistry = new StandardServiceRegistryBuilder()
 					.applySettings(configuration.getProperties()).build();

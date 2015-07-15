@@ -1,4 +1,4 @@
-package pl.baduuum.db.model;
+package pl.baduuum.shared.dto;
 
 import java.io.Serializable;
 import javax.persistence.*;
@@ -11,7 +11,7 @@ import javax.persistence.*;
 @Entity
 @Table(name="carnet_usage")
 @NamedQuery(name="CarnetUsage.findAll", query="SELECT c FROM CarnetUsage c")
-public class CarnetUsage implements Serializable {
+public class CarnetUsageDTO implements Serializable {
 	private static final long serialVersionUID = 1L;
 
 	@Id
@@ -21,13 +21,13 @@ public class CarnetUsage implements Serializable {
 
 	//bi-directional many-to-one association to Carnet
 	@ManyToOne
-	private Carnet carnet;
+	private CarnetDTO carnet;
 
 	//bi-directional many-to-one association to Reservation
 	@ManyToOne
-	private Reservation reservation;
+	private ReservationDTO reservation;
 
-	public CarnetUsage() {
+	public CarnetUsageDTO() {
 	}
 
 	public Integer getId() {
@@ -46,19 +46,19 @@ public class CarnetUsage implements Serializable {
 		this.hours = hours;
 	}
 
-	public Carnet getCarnet() {
+	public CarnetDTO getCarnet() {
 		return this.carnet;
 	}
 
-	public void setCarnet(Carnet carnet) {
+	public void setCarnet(CarnetDTO carnet) {
 		this.carnet = carnet;
 	}
 
-	public Reservation getReservation() {
+	public ReservationDTO getReservation() {
 		return this.reservation;
 	}
 
-	public void setReservation(Reservation reservation) {
+	public void setReservation(ReservationDTO reservation) {
 		this.reservation = reservation;
 	}
 

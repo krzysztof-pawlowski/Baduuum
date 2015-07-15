@@ -1,7 +1,9 @@
-package pl.baduuum.db.model;
+package pl.baduuum.shared.dto;
 
 import java.io.Serializable;
+
 import javax.persistence.*;
+
 import java.math.BigDecimal;
 import java.util.Date;
 
@@ -11,8 +13,9 @@ import java.util.Date;
  * 
  */
 @Entity
+@Table(name = "cost")
 @NamedQuery(name="Cost.findAll", query="SELECT c FROM Cost c")
-public class Cost implements Serializable {
+public class CostDTO implements Serializable {
 	private static final long serialVersionUID = 1L;
 
 	@Id
@@ -28,9 +31,9 @@ public class Cost implements Serializable {
 	//bi-directional many-to-one association to CostSubcategory
 	@ManyToOne
 	@JoinColumn(name="cost_subcategory_id")
-	private CostSubcategory costSubcategory;
+	private CostSubcategoryDTO costSubcategory;
 
-	public Cost() {
+	public CostDTO() {
 	}
 
 	public Integer getId() {
@@ -65,11 +68,11 @@ public class Cost implements Serializable {
 		this.description = description;
 	}
 
-	public CostSubcategory getCostSubcategory() {
+	public CostSubcategoryDTO getCostSubcategory() {
 		return this.costSubcategory;
 	}
 
-	public void setCostSubcategory(CostSubcategory costSubcategory) {
+	public void setCostSubcategory(CostSubcategoryDTO costSubcategory) {
 		this.costSubcategory = costSubcategory;
 	}
 

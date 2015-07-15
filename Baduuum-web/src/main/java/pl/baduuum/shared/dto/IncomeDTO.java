@@ -1,7 +1,9 @@
-package pl.baduuum.db.model;
+package pl.baduuum.shared.dto;
 
 import java.io.Serializable;
+
 import javax.persistence.*;
+
 import java.math.BigDecimal;
 import java.util.Date;
 
@@ -11,8 +13,9 @@ import java.util.Date;
  * 
  */
 @Entity
+@Table(name = "income")
 @NamedQuery(name="Income.findAll", query="SELECT i FROM Income i")
-public class Income implements Serializable {
+public class IncomeDTO implements Serializable {
 	private static final long serialVersionUID = 1L;
 
 	@Id
@@ -26,13 +29,13 @@ public class Income implements Serializable {
 	//bi-directional many-to-one association to IncomeCategory
 	@ManyToOne
 	@JoinColumn(name="income_category_id")
-	private IncomeCategory incomeCategory;
+	private IncomeCategoryDTO incomeCategory;
 
 	//bi-directional many-to-one association to Reservation
 	@ManyToOne
-	private Reservation reservation;
+	private ReservationDTO reservation;
 
-	public Income() {
+	public IncomeDTO() {
 	}
 
 	public Integer getId() {
@@ -59,19 +62,19 @@ public class Income implements Serializable {
 		this.date = date;
 	}
 
-	public IncomeCategory getIncomeCategory() {
+	public IncomeCategoryDTO getIncomeCategory() {
 		return this.incomeCategory;
 	}
 
-	public void setIncomeCategory(IncomeCategory incomeCategory) {
+	public void setIncomeCategory(IncomeCategoryDTO incomeCategory) {
 		this.incomeCategory = incomeCategory;
 	}
 
-	public Reservation getReservation() {
+	public ReservationDTO getReservation() {
 		return this.reservation;
 	}
 
-	public void setReservation(Reservation reservation) {
+	public void setReservation(ReservationDTO reservation) {
 		this.reservation = reservation;
 	}
 

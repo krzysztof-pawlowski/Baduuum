@@ -5,6 +5,13 @@
 
 <web-app>
 
+	<listener>
+		<listener-class>
+			org.springframework.web.context.ContextLoaderListener
+		</listener-class>
+	</listener>
+
+
 	<servlet>
 		<servlet-name>baduuumServiceServlet</servlet-name>
 		<servlet-class>pl.baduuum.server.BaduuumServiceImpl</servlet-class>

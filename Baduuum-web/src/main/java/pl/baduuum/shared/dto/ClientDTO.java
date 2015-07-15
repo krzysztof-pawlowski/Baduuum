@@ -1,7 +1,9 @@
-package pl.baduuum.db.model;
+package pl.baduuum.shared.dto;
 
 import java.io.Serializable;
+
 import javax.persistence.*;
+
 import java.util.List;
 
 
@@ -10,8 +12,9 @@ import java.util.List;
  * 
  */
 @Entity
+@Table(name = "client")
 @NamedQuery(name="Client.findAll", query="SELECT c FROM Client c")
-public class Client implements Serializable {
+public class ClientDTO implements Serializable {
 	private static final long serialVersionUID = 1L;
 
 	@Id
@@ -40,13 +43,13 @@ public class Client implements Serializable {
 
 	//bi-directional many-to-one association to Carnet
 	@OneToMany(mappedBy="client")
-	private List<Carnet> carnets;
+	private List<CarnetDTO> carnets;
 
 	//bi-directional many-to-one association to Reservation
 	@OneToMany(mappedBy="client")
-	private List<Reservation> reservations;
+	private List<ReservationDTO> reservations;
 
-	public Client() {
+	public ClientDTO() {
 	}
 
 	public Integer getId() {
@@ -129,44 +132,44 @@ public class Client implements Serializable {
 		this.street = street;
 	}
 
-	public List<Carnet> getCarnets() {
+	public List<CarnetDTO> getCarnets() {
 		return this.carnets;
 	}
 
-	public void setCarnets(List<Carnet> carnets) {
+	public void setCarnets(List<CarnetDTO> carnets) {
 		this.carnets = carnets;
 	}
 
-	public Carnet addCarnet(Carnet carnet) {
+	public CarnetDTO addCarnet(CarnetDTO carnet) {
 		getCarnets().add(carnet);
 		carnet.setClient(this);
 
 		return carnet;
 	}
 
-	public Carnet removeCarnet(Carnet carnet) {
+	public CarnetDTO removeCarnet(CarnetDTO carnet) {
 		getCarnets().remove(carnet);
 		carnet.setClient(null);
 
 		return carnet;
 	}
 
-	public List<Reservation> getReservations() {
+	public List<ReservationDTO> getReservations() {
 		return this.reservations;
 	}
 
-	public void setReservations(List<Reservation> reservations) {
+	public void setReservations(List<ReservationDTO> reservations) {
 		this.reservations = reservations;
 	}
 
-	public Reservation addReservation(Reservation reservation) {
+	public ReservationDTO addReservation(ReservationDTO reservation) {
 		getReservations().add(reservation);
 		reservation.setClient(this);
 
 		return reservation;
 	}
 
-	public Reservation removeReservation(Reservation reservation) {
+	public ReservationDTO removeReservation(ReservationDTO reservation) {
 		getReservations().remove(reservation);
 		reservation.setClient(null);
 
