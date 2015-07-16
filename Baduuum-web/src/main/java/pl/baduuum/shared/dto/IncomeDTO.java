@@ -14,7 +14,7 @@ import java.util.Date;
  */
 @Entity
 @Table(name = "income")
-@NamedQuery(name="Income.findAll", query="SELECT i FROM Income i")
+//@NamedQuery(name="Income.findAll", query="SELECT i FROM Income i")
 public class IncomeDTO implements Serializable {
 	private static final long serialVersionUID = 1L;
 

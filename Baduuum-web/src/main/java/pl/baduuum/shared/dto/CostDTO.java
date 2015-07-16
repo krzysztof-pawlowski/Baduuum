@@ -14,7 +14,7 @@ import java.util.Date;
  */
 @Entity
 @Table(name = "cost")
-@NamedQuery(name="Cost.findAll", query="SELECT c FROM Cost c")
+//@NamedQuery(name="Cost.findAll", query="SELECT c FROM Cost c")
 public class CostDTO implements Serializable {
 	private static final long serialVersionUID = 1L;
 

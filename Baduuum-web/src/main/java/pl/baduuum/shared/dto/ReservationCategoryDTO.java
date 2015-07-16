@@ -11,7 +11,7 @@ import java.util.List;
  */
 @Entity
 @Table(name="reservation_category")
-@NamedQuery(name="ReservationCategory.findAll", query="SELECT r FROM ReservationCategory r")
+//@NamedQuery(name="ReservationCategory.findAll", query="SELECT r FROM ReservationCategory r")
 public class ReservationCategoryDTO implements Serializable {
 	private static final long serialVersionUID = 1L;
 

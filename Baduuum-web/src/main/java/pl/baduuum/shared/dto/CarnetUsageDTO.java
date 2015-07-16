@@ -10,7 +10,7 @@ import javax.persistence.*;
  */
 @Entity
 @Table(name="carnet_usage")
-@NamedQuery(name="CarnetUsage.findAll", query="SELECT c FROM CarnetUsage c")
+//@NamedQuery(name="CarnetUsage.findAll", query="SELECT c FROM CarnetUsage c")
 public class CarnetUsageDTO implements Serializable {
 	private static final long serialVersionUID = 1L;
 

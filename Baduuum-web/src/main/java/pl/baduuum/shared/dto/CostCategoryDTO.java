@@ -11,7 +11,7 @@ import java.util.List;
  */
 @Entity
 @Table(name="cost_category")
-@NamedQuery(name="CostCategory.findAll", query="SELECT c FROM CostCategory c")
+//@NamedQuery(name="CostCategory.findAll", query="SELECT c FROM CostCategory c")
 public class CostCategoryDTO implements Serializable {
 	private static final long serialVersionUID = 1L;
 

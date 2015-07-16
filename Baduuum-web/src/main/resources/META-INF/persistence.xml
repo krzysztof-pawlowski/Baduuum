@@ -8,28 +8,27 @@
 		<provider>org.hibernate.ejb.HibernatePersistence</provider>
 
 		<properties>
-			
+
 			<!-- Database connection properties - Driver, URL, user, password -->
-			<property name="hibernate.connection.driver_class" value="org.postgresql.Driver"/>
+			<property name="hibernate.connection.driver_class" value="org.postgresql.Driver" />
 			<property name="hibernate.connection.url" value="jdbc:postgresql://localhost:5432/baduuum" />
 
-			<property name="hibernate.connection.username">baduuum</property>
-			<property name="hibernate.connection.password">baduuum</property>
+			<property name="hibernate.connection.username" value="baduuum" />
+			<property name="hibernate.connection.password" value="baduuum" />
 			<!-- Connection Pool Size -->
-			<property name="hibernate.connection.pool_size">1</property>
+			<property name="hibernate.connection.pool_size" value="1" />
 
 			<!-- org.hibernate.HibernateException: No CurrentSessionContext configured! -->
-			<property name="hibernate.current_session_context_class">thread</property>
+			<property name="hibernate.current_session_context_class"
+				value="thread" />
 
 			<!-- Outputs the SQL queries, should be disabled in Production -->
-			<property name="hibernate.show_sql">true</property>
+			<property name="hibernate.show_sql" value="true" />
 
 			<!-- Dialect is required to let Hibernate know the Database Type, MySQL, 
 				Oracle etc Hibernate 4 automatically figure out Dialect from Database Connection 
 				Metadata -->
-			<property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
-
-
+			<property name="hibernate.dialect" value="org.hibernate.dialect.PostgreSQLDialect" />
 
 		</properties>
 

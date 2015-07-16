@@ -12,7 +12,7 @@ import java.util.List;
  */
 @Entity
 @Table(name = "carnet")
-@NamedQuery(name="Carnet.findAll", query="SELECT c FROM Carnet c")
+//@NamedQuery(name="Carnet.findAll", query="SELECT c FROM carnet c")
 public class CarnetDTO implements Serializable {
 	private static final long serialVersionUID = 1L;
 
@@ -35,6 +35,16 @@ public class CarnetDTO implements Serializable {
 
 	public CarnetDTO() {
 	}
+	
+	public CarnetDTO(int id) {
+		this.id = id;
+	}
+	
+	public CarnetDTO(int id, String number) {
+		this.id = id;
+		this.number = number;
+	}
+
 
 	public Integer getId() {
 		return this.id;
