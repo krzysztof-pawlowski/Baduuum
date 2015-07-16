@@ -78,7 +78,10 @@ public class ReservationDTO implements Serializable {
 	public ReservationDTO(Integer id, String bandName) {
 		this.id = id;
 		this.bandName = bandName;
-		
+	}
+	
+	public ReservationDTO(String bandName) {
+		this.bandName = bandName;
 	}
 
 	public Integer getId() {

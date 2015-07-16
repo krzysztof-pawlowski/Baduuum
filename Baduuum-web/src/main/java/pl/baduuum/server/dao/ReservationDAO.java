@@ -9,7 +9,7 @@ import org.springframework.stereotype.Repository;
 import pl.baduuum.shared.dto.ReservationDTO;
 
 @Repository("reservationDAO")
-public class ReservationDAO extends JpaDAO<Long, ReservationDTO> {
+public class ReservationDAO extends JpaDAO<Integer, ReservationDTO> {
 	
 	@Autowired
 	EntityManagerFactory entityManagerFactory;
