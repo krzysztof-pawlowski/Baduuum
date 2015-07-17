@@ -1,5 +1,8 @@
 package pl.baduuum.client.view.reservation;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import pl.baduuum.PageConstants;
 import pl.baduuum.client.ReservationService;
 import pl.baduuum.client.ReservationServiceAsync;
@@ -53,7 +56,6 @@ public class ReservationViewImpl extends Composite implements BaduuumView {
 	}
 
 	private static BaduuumReservationViewUiBinder uiBinder = GWT.create(BaduuumReservationViewUiBinder.class);
-	
 	public ReservationViewImpl() {
 		initWidget(uiBinder.createAndBindUi(this));	
 		
@@ -95,7 +97,6 @@ public class ReservationViewImpl extends Composite implements BaduuumView {
 		Long date = dateField.getValue();
 		Long timeStart = timeStartField.getValue();
 		Long timeEnd = timeEndField.getValue();
-		
 		service.submit(name, band, email, phone, date, timeStart, timeEnd, callback);
 		
 	}

@@ -2,6 +2,7 @@
 <module rename-to='baduuum'>
 
 	<inherits name='com.google.gwt.user.User' />
+	<inherits name="com.google.gwt.logging.Logging"/>
 	<inherits name='com.google.gwt.user.theme.standard.Standard' />
 	<inherits name="com.google.gwt.resources.Resources"/>
 	<inherits name="org.gwtbootstrap3.GwtBootstrap3"/>
@@ -9,6 +10,11 @@
 	<inherits name='com.tractionsoftware.gwt.user.UTCDateTime'/>
 
 	<entry-point class='pl.baduuum.client.BaduuumEntry' />
+	
+	<set-property name="gwt.logging.simpleRemoteHandler" value="ENABLED" />
+	<set-property name="gwt.logging.logLevel" value="WARNING"/>
+	<set-property name="gwt.logging.enabled" value="TRUE"/>
+	<set-property name="gwt.logging.consoleHandler" value="ENABLED" />
 
 	<source path='client' />
 	<source path='shared' />

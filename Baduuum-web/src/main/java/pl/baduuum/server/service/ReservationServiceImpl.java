@@ -6,6 +6,8 @@ import java.util.Date;
 import javax.annotation.PostConstruct;
 import javax.annotation.PreDestroy;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.transaction.annotation.Propagation;
 import org.springframework.transaction.annotation.Transactional;
@@ -21,7 +23,7 @@ public class ReservationServiceImpl extends RemoteServiceServlet implements
 		ReservationService {
 
 	private static final long serialVersionUID = -1947746928337740655L;
-	
+	private static final Logger LOG = LoggerFactory.getLogger(ReservationServiceImpl.class);
 	
 	@Autowired
 	private ReservationDAO reservationDAO;
@@ -29,7 +31,7 @@ public class ReservationServiceImpl extends RemoteServiceServlet implements
 	@Override
 	public void submit(String name, String band, String email, String phone,
 			Long date, Long timeStart, Long timeEnd)  {
-		
+		LOG.info("after submit");
 		String bandName = "name";
 		String conctactPersonEmail = "cpontsanct";
 		String contactPersonPhone = "phone";
@@ -47,8 +49,9 @@ public class ReservationServiceImpl extends RemoteServiceServlet implements
 			saveReservation(bandName, conctactPersonEmail, contactPersonPhone, day, hourStart, hoursEnd, isApproved, isCymbals, isPaid, isPiano, reservationCategory);
 		} catch (Exception e) {
 			e.printStackTrace();
+			LOG.info("exception saving to db");
+			LOG.info(e.getLocalizedMessage());
 		}
-		
 		
 		// send email
 		
