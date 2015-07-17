@@ -75,9 +75,20 @@ public class ReservationDTO implements Serializable {
 	public ReservationDTO() {
 	}
 	
-	public ReservationDTO(Integer id, String bandName) {
+	public ReservationDTO(Integer id, String bandName, String conctactPersonEmail, String contactPersonPhone, Date date, Time hourStart, Time hoursEnd,
+			Boolean isApproved, Boolean isCymbals, Boolean isPaid, Boolean isPiano, ReservationCategoryDTO reservationCategory) {
 		this.id = id;
 		this.bandName = bandName;
+		this.conctactPersonEmail = conctactPersonEmail;
+		this.contactPersonPhone = contactPersonPhone;
+		this.date = date;
+		this.hourStart = hourStart;
+		this.hoursEnd = hoursEnd;
+		this.isApproved = isApproved;
+		this.isCymbals = isCymbals;
+		this.isPaid = isPaid;
+		this.isPiano = isPiano;
+		this.reservationCategory = reservationCategory;
 	}
 	
 	public ReservationDTO(String bandName) {

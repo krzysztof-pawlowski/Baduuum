@@ -1,5 +1,8 @@
 package pl.baduuum.server.service;
 
+import java.sql.Time;
+import java.util.Date;
+
 import javax.annotation.PostConstruct;
 import javax.annotation.PreDestroy;
 
@@ -9,6 +12,7 @@ import org.springframework.transaction.annotation.Transactional;
 
 import pl.baduuum.client.ReservationService;
 import pl.baduuum.server.dao.ReservationDAO;
+import pl.baduuum.shared.dto.ReservationCategoryDTO;
 import pl.baduuum.shared.dto.ReservationDTO;
 
 import com.google.gwt.user.server.rpc.RemoteServiceServlet;
@@ -24,10 +28,26 @@ public class ReservationServiceImpl extends RemoteServiceServlet implements
 
 	@Override
 	public void submit(String name, String band, String email, String phone,
-			Long date, Long timeStart, Long timeEnd) throws Exception {
+			Long date, Long timeStart, Long timeEnd)  {
+		
+		String bandName = "name";
+		String conctactPersonEmail = "cpontsanct";
+		String contactPersonPhone = "phone";
+		Date day = new Date();
+		Time hourStart = new Time(0);
+		Time hoursEnd = new Time(10);
+		Boolean isApproved = true;
+		Boolean isCymbals = true; 
+		Boolean isPaid = true;
+		Boolean isPiano = true; 
+		ReservationCategoryDTO reservationCategory = null;
 
 		// save to DB
-			saveReservation(null, "name");
+		try {
+			saveReservation(bandName, conctactPersonEmail, contactPersonPhone, day, hourStart, hoursEnd, isApproved, isCymbals, isPaid, isPiano, reservationCategory);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
 		
 		
 		// send email
@@ -48,22 +68,23 @@ public class ReservationServiceImpl extends RemoteServiceServlet implements
 	}
 	   
 	@Transactional(propagation=Propagation.REQUIRED, rollbackFor=Exception.class)
-	public void saveReservation(Integer id, String name) throws Exception {
-		ReservationDTO reservationDTO = reservationDAO.findById(id);
-		if(reservationDTO == null) {
-			reservationDTO = new ReservationDTO(name);
-			reservationDAO.persist(reservationDTO);
-		}
+	public void saveReservation(String name, String conctactPersonEmail, String contactPersonPhone, Date day, Time hourStart, Time hoursEnd, Boolean isApproved, Boolean isCymbals, Boolean isPaid, Boolean isPiano, ReservationCategoryDTO reservationCategory) throws Exception {
+		
+		ReservationDTO reservationDTO = new ReservationDTO(null, name, conctactPersonEmail, contactPersonPhone, day, hourStart, hoursEnd,
+				isApproved, isCymbals, isPaid, isPiano, reservationCategory);
+		reservationDAO.persist(reservationDTO);
+		
 	}
 	   
-	 @Transactional(propagation=Propagation.REQUIRED, rollbackFor=Exception.class)
-	 public void updateEmployee(int id, String name) throws Exception {
+	@Transactional(propagation=Propagation.REQUIRED, rollbackFor=Exception.class)
+	public void updateReservation(int id, String name) throws Exception {
 	    
-		 ReservationDTO reservationDTO = reservationDAO.findById(id);
+		ReservationDTO reservationDTO = reservationDAO.findById(id);
 	    
-		 if(reservationDTO != null) {
-			 reservationDTO.setBandName(name);
-		 }
+		if(reservationDTO != null) {
+			reservationDTO.setBandName(name);
+		}
+		reservationDAO.merge(reservationDTO);
 	 }
 	   
 	 @Transactional(propagation=Propagation.REQUIRED, rollbackFor=Exception.class)
@@ -77,8 +98,10 @@ public class ReservationServiceImpl extends RemoteServiceServlet implements
 	 }
 	   
 	 @Transactional(propagation=Propagation.REQUIRED, rollbackFor=Exception.class)
-	 public void saveOrUpdateReservation(int id, String name) throws Exception {
-		 ReservationDTO reservationDTO = new ReservationDTO(id, name);
+	 public void saveOrUpdateReservation(int id, String bandName, String conctactPersonEmail, String contactPersonPhone, Date date, Time hourStart, Time hoursEnd,
+				Boolean isApproved, Boolean isCymbals, Boolean isPaid, Boolean isPiano, ReservationCategoryDTO reservationCategory) throws Exception {
+		 ReservationDTO reservationDTO = new ReservationDTO(id, bandName, conctactPersonEmail, contactPersonPhone, date, hourStart, hoursEnd,
+					isApproved, isCymbals, isPaid, isPiano, reservationCategory);
 		 reservationDAO.merge(reservationDTO);
 	 }
 }
