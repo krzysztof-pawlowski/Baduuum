@@ -6,6 +6,7 @@ import java.util.Date;
 import javax.annotation.PostConstruct;
 import javax.annotation.PreDestroy;
 
+import org.hibernate.Session;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -13,7 +14,7 @@ import org.springframework.transaction.annotation.Propagation;
 import org.springframework.transaction.annotation.Transactional;
 
 import pl.baduuum.client.ReservationService;
-import pl.baduuum.server.dao.ReservationDAO;
+import pl.baduuum.server.db.HibernateUtil;
 import pl.baduuum.shared.dto.ReservationCategoryDTO;
 import pl.baduuum.shared.dto.ReservationDTO;
 
@@ -24,9 +25,6 @@ public class ReservationServiceImpl extends RemoteServiceServlet implements
 
 	private static final long serialVersionUID = -1947746928337740655L;
 	private static final Logger LOG = LoggerFactory.getLogger(ReservationServiceImpl.class);
-	
-	@Autowired
-	private ReservationDAO reservationDAO;
 
 	@Override
 	public void submit(String name, String band, String email, String phone,
@@ -50,13 +48,19 @@ public class ReservationServiceImpl extends RemoteServiceServlet implements
 		} catch (Exception e) {
 			e.printStackTrace();
 			LOG.info("exception saving to db");
-			LOG.info(e.getLocalizedMessage());
+			LOG.info("wrong", e);
 		}
 		
 		// send email
 		
 	}
-	
+
+	@Override
+	public void saveReservation(String bandName, String conctactPersonEmail, String contactPersonPhone, Date day, Time hourStart, Time hoursEnd, Boolean isApproved, Boolean isCymbals, Boolean isPaid, Boolean isPiano, Boolean reservationCategory) {
+
+	}
+
+
 	@PostConstruct
 	public void init() {
 	}
@@ -64,47 +68,19 @@ public class ReservationServiceImpl extends RemoteServiceServlet implements
 	@PreDestroy
 	public void destroy() {
 	}
-	 
-	
-	public ReservationDTO findReservation(int reservationId) {
-		return reservationDAO.findById(reservationId);
-	}
-	   
+
 	@Transactional(propagation=Propagation.REQUIRED, rollbackFor=Exception.class)
-	public void saveReservation(String name, String conctactPersonEmail, String contactPersonPhone, Date day, Time hourStart, Time hoursEnd, Boolean isApproved, Boolean isCymbals, Boolean isPaid, Boolean isPiano, ReservationCategoryDTO reservationCategory) throws Exception {
+	public Integer saveReservation(String name, String conctactPersonEmail, String contactPersonPhone, Date day, Time hourStart, Time hoursEnd, Boolean isApproved, Boolean isCymbals, Boolean isPaid, Boolean isPiano, ReservationCategoryDTO reservationCategory) throws Exception {
 		
 		ReservationDTO reservationDTO = new ReservationDTO(null, name, conctactPersonEmail, contactPersonPhone, day, hourStart, hoursEnd,
 				isApproved, isCymbals, isPaid, isPiano, reservationCategory);
-		reservationDAO.persist(reservationDTO);
+
+		Session session = HibernateUtil.getSessionFactory().getCurrentSession();
+		session.beginTransaction();
+		session.save(reservationDTO);
+		session.getTransaction().commit();
+		return reservationDTO.getId();
 		
 	}
-	   
-	@Transactional(propagation=Propagation.REQUIRED, rollbackFor=Exception.class)
-	public void updateReservation(int id, String name) throws Exception {
-	    
-		ReservationDTO reservationDTO = reservationDAO.findById(id);
-	    
-		if(reservationDTO != null) {
-			reservationDTO.setBandName(name);
-		}
-		reservationDAO.merge(reservationDTO);
-	 }
-	   
-	 @Transactional(propagation=Propagation.REQUIRED, rollbackFor=Exception.class)
-	 public void deleteReservation(int id) throws Exception {
-	    
-		 ReservationDTO reservationDTO = reservationDAO.findById(id);
-	    
-		 	if(reservationDTO != null){
-		 		reservationDAO.remove(reservationDTO);
-		 	}
-	 }
-	   
-	 @Transactional(propagation=Propagation.REQUIRED, rollbackFor=Exception.class)
-	 public void saveOrUpdateReservation(int id, String bandName, String conctactPersonEmail, String contactPersonPhone, Date date, Time hourStart, Time hoursEnd,
-				Boolean isApproved, Boolean isCymbals, Boolean isPaid, Boolean isPiano, ReservationCategoryDTO reservationCategory) throws Exception {
-		 ReservationDTO reservationDTO = new ReservationDTO(id, bandName, conctactPersonEmail, contactPersonPhone, date, hourStart, hoursEnd,
-					isApproved, isCymbals, isPaid, isPiano, reservationCategory);
-		 reservationDAO.merge(reservationDTO);
-	 }
+
 }
