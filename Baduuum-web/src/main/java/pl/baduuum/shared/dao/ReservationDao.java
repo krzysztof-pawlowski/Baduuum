@@ -1,5 +1,7 @@
 package pl.baduuum.shared.dao;
 
+import java.util.List;
+
 import pl.baduuum.shared.model.Reservation;
 
 /**
@@ -7,5 +9,14 @@ import pl.baduuum.shared.model.Reservation;
  */
 public interface ReservationDao {
 
-    void saveReservation(Reservation reservation);
+    void save(Reservation reservation);
+
+    void update(Reservation reservation);
+
+	List<Reservation> list();
+	
+	Reservation findById(int id);
+
+	void delete(Reservation reservation);
+
 }

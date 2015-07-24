@@ -79,7 +79,7 @@ public class ReservationServiceImpl extends RemoteServiceServlet implements
 
 
 		ReservationDao reservationDao = (ReservationDao) context.getBean("reservationDao");
-		reservationDao.saveReservation(reservation);
+		reservationDao.save(reservation);
 
 		return 0;
 	}

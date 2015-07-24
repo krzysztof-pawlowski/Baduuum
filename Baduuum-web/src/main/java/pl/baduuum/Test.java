@@ -20,11 +20,7 @@ public class Test {
 
 
     public static void main (String... args){
-
         new Test().run();
-
-
-
     }
 
     private void run() {
@@ -34,8 +30,7 @@ public class Test {
         String contactPersonPhone = "phone";
         Date day = new Date();
         Time hourStart = new Time(0);
-        Time hoursEnd = new Time(10)
-                ;
+        Time hoursEnd = new Time(10);
         Boolean isApproved = true;
         Boolean isCymbals = true;
         Boolean isPaid = true;
@@ -47,9 +42,14 @@ public class Test {
 
 
         ReservationDao reservationDao = (ReservationDao) context.getBean("reservationDao");
-        reservationDao.saveReservation(reservation);
-
-
+        reservationDao.save(reservation);
+        
+        System.out.println(reservationDao.list().size());
+        
+        Reservation res = reservationDao.findById(1);
+        reservationDao.delete(res);
+        
+        
         System.out.print("done");
     }
 }
