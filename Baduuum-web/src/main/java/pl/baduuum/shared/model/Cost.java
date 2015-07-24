@@ -19,6 +19,8 @@ public class Cost implements Serializable {
 	private static final long serialVersionUID = 1L;
 
 	@Id
+	@SequenceGenerator(name="pk_sequence_cost",sequenceName="seq_cost_id", allocationSize=1)
+	@GeneratedValue(strategy=GenerationType.SEQUENCE,generator="pk_sequence_cost")
 	private Integer id;
 
 	private BigDecimal cost;

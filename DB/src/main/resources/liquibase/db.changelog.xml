@@ -8,5 +8,5 @@
 
         <include file="src/main/resources/liquibase/000_initial_schema.xml"/>
         <include file="src/main/resources/liquibase/001_schema_fixes_reservation_income.xml"/>
-
+		<include file="src/main/resources/liquibase/002_create_sequences.xml"/>
 </databaseChangeLog>

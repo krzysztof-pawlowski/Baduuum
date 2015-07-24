@@ -1,7 +1,9 @@
 package pl.baduuum.shared.model;
 
 import java.io.Serializable;
+
 import javax.persistence.*;
+
 import java.util.List;
 
 
@@ -16,6 +18,8 @@ public class CostSubcategory implements Serializable {
 	private static final long serialVersionUID = 1L;
 
 	@Id
+	@SequenceGenerator(name="pk_sequence_cost_subcategory",sequenceName="seq_cost_subcategory_id", allocationSize=1)
+	@GeneratedValue(strategy=GenerationType.SEQUENCE,generator="pk_sequence_cost_subcategory")
 	private Integer id;
 
 	private String name;

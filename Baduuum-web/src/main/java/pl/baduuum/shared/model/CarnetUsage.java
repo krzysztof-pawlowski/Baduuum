@@ -1,6 +1,7 @@
 package pl.baduuum.shared.model;
 
 import java.io.Serializable;
+
 import javax.persistence.*;
 
 
@@ -15,6 +16,8 @@ public class CarnetUsage implements Serializable {
 	private static final long serialVersionUID = 1L;
 
 	@Id
+	@SequenceGenerator(name="pk_sequence_carnet_usage",sequenceName="seq_carnet_usage_id", allocationSize=1)
+	@GeneratedValue(strategy=GenerationType.SEQUENCE,generator="pk_sequence_carnet_usage")
 	private Integer id;
 
 	private Integer hours;

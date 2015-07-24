@@ -18,6 +18,8 @@ public class Client implements Serializable {
 	private static final long serialVersionUID = 1L;
 
 	@Id
+	@SequenceGenerator(name="pk_sequence_client",sequenceName="seq_client_id", allocationSize=1)
+	@GeneratedValue(strategy=GenerationType.SEQUENCE,generator="pk_sequence_client")
 	private Integer id;
 
 	@Column(name="band_name")

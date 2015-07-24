@@ -19,6 +19,8 @@ public class Income implements Serializable {
 	private static final long serialVersionUID = 1L;
 
 	@Id
+	@SequenceGenerator(name="pk_sequence_income",sequenceName="seq_income_id", allocationSize=1)
+	@GeneratedValue(strategy=GenerationType.SEQUENCE,generator="pk_sequence_income")
 	private Integer id;
 
 	private BigDecimal amount;

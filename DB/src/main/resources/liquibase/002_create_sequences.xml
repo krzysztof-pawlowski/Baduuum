@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog" xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.4.xsd">
+    <changeSet author="mario" id="createSequence-1">
+        <createSequence
+                incrementBy="1"
+                minValue="0"
+                schemaName="public"
+                sequenceName="seq_reservation_id"
+                startValue="0"/>
+
+        <sql>ALTER TABLE seq_reservation_id OWNER TO baduuum</sql>
+    </changeSet>
+    <changeSet author="mario" id="createSequence-2">
+        <createSequence
+                incrementBy="1"
+                minValue="0"
+                schemaName="public"
+                sequenceName="seq_carnet_id"
+                startValue="0"/>
+
+        <sql>ALTER TABLE seq_carnet_id OWNER TO baduuum</sql>
+    </changeSet>
+    <changeSet author="mario" id="createSequence-3">
+        <createSequence
+                incrementBy="1"
+                minValue="0"
+                schemaName="public"
+                sequenceName="seq_carnet_usage_id"
+                startValue="0"/>
+
+        <sql>ALTER TABLE seq_carnet_usage_id OWNER TO baduuum</sql>
+    </changeSet>
+    <changeSet author="mario" id="createSequence-4">
+        <createSequence
+                incrementBy="1"
+                minValue="0"
+                schemaName="public"
+                sequenceName="seq_client_id"
+                startValue="0"/>
+
+        <sql>ALTER TABLE seq_client_id OWNER TO baduuum</sql>
+    </changeSet>
+    <changeSet author="mario" id="createSequence-5">
+        <createSequence
+                incrementBy="1"
+                minValue="0"
+                schemaName="public"
+                sequenceName="seq_cost_id"
+                startValue="0"/>
+
+        <sql>ALTER TABLE seq_cost_id OWNER TO baduuum</sql>
+    </changeSet>
+    <changeSet author="mario" id="createSequence-6">
+        <createSequence
+                incrementBy="1"
+                minValue="0"
+                schemaName="public"
+                sequenceName="seq_cost_category_id"
+                startValue="0"/>
+
+        <sql>ALTER TABLE seq_cost_category_id OWNER TO baduuum</sql>
+    </changeSet>
+    <changeSet author="mario" id="createSequence-7">
+        <createSequence
+                incrementBy="1"
+                minValue="0"
+                schemaName="public"
+                sequenceName="seq_cost_subcategory_id"
+                startValue="0"/>
+
+        <sql>ALTER TABLE seq_cost_subcategory_id OWNER TO baduuum</sql>
+    </changeSet>
+    <changeSet author="mario" id="createSequence-8">
+        <createSequence
+                incrementBy="1"
+                minValue="0"
+                schemaName="public"
+                sequenceName="seq_income_id"
+                startValue="0"/>
+
+        <sql>ALTER TABLE seq_income_id OWNER TO baduuum</sql>
+    </changeSet>
+    <changeSet author="mario" id="createSequence-9">
+        <createSequence
+                incrementBy="1"
+                minValue="0"
+                schemaName="public"
+                sequenceName="seq_income_category_id"
+                startValue="0"/>
+
+        <sql>ALTER TABLE seq_income_category_id OWNER TO baduuum</sql>
+    </changeSet>
+    <changeSet author="mario" id="createSequence-10">
+        <createSequence
+                incrementBy="1"
+                minValue="0"
+                schemaName="public"
+                sequenceName="seq_reservation_category_id"
+                startValue="0"/>
+
+        <sql>ALTER TABLE seq_reservation_category_id OWNER TO baduuum</sql>
+    </changeSet>                                    
+</databaseChangeLog>

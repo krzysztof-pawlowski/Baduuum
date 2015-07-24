@@ -1,17 +1,15 @@
 package pl.baduuum;
 
-import org.springframework.beans.factory.annotation.Autowired;
+import java.sql.Time;
+import java.util.Date;
+
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.context.support.AbstractApplicationContext;
+
 import pl.baduuum.server.db.configuration.AppConfig;
-import pl.baduuum.server.db.configuration.HibernateConfiguration;
 import pl.baduuum.shared.dao.ReservationDao;
 import pl.baduuum.shared.model.Reservation;
 import pl.baduuum.shared.model.ReservationCategory;
-
-import java.sql.Time;
-import java.util.Date;
-import java.util.prefs.Preferences;
 
 /**
  * Created by mario on 19/07/15.

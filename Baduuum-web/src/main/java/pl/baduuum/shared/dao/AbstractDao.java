@@ -32,8 +32,13 @@ public abstract class AbstractDao {
 
     @Transactional
     public void persist(Object entity) {
-        getSession().persist(entity);
-
+    	
+    	Session session = getSession();
+    	
+    	session.beginTransaction();
+    	session.save(entity);
+    	session.getTransaction().commit();
+    	session.close();
 
 
     }
