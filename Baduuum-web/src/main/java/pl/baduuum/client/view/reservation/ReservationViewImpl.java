@@ -23,6 +23,8 @@ import com.google.gwt.user.client.ui.Widget;
 import com.tractionsoftware.gwt.user.client.ui.UTCDateBox;
 import com.tractionsoftware.gwt.user.client.ui.UTCTimeBox;
 
+import java.time.LocalTime;
+
 public class ReservationViewImpl extends Composite implements BaduuumView {
 	
 	@UiField
@@ -95,8 +97,9 @@ public class ReservationViewImpl extends Composite implements BaduuumView {
 		String email = emailField.getText();
 		String phone = phoneField.getText();
 		Long date = dateField.getValue();
-		Long timeStart = timeStartField.getValue();
-		Long timeEnd = timeEndField.getValue();
+
+		String timeStart = timeStartField.getText();
+		String timeEnd = timeEndField.getText();
 		service.submit(name, band, email, phone, date, timeStart, timeEnd, callback);
 		
 	}

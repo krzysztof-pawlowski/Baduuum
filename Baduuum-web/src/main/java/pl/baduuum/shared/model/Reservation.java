@@ -77,11 +77,12 @@ public class Reservation implements Serializable {
 	public Reservation() {
 	}
 
-	public Reservation(Integer id, String bandName, String conctactPersonEmail, String contactPersonPhone, Date date, Time hourStart, Time hoursEnd,
+	public Reservation(Integer id, String bandName, String contactPersonName, String conctactPersonEmail, String contactPersonPhone, Date date, Time hourStart, Time hoursEnd,
 					   Boolean isApproved, Boolean isCymbals, Boolean isPaid, Boolean isPiano, ReservationCategory reservationCategory) {
 		this.id = id;
 		this.bandName = bandName;
 		this.conctactPersonEmail = conctactPersonEmail;
+		this.contactPersonName = contactPersonName;
 		this.contactPersonPhone = contactPersonPhone;
 		this.date = date;
 		this.hourStart = hourStart;

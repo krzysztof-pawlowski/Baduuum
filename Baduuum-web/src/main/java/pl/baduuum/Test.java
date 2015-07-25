@@ -37,7 +37,7 @@ public class Test {
         Boolean isPiano = true;
         ReservationCategory reservationCategory = null;
 
-        Reservation reservation = new Reservation(null, name, conctactPersonEmail, contactPersonPhone, day, hourStart, hoursEnd,
+        Reservation reservation = new Reservation(null, name, name, conctactPersonEmail, contactPersonPhone, day, hourStart, hoursEnd,
                 isApproved, isCymbals, isPaid, isPiano, reservationCategory);
 
 
