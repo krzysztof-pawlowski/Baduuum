@@ -1,9 +1,6 @@
 package pl.baduuum.server.service;
 
 import java.sql.Time;
-import java.text.DateFormat;
-import java.text.SimpleDateFormat;
-import java.time.LocalTime;
 import java.util.Date;
 
 import org.slf4j.Logger;
@@ -14,7 +11,7 @@ import org.springframework.transaction.annotation.Propagation;
 import org.springframework.transaction.annotation.Transactional;
 
 import pl.baduuum.client.ReservationService;
-import pl.baduuum.server.db.configuration.AppConfig;
+import pl.baduuum.server.configuration.AppConfig;
 import pl.baduuum.shared.dao.ReservationDao;
 import pl.baduuum.shared.model.Reservation;
 

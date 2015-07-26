@@ -6,7 +6,7 @@ import java.util.Date;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.context.support.AbstractApplicationContext;
 
-import pl.baduuum.server.db.configuration.AppConfig;
+import pl.baduuum.server.configuration.AppConfig;
 import pl.baduuum.shared.dao.ReservationDao;
 import pl.baduuum.shared.model.Reservation;
 import pl.baduuum.shared.model.ReservationCategory;
@@ -14,13 +14,13 @@ import pl.baduuum.shared.model.ReservationCategory;
 /**
  * Created by mario on 19/07/15.
  */
-public class Test {
+public class TestDB {
     private AbstractApplicationContext context = new AnnotationConfigApplicationContext(AppConfig.class);
 
 
 
     public static void main (String... args){
-        new Test().run();
+        new TestDB().run();
     }
 
     private void run() {
@@ -43,13 +43,13 @@ public class Test {
 
         ReservationDao reservationDao = (ReservationDao) context.getBean("reservationDao");
         reservationDao.save(reservation);
-        
+
         System.out.println(reservationDao.list().size());
-        
+
         Reservation res = reservationDao.findById(1);
         reservationDao.delete(res);
-        
-        
+
+
         System.out.print("done");
     }
 }
