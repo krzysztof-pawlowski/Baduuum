@@ -19,7 +19,7 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 @Configuration
 @EnableTransactionManagement
 @ComponentScan({ "pl.baduuum.server.db.configuration" })
-@PropertySource(value = { "classpath:application.properties" })
+@PropertySource(value = {"classpath:application-${envTarget}.properties"})
 public class HibernateConfiguration {
 
     @Autowired
