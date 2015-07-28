@@ -19,7 +19,6 @@ public class TestEmail {
         new TestEmail().sendSampleEmail();
     }
 
-
     public void sendSampleEmail(){
 
         EmailService emailServiceBean = (EmailService) context.getBean("emailService");

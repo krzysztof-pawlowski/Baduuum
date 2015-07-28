@@ -31,25 +31,25 @@ public class TestDB {
         Date day = new Date();
         Time hourStart = new Time(0);
         Time hoursEnd = new Time(10);
-        Boolean isApproved = true;
-        Boolean isCymbals = true;
-        Boolean isPaid = true;
-        Boolean isPiano = true;
-        ReservationCategory reservationCategory = null;
 
-        Reservation reservation = new Reservation(null, name, name, conctactPersonEmail, contactPersonPhone, day, hourStart, hoursEnd,
-                isApproved, isCymbals, isPaid, isPiano, reservationCategory);
+        Reservation reservation = new Reservation.Builder()
+                .bandName("band")
+                .contactPersonName("name")
+                .contactPersonPhone("contactPersonPhone")
+                .date(new Date())
+                .hourStart(hourStart)
+                .hourEnd(hoursEnd)
+                .isApproved(false)
+                .isCymbals(false)
+                .isCymbalsCrash(false)
+                .isPaid(false)
+                .isPiano(false).build();
 
 
         ReservationDao reservationDao = (ReservationDao) context.getBean("reservationDao");
         reservationDao.save(reservation);
 
-        System.out.println(reservationDao.list().size());
 
-        Reservation res = reservationDao.findById(1);
-        reservationDao.delete(res);
-
-
-        System.out.print("done");
+        System.out.print(reservationDao.list().size());
     }
 }

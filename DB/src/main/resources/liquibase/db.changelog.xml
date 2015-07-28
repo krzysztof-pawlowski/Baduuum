@@ -10,4 +10,5 @@
         <include file="src/main/resources/liquibase/001_schema_fixes_reservation_income.xml"/>
 		<include file="src/main/resources/liquibase/002_create_sequences.xml"/>
 		<include file="src/main/resources/liquibase/003_add_cymbals_column.xml"/>
+		<include file="src/main/resources/liquibase/004_rename_hours_column.xml"/>
 </databaseChangeLog>

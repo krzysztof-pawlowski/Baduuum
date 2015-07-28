@@ -28,7 +28,7 @@ public class Reservation implements Serializable {
 	private String bandName;
 
 	@Column(name = "conctact_person_email")
-	private String conctactPersonEmail;
+	private String contactPersonEmail;
 
 	@Column(name = "contact_person_name")
 	private String contactPersonName;
@@ -42,8 +42,8 @@ public class Reservation implements Serializable {
 	@Column(name = "hour_start")
 	private Time hourStart;
 
-	@Column(name = "hours_end")
-	private Time hoursEnd;
+	@Column(name = "hour_end")
+	private Time hourEnd;
 
 	@Column(name = "is_approved")
 	private Boolean isApproved;
@@ -73,28 +73,120 @@ public class Reservation implements Serializable {
 	@JoinColumn(name = "reservation_category_id")
 	private ReservationCategory reservationCategory;
 
-	public Reservation(int reservationId) {
-		this.id = reservationId;
-	}
-
+	// hibernate, why?
 	public Reservation() {
 	}
 
-	public Reservation(Integer id, String bandName, String contactPersonName, String conctactPersonEmail, String contactPersonPhone, Date date, Time hourStart, Time hoursEnd,
-					   Boolean isApproved, Boolean isCymbals, Boolean isPaid, Boolean isPiano, ReservationCategory reservationCategory) {
-		this.id = id;
-		this.bandName = bandName;
-		this.conctactPersonEmail = conctactPersonEmail;
-		this.contactPersonName = contactPersonName;
-		this.contactPersonPhone = contactPersonPhone;
-		this.date = date;
-		this.hourStart = hourStart;
-		this.hoursEnd = hoursEnd;
-		this.isApproved = isApproved;
-		this.isCymbals = isCymbals;
-		this.isPaid = isPaid;
-		this.isPiano = isPiano;
-		this.reservationCategory = reservationCategory;
+	private Reservation(Builder builder) {
+		id = builder.id;
+		bandName = builder.bandName;
+		contactPersonName = builder.contactPersonName;
+		contactPersonEmail = builder.contactPersonEmail;
+		contactPersonPhone = builder.contactPersonPhone;
+		date = builder.date;
+		hourStart = builder.hourStart;
+		hourEnd = builder.hourEnd;
+		isApproved = builder.isApproved;
+		isCymbals = builder.isCymbals;
+		isCymbalsCrash = builder.isCymbalsCrash;
+		isPaid = builder.isPaid;
+		isPiano = builder.isPiano;
+		reservationCategory = builder.reservationCategory;
+	}
+
+
+	public static class Builder {
+		private Integer id;
+		private String bandName;
+		private String contactPersonName;
+		private String contactPersonEmail;
+		private String contactPersonPhone;
+		private Date date;
+		private Time hourStart;
+		private Time hourEnd;
+		private Boolean isApproved;
+		private Boolean isCymbals;
+		private Boolean isCymbalsCrash;
+		private Boolean isPaid;
+		private Boolean isPiano;
+		private ReservationCategory reservationCategory;
+
+		public Builder(){}
+
+		public Builder id(Integer val) {
+			id = val;
+			return this;
+		}
+
+		public Builder bandName(String val) {
+			bandName = val;
+			return this;
+		}
+
+		public Builder contactPersonName(String val) {
+			contactPersonName = val;
+			return this;
+		}
+
+		public Builder contactPersonPhone(String val) {
+			contactPersonPhone = val;
+			return this;
+		}
+
+		public Builder contactPersonEmail(String val) {
+			contactPersonEmail = val;
+			return this;
+		}
+
+		public Builder date(Date val) {
+			date = val;
+			return this;
+		}
+
+		public Builder hourStart(Time val) {
+			hourStart = val;
+			return this;
+		}
+
+		public Builder hourEnd(Time val) {
+			hourEnd = val;
+			return this;
+		}
+
+		public Builder isApproved(Boolean val) {
+			isApproved = val;
+			return this;
+		}
+
+		public Builder isCymbals(Boolean val) {
+			isCymbals = val;
+			return this;
+		}
+
+		public Builder isCymbalsCrash(Boolean val) {
+			isCymbalsCrash = val;
+			return this;
+		}
+
+		public Builder isPaid(Boolean val) {
+			isPaid = val;
+			return this;
+		}
+
+		public Builder isPiano(Boolean val) {
+			isPiano = val;
+			return this;
+		}
+
+		public Builder reservationCategory(ReservationCategory val) {
+			reservationCategory = val;
+			return this;
+		}
+
+		public Reservation build() {
+			return new Reservation(this);
+		}
+
 	}
 
 	public Reservation(String bandName) {
@@ -117,12 +209,12 @@ public class Reservation implements Serializable {
 		this.bandName = bandName;
 	}
 
-	public String getConctactPersonEmail() {
-		return this.conctactPersonEmail;
+	public String getContactPersonEmail() {
+		return this.contactPersonEmail;
 	}
 
-	public void setConctactPersonEmail(String conctactPersonEmail) {
-		this.conctactPersonEmail = conctactPersonEmail;
+	public void setContactPersonEmail(String contactPersonEmail) {
+		this.contactPersonEmail = contactPersonEmail;
 	}
 
 	public String getContactPersonName() {
@@ -157,12 +249,20 @@ public class Reservation implements Serializable {
 		this.hourStart = hourStart;
 	}
 
-	public Time getHoursEnd() {
-		return this.hoursEnd;
+	public Time getHourEnd() {
+		return this.hourEnd;
 	}
 
-	public void setHoursEnd(Time hoursEnd) {
-		this.hoursEnd = hoursEnd;
+	public void setHourEnd(Time hourEnd) {
+		this.hourEnd = hourEnd;
+	}
+
+	public Boolean getIsCymbalsCrash() {
+		return isCymbalsCrash;
+	}
+
+	public void setIsCymbalsCrash(Boolean isCymbalsCrash) {
+		this.isCymbalsCrash = isCymbalsCrash;
 	}
 
 	public Boolean getIsApproved() {

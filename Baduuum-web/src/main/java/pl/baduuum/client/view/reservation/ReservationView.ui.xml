@@ -44,6 +44,15 @@
 									<dp:UTCTimeBox styleName="form-control" ui:field="timeEndField" />
 								</div>
 								<div class="form-group">
+									<g:CheckBox styleName="form-control" ui:field="isPiano" text="piano"/>
+								</div>
+								<div class="form-group">
+									<g:CheckBox styleName="form-control" ui:field="isCymbals" text="piano"/>
+								</div>
+								<div class="form-group">
+									<g:CheckBox styleName="form-control" ui:field="isCymbalsCrash" text="piano"/>
+								</div>
+								<div class="form-group">
 									<g:Button text="Wyślij" ui:field="buttonSubmit"
 										styleName="btn btn-default" />
 								</div>

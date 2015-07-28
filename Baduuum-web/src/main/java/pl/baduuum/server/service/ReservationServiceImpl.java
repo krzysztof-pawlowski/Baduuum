@@ -53,8 +53,8 @@ public class ReservationServiceImpl extends RemoteServiceServlet implements
 		Time start = convertTime(hourStart);
 		Time end = convertTime(hoursEnd);
 		
-		Reservation reservation = new Reservation(null, band, name, email, phone, date, start, end,
-				false, false, false, false, null);
+		Reservation reservation = new Reservation.Builder()
+				.build();
 
 		ReservationDao reservationDao = (ReservationDao) context.getBean("reservationDao");
 		reservationDao.save(reservation);

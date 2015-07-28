@@ -1,5 +1,6 @@
 package pl.baduuum.client.view.reservation;
 
+import com.google.gwt.user.client.ui.*;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -16,14 +17,8 @@ import com.google.gwt.uibinder.client.UiHandler;
 import com.google.gwt.uibinder.client.UiTemplate;
 import com.google.gwt.user.client.History;
 import com.google.gwt.user.client.rpc.AsyncCallback;
-import com.google.gwt.user.client.ui.Composite;
-import com.google.gwt.user.client.ui.FormPanel;
-import com.google.gwt.user.client.ui.TextBox;
-import com.google.gwt.user.client.ui.Widget;
 import com.tractionsoftware.gwt.user.client.ui.UTCDateBox;
 import com.tractionsoftware.gwt.user.client.ui.UTCTimeBox;
-
-import java.time.LocalTime;
 
 public class ReservationViewImpl extends Composite implements BaduuumView {
 	
@@ -47,9 +42,18 @@ public class ReservationViewImpl extends Composite implements BaduuumView {
 	
 	@UiField 
 	UTCTimeBox timeStartField;
-	
-	@UiField 
+
+	@UiField
 	UTCTimeBox timeEndField;
+
+	@UiField
+	CheckBox isPiano;
+
+	@UiField
+	CheckBox isCymbals;
+
+	@UiField
+	CheckBox isCymbalsCrash;
 	
 	private ReservationServiceAsync service = GWT.create(ReservationService.class);
 
@@ -68,6 +72,8 @@ public class ReservationViewImpl extends Composite implements BaduuumView {
 		dateField.getElement().setPropertyString("placeholder", "dzień");
 		timeStartField.getElement().setPropertyString("placeholder", "godzina rozpoczęcia");
 		timeEndField.getElement().setPropertyString("placeholder", "godzina zakończenia");
+
+		isCymbals.getElement().setPropertyString("placeholder", "blah");
 		
 		form.setMethod(FormPanel.METHOD_POST);
 		form.setEncoding(FormPanel.ENCODING_MULTIPART);
