@@ -51,6 +51,9 @@ public class Reservation implements Serializable {
 	@Column(name = "is_cymbals")
 	private Boolean isCymbals;
 
+	@Column(name = "is_cymbals_crash")
+	private Boolean isCymbalsCrash;
+
 	@Column(name = "is_paid")
 	private Boolean isPaid;
 
