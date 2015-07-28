@@ -44,13 +44,22 @@
 									<dp:UTCTimeBox styleName="form-control" ui:field="timeEndField" />
 								</div>
 								<div class="form-group">
-									<g:CheckBox styleName="form-control" ui:field="isPiano" text="piano"/>
+									<g:HorizontalPanel>
+										<g:CheckBox ui:field="isPiano"/>
+										<g:Label styleName="paddedHorizontalPanelText" text="Chcemy wypożyczyć pianino cyfrowe Korg SP-170 (5zł/próba)"/>
+									</g:HorizontalPanel>
 								</div>
 								<div class="form-group">
-									<g:CheckBox styleName="form-control" ui:field="isCymbals" text="piano"/>
+									<g:HorizontalPanel>
+										<g:CheckBox ui:field="isCymbals"/>
+										<g:Label styleName="paddedHorizontalPanelText" text="Chcemy wypożyczyć hihat + ride Turkish Classic (5zł / próba)"/>
+									</g:HorizontalPanel>
 								</div>
 								<div class="form-group">
-									<g:CheckBox styleName="form-control" ui:field="isCymbalsCrash" text="piano"/>
+									<g:HorizontalPanel>
+										<g:CheckBox ui:field="isCymbalsCrash"/>
+										<g:Label styleName="paddedHorizontalPanelText" text="Chcemy wypożyczyć crash Turkish Rock Beat Raw (10zł / próba)"/>
+									</g:HorizontalPanel>
 								</div>
 								<div class="form-group">
 									<g:Button text="Wyślij" ui:field="buttonSubmit"

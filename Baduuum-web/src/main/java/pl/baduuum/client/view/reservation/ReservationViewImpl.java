@@ -73,7 +73,6 @@ public class ReservationViewImpl extends Composite implements BaduuumView {
 		timeStartField.getElement().setPropertyString("placeholder", "godzina rozpoczęcia");
 		timeEndField.getElement().setPropertyString("placeholder", "godzina zakończenia");
 
-		isCymbals.getElement().setPropertyString("placeholder", "blah");
 		
 		form.setMethod(FormPanel.METHOD_POST);
 		form.setEncoding(FormPanel.ENCODING_MULTIPART);
