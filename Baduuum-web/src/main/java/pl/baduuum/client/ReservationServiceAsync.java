@@ -7,6 +7,7 @@ import java.util.Date;
 
 public interface ReservationServiceAsync {
 
-    void submit(String name, String band, String email, String phone, Long date, String timeStart, String timeEnd, AsyncCallback<Void> callback);
+    void submit(String name, String band, String email, String phone, Long date, String timeStart, String timeEnd,
+                Boolean isPiano, Boolean isCymbals, Boolean isCymbalsCrash, AsyncCallback<Void> callback);
 
 }

@@ -25,10 +25,6 @@ public class TestDB {
 
     private void run() {
 
-        String name = "name";
-        String conctactPersonEmail = "cpontsanct";
-        String contactPersonPhone = "phone";
-        Date day = new Date();
         Time hourStart = new Time(0);
         Time hoursEnd = new Time(10);
 

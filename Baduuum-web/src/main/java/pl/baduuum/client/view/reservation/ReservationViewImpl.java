@@ -105,7 +105,7 @@ public class ReservationViewImpl extends Composite implements BaduuumView {
 
 		String timeStart = timeStartField.getText();
 		String timeEnd = timeEndField.getText();
-		service.submit(name, band, email, phone, date, timeStart, timeEnd, callback);
+		service.submit(name, band, email, phone, date, timeStart, timeEnd, isPiano.getValue(), isCymbals.getValue(), isCymbalsCrash.getValue(), callback);
 		
 	}
 

@@ -7,7 +7,10 @@ import org.springframework.context.support.AbstractApplicationContext;
 
 import pl.baduuum.server.configuration.AppConfig;
 import pl.baduuum.server.service.EmailService;
+import pl.baduuum.shared.model.Reservation;
 
+import java.sql.Time;
+import java.util.Date;
 
 
 public class TestEmail {
@@ -23,12 +26,26 @@ public class TestEmail {
 
         EmailService emailServiceBean = (EmailService) context.getBean("emailService");
 
-        String recipientName = "mariusz";
-        String recipientEmail = "mario@data.pl";
+        Time hourStart = new Time(0);
+        Time hoursEnd = new Time(10);
+
+        Reservation reservation = new Reservation.Builder()
+                .bandName("band")
+                .contactPersonName("name")
+                .contactPersonPhone("contactPersonPhone")
+                .contactPersonEmail("mario@data.pl")
+                .date(new Date())
+                .hourStart(hourStart)
+                .hourEnd(hoursEnd)
+                .isApproved(false)
+                .isCymbals(false)
+                .isCymbalsCrash(false)
+                .isPaid(false)
+                .isPiano(false).build();
+
         try {
-            emailServiceBean.sendSimpleMail(recipientName, recipientEmail);
+            emailServiceBean.sendReservationEmailToClient(reservation);
         } catch (MessagingException e) {
-            // TODO Auto-generated catch block
             e.printStackTrace();
         }
     }

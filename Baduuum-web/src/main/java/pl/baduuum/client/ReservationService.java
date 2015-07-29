@@ -10,6 +10,6 @@ import java.util.Date;
 public interface ReservationService extends RemoteService{
 
 	void submit(String name, String band, String email, String phone,
-			Long date, String timeStart, String timeEnd) throws Exception;
+			Long date, String timeStart, String timeEnd, Boolean isPiano, Boolean isCymbals, Boolean isCymbalsCrash) throws Exception;
 
 }

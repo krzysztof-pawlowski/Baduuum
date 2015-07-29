@@ -51,6 +51,7 @@ public class MailSenderConfiguration {
 		Properties mailProperties = new Properties();
 		mailProperties.put("mail.smtp.auth", Boolean.parseBoolean(environment.getRequiredProperty("mail.smtp.auth")));
 	    mailProperties.put("mail.smtp.starttls.enable", Boolean.parseBoolean(environment.getRequiredProperty("mail.smtp.starttls.enable")));
+		mailProperties.put("mail.smtp.ssl.enable", Boolean.parseBoolean(environment.getRequiredProperty("mail.smtp.ssl.enable")));
 		mailSender.setJavaMailProperties(mailProperties);
 		return mailSender;
 	}

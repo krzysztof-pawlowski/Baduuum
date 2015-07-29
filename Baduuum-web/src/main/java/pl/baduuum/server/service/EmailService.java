@@ -1,12 +1,5 @@
 package pl.baduuum.server.service;
 
-import java.util.Arrays;
-import java.util.Date;
-import java.util.Locale;
-
-import javax.mail.MessagingException;
-import javax.mail.internet.MimeMessage;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.io.ByteArrayResource;
 import org.springframework.core.io.InputStreamSource;
@@ -15,6 +8,13 @@ import org.springframework.mail.javamail.MimeMessageHelper;
 import org.springframework.stereotype.Service;
 import org.thymeleaf.TemplateEngine;
 import org.thymeleaf.context.Context;
+import pl.baduuum.shared.model.Reservation;
+
+import javax.mail.MessagingException;
+import javax.mail.internet.MimeMessage;
+import java.util.Arrays;
+import java.util.Date;
+import java.util.Locale;
 
 @Service("emailService")
 public class EmailService {
@@ -25,32 +25,30 @@ public class EmailService {
 	@Autowired
 	private TemplateEngine templateEngine;
 
-	
-	public void sendSimpleMail(final String recipientName,
-			final String recipientEmail) throws MessagingException {
-
+	public void sendReservationEmailToClient(Reservation reservation) throws MessagingException {
 		// Prepare the evaluation context
-		final Context ctx = new Context();
-		ctx.setVariable("name", recipientName);
-		ctx.setVariable("subscriptionDate", new Date());
-		ctx.setVariable("hobbies", Arrays.asList("Cinema", "Sports", "Music"));
+		final Context ctx = prepareContext(reservation);
 
 		// Prepare message using a Spring helper
 		final MimeMessage mimeMessage = this.mailSender.createMimeMessage();
-		final MimeMessageHelper message = new MimeMessageHelper(mimeMessage,
-				"UTF-8");
-		message.setSubject("Example HTML email (simple)");
-		message.setFrom("thymeleaf@example.com");
-		message.setTo(recipientEmail);
+		final MimeMessageHelper message = new MimeMessageHelper(mimeMessage, "UTF-8");
+		message.setSubject("Potwierdzenie wys³ania rezerwacji do Sali Prób Baduuum");
+		message.setFrom("baduuum@baduuum.pl");
+		message.setTo(reservation.getContactPersonEmail());
 
 		// Create the HTML body using Thymeleaf
 		final String htmlContent = this.templateEngine.process(
-				"email-simple.html", ctx);
+				"reservation.html", ctx);
 		message.setText(htmlContent, true /* isHtml */);
 
 		// Send email
-		this.mailSender.send(mimeMessage);
+//		this.mailSender.send(mimeMessage);
 
+		System.out.print(htmlContent);
+
+	}
+
+	public void sendNotification(String notificationReceiver, String notificationReceiverEmail, Reservation reservation) throws MessagingException {
 	}
 
 	/*
@@ -133,4 +131,17 @@ public class EmailService {
 
 	}
 
+	private Context prepareContext(Reservation reservation) {
+		Context ctx = new Context();
+		ctx.setVariable("contactName", reservation.getContactPersonName());
+		ctx.setVariable("bandName", reservation.getBandName());
+		ctx.setVariable("date", reservation.getDate());
+		ctx.setVariable("start", reservation.getHourStart());
+		ctx.setVariable("end", reservation.getHourEnd());
+		ctx.setVariable("contactPhone", reservation.getContactPersonPhone());
+		ctx.setVariable("isPiano", reservation.getIsPiano());
+		ctx.setVariable("isCymbals", reservation.getIsCymbals());
+		ctx.setVariable("isCymbalsCrash", reservation.getIsCymbalsCrash());
+		return ctx;
+	}
 }
