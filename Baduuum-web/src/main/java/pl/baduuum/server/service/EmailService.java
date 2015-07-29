@@ -11,7 +11,9 @@ import org.thymeleaf.context.Context;
 import pl.baduuum.shared.model.Reservation;
 
 import javax.mail.MessagingException;
+import javax.mail.internet.InternetAddress;
 import javax.mail.internet.MimeMessage;
+import java.io.UnsupportedEncodingException;
 import java.util.Arrays;
 import java.util.Date;
 import java.util.Locale;
@@ -25,15 +27,15 @@ public class EmailService {
 	@Autowired
 	private TemplateEngine templateEngine;
 
-	public void sendReservationEmailToClient(Reservation reservation) throws MessagingException {
+	public void sendReservationEmailToClient(Reservation reservation) throws MessagingException, UnsupportedEncodingException {
 		// Prepare the evaluation context
 		final Context ctx = prepareContext(reservation);
 
 		// Prepare message using a Spring helper
 		final MimeMessage mimeMessage = this.mailSender.createMimeMessage();
 		final MimeMessageHelper message = new MimeMessageHelper(mimeMessage, "UTF-8");
-		message.setSubject("Potwierdzenie wys≥ania rezerwacji do Sali PrÛb Baduuum");
-		message.setFrom("baduuum@baduuum.pl");
+		message.setSubject("Potwierdzenie wys≈Çania rezerwacji do Sali Pr√≥b Baduuum");
+		message.setFrom(new InternetAddress("baduuum@baduuum.pl", "Sala Pr√≥b Baduuum"));
 		message.setTo(reservation.getContactPersonEmail());
 
 		// Create the HTML body using Thymeleaf
@@ -42,7 +44,7 @@ public class EmailService {
 		message.setText(htmlContent, true /* isHtml */);
 
 		// Send email
-//		this.mailSender.send(mimeMessage);
+		//this.mailSender.send(mimeMessage);
 
 		System.out.print(htmlContent);
 
@@ -133,15 +135,7 @@ public class EmailService {
 
 	private Context prepareContext(Reservation reservation) {
 		Context ctx = new Context();
-		ctx.setVariable("contactName", reservation.getContactPersonName());
-		ctx.setVariable("bandName", reservation.getBandName());
-		ctx.setVariable("date", reservation.getDate());
-		ctx.setVariable("start", reservation.getHourStart());
-		ctx.setVariable("end", reservation.getHourEnd());
-		ctx.setVariable("contactPhone", reservation.getContactPersonPhone());
-		ctx.setVariable("isPiano", reservation.getIsPiano());
-		ctx.setVariable("isCymbals", reservation.getIsCymbals());
-		ctx.setVariable("isCymbalsCrash", reservation.getIsCymbalsCrash());
+		ctx.setVariable("reservation", reservation);
 		return ctx;
 	}
 }

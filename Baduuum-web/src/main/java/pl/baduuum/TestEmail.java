@@ -9,6 +9,7 @@ import pl.baduuum.server.configuration.AppConfig;
 import pl.baduuum.server.service.EmailService;
 import pl.baduuum.shared.model.Reservation;
 
+import java.io.UnsupportedEncodingException;
 import java.sql.Time;
 import java.util.Date;
 
@@ -46,6 +47,8 @@ public class TestEmail {
         try {
             emailServiceBean.sendReservationEmailToClient(reservation);
         } catch (MessagingException e) {
+            e.printStackTrace();
+        } catch (UnsupportedEncodingException e) {
             e.printStackTrace();
         }
     }

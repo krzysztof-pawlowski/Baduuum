@@ -1,25 +1,25 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
-    <title th:remove="all">Template for HTML email (simple)</title>
+    <title th:remove="all">Potwierdzenie wysłania rezerwacji</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 </head>
 <body>
-<p th:text="#{greeting(${contactName})}">
-    Hello, Peter Static!
-</p>
-<p th:if="${contactName.length() gt 10}">
-    Wow! You've got a long name (more than 10 chars)!
+<p>
+    Dziękujemy za wysłanie rezerwacji. Odpowiemy tak szybko jak to możliwe.
 </p>
 <p>
-    You have been successfully subscribed to the <b>Fake newsletter</b> on
-
+    Wysłana rezerwacja:
+    Osoba kontaktowa: <span th:text="${reservation.getContactPersonName()}"></span> <br/>
+    Zespół: <span th:text="${reservation.getBandName()}"></span> <br/>
+    Dzień: <span th:text="${#dates.format(reservation.getDate(), 'yyyy-MM-dd')}"></span> <br/>
+    Godzina rozpoczęcia: <span th:text="${#dates.format(reservation.getHourStart(), 'HH:mm')}"></span> <br/>
+    Godzina zakończenia: <span th:text="${#dates.format(reservation.getHourEnd(), 'HH:mm')}"></span> <br/>
 </p>
-<p>Your hobbies are:</p>
 
 <p>
-    Regards, <br />
-    &emsp; <em>The Thymeleaf Team</em>
+    Pozdrawiamy, <br />
+    &emsp; <em>Sala Prób Baduuum</em>
 </p>
 </body>
 </html>

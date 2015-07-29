@@ -1,5 +1,6 @@
 package pl.baduuum.server.service;
 
+import java.io.UnsupportedEncodingException;
 import java.sql.Time;
 import java.util.Date;
 
@@ -68,10 +69,10 @@ public class ReservationServiceImpl extends RemoteServiceServlet implements
 		try {
 			emailServiceBean.sendReservationEmailToClient(reservation);
 			emailServiceBean.sendNotification(notificationReceiver, notificationReceiverEmail, reservation );
-		} catch (MessagingException e) {
+		} catch (MessagingException | UnsupportedEncodingException e) {
 			LOG.error("Error while sending email to client.", e);
 		}
-		
+
 	}
 
 	@Transactional(propagation=Propagation.REQUIRED, rollbackFor=Exception.class)
