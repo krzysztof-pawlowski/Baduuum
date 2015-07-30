@@ -68,9 +68,9 @@ public class ReservationServiceImpl extends RemoteServiceServlet implements
 		EmailService emailServiceBean = (EmailService) context.getBean("emailService");
 		try {
 			emailServiceBean.sendReservationEmailToClient(reservation);
-			emailServiceBean.sendNotification(notificationReceiver, notificationReceiverEmail, reservation );
+			emailServiceBean.sendNotification(reservation );
 		} catch (MessagingException | UnsupportedEncodingException e) {
-			LOG.error("Error while sending email to client.", e);
+			LOG.error("Error while sending email.", e);
 		}
 
 	}

@@ -12,9 +12,14 @@
     Wysłana rezerwacja:
     Osoba kontaktowa: <span th:text="${reservation.getContactPersonName()}"></span> <br/>
     Zespół: <span th:text="${reservation.getBandName()}"></span> <br/>
-    Dzień: <span th:text="${#dates.format(reservation.getDate(), 'yyyy-MM-dd')}"></span> <br/>
+    Dzień: <span th:text="${#dates.format(reservation.getDate(), 'yyyy-MM-dd (EEEE)')}"></span> <br/>
     Godzina rozpoczęcia: <span th:text="${#dates.format(reservation.getHourStart(), 'HH:mm')}"></span> <br/>
     Godzina zakończenia: <span th:text="${#dates.format(reservation.getHourEnd(), 'HH:mm')}"></span> <br/>
+    Czy wypożyczamy pianino cyfrowe: <span th:if="${reservation.isPiano}">tak</span><span th:unless="${reservation.isPiano}">nie</span>
+    Czy wypożyczamy hihat i ride Turkish Classic: <span th:if="${reservation.isCymbals}">tak</span><span th:unless="${reservation.isCymbals}">nie</span>
+    Czy wypożyczamy crash Turkish Rock Beat Raw: <span th:if="${reservation.isCymbalsCrash}">tak</span><span th:unless="${reservation.isCymbalsCrash}">nie</span>
+    Email: <span th:text="${reservation.getContactPersonEmail()}"></span> <br/>
+    Numer telefonu: <span th:text="${reservation.getContactPersonPhone()}"></span> <br/>
 </p>
 
 <p>

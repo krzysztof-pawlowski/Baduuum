@@ -31,7 +31,7 @@
 
     <!-- Message externalization/internationalization -->
     <bean id="messageSource" class="org.springframework.context.support.ResourceBundleMessageSource">
-        <property name="basename" value="Messages" />
+        <property name="basename" value="Messages_pl" />
     </bean>
 
 

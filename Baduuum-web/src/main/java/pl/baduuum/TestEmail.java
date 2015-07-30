@@ -42,7 +42,7 @@ public class TestEmail {
                 .isCymbals(false)
                 .isCymbalsCrash(false)
                 .isPaid(false)
-                .isPiano(false).build();
+                .isPiano(true).build();
 
         try {
             emailServiceBean.sendReservationEmailToClient(reservation);
