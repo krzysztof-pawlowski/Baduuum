@@ -29,6 +29,27 @@
 		<url-pattern>/baduuum/reservationService</url-pattern>
 	</servlet-mapping>
 
+	<servlet>
+		<servlet-name>authServlet</servlet-name>
+		<servlet-class>pl.baduuum.server.service.AuthServiceImpl</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>authServlet</servlet-name>
+		<url-pattern>/baduuum/auth</url-pattern>
+	</servlet-mapping>
+
+	<filter>
+		<filter-name>springSecurityFilterChain</filter-name>
+		<filter-class>org.springframework.web.filter.DelegatingFilterProxy</filter-class>
+	</filter>
+
+	<filter-mapping>
+		<filter-name>springSecurityFilterChain</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>
+
+
 	<!-- Default page to serve -->
 	<welcome-file-list>
 		<welcome-file>Baduuum.html</welcome-file>

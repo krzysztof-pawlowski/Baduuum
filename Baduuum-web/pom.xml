@@ -12,6 +12,7 @@
 
 	<properties>
 		<springframework.version>4.0.6.RELEASE</springframework.version>
+		<springsecurityframework.version>3.0.5.RELEASE</springsecurityframework.version>
 		<hibernate.version>4.3.6.Final</hibernate.version>
 		<quartz.version>2.2.1</quartz.version>
 		<gwt.version>2.7.0</gwt.version>
@@ -83,7 +84,21 @@
 			<artifactId>spring-orm</artifactId>
 			<version>${springframework.version}</version>
 		</dependency>
-
+		<dependency>
+			<groupId>org.springframework.security</groupId>
+			<artifactId>spring-security-core</artifactId>
+			<version>${springsecurityframework.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.security</groupId>
+			<artifactId>spring-security-config</artifactId>
+			<version>${springsecurityframework.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.security</groupId>
+			<artifactId>spring-security-web</artifactId>
+			<version>${springsecurityframework.version}</version>
+		</dependency>
 
 		<dependency>
 			<groupId>junit</groupId>
