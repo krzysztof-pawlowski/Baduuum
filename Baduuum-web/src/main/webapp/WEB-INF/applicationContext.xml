@@ -9,9 +9,7 @@
     <beans:bean id="customAuthListener" class="pl.baduuum.server.auth.CustomAuthListener"/>
 
     <http auto-config="true">
-        <intercept-url pattern="/baduuum/**" access="ROLE_USER"/>
-        <intercept-url pattern="/gwt/**" access="ROLE_USER"/>
-        <intercept-url pattern="/**/*.html" access="ROLE_USER"/>
+
         <intercept-url pattern="/**" access="IS_AUTHENTICATED_ANONYMOUSLY" />
     </http>
 
